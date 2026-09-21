@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JRE 議題庫</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;700&family=Noto+Serif+HK:wght@500;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#EDEFF3;--surface:#FFF;--surface-2:#F5F7FA;--surface-3:#E8ECF3;
+--text:#141C2E;--dim:#54607A;--faint:#8892A6;--line:#D6DBE5;--line2:#B4BDCE;
+--navy:#1B2C4F;--zh:#8A3324;--zh-bg:#F8E8E3;--en:#1D4E89;--en-bg:#E5ECF7;
+--jade:#1B6A55;--jade-bg:#E2EFE9;--amber:#87560A;--amber-bg:#F8ECD6;--stamp:#A32A22}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--bg:#0D121C;--surface:#151C2A;--surface-2:#1A2231;--surface-3:#212A3B;
+--text:#E4E9F2;--dim:#9CA8BE;--faint:#727F97;--line:#273245;--line2:#3A4660;
+--navy:#A2BAE7;--zh:#E79484;--zh-bg:#331C17;--en:#8FB4E8;--en-bg:#15263C;
+--jade:#5FC5A2;--jade-bg:#11332B;--amber:#E3AC4F;--amber-bg:#332710;--stamp:#EE8175}}
+:root[data-theme="dark"]{
+--bg:#0D121C;--surface:#151C2A;--surface-2:#1A2231;--surface-3:#212A3B;
+--text:#E4E9F2;--dim:#9CA8BE;--faint:#727F97;--line:#273245;--line2:#3A4660;
+--navy:#A2BAE7;--zh:#E79484;--zh-bg:#331C17;--en:#8FB4E8;--en-bg:#15263C;
+--jade:#5FC5A2;--jade-bg:#11332B;--amber:#E3AC4F;--amber-bg:#332710;--stamp:#EE8175}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);margin:0;font-size:15px;line-height:1.75;
+font-family:"Noto Sans HK","PingFang HK","Microsoft JhengHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Noto Serif HK",Georgia,serif;margin:0;text-wrap:balance}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+.wrap{max-width:1240px;margin:0 auto;padding:0 22px 80px}
+header{background:var(--surface);border-bottom:2px solid var(--navy)}
+.hd{max-width:1240px;margin:0 auto;padding:24px 22px 20px;display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap}
+.hd .no{font-family:"IBM Plex Mono",monospace;font-size:38px;font-weight:600;color:var(--line2);line-height:1}
+.hd h1{font-size:27px;font-weight:900;letter-spacing:.04em}
+.hd .en-t{font-size:15px;color:var(--dim);margin-top:4px;font-family:"Noto Serif HK",Georgia,serif;font-weight:500}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.09em;padding:3px 9px;border-radius:2px;
+background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
+.hd .right{margin-left:auto;display:flex;gap:6px;align-items:center}
+.btn{font-size:12px;padding:5px 11px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);
+border-radius:2px;cursor:pointer;font-family:inherit}
+.btn.on{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.back{font-size:12.5px;color:var(--dim);text-decoration:none;border-bottom:1px solid var(--line2)}
+section{margin-top:34px}
+.sh{display:flex;align-items:baseline;gap:12px;padding-bottom:8px;border-bottom:1px solid var(--line2);margin-bottom:0}
+.sh h2{font-size:18px;font-weight:700;letter-spacing:.03em}
+.sh .e{font-size:12.5px;color:var(--faint);font-family:"Noto Serif HK",Georgia,serif}
+.sh .hint{margin-left:auto;font-size:12px;color:var(--faint)}
+.pair{display:grid;grid-template-columns:1fr 1fr;background:var(--surface);border:1px solid var(--line);border-top:none}
+.pair:first-of-type{border-top:1px solid var(--line)}
+.pair>div{padding:15px 20px}
+.pair .en{border-left:1px solid var(--line);background:var(--surface-2)}
+.pair h4{font-size:14.5px;font-weight:700;margin-bottom:6px}
+.pair .zh h4{color:var(--zh)}
+.pair .en h4{color:var(--en)}
+.pair p{margin:0;color:var(--dim);font-size:14.5px;line-height:1.78}
+.pair .zh p{color:var(--text)}
+.num{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--faint);font-weight:600;margin-right:7px}
+.lbl{display:inline-block;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);
+font-weight:600;margin-bottom:5px}
+.ladder .zh h4,.ladder .en h4{font-size:13px;letter-spacing:.05em}
+.ladder .zh h4{color:var(--jade)}.ladder .en h4{color:var(--jade)}
+.fix{margin-top:9px;padding-top:9px;border-top:1px dashed var(--line2)}
+.fix .lbl{color:var(--jade)}
+.reb{margin-top:10px;padding:10px 12px;background:var(--surface-3);border-left:2px solid var(--navy);border-radius:0 2px 2px 0}
+.reb .lbl{color:var(--navy);margin-bottom:3px}
+.reb p{font-size:13.5px;line-height:1.72}
+.pair .en .reb{background:var(--bg)}
+.flip{background:var(--amber-bg);border:1px solid var(--amber);border-radius:3px;padding:13px 17px;
+margin-bottom:12px;font-size:13.5px;line-height:1.7;color:var(--text)}
+.flip b{color:var(--amber)}
+.say{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--navy);padding:0}
+.say .pair{border:none}
+.vocab{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);font-size:14px}
+.vocab td{padding:9px 16px;border-bottom:1px solid var(--line);color:var(--dim)}
+.vocab td:first-child{color:var(--text);font-weight:600;width:34%;border-right:1px solid var(--line)}
+.vocab tr:last-child td{border-bottom:none}
+.vocab td.e{font-family:"Noto Serif HK",Georgia,serif}
+body.only-zh .pair .en,body.only-zh .vocab td.e{display:none}
+body.only-zh .pair{grid-template-columns:1fr}
+body.only-zh .vocab td:first-child{width:100%;border-right:none}
+body.only-en .pair .zh{display:none}
+body.only-en .pair{grid-template-columns:1fr}
+body.only-en .pair .en{border-left:none}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line2);font-size:12.5px;color:var(--faint);line-height:1.7}
+.foot a{color:var(--navy)}
+@media(max-width:820px){
+ .pair{grid-template-columns:1fr}
+ .pair .en{border-left:none;border-top:1px solid var(--line)}
+ .hd .no{font-size:28px}.hd h1{font-size:22px}
+}
+
+.hero{background:var(--surface);border-bottom:2px solid var(--navy)}
+.hero .in{max-width:1240px;margin:0 auto;padding:30px 22px 26px;display:grid;gap:14px}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--amber)}
+.hero h1{font-size:32px;font-weight:900;letter-spacing:.04em}
+.hero .sub{font-family:"Noto Serif HK",Georgia,serif;color:var(--dim);font-size:15px}
+.hero p.lede{max-width:72ch;margin:0;color:var(--text)}
+.stats{display:flex;flex-wrap:wrap;gap:22px;margin-top:4px}
+.stats div{font-size:12.5px;color:var(--dim)}
+.stats b{display:block;font-family:"IBM Plex Mono",monospace;font-size:22px;color:var(--navy);font-weight:600;line-height:1.2}
+.hsec{margin-top:38px}
+.hsec>h2{font-size:19px;font-weight:700;padding-bottom:8px;border-bottom:1px solid var(--line2);display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.hsec>h2 .e{font-size:12.5px;color:var(--faint);font-weight:500}
+.hsec>h2 .hint{margin-left:auto;font-size:12px;color:var(--faint);font-family:"Noto Sans HK",sans-serif;font-weight:400}
+.note{font-size:13.5px;color:var(--dim);margin:10px 0 0;max-width:80ch}
+.radar{list-style:none;margin:0;padding:0;counter-reset:r;background:var(--surface);border:1px solid var(--line);border-top:none}
+.radar li{counter-increment:r;display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:start;padding:12px 18px;border-top:1px solid var(--line)}
+.radar li:first-child{border-top:none}
+.radar li::before{content:counter(r,decimal-leading-zero);font-family:"IBM Plex Mono",monospace;font-size:18px;font-weight:600;color:var(--line2);line-height:1.4}
+.radar li:nth-child(-n+5)::before{color:var(--stamp)}
+.radar .q{font-weight:700;font-family:"Noto Serif HK",Georgia,serif;font-size:15.5px;line-height:1.55}
+.radar .q a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--line2)}
+.radar .q a:hover,.radar .q a:focus-visible{border-bottom-color:var(--navy);outline:none}
+.radar .w{font-size:13px;color:var(--dim);margin-top:3px}
+.radar .t{font-size:11.5px;white-space:nowrap;text-align:right;color:var(--faint);font-family:"IBM Plex Mono",monospace;line-height:1.5}
+.radar .t span{display:block;font-family:"Noto Sans HK",sans-serif;font-size:12px;color:var(--navy);font-weight:700}
+.twocol{display:grid;grid-template-columns:1.6fr 1fr;gap:22px;align-items:start}
+.shiftlist{background:var(--surface);border:1px solid var(--line);border-top:none}
+.shiftlist div{display:grid;grid-template-columns:1fr auto 1.25fr;gap:10px;padding:10px 16px;border-top:1px solid var(--line);align-items:baseline;font-size:14.5px}
+.shiftlist div:first-child{border-top:none}
+.shiftlist .f{color:var(--faint);text-decoration:line-through;text-decoration-color:var(--line2);text-align:right}
+.shiftlist .a{color:var(--navy);font-weight:700}
+.shiftlist .to{font-weight:700}
+.shiftlist small{grid-column:1/-1;font-size:11.5px;color:var(--faint);text-align:right;margin-top:-4px}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-top:none}
+table.k{width:100%;border-collapse:collapse;font-size:13.5px;min-width:760px}
+table.k th,table.k td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.k th{font-size:11.5px;letter-spacing:.06em;color:var(--faint);font-weight:600;background:var(--surface-2)}
+table.k td.n{font-family:"IBM Plex Mono",monospace;color:var(--faint);width:36px}
+table.k td.v{font-variant-numeric:tabular-nums;white-space:nowrap}
+table.k td .e{display:block;font-size:12px;color:var(--faint)}
+table.k tr:last-child td{border-bottom:none}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:1px 8px;border-radius:9px;white-space:nowrap}
+.pill.B{background:var(--zh-bg);color:var(--stamp)}
+.pill.A{background:var(--surface-3);color:var(--dim)}
+table.k a{color:var(--navy);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:12px;margin-top:12px}
+.card{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);padding:15px 17px 13px;text-decoration:none;color:var(--text);border-radius:2px;transition:border-color .15s}
+.card:hover,.card:focus-visible{border-color:var(--navy);outline:none}
+.card .top{display:flex;gap:10px;align-items:baseline}
+.card .no{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--line2);font-size:20px}
+.card h3{font-size:16.5px;font-weight:700;line-height:1.35}
+.card .en{font-size:12.5px;color:var(--dim);font-family:"Noto Serif HK",Georgia,serif}
+.card p{margin:2px 0 0;font-size:13px;color:var(--dim);line-height:1.65;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.card .meta{margin-top:auto;padding-top:8px;border-top:1px dashed var(--line);font-size:11.5px;color:var(--faint);font-family:"IBM Plex Mono",monospace}
+.card.newt{border-top:3px solid var(--jade)}
+table.m{border-collapse:collapse;font-size:12.5px;min-width:880px;width:100%}
+table.m th,table.m td{border-bottom:1px solid var(--line);padding:6px 6px;text-align:center}
+table.m th{font-weight:600;color:var(--faint);font-size:11px;background:var(--surface-2)}
+table.m th a{color:var(--dim);text-decoration:none}
+table.m td:first-child,table.m th:first-child{text-align:left;padding-left:14px;white-space:nowrap;font-weight:700;color:var(--text)}
+table.m td .d{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--navy)}
+table.m tr:last-child td{border-bottom:none}
+.caveat{background:var(--amber-bg);border:1px solid var(--amber);border-radius:3px;padding:12px 16px;font-size:13.5px;margin-top:12px;line-height:1.7}
+.caveat b{color:var(--amber)}
+.enlist{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-top:none}
+.enlist li{padding:10px 16px;border-top:1px solid var(--line);font-size:14px;display:grid;grid-template-columns:1fr auto;gap:10px}
+.enlist li:first-child{border-top:none}
+.enlist a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--line2);font-family:"Noto Serif HK",Georgia,serif}
+.enlist span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--faint)}
+.how{background:var(--surface);border:1px solid var(--line);border-top:none;padding:16px 20px}
+.how ol{margin:0;padding-left:20px;font-size:14px;color:var(--dim);line-height:1.8;display:grid;gap:4px}
+.how b{color:var(--text)}
+@media(max-width:860px){.twocol{grid-template-columns:1fr}.radar li{grid-template-columns:34px 1fr}.radar .t{grid-column:2;text-align:left}.radar .t span{display:inline;margin-right:6px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+ <div class="eyebrow">2026 聯合招聘考試 · 以《香港第一個五年規劃》＋《2026年施政報告》為本</div>
+ <h1>JRE 議題庫</h1>
+ <div class="sub">Policy Topic Bank — built on Hong Kong’s First Five-Year Plan and the 2026 Policy Address</div>
+ <p class="lede">16個議題，每頁都有五年規劃的量化目標、施政報告的具體措施（附段號）、政策方向的轉變、政府取態與爭議、文化相近地區的做法（可借鑑與不可照搬）、以及四條出題方向連五層答題骨架。中文卷的題目歷年來自當年施政報告中「剛推出、有爭議、有執行難度」的措施——所以下面的雷達就是你的題庫。</p>
+ <div class="stats"><div><b>16</b>議題</div><div><b>181</b>項施政措施</div><div><b>64</b>組區域比較</div><div><b>64</b>條出題方向</div><div><b>22</b>項五年規劃指標</div></div>
+</div></header>
+<div class="wrap">
+
+<section class="hsec"><h2>中文卷出題雷達 <span class="e">Most likely Chinese-paper questions</span><span class="hint">按「新措施 × 爭議 × 持份者清晰 × 近年勞工福利醫療主線」排序</span></h2>
+<ol class="radar"><li><div><div class="q"><a href="01-ageing/index.html#exam">輸入外籍家居照顧員：解決居家照顧人手，還是衝擊本地護理員？</a></div><div class="w">全新試行；勞工＋安老雙主線；反對者（勞工界）清晰</div></div><div class="t"><span>人口老化與安老服務</span>§395</div></li><li><div><div class="q"><a href="04-labour/index.html#exam">立法為外送員提供法定工傷補償：範圍應否擴大？</a></div><div class="w">正在草擬的新經濟立法，延續網約車規管的命題思路</div></div><div class="t"><span>勞工、就業與人力</span>§385</div></li><li><div><div class="q"><a href="05-population/index.html#exam">現金與稅務獎勵能否提升生育率？</a></div><div class="w">政府原文宣布「由不干預轉為鼓勵生育」，本年最大的取態轉變</div></div><div class="t"><span>人口、生育與人才</span>§288–290</div></li><li><div><div class="q"><a href="15-governance/index.html#exam">政府應否更深入介入私人樓宇大維修以杜絕圍標？</a></div><div class="w">宏福苑大火後的優先改革；獨立委員會10月底前報告</div></div><div class="t"><span>公務員制度與公共治理改革</span>§423–425</div></li><li><div><div class="q"><a href="03-mental-health/index.html#exam">應否立法限制兒童使用社交媒體？</a></div><div class="w">專責小組剛成立；國際熱議；家長、學校、平台、私隱四方拉扯</div></div><div class="t"><span>精神健康</span>§123(ii)</div></li><li><div><div class="q"><a href="02-healthcare/index.html#exam">公營醫療收費改革：首階段成效與下一步</a></div><div class="w">有現成數據可做「分析現況」，下一階段必上議程</div></div><div class="t"><span>醫療衞生與基層醫療</span>§303</div></li><li><div><div class="q"><a href="12-education/index.html#exam">學齡人口下降，應否積極推動資助中小學合併？</a></div><div class="w">「滙流升級計劃」本學年推出，辦學團體是清晰的游說對象</div></div><div class="t"><span>教育、人才培育與青年發展</span>§272</div></li><li><div><div class="q"><a href="06-welfare/index.html#exam">以社福數據平台＋AI識別高風險家庭：精準還是監控？</a></div><div class="w">明年上半年試行；私隱爭議；連結安老、照顧者、兒童保護</div></div><div class="t"><span>福利、扶貧與社會流動</span>§375(ii)</div></li><li><div><div class="q"><a href="09-tourism/index.html#exam">熱門郊野景點應否預約、限額甚至收費？</a></div><div class="w">9月剛試行；題目範圍小而清晰，最似官方樣本題風格</div></div><div class="t"><span>旅遊、盛事與文體旅協同</span>§351(iv)</div></li><li><div><div class="q"><a href="07-housing/index.html#exam">2030年內基本解決劣質劏房：目標是否過於進取？</a></div><div class="w">明年3月開始執法，安置和業主合規是焦點</div></div><div class="t"><span>土地、房屋與居住質素</span>§327–329</div></li><li><div><div class="q"><a href="04-labour/index.html#exam">收緊輸入勞工審批會否窒礙中小企？</a></div><div class="w">分級審批6月才實施；「本地優先」與人手短缺的兩難</div></div><div class="t"><span>勞工、就業與人力</span>§383</div></li><li><div><div class="q"><a href="02-healthcare/index.html#exam">專科輪候減半：關鍵是否在於分流至基層？</a></div><div class="w">五年減半是可考核目標，分流牽涉人手與病人信任</div></div><div class="t"><span>醫療衞生與基層醫療</span>§302</div></li><li><div><div class="q"><a href="03-mental-health/index.html#exam">全面推行精神健康分層護理模式</a></div><div class="w">框架剛獲接納、細節未定；與官方樣本題同一範疇</div></div><div class="t"><span>精神健康</span>§313(vii)</div></li><li><div><div class="q"><a href="06-welfare/index.html#exam">照顧者最需要的是津貼還是喘息服務？</a></div><div class="w">照顧者首次成為精準扶貧目標群組，津貼剛上調</div></div><div class="t"><span>福利、扶貧與社會流動</span>§374–376</div></li><li><div><div class="q"><a href="14-digital/index.html#exam">應否立法要求平台下架詐騙內容（包括AI詐騙）？</a></div><div class="w">財庫局今年內諮詢；全民關注網騙</div></div><div class="t"><span>數字政府、人工智能與數據治理</span>§123(i)(b)</div></li></ol>
+<p class="note">排序是備考推斷，不是真題。前五名用紅色標示：每一條都值得在第4至8週各寫一篇完整文章。點擊題目會跳到該議題頁的答題骨架。</p>
+</section>
+
+<section class="hsec"><div class="twocol">
+<div><h2 style="font-size:19px;font-weight:700;padding-bottom:8px;border-bottom:1px solid var(--line2)">今年政策的十個轉向 <span class="e" style="font-size:12.5px;color:var(--faint);font-weight:500">Direction of travel</span></h2>
+<div class="shiftlist"><div><span class="f">不干預</span><span class="a">→</span><span class="to">鼓勵生育</span><small>人口 · §288</small></div><div><span class="f">接濟</span><span class="a">→</span><span class="to">主動識別、精準扶助</span><small>福利 · §374</small></div><div><span class="f">事後追究</span><span class="a">→</span><span class="to">事前把關</span><small>樓宇安全 · §423；FYP 6.11</small></div><div><span class="f">服務為本</span><span class="a">→</span><span class="to">錢跟人走（長者券）</span><small>安老 · FYP 5.55</small></div><div><span class="f">以醫院為中心</span><span class="a">→</span><span class="to">預防為重、基層為先</span><small>醫療 · §297</small></div><div><span class="f">數人頭</span><span class="a">→</span><span class="to">增加值與留港時間</span><small>旅遊 · 專欄24</small></div><div><span class="f">推應用</span><span class="a">→</span><span class="to">應用＋治理並重</span><small>AI · §122–123</small></div><div><span class="f">研發強</span><span class="a">→</span><span class="to">產業強（新型工業化）</span><small>創科 · 主要指標7</small></div><div><span class="f">投訴後治理</span><span class="a">→</span><span class="to">未投訴已治理</span><small>地區治理 · §434</small></div><div><span class="f">住屋為主的新市鎮</span><span class="a">→</span><span class="to">大學城帶動的北都</span><small>北都 · §185</small></div></div>
+<p class="note">任何一條中文題的「分析現況」段，都可以用「政策方向正由……轉向……」開頭——這是閱卷者最想看到的政策觸覺。</p></div>
+<div><h2 style="font-size:19px;font-weight:700;padding-bottom:8px;border-bottom:1px solid var(--line2)">英文卷個案候選 <span class="e" style="font-size:12.5px;color:var(--faint);font-weight:500">English-paper cases</span></h2>
+<ul class="enlist"><li><a href="15-governance/index.html#exam">Prioritising post-fire building maintenance reforms before an inquiry reports</a><span>15 · §423–425</span></li><li><a href="11-environment/index.html#exam">Importing zero-carbon electricity versus building local generation</a><span>11 · §402</span></li><li><a href="08-innovation/index.html#exam">Regulating commercial drone delivery and passenger aircraft trials</a><span>08 · §137–139</span></li><li><a href="14-digital/index.html#exam">Safety and ethics declarations in AI procurement</a><span>14 · §123(iii)</span></li><li><a href="01-ageing/index.html#exam">Self-financed operation of government-built care homes</a><span>01 · §393(ii)</span></li><li><a href="02-healthcare/index.html#exam">Price transparency rules for private healthcare</a><span>02 · §304</span></li></ul>
+<p class="note">英文卷把議題放進虛構政體（例如 the City of Jade）寫內部討論文件。以上六個題材都有明確的方案比較空間。</p></div>
+</div></section>
+
+<section class="hsec"><h2>五年規劃22項主要指標 <span class="e">Key indicators of the First Five-Year Plan</span><span class="hint">約束性＝必須達標；預期性＝方向目標</span></h2>
+<div class="tbl"><table class="k"><thead><tr><th>#</th><th>指標</th><th>基準（2025年，除另註明）</th><th>2030年／五年目標</th><th>屬性</th><th>議題</th></tr></thead><tbody><tr><td class="n">1</td><td>實質本地生產總值增長<span class="e">Real GDP growth</span></td><td class="v">3.6%</td><td class="v">保持在合理區間</td><td><span class="pill A">預期性</span></td><td></td></tr><tr><td class="n">2</td><td>勞工生產力指數增長<span class="e">Labour productivity growth</span></td><td class="v">2.3%（2024）</td><td class="v">維持平穩</td><td><span class="pill A">預期性</span></td><td></td></tr><tr><td class="n">3</td><td>空運貨物吞吐量<span class="e">Air cargo throughput</span></td><td class="v">507萬公噸</td><td class="v">保持全球領先</td><td><span class="pill A">預期性</span></td><td></td></tr><tr><td class="n">4</td><td>商品整體進出口貨值<span class="e">Goods trade value</span></td><td class="v">109,271億元</td><td class="v">隨環球經濟穩定增長</td><td><span class="pill A">預期性</span></td><td></td></tr><tr><td class="n">5</td><td>服務進口和輸出總額<span class="e">Services trade value</span></td><td class="v">16,268億元</td><td class="v">隨環球經濟穩定增長</td><td><span class="pill A">預期性</span></td><td></td></tr><tr><td class="n">6</td><td>本地創新活動總開支佔GDP<span class="e">Innovation expenditure / GDP</span></td><td class="v">1.63%（2024）</td><td class="v">力爭2030年後達3%</td><td><span class="pill A">預期性</span></td><td><a href="08-innovation/index.html#plan">08</a></td></tr><tr><td class="n">7</td><td>製造及新型工業增加值佔GDP<span class="e">Manufacturing &amp; new industrialisation / GDP</span></td><td class="v">3.8%（2024）</td><td class="v">力爭2030年後達5.5%</td><td><span class="pill A">預期性</span></td><td><a href="08-innovation/index.html#plan">08</a></td></tr><tr><td class="n">8</td><td>全球金融中心<span class="e">Global financial centre</span></td><td class="v">全球第三</td><td class="v">強化領先地位</td><td><span class="pill A">預期性</span></td><td></td></tr><tr><td class="n">9</td><td>全球跨境財富管理中心<span class="e">Cross-boundary wealth management</span></td><td class="v">全球第一</td><td class="v">強化領先地位</td><td><span class="pill A">預期性</span></td><td></td></tr><tr><td class="n">10</td><td>有境外母公司的駐港公司<span class="e">Firms with parent companies outside HK</span></td><td class="v">11 070家</td><td class="v">每年增約4–5%</td><td><span class="pill A">預期性</span></td><td></td></tr><tr><td class="n">11</td><td>北都「熟地」五年產出量<span class="e">NM spade-ready land (5 years)</span></td><td class="v">120公頃</td><td class="v">900公頃（增7.5倍）</td><td><span class="pill B">約束性</span></td><td><a href="16-northern-metropolis/index.html#plan">16</a></td></tr><tr><td class="n">12</td><td>北都住宅五年落成量<span class="e">NM housing completions (5 years)</span></td><td class="v">11 000個</td><td class="v">70 000個（增約6.4倍）</td><td><span class="pill A">預期性</span></td><td><a href="16-northern-metropolis/index.html#plan">16</a></td></tr><tr><td class="n">13</td><td>非本地全日制專上學生<span class="e">Non-local post-secondary students</span></td><td class="v">7.98萬（2024/25）</td><td class="v">10萬（2029/30）</td><td><span class="pill A">預期性</span></td><td><a href="05-population/index.html#plan">05</a></td></tr><tr><td class="n">14</td><td>旅遊業增加值<span class="e">Tourism value added</span></td><td class="v">862億元（2024）</td><td class="v">1,260億元（2030）</td><td><span class="pill A">預期性</span></td><td><a href="09-tourism/index.html#plan">09</a></td></tr><tr><td class="n">15</td><td>就業收入中位數<span class="e">Median employment earnings</span></td><td class="v">22,200元</td><td class="v">與經濟增長同步</td><td><span class="pill A">預期性</span></td><td><a href="04-labour/index.html#plan">04</a></td></tr><tr><td class="n">16</td><td>四大非傳染病早逝風險<span class="e">Premature NCD mortality risk</span></td><td class="v">7.3%（2024）</td><td class="v">6.9%</td><td><span class="pill A">預期性</span></td><td><a href="02-healthcare/index.html#plan">02</a></td></tr><tr><td class="n">17</td><td>每千人口醫生比<span class="e">Doctors per 1 000 people</span></td><td class="v">2.25</td><td class="v">2.43</td><td><span class="pill A">預期性</span></td><td><a href="02-healthcare/index.html#plan">02</a></td></tr><tr><td class="n">18</td><td>人均公共醫療經常開支<span class="e">Per-capita public health spending</span></td><td class="v">18,000元（2024-25）</td><td class="v">維持上升</td><td><span class="pill A">預期性</span></td><td><a href="02-healthcare/index.html#plan">02</a></td></tr><tr><td class="n">19</td><td>碳強度（較2020年）<span class="e">Carbon intensity (vs 2020)</span></td><td class="v">已降12.3%（2024）</td><td class="v">2030年較2024年再降32.5%</td><td><span class="pill B">約束性</span></td><td><a href="11-environment/index.html#plan">11</a></td></tr><tr><td class="n">20</td><td>零碳能源佔發電燃料<span class="e">Zero-carbon share of power</span></td><td class="v">25%（2024）</td><td class="v">30%</td><td><span class="pill B">約束性</span></td><td><a href="11-environment/index.html#plan">11</a></td></tr><tr><td class="n">21</td><td>PM2.5平均濃度<span class="e">Average PM2.5</span></td><td class="v">15微克/立方米</td><td class="v">&lt;14</td><td><span class="pill B">約束性</span></td><td><a href="11-environment/index.html#plan">11</a></td></tr><tr><td class="n">22</td><td>地表水水質達標率<span class="e">Surface water compliance</span></td><td class="v">&gt;88%</td><td class="v">&gt;90%</td><td><span class="pill B">約束性</span></td><td><a href="11-environment/index.html#plan">11</a></td></tr></tbody></table></div>
+<p class="note">引用數字時寫「按五年規劃，……由X增至Y」。記住只有五項是約束性：北都熟地、碳強度、零碳能源、PM2.5、水質——閱卷者會留意你是否分得清「必須做到」和「爭取做到」。</p>
+</section>
+
+<section class="hsec"><h2>16個議題 <span class="e">Topics</span><span class="hint">綠色上邊＝本輪新增</span></h2>
+<div class="grid"><a class="card" href="01-ageing/index.html"><div class="top"><span class="no">01</span><div><h3>人口老化與安老服務</h3><div class="en">Ageing Population and Elderly Care</div></div></div><p>方向不是單純「多建院舍」，而是三件事同時做：把資助照顧的重心移向「錢跟人走」的長者券；把部分院舍供應交給業界自資營運和大灣區；以試行輸入外籍家居照顧員補足居家照顧的人手缺口。</p><div class="meta">措施 9 · 比較 4 · 題目 4</div></a><a class="card" href="02-healthcare/index.html"><div class="top"><span class="no">02</span><div><h3>醫療衞生與基層醫療</h3><div class="en">Health Services and Primary Care</div></div></div><p>由「以醫院為中心」轉向「預防為重、基層為先」：收費改革把資助集中到「貧、急、重、危」；基層醫療以立法賦權、社區藥房和家庭醫生接住慢病；專科輪候以「截上游、放下游、中間分流」五年減半；同時以藥械審批改革和臨床試驗把醫療變成創科產業。</p><div class="meta">措施 12 · 比較 4 · 題目 4</div></a><a class="card" href="03-mental-health/index.html"><div class="top"><span class="no">03</span><div><h3>精神健康</h3><div class="en">Mental Health</div></div></div><p>政府採用「綜合模式」織三道網：學校（三層應急機制）、網上（網上青年支援隊）、社區（地區康健中心「健康心靈先導計劃」）；並已接納「精神健康分層護理模式」框架——下一步是訂人員能力標準、培訓和部門分工。重點不是增加專科，而是把輕中度個案留在社區處理。</p><div class="meta">措施 11 · 比較 4 · 題目 4</div></a><a class="card" href="04-labour/index.html"><div class="top"><span class="no">04</span><div><h3>勞工、就業與人力</h3><div class="en">Labour, Employment and Manpower</div></div></div><p>兩條線同時走：一方面以「本地優先」收緊輸入勞工（分級審批、第二級提高人手比例和延長本地招聘期）並嚴打黑工；另一方面以新法例把數碼平台外送員納入法定工傷補償、推進強積金「全自由行」，並以技能提升局、再就業津貼和青年職位計劃釋放本地勞動力。</p><div class="meta">措施 11 · 比較 4 · 題目 4</div></a><a class="card" href="05-population/index.html"><div class="top"><span class="no">05</span><div><h3>人口、生育與人才</h3><div class="en">Population, Fertility and Talent</div></div></div><p>兩個「轉向」：生育政策由「不干預」轉為主動鼓勵生育，以「組合拳」加碼現金、稅務、置業、託兒和輔助生育，並特別向第二胎傾斜；人才政策由「搶人」轉向「精準引才＋留學香港」——人才清單加入AI類別、放寬初創人才續簽、非本地專上學生目標10萬人，把高等教育變成人口政策的一部分。</p><div class="meta">措施 12 · 比較 4 · 題目 4</div></a><a class="card" href="06-welfare/index.html"><div class="top"><span class="no">06</span><div><h3>福利、扶貧與社會流動</h3><div class="en">Welfare, Poverty and Social Mobility</div></div></div><p>扶貧的語言由「接濟」轉為「主動識別、精準扶助」：以社福數據分享平台和AI找出高風險家庭；把照顧者（以老護老、以老護殘、照顧特殊需要兒童）納入精準扶貧目標群組；由政府獨力承擔轉為「政、商、民」三方協作，並以配對平台把商界資源制度化。</p><div class="meta">措施 11 · 比較 4 · 題目 4</div></a><a class="card" href="07-housing/index.html"><div class="top"><span class="no">07</span><div><h3>土地、房屋與居住質素</h3><div class="en">Land, Housing and Housing Conditions</div></div></div><p>公營房屋「提量、提速、提效、提質」進入收成期（2027-28年起五年平均每年逾35 000個）。重心由「追供應」轉向三件事：2030年內基本解決劣質劏房（簡樸房制度明年3月開始執法）；以「公營出租四成、資助出售三成、私人三成」構建多層階梯並鼓勵上流；以新發展區土地推動舊區重建。</p><div class="meta">措施 11 · 比較 4 · 題目 4</div></a><a class="card" href="08-innovation/index.html"><div class="top"><span class="no">08</span><div><h3>創新科技與新型工業</h3><div class="en">Innovation, Technology and New Industrialisation</div></div></div><p>目標是把創科由「研發強」變成「產業強」：以「三大創科園區、五大研發機構」為骨架；以新型工業化（智能生產線、菁英企業培育、國家製造業創新中心）補上香港缺了三十年的「製造」環節；以引導基金、港投公司的「耐心資本」和應用場景促進中心，解決中游轉化和「首單買家」的缺口。</p><div class="meta">措施 13 · 比較 4 · 題目 4</div></a><a class="card" href="09-tourism/index.html"><div class="top"><span class="no">09</span><div><h3>旅遊、盛事與文體旅協同</h3><div class="en">Tourism, Mega Events and Culture-Sports-Tourism Integration</div></div></div><p>旅遊政策由「數人頭」轉向「提升增加值和留港時間」：旅遊業增加值目標由862億元增至2030年1,260億元，非內地過夜旅客比例增至40%。手段是「盛事＋旅遊」、「一程多站」、票尾經濟和遊艇經濟；並首次在熱門郊野景點試行網上預約和人數上限——承認「承載力」是旅遊政策的一部分。</p><div class="meta">措施 11 · 比較 4 · 題目 4</div></a><a class="card" href="10-transport/index.html"><div class="top"><span class="no">10</span><div><h3>交通運輸與智慧出行</h3><div class="en">Transport and Smart Mobility</div></div></div><p>交通政策同時做「新規管」和「新基建」：網約車規管8月生效、第四季發牌，並以數據管理系統為日後供求評估作準備；自動駕駛由測試走向商業化；智慧綠色集體運輸系統突破重鐵局限；北都以北環線（2034年）、港深西部鐵路（2035年）、北都公路和青龍大橋打通南北與跨境；以AI「交通管理平台」應對極端天氣。</p><div class="meta">措施 10 · 比較 4 · 題目 4</div></a><a class="card" href="11-environment/index.html"><div class="top"><span class="no">11</span><div><h3>環境、氣候與城市韌性</h3><div class="en">Environment, Climate and Urban Resilience</div></div></div><p>環境是五年規劃中少數設「約束性」指標的範疇：碳強度、零碳能源比例、PM2.5、水質都必須達標。路徑以供應側和基建為主——輸電供港和第132區填海把零碳能源在2035年前提升至六至七成；I·PARK邁向「零廢堆填」；電動車與快充網絡，2035年或之前停止新登記燃油私家車（包括混能）——而非以收費改變行為。同時以防洪、海岸防禦和供水網更新提升城市韌性。</p><div class="meta">措施 12 · 比較 4 · 題目 4</div></a><a class="card" href="12-education/index.html"><div class="top"><span class="no">12</span><div><h3>教育、人才培育與青年發展</h3><div class="en">Education, Talent Development and Youth</div></div></div><p>教育同時面對「兩頭」：基礎教育因學齡人口下降而收縮——以「滙流升級計劃」鼓勵資助中小學合併、「做大做強」；高等教育則擴張——北都三個大學城、研究院學額增三成、非本地生10萬人。中間是質素和價值觀：教師須持執業證書、數字及AI教育、愛國主義及國家安全教育，以及職專教育和「技能為本」培訓。</p><div class="meta">措施 11 · 比較 4 · 題目 4</div></a><a class="card" href="13-culture/index.html"><div class="top"><span class="no">13</span><div><h3>文化、體育與歷史保育</h3><div class="en">Culture, Sport and Heritage Conservation</div></div></div><p>文化政策由「資助藝術」轉向「文藝創意產業」：以《文藝創意產業發展藍圖》為綱，目標2030年產業增加值1,700億元、就業22.8萬人；主要藝團資助引入「與表現掛鈎的撥款和進出機制」；電影發展基金全面檢視以吸引私人投資。體育推動「普及化、精英化、盛事化、專業化、產業化」，把體育總會資助與管治合規掛鈎，並研究把維園網球場重建為全天候多用途場館。</p><div class="meta">措施 11 · 比較 4 · 題目 4</div></a><a class="card" href="14-digital/index.html"><div class="top"><span class="no">14</span><div><h3>數字政府、人工智能與數據治理</h3><div class="en">Digital Government, AI and Data Governance</div></div></div><p>AI政策由「推應用」進入「應用＋治理」並重：政府以「AI效能提升組」（已落實30個項目）、「AI城市大腦」和「智方便」一網通辦把自己變成最大用家；同時首次提出AI風險治理七方面行動——打擊AI犯罪（研究深偽立法、立法賦權下架詐騙內容）、保護未成年人、倫理框架、採購須作安全與道德申報、產品責任、AI Agent指引、就業影響——並在數字辦設AI專員。</p><div class="meta">措施 12 · 比較 4 · 題目 4</div></a><a class="card newt" href="15-governance/index.html"><div class="top"><span class="no">15</span><div><h3>公務員制度與公共治理改革</h3><div class="en">Civil Service and Public Governance Reform</div></div></div><p>治理改革有三條線：一是制度問責——部門首長責任制、兩級調查、評核「賞罰分明」、簡化紀律程序；二是城市安全——宏福苑大火後優先修訂三條條例、研究圍標刑事化、政府首次為業主提供招標評標服務，並以AI城市大腦和物聯網提升防災；三是地區與服務——1823設牽頭部門和首長級監察，以AI把「投訴後治理」變成「未投訴已治理」。五年規劃再加一層：「五年規劃統領、年度施政落實、財政預算支持、年度述職匯報」的實施機制。</p><div class="meta">措施 12 · 比較 4 · 題目 4 · 新增議題</div></a><a class="card newt" href="16-northern-metropolis/index.html"><div class="top"><span class="no">16</span><div><h3>北部都會區</h3><div class="en">Northern Metropolis</div></div></div><p>北都由「藍圖」進入「收成期」，發展主線改為「以大學城帶動」：新田、洪水橋、打鼓嶺三個大學城以「一城五元素」布局；熟地五年900公頃屬約束性指標；以《北部都會區發展條例草案》、片區開發、按實補價和環評數據庫提速；以招商優惠政策包和5%／半稅吸引企業；並以城鄉共融、交通先行和「住大些」回應生活質素。</p><div class="meta">措施 12 · 比較 4 · 題目 4 · 新增議題</div></a></div>
+</section>
+
+<section class="hsec"><h2>怎樣用 <span class="e">How to use</span></h2>
+<div class="how"><ol>
+ <li><b>不要當讀物讀。</b>每一頁的用法是：合上它，在白紙默寫「一句話方向、三項關鍵措施（連段號）、支持三點、反對三點」，再打開對照，用紅筆標出你完全沒想到的——那些才是你的盲點。</li>
+ <li><b>左欄練中文卷，右欄練英文卷。</b>左欄的句子可以直接搬進中文論述；右欄不只是翻譯，而是英文公文的用語示範，要連句式一起記。</li>
+ <li><b>「出題方向與答題骨架」和「執行挑戰與化解」最值錢。</b>近年中文卷要求你提完方案後自己拆自己的台，再游說最反對的一方；每條骨架都按這五層寫好。</li>
+ <li><b>「區域比較」只背「不可照搬」那一格。</b>外地做法人人都會寫，能說出制度差異（土地、社會保險、稅制、行政架構）才是分析。</li>
+ <li><b>關鍵詞彙表雙向默寫。</b>看中文寫英文，再看英文寫中文；本輪每頁都加了施政報告的官方英文用語。</li>
+</ol></div>
+</section>
+
+<section class="hsec"><h2>區域比較覆蓋 <span class="e">Comparators by topic</span><span class="hint">每個議題選四個文化相近地區</span></h2>
+<div class="tbl"><table class="m"><thead><tr><th>地區 ＼ 議題</th><th><a href="01-ageing/index.html#compare" title="人口老化與安老服務">01</a></th><th><a href="02-healthcare/index.html#compare" title="醫療衞生與基層醫療">02</a></th><th><a href="03-mental-health/index.html#compare" title="精神健康">03</a></th><th><a href="04-labour/index.html#compare" title="勞工、就業與人力">04</a></th><th><a href="05-population/index.html#compare" title="人口、生育與人才">05</a></th><th><a href="06-welfare/index.html#compare" title="福利、扶貧與社會流動">06</a></th><th><a href="07-housing/index.html#compare" title="土地、房屋與居住質素">07</a></th><th><a href="08-innovation/index.html#compare" title="創新科技與新型工業">08</a></th><th><a href="09-tourism/index.html#compare" title="旅遊、盛事與文體旅協同">09</a></th><th><a href="10-transport/index.html#compare" title="交通運輸與智慧出行">10</a></th><th><a href="11-environment/index.html#compare" title="環境、氣候與城市韌性">11</a></th><th><a href="12-education/index.html#compare" title="教育、人才培育與青年發展">12</a></th><th><a href="13-culture/index.html#compare" title="文化、體育與歷史保育">13</a></th><th><a href="14-digital/index.html#compare" title="數字政府、人工智能與數據治理">14</a></th><th><a href="15-governance/index.html#compare" title="公務員制度與公共治理改革">15</a></th><th><a href="16-northern-metropolis/index.html#compare" title="北部都會區">16</a></th><th>合計</th></tr></thead><tbody><tr><td>新加坡<span style="font-weight:400;color:var(--faint);font-size:11px"> Singapore</span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td>16</td></tr><tr><td>日本<span style="font-weight:400;color:var(--faint);font-size:11px"> Japan</span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td>15</td></tr><tr><td>韓國<span style="font-weight:400;color:var(--faint);font-size:11px"> Korea</span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td></td><td></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td>14</td></tr><tr><td>台灣地區<span style="font-weight:400;color:var(--faint);font-size:11px"> Taiwan region</span></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td></td><td></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td></td><td></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td></td><td></td><td></td><td>9</td></tr><tr><td>內地城市<span style="font-weight:400;color:var(--faint);font-size:11px"> Mainland cities</span></td><td></td><td></td><td></td><td><span class=d></span></td><td><span class=d></span></td><td></td><td><span class=d></span></td><td><span class=d></span></td><td></td><td><span class=d></span></td><td><span class=d></span></td><td></td><td></td><td><span class=d></span></td><td><span class=d></span></td><td><span class=d></span></td><td>9</td></tr><tr><td>澳門特區<span style="font-weight:400;color:var(--faint);font-size:11px"> Macao SAR</span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class=d></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr></tbody></table></div>
+<div class="caveat"><b>引用比較地區的分寸：</b>寫「台灣地區」「澳門特區」「內地城市（如深圳、上海、杭州）」，不要把台灣與國家並列。引用內地經驗在今年的政策語境下是加分項（對接國家、規則銜接）。每個比較都要同時寫「可借鑑」與「不可照搬」及其制度原因——單純羅列外地做法不算分析。外地數字屬背景參考，考場上寧可寫方向、不寫精確數字。</div>
+</section>
+
+<div class="foot">資料來源：《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》（2026年9月16日，政府新聞公報全文）、《應對社會高齡化對策報告》（2026年9月18日）、2026-27年度財政預算案。§為施政報告段落編號。出題排序為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。</div>
+</div>
+</body>
+</html>
