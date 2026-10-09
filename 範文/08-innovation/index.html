@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>創新科技與新型工業｜JRE 範文</title>
+<meta name="description" content="創新科技與新型工業：四篇定稿題目範文、審題與逐段拆解">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;700&family=Noto+Serif+HK:wght@500;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#EDEFF3;--surface:#FFF;--surface-2:#F5F7FA;--surface-3:#E8ECF3;
+--text:#141C2E;--dim:#54607A;--faint:#8892A6;--line:#D6DBE5;--line2:#B4BDCE;
+--navy:#1B2C4F;--zh:#8A3324;--zh-bg:#F8E8E3;--en:#1D4E89;--en-bg:#E5ECF7;
+--jade:#1B6A55;--jade-bg:#E2EFE9;--amber:#87560A;--amber-bg:#F8ECD6;--stamp:#A32A22}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--bg:#0D121C;--surface:#151C2A;--surface-2:#1A2231;--surface-3:#212A3B;
+--text:#E4E9F2;--dim:#9CA8BE;--faint:#727F97;--line:#273245;--line2:#3A4660;
+--navy:#A2BAE7;--zh:#E79484;--zh-bg:#331C17;--en:#8FB4E8;--en-bg:#15263C;
+--jade:#5FC5A2;--jade-bg:#11332B;--amber:#E3AC4F;--amber-bg:#332710;--stamp:#EE8175}}
+:root[data-theme="dark"]{
+--bg:#0D121C;--surface:#151C2A;--surface-2:#1A2231;--surface-3:#212A3B;
+--text:#E4E9F2;--dim:#9CA8BE;--faint:#727F97;--line:#273245;--line2:#3A4660;
+--navy:#A2BAE7;--zh:#E79484;--zh-bg:#331C17;--en:#8FB4E8;--en-bg:#15263C;
+--jade:#5FC5A2;--jade-bg:#11332B;--amber:#E3AC4F;--amber-bg:#332710;--stamp:#EE8175}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);margin:0;font-size:15px;line-height:1.75;overflow-wrap:break-word;
+font-family:"Noto Sans HK","PingFang HK","Microsoft JhengHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Noto Serif HK",Georgia,serif;margin:0;text-wrap:balance}
+.wrap{max-width:1240px;margin:0 auto;padding:0 22px 80px}
+header{background:var(--surface);border-bottom:2px solid var(--navy)}
+.hd{max-width:1240px;margin:0 auto;padding:24px 22px 20px;display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap}
+.hd .no{font-family:"IBM Plex Mono",monospace;font-size:38px;font-weight:600;color:var(--line2);line-height:1}
+.hd h1{font-size:27px;font-weight:900;letter-spacing:.04em}
+.hd .en-t{font-size:15px;color:var(--dim);margin-top:4px;font-family:"Noto Serif HK",Georgia,serif;font-weight:500}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.09em;padding:3px 9px;border-radius:2px;
+background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
+.hd .right{margin-left:auto;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.back{font-size:12.5px;color:var(--dim);text-decoration:none;border-bottom:1px solid var(--line2)}
+.back:hover,.back:focus-visible{color:var(--navy);border-bottom-color:var(--navy);outline:none}
+.hero{background:var(--surface);border-bottom:2px solid var(--navy)}
+.hero .in{max-width:1240px;margin:0 auto;padding:30px 22px 26px;display:grid;gap:14px}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--amber)}
+.hero h1{font-size:32px;font-weight:900;letter-spacing:.04em}
+.hero .sub{font-family:"Noto Serif HK",Georgia,serif;color:var(--dim);font-size:15px}
+.hero p.lede{max-width:72ch;margin:0;color:var(--text)}
+.stats{display:flex;flex-wrap:wrap;gap:22px;margin-top:4px}
+.stats div{font-size:12.5px;color:var(--dim)}
+.stats b{display:block;font-family:"IBM Plex Mono",monospace;font-size:22px;color:var(--navy);font-weight:600;line-height:1.2}
+.quicknav{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line2)}
+.quicknav .in{max-width:1240px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.quicknav .in::-webkit-scrollbar{display:none}
+.quicknav a{flex:none;padding:11px 13px;font-size:12.5px;font-weight:700;letter-spacing:.03em;color:var(--dim);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent}
+.quicknav a:hover,.quicknav a:focus-visible{color:var(--navy);border-bottom-color:var(--line2);outline:none}
+.quicknav a.hot{color:var(--stamp)}
+.quicknav a.cur{color:var(--navy);border-bottom-color:var(--navy)}
+.quicknav .sep{flex:none;width:1px;background:var(--line2);margin:10px 6px}
+.quicknav .zh{color:var(--zh)}.quicknav .en{color:var(--en)}
+.hsec{margin-top:38px}
+.hsec>h2{font-size:19px;font-weight:700;padding-bottom:8px;border-bottom:1px solid var(--line2);display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.hsec>h2 .e{font-size:12.5px;color:var(--faint);font-weight:500}
+.hsec>h2 .hint{margin-left:auto;font-size:12px;color:var(--faint);font-family:"Noto Sans HK",sans-serif;font-weight:400}
+.note{font-size:13.5px;color:var(--dim);margin:10px 0 0;max-width:80ch}
+.caveat{background:var(--amber-bg);border:1px solid var(--amber);border-radius:3px;padding:12px 16px;font-size:13.5px;margin-top:14px;line-height:1.7}
+.caveat b,.caveat strong{color:var(--amber)}
+.caveat p{margin:0}.caveat p+p{margin-top:6px}
+.pp{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;padding:1px 8px;border-radius:2px;white-space:nowrap}
+.pp.zh{background:var(--zh-bg);color:var(--zh)}
+.pp.en{background:var(--en-bg);color:var(--en)}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:10px 0;border:1px solid var(--line);background:var(--surface)}
+.tbl table{width:100%;border-collapse:collapse;font-size:13.5px;line-height:1.65;min-width:560px}
+.tbl th,.tbl td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tbl th{font-size:12px;letter-spacing:.04em;color:var(--faint);font-weight:600;background:var(--surface-2);white-space:nowrap}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td:first-child{white-space:nowrap;color:var(--dim);font-family:"IBM Plex Mono","Noto Sans HK",monospace;font-size:12.5px}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line2);font-size:12.5px;color:var(--faint);line-height:1.7}
+.foot a{color:var(--navy)}
+@media(max-width:820px){.hd .no{font-size:28px}.hd h1{font-size:22px}.hero h1{font-size:26px}}
+@media(max-width:600px){
+ .wrap,.hd,.hero .in,.quicknav .in{padding-left:16px;padding-right:16px}
+ .hd .right{margin-left:0}
+}
+
+.wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
+section{scroll-margin-top:56px}
+.intro{margin-top:22px}
+.qa{margin-top:42px}
+.qh{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;padding-bottom:8px;border-bottom:1px solid var(--line2)}
+.qh .qno{font-family:"Noto Serif HK",Georgia,serif;font-size:13px;font-weight:700;color:var(--faint);letter-spacing:.06em}
+.qh h2{font-size:20px;font-weight:700;letter-spacing:.02em;flex:1 1 260px;min-width:0}
+.qh .st{color:var(--amber);letter-spacing:2px;font-size:13px}
+.qh .wc{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--faint);white-space:nowrap}
+.qcard{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--zh);padding:16px 20px;border-radius:0 2px 2px 0}
+.qcard.en{border-left-color:var(--en)}
+.qcard .ql{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--zh);margin-bottom:6px}
+.qcard.en .ql{color:var(--en)}
+.qcard .qb{font-family:"Noto Serif HK",Georgia,serif;font-weight:500;font-size:16px;line-height:1.9}
+.qcard .qb[lang="en"]{font-family:Georgia,"Noto Serif HK",serif;font-weight:400;font-size:15.5px;line-height:1.75}
+.qcard .qb p{margin:0 0 .8em}.qcard .qb p:last-child{margin-bottom:0}
+.qcard .qb .lb{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;letter-spacing:.12em;color:var(--en);margin:1.1em 0 .4em}
+.qcard .qb .lb:first-child{margin-top:0}
+.qnote{margin-top:10px;font-size:13.5px;color:var(--dim)}
+.qnote p{margin:0 0 .5em}
+details.sx{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:2px}
+details.sx>summary{cursor:pointer;list-style:none;padding:10px 16px;font-weight:700;font-size:14px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+details.sx>summary::-webkit-details-marker{display:none}
+details.sx>summary::before{content:"▸";color:var(--navy);font-size:12px;transition:transform .15s;display:inline-block}
+details.sx[open]>summary::before{transform:rotate(90deg)}
+details.sx>summary .s{font-weight:400;font-size:12px;color:var(--faint)}
+details.sx>summary:focus-visible{outline:2px solid var(--navy);outline-offset:-2px}
+details.sx .bd{padding:2px 18px 14px;border-top:1px dashed var(--line);font-size:14.5px}
+details.sx .bd p{margin:.7em 0}
+details.sx .bd strong{color:var(--navy)}
+details.sx .bd ul,details.sx .bd ol{padding-left:1.4em}
+details.sx.how2 summary{color:var(--jade)}
+details.sx.how2 summary::before{color:var(--jade)}
+.essay{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--navy);padding:22px 24px 26px}
+.essay .eh{display:flex;gap:10px;align-items:baseline;font-size:11.5px;font-weight:700;letter-spacing:.1em;color:var(--navy);margin-bottom:12px}
+.essay .eh .wc{font-family:"IBM Plex Mono",monospace;font-weight:400;color:var(--faint);letter-spacing:0}
+.essay .body{max-width:72ch;font-family:"Noto Serif HK",Georgia,serif;font-size:17px;line-height:2.05;font-weight:500}
+.essay .body p{margin:0 0 .85em}
+.essay .body[lang="en"]{font-family:Georgia,"Noto Serif HK",serif;font-weight:400;font-size:16.5px;line-height:1.8}
+.essay .body[lang="en"] p{margin:0 0 1em}
+.essay .body .lb{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;letter-spacing:.06em;margin:1.4em 0 .5em;color:var(--text)}
+.essay .body ol{padding-left:2.2em;margin:0 0 1em}
+.essay .body li{margin:0 0 .6em}
+.essay .body li p{margin:0 0 .6em}
+.essay .body em{color:var(--dim)}
+.toplink{display:inline-block;margin-top:10px;font-size:12px;color:var(--faint);text-decoration:none}
+.toplink:hover{color:var(--navy)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:40px;flex-wrap:wrap}
+.pager a{color:var(--navy);text-decoration:none;font-size:13.5px;border-bottom:1px solid var(--line2)}
+@media(max-width:600px){
+ .qcard{padding:14px 14px}
+ .essay{padding:16px 14px 20px}
+ .essay .body{font-size:16.5px;line-height:1.95}
+ details.sx .bd{padding:2px 12px 12px}
+}
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header><div class="hd narrow">
+  <div class="no">08</div>
+  <div>
+    <div class="tag">範文 · 中文卷 3 篇 · 英文卷 1 篇</div>
+    <h1>創新科技與新型工業</h1>
+    <div class="en-t">Innovation, Technology and New Industrialisation · Model essays</div>
+  </div>
+  <div class="right">
+    <a class="back" href="../index.html">← 範文首頁</a>
+    <a class="back" href="../../議題庫/08-innovation/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../答題框架/index.html">答題框架</a>
+  </div>
+</div></header>
+<nav class="quicknav" aria-label="本頁四題"><div class="in narrow"><a href="#q1"><span class="zh">題一</span> 新型工業化：應否「把製造帶回香港」</a><a href="#q2"><span class="zh">題二</span> 創科產業引導基金：是否「揀選贏家」</a><a href="#q3"><span class="zh">題三</span> 政府作本地創科產品的「首個用家」</a><a href="#q4"><span class="en">題四</span> Commercial drone delivery trials over urban areas</a></div></nav>
+<div class="wrap narrow">
+<section class="qa" id="q1">
+<div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>新型工業化：應否「把製造帶回香港」</h2><span class="wc">範文 1,484 字</span></div>
+<div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《香港第一個五年規劃》把「製造及新型工業產業增加價值佔本地生產總值比重」列為主要指標，力爭由2024年的3.8%於2030年後提升至5.5%。有意見認為，香港應大力推動新型工業化，把「製造」帶回香港。你是否同意？試分析香港發展新型工業化的現況（包括有利條件與限制），提出你的政策建議，分析這些建議的執行挑戰及處理方法，並游說立法會支持推動新型工業化的相關撥款。</p></div></div>
+<details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解（五層＋表態）：</strong> ① 你是否同意（首段表態）② 現況：有利條件＋限制 ③ 政策建議 ④ 執行挑戰＋處理方法（一一對應）⑤ 游說立法會支持撥款。</p>
+<p><strong>本文立場一句話：</strong> 同意推動新型工業化，不同意「把製造帶回」的提法——目標是把中試、首產和國際認證留在香港，量產與大灣區分工。</p>
+<p><strong>段落分配與字數預算（≤1,500）：</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>任務</th>
+<th>預算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>拆目的→評估標準→表態</td>
+<td>200</td>
+</tr>
+<tr>
+<td>2–3</td>
+<td>現況：條件；限制＋癥結（中游斷層）＋指標的限定詞</td>
+<td>380</td>
+</tr>
+<tr>
+<td>4</td>
+<td>駁論：「成本不可逆」論</td>
+<td>170</td>
+</tr>
+<tr>
+<td>5</td>
+<td>四項建議（分時段、附指標）</td>
+<td>250</td>
+</tr>
+<tr>
+<td>6</td>
+<td>三項挑戰＋對應處理</td>
+<td>200</td>
+</tr>
+<tr>
+<td>7</td>
+<td>游說立法會</td>
+<td>200</td>
+</tr>
+<tr>
+<td>8</td>
+<td>結語</td>
+<td>60</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<article class="essay"><div class="eh">範文<span class="wc">1,484 字</span></div><div class="body"><p>有意見認為，香港應大力推動新型工業化，把「製造」帶回香港。評估此說，須先分清目的：若目的是恢復製造業比重，成敗標準是廠房數目；若目的是把本地科研成果變成留在香港的產業、職位和稅基，成敗標準便是成果能否在本地走完由樣品到首批量產這一段。前者會驅使政府以補貼追逐廠房，後者則要求政府守住最易流失的中游環節。<strong>本文同意香港應積極推動新型工業化，但不同意籠統地「把製造帶回香港」：目標應是把中試、首產和國際認證留在本地，量產則與大灣區分工。</strong></p>
+<p>　　<strong>就現況而言，香港的有利條件並非從零開始。</strong> 五所大學躋身全球百強；新型工業化資助計劃已支持逾一百三十條智能生產線，並提早一年達標；首個在港國家製造業創新中心由微電子研發院牽頭籌建。新田科技城將提供原型、中試和量產空間；普通法、檢測認證和正在改革的藥械審批，亦是高端產品打入國際市場的條件。</p>
+<p>　　<strong>限制同樣明顯：</strong> 土地和電力成本高昂，《施政報告》亦承認本地技術人才持續短缺，新田科技城要到今年年底起才陸續產出科研用地。然而這些只是表徵，香港缺的不是工廠，而是「中游」：成果由實驗室走到量產，需要中試線、熟悉工藝驗證的工程師和第一張訂單，香港三者皆不足，團隊往往在中試階段已遷往外地；中試在外地完成，量產便會留在當地。五年規劃以「製造及新型工業產業增加價值」佔本地生產總值由3.8%升至5.5%為目標，能否達標，關鍵在守住中試這一關。另須留意，這項指標屬「預期性」，並以「2030年後」為期，若無中期指標，五年內難以問責。</p>
+<p>　　或有意見認為，香港地價、電價和工資高企，深圳、東莞的供應鏈又遠較完整，「製造回流」根本不成立，投入只會沉沒。此說點出真實限制，惟忽略了兩點：其一，高度自動化、須取得國際認證的產品，土地和人手只佔成本一小部分，決定成敗的是知識產權、標準認證和融資，正是香港的強項；其二，五年規劃描述的本來就是「高校研發—灣區製造—港澳融資—國際市場」的模式。真正的問題不是「應否製造」，而是「製造哪一段」。</p>
+<p>　　<strong>針對上述癥結，本文提出四項建議。</strong> 第一，以準則聚焦（一年內）：政府今年內公布的中長期發展方案，宜以「須取得國際認證、高增值、高自動化」篩選重點產品，例如生物醫藥、第三代半導體和先進建造組件，並以「在港完成中試及首產的項目數目」為首要指標。第二，建設共用中試平台（兩至三年）：以微電子研發院的中試線為樣板，由研發機構按產業營運，企業按使用量付費，並在新田科技城首批用地預留中試樓面。第三，以承諾換取土地：產業用地以長期租約批出，租金可低於市值，但須附投資額和本地職位承諾，未達承諾須退回優惠或交還用地。第四，培養產線人才：把資助延伸至工藝、驗證和品質工程，由應用科學大學與企業合辦學徒式課程。</p>
+<p>　　<strong>上述建議在執行上會遇到三項挑戰。</strong> 第一是時間差：北都用地分階段交付，企業的投資決定卻在兩三年內作出。處理方法是先以科學園和創新園提供過渡空間，並給予企業日後遷入新田科技城的優先權，把時間差變成鎖定企業的工具。第二是「以公帑補貼個別企業」的觀感與虧損風險。處理方法是公開篩選準則、由獨立專家評審，資助按里程碑分期發放，並以整體組合評估成效。第三是與大灣區城市互相壓價、爭奪同一批企業。處理方法是透過河套「一區兩園」機制，把「香港做中試、國際註冊與融資，其他灣區城市做量產」訂為項目分流原則。</p>
+<p>　　<strong>要爭取立法會支持撥款，關鍵在於回應議員最在意的兩件事：錢是否用得其所，以及能否向選民交代。</strong> 第一，撥款按里程碑分期，每期附中試項目、本地工程職位等指標，未達標即暫停下一期，議員因而握有實質監察權。第二，政府每年向事務委員會公布本地職位數目、薪酬水平和培訓名額，並配合五年規劃的中期評估全面檢討。第三，回應機會成本：錢投放於醫療或安老固然受惠更即時，但沒有新產業擴闊稅基，未來民生開支只會更難支撐。最後，政府可作讓步：首期撥款只覆蓋兩至三個重點產業，中期評估達標後才擴展，議員毋須一次過為整個願景背書。</p>
+<p>　　歸根究柢，新型工業化的成敗不在重現多少工廠，而在科研成果能否在香港走完最關鍵的一段轉化。以「守住中試、分工量產」為定位，以分期撥款和公開指標為紀律，這項政策才經得起公帑問責。</p></div></article>
+<details class="sx how2" open><summary>這篇在做什麼<span class="s">逐段拆解</span></summary><div class="bd"><div class="tbl"><table>
+<thead>
+<tr>
+<th>動作</th>
+<th>位置</th>
+<th>學什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>拆「有意見」的字眼</td>
+<td>第一段</td>
+<td>把「把製造帶回」拆成兩個目的，各導出一個成敗標準；立場就是選其中一個——同意大方向、不同意提法，有條件而不騎牆</td>
+</tr>
+<tr>
+<td>現況段的診斷</td>
+<td>第三段</td>
+<td>把土地、電力、人才降格為「表徵」，指出機制「中試外流→量產跟走」；再用原文指標的限定詞（「預期性」「2030年後」）指出問責缺口——材料以外的東西</td>
+</tr>
+<tr>
+<td>駁論放在建議之前</td>
+<td>第四段</td>
+<td>駁的是最強的「成本不可逆」論；先承認，再用五年規劃自己的「灣區製造」模式反駁，順勢把題目收窄成「製造哪一段」，為建議鋪路</td>
+</tr>
+<tr>
+<td>措施—挑戰—處理對應</td>
+<td>第五、六段</td>
+<td>每個挑戰都是自己措施的弱點（低於市值租約→「補貼企業」觀感；中試平台→用地時間差），處理方法逐一配對</td>
+</tr>
+<tr>
+<td>游說抓住議員利益</td>
+<td>第七段</td>
+<td>議員要向選民「交代」，所以給指標、給暫停權、給讓步（首期只覆蓋兩三個產業），並正面回應機會成本</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<a class="toplink" href="#top">↑ 回到頂部</a></section>
+<section class="qa" id="q2">
+<div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>創科產業引導基金：是否「揀選贏家」</h2><span class="wc">範文 1,294 字</span></div>
+<div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>政府推出一百億元的「創科產業引導基金」，以母基金形式與市場資金共同投資生命健康科技、人工智能與機械人、半導體與智能設備等策略性產業，並預期市場投入的資金至少為政府出資的三倍。有意見認為，這是以公帑「揀選贏家」，有違香港市場主導的傳統。請分析以引導基金支持創科產業的利弊，表明你是否同意上述意見，並就你的立場提出理據。如果你不同意，請提出確保基金有效運作的管治安排；如果你同意，請提出其他協助創科企業解決早期融資缺口的措施。</p></div></div>
+<details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解（樣本版）：</strong> ① 利 ② 弊 ③ 表明是否同意「揀選贏家」說 ④ 理據 ⑤ 條件式任務：不同意→管治安排。<strong>陷阱：</strong> 題目的「意見」是反對基金的，所以「不同意上述意見」＝支持基金；表態句要寫清楚「不同意上述意見」，不要只寫「支持」，免得評卷人對不上號。</p>
+<p><strong>本文立場一句話：</strong> 不同意——政府揀的是賽道和經理，不是企業；真正的風險是揀錯不退、虧損無人負責，應以管治處理。</p>
+<p><strong>段落分配與字數預算（≤1,300）：</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>任務</th>
+<th>預算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>拆目的→「額外性」標準→表態</td>
+<td>220</td>
+</tr>
+<tr>
+<td>2</td>
+<td>利（三點）</td>
+<td>150</td>
+</tr>
+<tr>
+<td>3</td>
+<td>弊（三點，把對方論點寫足）</td>
+<td>150</td>
+</tr>
+<tr>
+<td>4</td>
+<td>理據（三點）</td>
+<td>190</td>
+</tr>
+<tr>
+<td>5</td>
+<td>駁論：「讓利搭便車」</td>
+<td>140</td>
+</tr>
+<tr>
+<td>6</td>
+<td>管治安排（五項，逐一對應弊處）</td>
+<td>330</td>
+</tr>
+<tr>
+<td>7</td>
+<td>結語</td>
+<td>90</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<article class="essay"><div class="eh">範文<span class="wc">1,294 字</span></div><div class="body"><p>有意見認為，政府以一百億元推出創科產業引導基金，是以公帑「揀選贏家」，有違香港市場主導的傳統。評論此說，先要問基金想解決什麼問題。早期硬科技研發周期長、失敗率高，私人資本多在企業成熟後才願入場，中間形成融資斷層；基金的目的，是以公帑分擔私人不願獨自承擔的那一段風險，帶動原本不會出現的私人投資。因此，衡量基金的標準不是單看回報，而是它帶動的是否確屬新增、並投向香港策略產業的資金。<strong>以此為準，本文不同意上述意見：政府確實在揀「賽道」，但並非由官員揀企業；真正的風險不在「揀」，而在揀錯了不肯退、虧損了無人負責，這應以管治安排處理，而非成為否定基金的理由。</strong></p>
+<p>　　<strong>以引導基金支持創科產業，利處有三。</strong> 其一，填補市場失靈：初創企業由實驗室走到產品化的階段最缺資金，基金專門承擔這一段，屬補位而非搶位。其二，以少量公帑撬動私人資金：五年規劃預期市場投入至少為政府出資的三倍。其三，集中資源發展香港有優勢、國家亦有需要的產業，例如生命健康科技、人工智能與機械人、半導體與智能設備，有助形成產業集群，其外溢效益遠高於個別企業的回報。</p>
+<p>　　<strong>惟弊處亦不容忽視。</strong> 第一，基金並非中性：劃定五個主題板塊，本身就是政府對產業方向的判斷，方向一旦錯誤，損失會集中而非分散。第二，資訊不對稱與游說俘獲：最懂得爭取資源的企業，未必最有前景。第三，公帑承擔下行、私人分享上行：為吸引跟投，政府往往要讓利，若安排不當，私人投資者可「搭便車」，虧損卻由公帑承擔，責任誰屬亦欠清晰。</p>
+<p>　　<strong>本文仍不同意「揀選贏家」之說，理由有三。</strong> 第一，基金以母基金形式運作：政府已初步甄選約二十間基金經理公司，並正籌募資金成立子基金，投資哪一家企業由專業經理決定，政府揀的是規則和經理，而非企業。第二，私人跟投本身就是市場檢驗：私人投資者以自己的資金同步投入，若項目不值得投資，配對資金根本不會出現。第三，訂定產業優先次序本屬公共政策的正常職能，正如規劃土地和教育資源亦須取捨；把「定方向」等同「揀贏家」，是把兩種性質不同的決定混為一談。</p>
+<p>　　或有意見反駁，即使不直接揀企業，基金經理為迎合政府目標，仍會把資金投向政策熱門而非最有前景的項目，加上讓利，實質仍是公帑補貼私人。這是對基金最有力的質疑。惟此風險源於激勵和讓利的設計，而非基金本身：只要讓利設上限、私人資金與公帑同輪同價投入，並把經理報酬與整體表現掛鈎，便可大幅收窄這個空間。這是管治必須處理的重點，而非放棄基金的理由。</p>
+<p>　　<strong>基於上述立場，本文建議從五方面建立管治安排，確保基金有效運作。</strong> 第一，目標分層、分開披露：同時訂明財務目標和產業目標，後者如私人資金倍數、獲投企業在港設立研發或生產的比例；兩者分開匯報，避免以產業效益掩飾虧損。第二，決策分隔、利益迴避：由獨立專業人士主導投資委員會，官員只制訂投資政策，不參與個別項目；委員和經理須申報利益並迴避。第三，配對與讓利規則公開：訂明子基金私人資金的最低比例和政府讓利上限。第四，分散風險：為單一子基金、單一企業及單一板塊設投資上限，避免資金追逐一兩個熱門題材。第五，組合評估與退出：以整體組合而非個別項目衡量成敗，每年公布組合報告並向立法會匯報；設中期檢討，連續未達標的子基金不獲續期，基金亦須訂明年期和退出安排，確保公帑不會被無限期鎖定。</p>
+<p>　　歸根究柢，以公帑推動產業，風險無法消除，只能管理。引導基金若做到決策專業、規則公開、虧損有限、成效可查，它便不是「揀選贏家」，而是讓市場資金願意進入高風險領域的風險分擔機制；若做不到，批評者的憂慮就會成真。基金的價值，取決於它的管治，而不在於它的初衷。</p></div></article>
+<details class="sx how2" open><summary>這篇在做什麼<span class="s">逐段拆解</span></summary><div class="bd"><div class="tbl"><table>
+<thead>
+<tr>
+<th>動作</th>
+<th>位置</th>
+<th>學什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用政策目的導出評估標準</td>
+<td>第一段</td>
+<td>不以回報率判斷基金，而以「是否帶動新增私人資金」判斷——標準一立，後文的利弊和管治都圍着它轉</td>
+</tr>
+<tr>
+<td>拆開題目的關鍵詞</td>
+<td>第一、四段</td>
+<td>把「揀贏家」拆成「揀賽道」與「揀企業」：承認前者、反駁後者，立場清晰而不絕對</td>
+</tr>
+<tr>
+<td>弊處寫得比對方更好</td>
+<td>第三、五段</td>
+<td>第三個弊處（讓利搭便車）就是對方最強的論點；駁論段正面處理它，結論是「這是設計問題」，順勢引出管治</td>
+</tr>
+<tr>
+<td>管治逐項對應弊處</td>
+<td>第六段</td>
+<td>目標分層↔問責不清；決策分隔↔游說俘獲；讓利上限↔搭便車；投資上限↔方向錯誤損失集中；組合評估與退出↔揀錯不退</td>
+</tr>
+<tr>
+<td>結語把道德題轉成制度題</td>
+<td>第七段</td>
+<td>「價值取決於管治，而不在於初衷」——一句收住全文，不喊口號</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<a class="toplink" href="#top">↑ 回到頂部</a></section>
+<section class="qa" id="q3">
+<div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>政府作本地創科產品的「首個用家」</h2><span class="wc">範文 1,497 字</span></div>
+<div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《行政長官2026年施政報告》提出，創新科技及工業局將支持香港科技園公司研究設立「香港創科應用場景促進中心」，配對公私營界別的應用場景需求與三大創科園區企業及五大研發機構的技術方案；醫院管理局亦將籌設醫創融匯辦公室，加快醫療創新技術落地。有意見認為，本地創科企業最缺乏的往往不是資金，而是第一個願意採用其產品的客戶，因此政府應更進一步，以自身作為本地創科產品的「首個用家」。你是否同意？試分析本地創科產品在公營機構應用的現況，提出你的建議措施，分析這些措施的執行挑戰及處理方法，並游說政策局及部門首長支持推行。</p></div></div>
+<details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解（五層＋表態）：</strong> ① 你是否同意（首段表態）② 現況：本地創科產品在公營機構的應用 ③ 建議措施 ④ 執行挑戰＋處理方法（一一對應）⑤ 游說政策局及部門首長。<strong>陷阱：</strong> 題目資料中的促進中心只是「研究設立」、醫創融匯辦公室是「將籌設」，現況段不可寫成「已推行」。</p>
+<p><strong>本文立場一句話：</strong> 同意，但政府應做「首個試用者」而非「保證買家」——以公平試用和按成效付費取代「本地優先」，以企業能否取得下一個客戶為成敗標準。</p>
+<p><strong>段落分配與字數預算（≤1,500）：</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>任務</th>
+<th>預算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>拆兩個目的（產業／服務）→ 衝突點 → 表態</td>
+<td>200</td>
+</tr>
+<tr>
+<td>2</td>
+<td>現況：已有進展＋三個制度癥結</td>
+<td>300</td>
+</tr>
+<tr>
+<td>3</td>
+<td>駁論：「公共服務不應作試驗場、本地優先不公」</td>
+<td>160</td>
+</tr>
+<tr>
+<td>4</td>
+<td>四項措施（逐項回扣癥結）</td>
+<td>270</td>
+</tr>
+<tr>
+<td>5</td>
+<td>三項挑戰＋對應處理</td>
+<td>250</td>
+</tr>
+<tr>
+<td>6</td>
+<td>游說部門首長</td>
+<td>230</td>
+</tr>
+<tr>
+<td>7</td>
+<td>結語</td>
+<td>70</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<article class="essay"><div class="eh">範文<span class="wc">1,497 字</span></div><div class="body"><p>有意見認為，政府應更進一步，以自身作為本地創科產品的「首個用家」。這項建議同時承載兩個目的：一是產業目的，讓本地企業取得第一個可公開引用的成功案例，打破「沒有用戶便沒有案例、沒有案例便沒有用戶」的循環；二是服務目的，讓公營部門以新技術改善服務。兩者並不必然一致：當本地產品未及現有方案時，前者要求政府遷就，後者要求政府拒絕。<strong>本文同意政府應擔當「首個用家」，但角色應是「首個試用者」而非「保證買家」：以公開的試用機會和按成效付費取代「本地優先」，並以企業能否憑政府案例取得下一個客戶作為成敗標準。</strong></p>
+<p>　　<strong>就現況而言，政府並非抗拒新技術。</strong> 去年提出成立的「AI效能提升組」已促成及落實三十個項目，例如把環境影響評估程序時間縮短一半；醫管局亦將籌設醫創融匯辦公室，以需求主導為原則，把臨床需要反饋給藥械企業；應用場景促進中心則仍在研究階段。然而這些多屬部門自用，本地企業取得公營首單仍屬零散。究其根本，問題不在部門不用新技術，而在三個制度環節：其一，採購以既定規格和往績為入圍條件，新產品天生缺乏往績，形成「越新越難入圍」；其二，部門面對不對稱風險，試用出錯會被追究，成功卻未必獲記一功；其三，試用成果多不公開，企業即使完成試用，也拿不出一份可供私人或海外買家參考的評估。缺的不是需求，而是把需求轉化為可引用案例的機制。</p>
+<p>　　或有意見認為，公共服務關乎市民福祉，不應成為產業政策的試驗場；政府採購亦講求公開、公平和物有所值，向本地產品傾斜既對其他供應商不公，亦可能牴觸國際採購承諾。此說有其道理，本文亦認為「本地優先」不可取。惟它假設試用必然犧牲服務和公平，這並不成立：試用可先在後勤和非關鍵環節進行，與現有方案並行比較，失敗即回復原狀；採購亦可以公開問題、不限來源的方式進行，本地企業的優勢應來自貼近用家，而非制度上的優待。</p>
+<p>　　<strong>針對上述癥結，本文提出四項措施。</strong> 第一，以「問題清單」取代「產品規格」：各部門每年公布一批待解決的服務問題，以成效要求而非技術規格邀請方案，任何企業均可參與，並由研究中的應用場景促進中心擔任配對平台。第二，分段合約、按成效付費：合約分為概念驗證、小規模試用和擴大採用三段，每段設清晰指標；試用成功不保證採購，但政府須發出公開評估報告，讓企業可作參考案例。第三，設中央試用預算：試用經費由中央撥出，不佔部門經常開支，技術評估亦由中央專責團隊承擔。第四，以「下一個客戶」衡量成敗：核心指標是獲試用企業其後取得私人或海外客戶的比例，而非政府採購金額；計劃先試行三年，期滿檢討。</p>
+<p>　　<strong>上述措施在執行上會遇到三項挑戰。</strong> 第一是公平與廉潔的質疑：試用名額有限，落選企業或質疑程序。處理方法是事先公布評審準則和指標，由跨部門小組評審並設利益申報，結果連同理由公開。第二是部門仍然不願試新。處理方法是由中央發出容錯指引，凡按程序進行而結果未如預期的試用，不追究個別人員，成功的試用則計入部門績效。第三是數據私隱和網絡安全風險，尤其涉及醫療和個人資料的場景。處理方法是試用優先採用去識別化數據，並沿用《施政報告》要求人工智能服務投標者作安全及道德合規申報的做法；高風險場景須先通過安全評估。若企業長期只做政府生意，三年檢討時應收緊支援，避免政府變成長期補貼者。</p>
+<p>　　<strong>要爭取政策局及部門首長支持，關鍵在於理解他們真正在意什麼：服務不能出錯、預算不能失控、問責落在誰身上，以及前線人手是否應付得來。</strong> 第一，風險有限：部門可自選範疇，先由後勤環節開始，原有方案並行，隨時可以終止。第二，成本不由部門承擔：試用經費和技術評估由中央負責，不佔部門預算和人手。第三，問責有保障：容錯指引清楚列明按程序試用者不會因結果未如預期而被追究，成功個案則計入部門績效。第四，這與五年規劃推動數字政府、大規模應用人工智能以優化流程的方向一致；部門及早參與，便可按自身需要塑造方案，而非日後被動接受統一規格。</p>
+<p>　　歸根究柢，政府作為「首個用家」的價值，不在替本地企業買下第一張訂單，而在提供公平、可驗證、可公開引用的試用機會。以規則代替偏袒、以成效代替採購金額，這項建議才能既改善公共服務，又讓本地創新走向市場。</p></div></article>
+<details class="sx how2" open><summary>這篇在做什麼<span class="s">逐段拆解</span></summary><div class="bd"><div class="tbl"><table>
+<thead>
+<tr>
+<th>動作</th>
+<th>位置</th>
+<th>學什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>重新定義題目關鍵詞</td>
+<td>第一段</td>
+<td>把「首個用家」拆成產業目的與服務目的，指出兩者何時衝突，再把立場定為「首個試用者而非保證買家」——表態同時收窄題目</td>
+</tr>
+<tr>
+<td>現況先承認、後診斷</td>
+<td>第二段</td>
+<td>先認可政府已在用新技術（避免一面倒），再把癥結定位在三個制度環節（入圍規格、風險不對稱、成果不公開）——機制而非症狀</td>
+</tr>
+<tr>
+<td>以讓步換可信度的駁論</td>
+<td>第三段</td>
+<td>先同意「本地優先不可取」，再拆對方「試用必犧牲服務」的隱含前提</td>
+</tr>
+<tr>
+<td>措施逐項回扣癥結</td>
+<td>第四段</td>
+<td>問題清單↔規格門檻；公開評估報告↔成果不公開；中央預算↔部門成本；「下一個客戶」指標↔防止長期依賴</td>
+</tr>
+<tr>
+<td>游說內部持份者</td>
+<td>第六段</td>
+<td>先列部門首長的四個顧慮（服務、預算、問責、人手），再逐一回應，並給「可隨時終止」的退路</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<a class="toplink" href="#top">↑ 回到頂部</a></section>
+<section class="qa" id="q4">
+<div class="qh"><span class="qno">題四</span><span class="pp en">英文卷</span><h2>Commercial drone delivery trials over urban areas</h2><span class="wc">範文 899 words</span></div>
+<div class="qcard en"><div class="ql">定稿題目</div><div class="qb" lang="en"><p class="lb">CASE BACKGROUND</p>
+<p>The City of Jade is a compact, high-rise city of about six million people. Three years ago the Government introduced a regulatory sandbox for drones. Some 120 sandbox projects, mainly building inspection, facade cleaning and light shows over closed-off sites, have since become routine operations, with no injuries reported.</p>
+<p>The Government now intends to allow a 12-month trial of commercial drone delivery over three urban districts. Licensed operators would carry parcels of up to 5 kg along routes of their own choosing. Four logistics companies and one food-delivery platform have applied to take part. A hospital group says drones could cut the transfer time for urgent laboratory samples between two of its hospitals from about 60 minutes to 15. A developer of passenger-carrying aircraft has also asked to join the trial.</p>
+<p>Other relevant information:</p>
+<ul>
+<li>Police, fire and air-ambulance helicopters routinely fly at low altitude over the three districts. Each drone operator uses its own flight-management software; there is no shared, real-time picture of drone traffic.</li>
+<li>The City's aviation law was drafted for crewed aircraft. It does not specify who is liable if a drone or its cargo injures a person on the ground. Two insurers currently offer third-party cover for delivery drones.</li>
+<li>In a recent survey, 58% of residents supported drone delivery in principle, but 64% opposed regular flights within 50 metres of their homes.</li>
+<li>Since test flights began, local councillors in one of the three districts have received over 300 complaints, mainly about noise and on-board cameras.</li>
+</ul>
+<p class="lb">QUESTION</p>
+<p>You work in the Ministry of Transport of the Government of the City of Jade. You have been tasked to draft an internal discussion paper on the proposed trial of commercial drone delivery, in which you should:—</p>
+<p>(a) set out two major problems facing the introduction of commercial drone delivery over urban areas and explain the implication of the identified issues; and</p>
+<p>(b) recommend feasible measures to address the major problems identified.</p>
+<p>Please draft the paper in English.</p></div></div>
+<details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> (a) 兩個 major problems（數量必須是二）＋ 每個問題各自的 implications；(b) 可行措施，逐項對應 (a) 的兩個問題。文體：internal discussion paper，段落編號、大寫標題、ADVICE SOUGHT 收尾。</p>
+<p><strong>把個案歸併成兩個問題：</strong> 個案給了四項事實——沒有共用的空中交通圖像、法律未定責任且只有兩家保險商、民調「原則支持但不要在我家附近」、三百多宗投訴；另有「營辦商自選航線」和「載人飛行器要求加入」兩個埋伏。前兩項是同一機制（規管框架為單點作業而設）→ Problem 1；後兩項連同自選航線是另一機制（成本集中、效益分散）→ Problem 2；載人要求放在建議中處理。</p>
+<p><strong>本文立場一句話：</strong> 試驗應做，但只做貨運、只走指定航道、先建共用交通圖像和責任安排，載人另行處理。</p>
+<p><strong>段落與字數預算（≤950 words）：</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>內容</th>
+<th>預算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>PURPOSE（鏡像題目）</td>
+<td>35</td>
+</tr>
+<tr>
+<td>2–3</td>
+<td>BACKGROUND：定義政策目的；指出沙盒紀錄「性質不同」</td>
+<td>130</td>
+</tr>
+<tr>
+<td>4–5</td>
+<td>PROBLEM 1 診斷＋Implications（四層）</td>
+<td>200</td>
+</tr>
+<tr>
+<td>6–7</td>
+<td>PROBLEM 2 診斷＋Implications（含公平與數據失真）</td>
+<td>175</td>
+</tr>
+<tr>
+<td>8–12</td>
+<td>RECOMMENDATIONS（三項對 P1、兩項對 P2）</td>
+<td>260</td>
+</tr>
+<tr>
+<td>13</td>
+<td>IMPLEMENTATION AND MONITORING</td>
+<td>100</td>
+</tr>
+<tr>
+<td>14</td>
+<td>ADVICE SOUGHT</td>
+<td>25</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<article class="essay"><div class="eh">範文<span class="wc">899 words</span></div><div class="body" lang="en"><p class="lb">DISCUSSION PAPER</p>
+<p class="lb">TRIAL OF COMMERCIAL DRONE DELIVERY OVER URBAN AREAS</p>
+<p class="lb">PURPOSE</p>
+<ol>
+<li>This paper (a) sets out two major problems facing the introduction of commercial drone delivery over urban areas and explains their implications; and (b) recommends measures to address them.</li>
+</ol>
+<p class="lb">BACKGROUND</p>
+<ol start="2">
+<li>
+<p>The objective of the trial is not simply to open a new delivery channel. It is to establish whether routine commercial flights can share dense urban airspace safely and with public consent, and to build the regulatory capability that any wider low-altitude economy would need. The trial should therefore be judged as much by what it teaches the regulator as by how quickly parcels arrive.</p>
+</li>
+<li>
+<p>On that test, the sandbox record is a weaker guide than it appears. Sandbox projects flew over closed sites, with trained staff below and one operator overhead. The trial would involve repeated flights by competing operators over people who have neither consented nor benefit directly. Both problems below arise from that change in kind.</p>
+</li>
+</ol>
+<p class="lb">PROBLEM 1 — A FRAMEWORK BUILT FOR ISOLATED FLIGHTS, NOT URBAN TRAFFIC</p>
+<ol start="4">
+<li>
+<p>Two gaps combine. First, no one holds a complete picture of the airspace: each operator sees only its own drones, while emergency helicopters fly low and at short notice. Risk therefore rises with the number of operators, not merely the number of flights. Second, the law does not say who pays if a drone injures someone on the ground — the operator, the manufacturer, the software provider or the retailer. With only two insurers in the market, that uncertainty is priced into premiums rather than resolved.</p>
+</li>
+<li>
+<p><strong>Implications.</strong> The immediate risk is a collision or a falling object in a crowded street, followed by a prolonged dispute over compensation. The second-order effect reaches beyond the trial: one serious incident would create pressure to suspend all drone activity, including the 120 routine uses with a clean record. Third, high premiums would favour the largest applicants, so the trial would test a near-monopoly rather than a market, and its findings on cost and reliability would not hold once the field opened. Finally, if helicopter crews must work around drones they cannot see, part of the trial's cost would fall on emergency response.</p>
+</li>
+</ol>
+<p class="lb">PROBLEM 2 — LOCAL COSTS, DISPERSED BENEFITS</p>
+<ol start="6">
+<li>
+<p>The survey results are not contradictory. Residents welcome drone delivery in general but not over their own homes, because noise and the sense of being watched are borne locally, while the benefits go to customers and operators across the city. Letting operators choose their own routes aggravates this: each will choose the shortest path, not the least intrusive.</p>
+</li>
+<li>
+<p><strong>Implications.</strong> Complaints, already above 300 in one district, would turn every route into a local dispute and press councillors to oppose the programme as a whole. A less visible consequence concerns equity: operators would avoid districts that object most effectively, so flights could concentrate where residents are least able to organise. This would also distort the evidence, overstating public acceptance and misleading any decision to expand. Lastly, imagery retained or reused beyond navigation would expose operators, and the Government, to challenge under data protection law.</p>
+</li>
+</ol>
+<p class="lb">RECOMMENDATIONS</p>
+<p><em>Addressing Problem 1</em></p>
+<ol start="8">
+<li>
+<p><strong>A single traffic picture.</strong> As a condition of joining the trial, every operator should feed real-time position data into one unmanned traffic management platform, commissioned by the Ministry, which also displays emergency aircraft and can impose temporary no-fly zones. If a full system cannot be ready in time, the trial should start with fewer operators rather than proceed without one.</p>
+</li>
+<li>
+<p><strong>Liability by licence condition.</strong> Pending amendment of the aviation law, trial licences should make the operator strictly liable for injury or damage on the ground and require a minimum level of third-party insurance. Sharing anonymised incident data with insurers would help more of them price the risk and enter the market.</p>
+</li>
+<li>
+<p><strong>Passenger aircraft on a separate track.</strong> The request to carry passengers should not be folded into this trial. Carrying people requires certification of a different order, and a cargo trial cannot supply that safety case.</p>
+</li>
+</ol>
+<p><em>Addressing Problem 2</em></p>
+<ol start="11">
+<li>
+<p><strong>Designated corridors instead of free routing.</strong> Flights should follow published corridors over roads, railways and waterfronts, with minimum distances from residential windows, set hours and noise limits. The trial should include the hospital link as a priority medical corridor, giving residents a visible public benefit.</p>
+</li>
+<li>
+<p><strong>A binding privacy code and early engagement.</strong> Cameras should be used only for navigation and safety, with imagery deleted within a short period unless needed for an incident investigation, and compliance audited with the data protection authority. Draft corridors should be discussed with local councillors before designation, and complaint figures published by corridor.</p>
+</li>
+</ol>
+<p class="lb">IMPLEMENTATION AND MONITORING</p>
+<ol start="13">
+<li>It is proposed that licence conditions, the privacy code and corridor consultation be completed within six months, and that the 12-month trial then begin in two corridors rather than three districts. An independent panel should review results against indicators fixed in advance: incidents and airspace conflicts per 10,000 flights, complaints per corridor, data breaches and delivery reliability. Extension to further districts should depend on these indicators being met. The main risk is that this pace disappoints industry; a slower trial that keeps public trust is preferable to a faster one that ends in suspension.</li>
+</ol>
+<p class="lb">ADVICE SOUGHT</p>
+<ol start="14">
+<li>Members are invited to comment on the problems identified in paragraphs 4 to 7 and the recommendations in paragraphs 8 to 13.</li>
+</ol>
+<p><em>Ministry of Transport</em>
+<em>[Month] [Year]</em></p></div></article>
+<details class="sx how2" open><summary>這篇在做什麼<span class="s">逐段拆解</span></summary><div class="bd"><div class="tbl"><table>
+<thead>
+<tr>
+<th>動作</th>
+<th>位置</th>
+<th>學什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>解讀個案而非複述</td>
+<td>第 2–3 段</td>
+<td>先定義政策目的（試的是規管能力，不只是送貨），再指出沙盒「零受傷」紀錄為何不能直接搬用——一句話把個案數據變成論點</td>
+</tr>
+<tr>
+<td>把多項事實歸併為兩個機制</td>
+<td>第 4、6 段</td>
+<td>四項零散事實歸成兩個問題，每個問題都說出「為何會這樣」；數量嚴守 two</td>
+</tr>
+<tr>
+<td>Implications 寫到隱藏後果</td>
+<td>第 5、7 段</td>
+<td>保費高→近乎壟斷→試驗結論失真；航線避開最會投訴的地區→公平問題→民意數據高估接受度</td>
+</tr>
+<tr>
+<td>處理個案中的誘餌</td>
+<td>第 10 段</td>
+<td>載人飛行器要求不併入試驗，並說明理由——展示判斷，而不是照單全收</td>
+</tr>
+<tr>
+<td>執行段有門檻和權衡</td>
+<td>第 13 段</td>
+<td>時間表、事先訂好的指標、擴展條件，再用一句承認方案的代價（步伐較慢）並說明為何值得</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<a class="toplink" href="#top">↑ 回到頂部</a></section>
+<div class="pager"><a href="../07-housing/index.html">← 07 土地、房屋與居住質素</a><a href="../09-tourism/index.html">09 旅遊、盛事與文體旅協同 →</a></div>
+<div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/08-innovation/index.html">議題庫：創新科技與新型工業</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
+</div>
+</body>
+</html>

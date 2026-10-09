@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>答題框架、模板與語料庫｜JRE</title>
+<meta name="description" content="英文卷公文模板、中文卷七段式、分析框架及考場檢查清單">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;700&family=Noto+Serif+HK:wght@500;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#EDEFF3;--surface:#FFF;--surface-2:#F5F7FA;--surface-3:#E8ECF3;
+--text:#141C2E;--dim:#54607A;--faint:#8892A6;--line:#D6DBE5;--line2:#B4BDCE;
+--navy:#1B2C4F;--zh:#8A3324;--zh-bg:#F8E8E3;--en:#1D4E89;--en-bg:#E5ECF7;
+--jade:#1B6A55;--jade-bg:#E2EFE9;--amber:#87560A;--amber-bg:#F8ECD6;--stamp:#A32A22}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--bg:#0D121C;--surface:#151C2A;--surface-2:#1A2231;--surface-3:#212A3B;
+--text:#E4E9F2;--dim:#9CA8BE;--faint:#727F97;--line:#273245;--line2:#3A4660;
+--navy:#A2BAE7;--zh:#E79484;--zh-bg:#331C17;--en:#8FB4E8;--en-bg:#15263C;
+--jade:#5FC5A2;--jade-bg:#11332B;--amber:#E3AC4F;--amber-bg:#332710;--stamp:#EE8175}}
+:root[data-theme="dark"]{
+--bg:#0D121C;--surface:#151C2A;--surface-2:#1A2231;--surface-3:#212A3B;
+--text:#E4E9F2;--dim:#9CA8BE;--faint:#727F97;--line:#273245;--line2:#3A4660;
+--navy:#A2BAE7;--zh:#E79484;--zh-bg:#331C17;--en:#8FB4E8;--en-bg:#15263C;
+--jade:#5FC5A2;--jade-bg:#11332B;--amber:#E3AC4F;--amber-bg:#332710;--stamp:#EE8175}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);margin:0;font-size:15px;line-height:1.75;overflow-wrap:break-word;
+font-family:"Noto Sans HK","PingFang HK","Microsoft JhengHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Noto Serif HK",Georgia,serif;margin:0;text-wrap:balance}
+.wrap{max-width:1240px;margin:0 auto;padding:0 22px 80px}
+header{background:var(--surface);border-bottom:2px solid var(--navy)}
+.hd{max-width:1240px;margin:0 auto;padding:24px 22px 20px;display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap}
+.hd .no{font-family:"IBM Plex Mono",monospace;font-size:38px;font-weight:600;color:var(--line2);line-height:1}
+.hd h1{font-size:27px;font-weight:900;letter-spacing:.04em}
+.hd .en-t{font-size:15px;color:var(--dim);margin-top:4px;font-family:"Noto Serif HK",Georgia,serif;font-weight:500}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.09em;padding:3px 9px;border-radius:2px;
+background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
+.hd .right{margin-left:auto;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.back{font-size:12.5px;color:var(--dim);text-decoration:none;border-bottom:1px solid var(--line2)}
+.back:hover,.back:focus-visible{color:var(--navy);border-bottom-color:var(--navy);outline:none}
+.hero{background:var(--surface);border-bottom:2px solid var(--navy)}
+.hero .in{max-width:1240px;margin:0 auto;padding:30px 22px 26px;display:grid;gap:14px}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--amber)}
+.hero h1{font-size:32px;font-weight:900;letter-spacing:.04em}
+.hero .sub{font-family:"Noto Serif HK",Georgia,serif;color:var(--dim);font-size:15px}
+.hero p.lede{max-width:72ch;margin:0;color:var(--text)}
+.stats{display:flex;flex-wrap:wrap;gap:22px;margin-top:4px}
+.stats div{font-size:12.5px;color:var(--dim)}
+.stats b{display:block;font-family:"IBM Plex Mono",monospace;font-size:22px;color:var(--navy);font-weight:600;line-height:1.2}
+.quicknav{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line2)}
+.quicknav .in{max-width:1240px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.quicknav .in::-webkit-scrollbar{display:none}
+.quicknav a{flex:none;padding:11px 13px;font-size:12.5px;font-weight:700;letter-spacing:.03em;color:var(--dim);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent}
+.quicknav a:hover,.quicknav a:focus-visible{color:var(--navy);border-bottom-color:var(--line2);outline:none}
+.quicknav a.hot{color:var(--stamp)}
+.quicknav a.cur{color:var(--navy);border-bottom-color:var(--navy)}
+.quicknav .sep{flex:none;width:1px;background:var(--line2);margin:10px 6px}
+.quicknav .zh{color:var(--zh)}.quicknav .en{color:var(--en)}
+.hsec{margin-top:38px}
+.hsec>h2{font-size:19px;font-weight:700;padding-bottom:8px;border-bottom:1px solid var(--line2);display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.hsec>h2 .e{font-size:12.5px;color:var(--faint);font-weight:500}
+.hsec>h2 .hint{margin-left:auto;font-size:12px;color:var(--faint);font-family:"Noto Sans HK",sans-serif;font-weight:400}
+.note{font-size:13.5px;color:var(--dim);margin:10px 0 0;max-width:80ch}
+.caveat{background:var(--amber-bg);border:1px solid var(--amber);border-radius:3px;padding:12px 16px;font-size:13.5px;margin-top:14px;line-height:1.7}
+.caveat b,.caveat strong{color:var(--amber)}
+.caveat p{margin:0}.caveat p+p{margin-top:6px}
+.pp{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;padding:1px 8px;border-radius:2px;white-space:nowrap}
+.pp.zh{background:var(--zh-bg);color:var(--zh)}
+.pp.en{background:var(--en-bg);color:var(--en)}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:10px 0;border:1px solid var(--line);background:var(--surface)}
+.tbl table{width:100%;border-collapse:collapse;font-size:13.5px;line-height:1.65;min-width:560px}
+.tbl th,.tbl td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tbl th{font-size:12px;letter-spacing:.04em;color:var(--faint);font-weight:600;background:var(--surface-2);white-space:nowrap}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td:first-child{white-space:nowrap;color:var(--dim);font-family:"IBM Plex Mono","Noto Sans HK",monospace;font-size:12.5px}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line2);font-size:12.5px;color:var(--faint);line-height:1.7}
+.foot a{color:var(--navy)}
+@media(max-width:820px){.hd .no{font-size:28px}.hd h1{font-size:22px}.hero h1{font-size:26px}}
+@media(max-width:600px){
+ .wrap,.hd,.hero .in,.quicknav .in{padding-left:16px;padding-right:16px}
+ .hd .right{margin-left:0}
+}
+
+.wrap.narrow,.hd.narrow{max-width:1000px}
+.toc{margin-top:24px;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--navy);padding:14px 20px 16px}
+.toc .t{font-size:11.5px;font-weight:700;letter-spacing:.1em;color:var(--navy);margin-bottom:6px}
+.toc ol{list-style:none;margin:0;padding:0;columns:2 280px;column-gap:28px}
+.toc li{break-inside:avoid;font-size:13.5px;line-height:1.6;padding:2px 0}
+.toc li.l2{font-weight:700;margin-top:8px;font-family:"Noto Serif HK",Georgia,serif;font-size:14.5px}
+.toc li.l2:first-child{margin-top:0}
+.toc li.l3{padding-left:1em}
+.toc a{color:var(--text);text-decoration:none}
+.toc a:hover,.toc a:focus-visible{color:var(--navy);text-decoration:underline;outline:none}
+.doc h2,.doc h3,.doc h4{scroll-margin-top:16px}
+.doc h2{margin-top:44px;font-size:21px;font-weight:900;padding-bottom:8px;border-bottom:2px solid var(--navy);letter-spacing:.03em}
+.doc h3{margin-top:30px;font-size:17.5px;font-weight:700;padding-bottom:6px;border-bottom:1px solid var(--line2)}
+.doc h4{margin-top:20px;font-size:15.5px;font-weight:700;color:var(--navy)}
+.doc p{margin:.7em 0;max-width:80ch}
+.doc ul,.doc ol{padding-left:1.5em;max-width:80ch}
+.doc li{margin:.25em 0}
+.doc strong{color:var(--navy)}
+.doc blockquote{margin:14px 0;background:var(--amber-bg);border-left:3px solid var(--amber);padding:10px 16px;border-radius:0 2px 2px 0}
+.doc blockquote p{margin:.3em 0}
+.doc pre{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--en);padding:12px 16px;overflow-x:auto;max-width:100%;
+font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12.5px;line-height:1.6;color:var(--text)}
+.doc code{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:.88em;background:var(--surface-3);padding:1px 5px;border-radius:2px}
+.doc pre code{background:none;padding:0;font-size:inherit}
+.doc hr{border:none;border-top:1px solid var(--line2);margin:28px 0}
+.doc .tbl td:first-child{white-space:normal;font-family:inherit;font-size:13.5px;color:var(--text)}
+.doc .tbl table{min-width:520px}
+</style>
+</head>
+<body>
+<header><div class="hd narrow" id="top">
+  <div class="no">框</div>
+  <div>
+    <div class="tag">英文卷公文模板 · 中文卷七段式 · 分析框架 · 考場檢查清單</div>
+    <h1>答題框架、模板與語料庫</h1>
+    <div class="en-t">Answer Frameworks, Templates and Phrase Bank</div>
+  </div>
+  <div class="right">
+    <a class="back" href="../議題庫/index.html">← 議題庫</a>
+    <a class="back" href="../範文/index.html">範文</a>
+  </div>
+</div></header>
+<nav class="quicknav" aria-label="本頁章節"><div class="in"><a href="#s1">甲部</a><a href="#s11">乙部</a><a href="#s15">丙部</a><a href="#s21">丁部</a><span class="sep"></span><a href="#toc">目錄</a></div></nav>
+<div class="wrap narrow">
+<nav class="toc" id="toc" aria-label="目錄"><div class="t">目錄</div><ol><li class="l2"><a href="#s1">甲部：英文卷 —— 政府公文</a></li><li class="l3"><a href="#s2">A1. 主模板：Discussion Paper（樣本題型）</a></li><li class="l3"><a href="#s3">A2. 變體模板</a></li><li class="l3"><a href="#s4">A3. 診斷框架：怎樣「找出」兩個主要問題</a></li><li class="l3"><a href="#s8">A4. Implication 段落的寫法（★ 最重要的得分點）</a></li><li class="l3"><a href="#s9">A5. 建議段落的寫法</a></li><li class="l3"><a href="#s10">A6. 英文語料庫（直接背）</a></li><li class="l2"><a href="#s11">乙部：中文卷 —— 議題立場文</a></li><li class="l3"><a href="#s12">B1. 主模板（七段式）</a></li><li class="l3"><a href="#s13">B2. 「先定義政策目的」的示範</a></li><li class="l3"><a href="#s14">B3. 中文語料庫</a></li><li class="l2"><a href="#s15">丙部：通用分析框架（兩題都用得上）</a></li><li class="l3"><a href="#s16">C1. 政策工具階梯（找方案時掃一遍）</a></li><li class="l3"><a href="#s17">C2. 政策周期</a></li><li class="l3"><a href="#s18">C3. 取捨清單（每篇至少處理一組）</a></li><li class="l3"><a href="#s19">C4. 可行性五問（檢驗你每一個建議）</a></li><li class="l3"><a href="#s20">C5. 三個萬用加分動作</a></li><li class="l2"><a href="#s21">丁部：考場檢查清單（背下來，收筆前逐項打勾）</a></li></ol></nav>
+<div class="doc"><blockquote>
+<p>這一份要背到肌肉記憶。考場上你沒有時間想結構，只有時間想內容。</p>
+</blockquote>
+<hr>
+<h2 id="s1">甲部：英文卷 —— 政府公文</h2>
+<h3 id="s2">A1. 主模板：Discussion Paper（樣本題型）</h3>
+<pre><code>[SUBJECT IN CAPITALS]
+e.g. PROVISION OF MENTAL HEALTH SERVICES:
+     SETTING UP OF INTEGRATED CENTRES
+
+PURPOSE
+
+1.  This paper (a) sets out two major problems facing the setting up of
+    integrated centres for mental health and their implications; and
+    (b) recommends measures to address them.
+
+BACKGROUND
+
+2.  [2–4 sentences only. Compress the given material. Do NOT re-narrate it.]
+3.  [State the policy objective explicitly — this is where marks start.]
+
+PROBLEM 1 — [A SHARP LABEL, e.g. SITE IDENTIFICATION AND COMMUNITY RESISTANCE]
+
+4.  [Diagnosis: what exactly is the problem, and why does it arise?
+     Name the mechanism, not just the symptom.]
+5.  Implications. [Independent paragraph. Work through at least three of:
+     service users / financial / manpower / timetable / legal /
+     inter-departmental / public confidence / equity / precedent.]
+
+PROBLEM 2 — [LABEL]
+
+6.  [Diagnosis]
+7.  Implications. [As above]
+
+RECOMMENDATIONS
+
+8.  Addressing Problem 1: [Measure A]. [What, who leads, by when,
+     resource implication, one sentence on the main risk and how it is managed.]
+9.  [Measure B — ideally one conventional and one creative measure per problem.]
+10. Addressing Problem 2: [Measure C] ...
+11. [Measure D] ...
+
+IMPLEMENTATION AND MONITORING          ← 加分段，很多人沒寫
+
+12. [Sequencing: what in 6 months / 18 months / 3 years.
+     One or two measurable indicators. Who reports to whom.]
+
+ADVICE SOUGHT
+
+13. Members are invited to comment on the problems identified in
+    paragraphs 4 to 7 and the recommendations in paragraphs 8 to 11.
+
+[Bureau / Division]
+[Month Year]
+</code></pre>
+<p><strong>為什麼這個模板有效：</strong> 它是香港政府（及立法會委員會文件）的真實格式。評卷人每日讀這種文件。當你的卷一打開就長成這樣，你在第一秒已經證明了「你知道政府文件是怎麼寫的」。</p>
+<h3 id="s3">A2. 變體模板</h3>
+<p><strong>（1）Briefing note to the Secretary</strong>（若題目要求給局長的簡報）</p>
+<pre><code>PURPOSE → RECOMMENDATION (放最前！) → BACKGROUND → CONSIDERATIONS
+→ OPTIONS AND ASSESSMENT → PRESENTATIONAL HANDLING → ADVICE SOUGHT
+</code></pre>
+<p>局長只讀第一段，所以 bottom line 上移。</p>
+<p><strong>（2）Options paper</strong>（若題目要求比較方案）</p>
+<pre><code>PURPOSE → BACKGROUND → ASSESSMENT CRITERIA (先講標準！) →
+OPTION A: description / merits / drawbacks →
+OPTION B: ... → OPTION C: ... →
+COMPARISON (一個表或一段) → PREFERRED OPTION AND JUSTIFICATION →
+FINANCIAL AND STAFFING IMPLICATIONS → WAY FORWARD
+</code></pre>
+<p><strong>先寫評估準則再比較選項</strong>，是高分動作。</p>
+<p><strong>（3）Paper to a Panel / Committee</strong>（若題目提到議會）</p>
+<pre><code>PURPOSE → BACKGROUND → THE PROPOSAL → JUSTIFICATION →
+FINANCIAL AND STAFFING IMPLICATIONS → LEGISLATIVE IMPLICATIONS →
+PUBLIC CONSULTATION → WAY FORWARD → ADVICE SOUGHT
+</code></pre>
+<h3 id="s4">A3. 診斷框架：怎樣「找出」兩個主要問題</h3>
+<p>不要憑感覺。用框架掃描，保證覆蓋且顯得有系統。</p>
+<h4 id="s5">框架 1：五缺口掃描（Five Gaps）</h4>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>缺口</th>
+<th>提問</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Supply gap</strong></td>
+<td>設施／服務／人手夠不夠？</td>
+</tr>
+<tr>
+<td><strong>Access gap</strong></td>
+<td>有供應但目標群組接觸得到嗎？（地理、資訊、負擔、污名）</td>
+</tr>
+<tr>
+<td><strong>Coordination gap</strong></td>
+<td>幾個部門／機構之間誰負責？有沒有人牽頭？</td>
+</tr>
+<tr>
+<td><strong>Incentive gap</strong></td>
+<td>執行者（部門、NGO、業界、市民）有沒有動機去做？</td>
+</tr>
+<tr>
+<td><strong>Institutional gap</strong></td>
+<td>法例、規例、撥款機制、數據、問責安排是否配套？</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="s6">框架 2：政策落地五道關卡</h4>
+<p><code>政治可行性 → 法律授權 → 財政資源 → 執行能力 → 社會接受度</code>
+問題通常卡在其中兩關。找出是哪兩關，你的「兩個主要問題」就有了，而且自帶分析深度。</p>
+<h4 id="s7">框架 3：持份者矩陣（用於找隱藏問題）</h4>
+<pre><code>             支持              反對
+影響力大   ┌──────────┬──────────┐
+           │  盟友     │  否決者   │ ← 最大風險在這格
+           ├──────────┼──────────┤
+影響力小   │  支持者   │  受損者   │ ← 公平性問題在這格
+           └──────────┴──────────┘
+</code></pre>
+<h3 id="s8">A4. Implication 段落的寫法（★ 最重要的得分點）</h3>
+<p>一句「This will affect service delivery」是零分。要寫成<strong>因果鏈 + 量級 + 對象</strong>：</p>
+<blockquote>
+<p><strong>公式：</strong> If [problem persists], then [first-order effect], which in turn [second-order effect]. The most affected would be [specific group]. In resource terms, this means [rough magnitude]. There is also a [reputational / legal / precedent] dimension: [...].</p>
+</blockquote>
+<p><strong>示範：</strong></p>
+<blockquote>
+<ol start="5">
+<li><strong>Implications.</strong> If suitable sites cannot be secured within the current
+   planning cycle, the target of establishing one centre in each district
+   would slip by at least two to three years. The immediate consequence is
+   that service users would continue to rely on hospital-based specialist
+   out-patient clinics, lengthening waiting times and pushing marginal cases
+   towards crisis intervention — the most expensive form of care. A second
+   and less visible consequence is attrition: professional staff recruited
+   in anticipation of the new centres would be redeployed or would leave,
+   so that even when sites are eventually secured, the Ministry would face
+   a fresh manpower problem. Finally, repeated deferral of a publicly
+   announced commitment carries a reputational cost that would make future
+   community engagement on similar facilities harder.</li>
+</ol>
+</blockquote>
+<p>注意這段做了什麼：<strong>時間量級 → 服務使用者後果 → 財政後果 → 隱藏的人手後果 → 聲譽與先例後果</strong>。五層。這就是「分析能力」的可見證據。</p>
+<h3 id="s9">A5. 建議段落的寫法</h3>
+<p><strong>公式：</strong> [Measure name]. [What exactly]. [Who leads, with whom]. [By when]. [Resource / legal implication]. [Main risk and mitigation].</p>
+<p><strong>加分技巧：</strong>
+- 每個問題配 <strong>一個常規方案 ＋ 一個有創意的方案</strong>（官方要求「務實兼具創意」）
+- 創意不等於天馬行空。創意 = <strong>換一個政策工具</strong>。工具階梯由輕到重：
+  <code>資訊／宣傳 → 誘因／補貼 → 中介／配對 → 發牌／規管 → 直接提供 → 收購／擁有</code>
+  大多數人只想到「政府出錢做」。你若能提出「先用共用空間 + 分時段使用 + 與現有設施協同」這類低成本方案，立即與人不同。
+- 加一句 <strong>「風險與緩解」</strong>：<code>The main risk is X; this can be mitigated by Y.</code> 這一句證明你不是天真的人。</p>
+<h3 id="s10">A6. 英文語料庫（直接背）</h3>
+<p><strong>開場／目的</strong>
+- This paper sets out … and recommends …
+- The purpose of this paper is to invite Members to consider …
+- This note summarises the key issues arising from … and seeks a steer on …</p>
+<p><strong>定義政策目的</strong>
+- The underlying policy objective is to … rather than merely to …
+- Any assessment of the proposal must begin from what it is intended to achieve.</p>
+<p><strong>診斷</strong>
+- The difficulty is structural rather than operational.
+- The constraint lies not in funding but in delivery capacity.
+- Three factors account for this: first, … ; second, … ; and third, …
+- What presents itself as a supply problem is in substance a coordination problem.</p>
+<p><strong>影響</strong>
+- The immediate implication is … ; the more serious, longer-term implication is …
+- This would have knock-on effects on …
+- The cost of inaction is not neutral: …
+- The burden would fall disproportionately on …</p>
+<p><strong>建議</strong>
+- We recommend that … , with a view to …
+- A phased approach is proposed: in the first phase … ; thereafter …
+- Subject to the availability of resources, …
+- As an interim measure, … pending the completion of …
+- Consideration could be given to …</p>
+<p><strong>權衡與反面</strong>
+- We recognise that this would involve a trade-off between … and …
+- The principal objection to this approach is … ; on balance, however, …
+- This is not a costless option, but the alternative — … — carries a higher risk.</p>
+<p><strong>收尾</strong>
+- Members are invited to comment on the recommendations in paragraphs … to …
+- Members' views are sought on whether …
+- We will report back on progress in [timeframe].</p>
+<p><strong>慎用／避免</strong>
+- ❌ I think / In my opinion（內部文件用 "we" 或無人稱）
+- ❌ Very / really / a lot of（用 substantially / materially / significant）
+- ❌ 空洞形容詞：important, good, bad, huge
+- ❌ 長句堆疊。<strong>一句一個意思。</strong></p>
+<hr>
+<h2 id="s11">乙部：中文卷 —— 議題立場文</h2>
+<h3 id="s12">B1. 主模板（七段式）</h3>
+<pre><code>【第一段 · 破題與立場】4–6 句
+　 一句重述建議 →
+　 一句點出這個建議背後的政策目的（★ 拉分位）→
+　 一句指出核心張力 →
+　 一句明確表態：「本文認為，應（有條件地）支持／反對上述建議。」
+
+【第二段 · 承認利處】2 點
+　 「誠然，有關建議確有其可取之處。其一，……；其二，……」
+　 （寫得認真，不要敷衍——這是公允度分數）
+
+【第三段 · 剖析弊處／風險】3 點，由重到輕
+　 每點：分論點句 → 機制說明（為什麼會這樣）→ 具體後果 → 受影響者
+
+【第四段 · 立場論證】3 個理由
+　 每個理由：論點 → 理據（原理／數據／先例／比較經驗）→ 短例證 → 小結回扣立場
+
+【第五段 · 駁論】1–2 個最強反方論點
+　 「或有意見認為……此說有其道理，惟……」
+　 ★ 必須挑對方最強的論點來駁，不要打稻草人
+
+【第六段 · 建議／替代方案】（條件式任務，必答）
+　 支持 → 4 項配套措施，逐項對應第三段的弊處
+　 反對 → 3–4 項替代措施，說明如何更有效達致同一政策目的
+　 每項：措施名 → 具體做法 → 由誰推行 → 預期效果
+
+【第七段 · 結語】3–4 句
+　 回扣政策目的 → 重申立場 → 一句前瞻（不要喊口號）
+</code></pre>
+<p><strong>字數分配（總目標 800–1000 字）：</strong>
+破題 100 ｜ 利 120 ｜ 弊 200 ｜ 論證 250 ｜ 駁論 100 ｜ 建議 200 ｜ 結語 60</p>
+<h3 id="s13">B2. 「先定義政策目的」的示範</h3>
+<p>樣本題（大牌檔）的政策目的可以是四種，而<strong>你選哪一種，整篇文章的評估標準就不同</strong>：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>若政策目的是</th>
+<th>則成功指標是</th>
+<th>則主要風險是</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>推廣飲食文化、鞏固「美食天堂」品牌</td>
+<td>品牌辨識度、媒體與旅客口碑</td>
+<td>淪為人工景點、失去真實性</td>
+</tr>
+<tr>
+<td>帶動旅遊消費</td>
+<td>旅客人均消費、周邊商戶生意</td>
+<td>與現有食肆惡性競爭</td>
+</tr>
+<tr>
+<td>保育本土街道文化</td>
+<td>傳統經營者是否真的回來</td>
+<td>發牌給大集團，原生態消失</td>
+</tr>
+<tr>
+<td>創造基層就業與小本創業機會</td>
+<td>新發牌數目、經營者收入</td>
+<td>租金與牌費過高，基層入不到場</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>寫法：</strong></p>
+<blockquote>
+<p>評估這項建議是否可取，必先釐清它要達到什麼目的。若目的在於鞏固香港「美食天堂」的品牌並帶動旅遊消費，則衡量標準應是能否創造具辨識度而又真實的飲食體驗；若目的在於保育本土街道文化，則衡量標準應是傳統經營者能否實際參與。本文認為，這兩個目的並不完全相容，而政府若不先作取捨，所謂「新大牌檔」很可能兩頭不到岸。基於此，本文……</p>
+</blockquote>
+<p><strong>這一段幾乎必然是全卷分數最高的一段。</strong> 因為它做了所有人都不做的事：<strong>把題目的隱含前提拆開來檢視。</strong></p>
+<h3 id="s14">B3. 中文語料庫</h3>
+<p><strong>破題</strong>
+- 近年社會上有意見認為……此議觸及的，其實是……的根本問題。
+- 有關建議表面上是……之爭，實質關乎……的取捨。
+- 本文認為，上述建議方向可取，惟必須輔以嚴格配套，方能達致預期政策目的。
+- 本文並不同意上述建議，理由有三。</p>
+<p><strong>承認對方</strong>
+- 誠然，……確有其道理。
+- 不能否認，……在若干層面上有其積極意義。
+- 持此論者所指出的……問題，確實存在。</p>
+<p><strong>轉折與駁論</strong>
+- 惟細加推敲，此說至少有三處未竟之義。
+- 然而，上述論述忽略了一項關鍵前提，即……
+- 或有意見認為……此說有其道理，惟忽略了……
+- 此一比較看似有力，實則兩地在……方面條件迥異，未可簡單移植。</p>
+<p><strong>分析機制</strong>
+- 究其根本，問題並非在於……，而在於……
+- 這並非單一部門可以獨力解決的問題，而涉及……之間的協調。
+- 表面上是資源問題，實質是誘因設計問題。
+- 三者環環相扣：……導致……，繼而造成……</p>
+<p><strong>影響</strong>
+- 其連帶影響有三：其一……；其二……；其三……
+- 受影響最深的，往往是……這一群最缺乏議價能力的人。
+- 若不加處理，短期內或無明顯惡果，惟長遠而言……</p>
+<p><strong>建議</strong>
+- 建議政府從四方面著手：
+- 第一，在制度層面……；第二，在資源配置上……；第三，在執行安排方面……；第四，在監察與檢討機制上……
+- 上述措施宜分階段推行：首階段（一年內）……；次階段（三年內）……
+- 為免……，建議設立退場機制／日落條款／定期檢討。</p>
+<p><strong>結語</strong>
+- 歸根究柢，……的成敗不在於……，而在於……
+- 政策的價值，最終要看它能否真正惠及……
+- 香港要在……之間取得平衡，關鍵不在於是否推行，而在於如何推行。</p>
+<p><strong>避免</strong>
+- ❌ 廣東話口語：「唔好」「係咁」「好似」「搞掂」「點樣」
+- ❌ 網絡用語、感嘆號、反問句連發
+- ❌ 空泛口號：「與時並進」「攜手合作」「共創未來」（放在結語會很廉價）
+- ❌ 內地公文語體：「加大力度」「統籌推進」「頂層設計」「抓好落實」「保駕護航」
+- ❌ 第一人稱過度：「我覺得」「我認為」（用「本文認為」）</p>
+<hr>
+<h2 id="s15">丙部：通用分析框架（兩題都用得上）</h2>
+<h3 id="s16">C1. 政策工具階梯（找方案時掃一遍）</h3>
+<pre><code>資訊 → 教育宣傳 → 自願約章 → 誘因/補貼 → 稅費 → 中介配對
+→ 發牌 → 規管/標準 → 直接提供 → 公私營合作 → 公營擁有
+</code></pre>
+<p><strong>技巧：</strong> 別人提出「規管」時，你提出「先用誘因，兩年後檢討再規管」，立即顯得成熟。</p>
+<h3 id="s17">C2. 政策周期</h3>
+<p><code>議題設定 → 方案制定 → 合法化（立法/撥款）→ 執行 → 監察 → 評估 → 修訂</code>
+<strong>用途：</strong> 問「問題卡在哪一環」，答案往往在「執行」與「監察」，而大多數考生只談「制定」。</p>
+<h3 id="s18">C3. 取捨清單（每篇至少處理一組）</h3>
+<ul>
+<li>效率 ↔ 公平</li>
+<li>短期紓緩 ↔ 長期結構改革</li>
+<li>個人自由 ↔ 集體利益</li>
+<li>中央統籌 ↔ 地區彈性</li>
+<li>財政可持續 ↔ 服務需求</li>
+<li>速度 ↔ 程序公義／諮詢</li>
+<li>普及 ↔ 針對性（資源集中於最有需要者）</li>
+<li>市場活力 ↔ 規管保障</li>
+</ul>
+<h3 id="s19">C4. 可行性五問（檢驗你每一個建議）</h3>
+<ol>
+<li><strong>有法律授權嗎？</strong> 需要修例嗎？修例要多久？</li>
+<li><strong>錢從哪來？</strong> 經常開支還是非經常？現有撥款可否重新調配？</li>
+<li><strong>誰去做？</strong> 哪個局／署牽頭？人手從哪來？NGO 還是公務員？</li>
+<li><strong>多久見效？</strong> 6 個月／2 年／5 年？中間有沒有里程碑？</li>
+<li><strong>誰會反對？</strong> 他們的理由是什麼？你怎樣回應？</li>
+</ol>
+<p><strong>每個建議在文中至少要答到其中兩問。全部答齊會太長，但一問都不答就是「口號式建議」。</strong></p>
+<h3 id="s20">C5. 三個萬用加分動作</h3>
+<ol>
+<li><strong>設監察指標。</strong> 「建議以……作為成效指標，每年檢討一次。」——證明你懂 outcome-based governance。</li>
+<li><strong>設退場／日落機制。</strong> 「為免資源長期鎖定，建議設三年期限，期滿須重新評估。」——證明你懂財政紀律。</li>
+<li><strong>設試點。</strong> 「建議先在一至兩區試行，累積經驗後再行推廣。」——證明你懂風險管理。（但不要每題都用，會變成模板味）</li>
+</ol>
+<hr>
+<h2 id="s21">丁部：考場檢查清單（背下來，收筆前逐項打勾）</h2>
+<p><strong>英文卷</strong>
+- ☐ 題目要求的文體對不對（paper / note / memo）？
+- ☐ 分題 (a)(b)(c) 有沒有全部答？
+- ☐ 數量詞對不對（two problems 就是兩個）？
+- ☐ 每個問題後面有沒有<strong>獨立的 implication 段</strong>？
+- ☐ 每個建議有沒有回扣到所識別的問題？
+- ☐ 有沒有 who / when / resource？
+- ☐ 有沒有一段講風險或反面？
+- ☐ 有沒有段落編號與小標題？
+- ☐ 有沒有整段照抄背景資料？（有就劃掉重寫）</p>
+<p><strong>中文卷</strong>
+- ☐ 第一段有沒有一句話明確表態？
+- ☐ 有沒有先定義政策目的？
+- ☐ 利、弊都有寫？
+- ☐ 理據有沒有三個，而且互不重疊？
+- ☐ 有沒有駁論段？駁的是不是對方最強的論點？
+- ☐ <strong>條件式任務（如支持→配套／如反對→替代）有沒有完成？</strong>
+- ☐ 繁體字？書面語？沒有口語與內地公文語體？
+- ☐ 有沒有喊口號式結尾？</p></div>
+<div class="foot">由備考資料《03｜答題框架、模板與語料庫》生成。配合<a href="../範文/index.html">範文</a>使用：每篇範文的「審題」和「這篇在做什麼」都按本頁的模板拆解。本頁為備考筆記，不代表政府立場。</div>
+</div>
+</body>
+</html>

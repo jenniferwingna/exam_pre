@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>醫療衞生與基層醫療｜JRE 範文</title>
+<meta name="description" content="醫療衞生與基層醫療：四篇定稿題目範文、審題與逐段拆解">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;700&family=Noto+Serif+HK:wght@500;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#EDEFF3;--surface:#FFF;--surface-2:#F5F7FA;--surface-3:#E8ECF3;
+--text:#141C2E;--dim:#54607A;--faint:#8892A6;--line:#D6DBE5;--line2:#B4BDCE;
+--navy:#1B2C4F;--zh:#8A3324;--zh-bg:#F8E8E3;--en:#1D4E89;--en-bg:#E5ECF7;
+--jade:#1B6A55;--jade-bg:#E2EFE9;--amber:#87560A;--amber-bg:#F8ECD6;--stamp:#A32A22}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--bg:#0D121C;--surface:#151C2A;--surface-2:#1A2231;--surface-3:#212A3B;
+--text:#E4E9F2;--dim:#9CA8BE;--faint:#727F97;--line:#273245;--line2:#3A4660;
+--navy:#A2BAE7;--zh:#E79484;--zh-bg:#331C17;--en:#8FB4E8;--en-bg:#15263C;
+--jade:#5FC5A2;--jade-bg:#11332B;--amber:#E3AC4F;--amber-bg:#332710;--stamp:#EE8175}}
+:root[data-theme="dark"]{
+--bg:#0D121C;--surface:#151C2A;--surface-2:#1A2231;--surface-3:#212A3B;
+--text:#E4E9F2;--dim:#9CA8BE;--faint:#727F97;--line:#273245;--line2:#3A4660;
+--navy:#A2BAE7;--zh:#E79484;--zh-bg:#331C17;--en:#8FB4E8;--en-bg:#15263C;
+--jade:#5FC5A2;--jade-bg:#11332B;--amber:#E3AC4F;--amber-bg:#332710;--stamp:#EE8175}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);margin:0;font-size:15px;line-height:1.75;overflow-wrap:break-word;
+font-family:"Noto Sans HK","PingFang HK","Microsoft JhengHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Noto Serif HK",Georgia,serif;margin:0;text-wrap:balance}
+.wrap{max-width:1240px;margin:0 auto;padding:0 22px 80px}
+header{background:var(--surface);border-bottom:2px solid var(--navy)}
+.hd{max-width:1240px;margin:0 auto;padding:24px 22px 20px;display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap}
+.hd .no{font-family:"IBM Plex Mono",monospace;font-size:38px;font-weight:600;color:var(--line2);line-height:1}
+.hd h1{font-size:27px;font-weight:900;letter-spacing:.04em}
+.hd .en-t{font-size:15px;color:var(--dim);margin-top:4px;font-family:"Noto Serif HK",Georgia,serif;font-weight:500}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.09em;padding:3px 9px;border-radius:2px;
+background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
+.hd .right{margin-left:auto;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.back{font-size:12.5px;color:var(--dim);text-decoration:none;border-bottom:1px solid var(--line2)}
+.back:hover,.back:focus-visible{color:var(--navy);border-bottom-color:var(--navy);outline:none}
+.hero{background:var(--surface);border-bottom:2px solid var(--navy)}
+.hero .in{max-width:1240px;margin:0 auto;padding:30px 22px 26px;display:grid;gap:14px}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--amber)}
+.hero h1{font-size:32px;font-weight:900;letter-spacing:.04em}
+.hero .sub{font-family:"Noto Serif HK",Georgia,serif;color:var(--dim);font-size:15px}
+.hero p.lede{max-width:72ch;margin:0;color:var(--text)}
+.stats{display:flex;flex-wrap:wrap;gap:22px;margin-top:4px}
+.stats div{font-size:12.5px;color:var(--dim)}
+.stats b{display:block;font-family:"IBM Plex Mono",monospace;font-size:22px;color:var(--navy);font-weight:600;line-height:1.2}
+.quicknav{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line2)}
+.quicknav .in{max-width:1240px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.quicknav .in::-webkit-scrollbar{display:none}
+.quicknav a{flex:none;padding:11px 13px;font-size:12.5px;font-weight:700;letter-spacing:.03em;color:var(--dim);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent}
+.quicknav a:hover,.quicknav a:focus-visible{color:var(--navy);border-bottom-color:var(--line2);outline:none}
+.quicknav a.hot{color:var(--stamp)}
+.quicknav a.cur{color:var(--navy);border-bottom-color:var(--navy)}
+.quicknav .sep{flex:none;width:1px;background:var(--line2);margin:10px 6px}
+.quicknav .zh{color:var(--zh)}.quicknav .en{color:var(--en)}
+.hsec{margin-top:38px}
+.hsec>h2{font-size:19px;font-weight:700;padding-bottom:8px;border-bottom:1px solid var(--line2);display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.hsec>h2 .e{font-size:12.5px;color:var(--faint);font-weight:500}
+.hsec>h2 .hint{margin-left:auto;font-size:12px;color:var(--faint);font-family:"Noto Sans HK",sans-serif;font-weight:400}
+.note{font-size:13.5px;color:var(--dim);margin:10px 0 0;max-width:80ch}
+.caveat{background:var(--amber-bg);border:1px solid var(--amber);border-radius:3px;padding:12px 16px;font-size:13.5px;margin-top:14px;line-height:1.7}
+.caveat b,.caveat strong{color:var(--amber)}
+.caveat p{margin:0}.caveat p+p{margin-top:6px}
+.pp{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;padding:1px 8px;border-radius:2px;white-space:nowrap}
+.pp.zh{background:var(--zh-bg);color:var(--zh)}
+.pp.en{background:var(--en-bg);color:var(--en)}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:10px 0;border:1px solid var(--line);background:var(--surface)}
+.tbl table{width:100%;border-collapse:collapse;font-size:13.5px;line-height:1.65;min-width:560px}
+.tbl th,.tbl td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tbl th{font-size:12px;letter-spacing:.04em;color:var(--faint);font-weight:600;background:var(--surface-2);white-space:nowrap}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td:first-child{white-space:nowrap;color:var(--dim);font-family:"IBM Plex Mono","Noto Sans HK",monospace;font-size:12.5px}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line2);font-size:12.5px;color:var(--faint);line-height:1.7}
+.foot a{color:var(--navy)}
+@media(max-width:820px){.hd .no{font-size:28px}.hd h1{font-size:22px}.hero h1{font-size:26px}}
+@media(max-width:600px){
+ .wrap,.hd,.hero .in,.quicknav .in{padding-left:16px;padding-right:16px}
+ .hd .right{margin-left:0}
+}
+
+.wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
+section{scroll-margin-top:56px}
+.intro{margin-top:22px}
+.qa{margin-top:42px}
+.qh{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;padding-bottom:8px;border-bottom:1px solid var(--line2)}
+.qh .qno{font-family:"Noto Serif HK",Georgia,serif;font-size:13px;font-weight:700;color:var(--faint);letter-spacing:.06em}
+.qh h2{font-size:20px;font-weight:700;letter-spacing:.02em;flex:1 1 260px;min-width:0}
+.qh .st{color:var(--amber);letter-spacing:2px;font-size:13px}
+.qh .wc{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--faint);white-space:nowrap}
+.qcard{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--zh);padding:16px 20px;border-radius:0 2px 2px 0}
+.qcard.en{border-left-color:var(--en)}
+.qcard .ql{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--zh);margin-bottom:6px}
+.qcard.en .ql{color:var(--en)}
+.qcard .qb{font-family:"Noto Serif HK",Georgia,serif;font-weight:500;font-size:16px;line-height:1.9}
+.qcard .qb[lang="en"]{font-family:Georgia,"Noto Serif HK",serif;font-weight:400;font-size:15.5px;line-height:1.75}
+.qcard .qb p{margin:0 0 .8em}.qcard .qb p:last-child{margin-bottom:0}
+.qcard .qb .lb{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;letter-spacing:.12em;color:var(--en);margin:1.1em 0 .4em}
+.qcard .qb .lb:first-child{margin-top:0}
+.qnote{margin-top:10px;font-size:13.5px;color:var(--dim)}
+.qnote p{margin:0 0 .5em}
+details.sx{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:2px}
+details.sx>summary{cursor:pointer;list-style:none;padding:10px 16px;font-weight:700;font-size:14px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+details.sx>summary::-webkit-details-marker{display:none}
+details.sx>summary::before{content:"▸";color:var(--navy);font-size:12px;transition:transform .15s;display:inline-block}
+details.sx[open]>summary::before{transform:rotate(90deg)}
+details.sx>summary .s{font-weight:400;font-size:12px;color:var(--faint)}
+details.sx>summary:focus-visible{outline:2px solid var(--navy);outline-offset:-2px}
+details.sx .bd{padding:2px 18px 14px;border-top:1px dashed var(--line);font-size:14.5px}
+details.sx .bd p{margin:.7em 0}
+details.sx .bd strong{color:var(--navy)}
+details.sx .bd ul,details.sx .bd ol{padding-left:1.4em}
+details.sx.how2 summary{color:var(--jade)}
+details.sx.how2 summary::before{color:var(--jade)}
+.essay{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--navy);padding:22px 24px 26px}
+.essay .eh{display:flex;gap:10px;align-items:baseline;font-size:11.5px;font-weight:700;letter-spacing:.1em;color:var(--navy);margin-bottom:12px}
+.essay .eh .wc{font-family:"IBM Plex Mono",monospace;font-weight:400;color:var(--faint);letter-spacing:0}
+.essay .body{max-width:72ch;font-family:"Noto Serif HK",Georgia,serif;font-size:17px;line-height:2.05;font-weight:500}
+.essay .body p{margin:0 0 .85em}
+.essay .body[lang="en"]{font-family:Georgia,"Noto Serif HK",serif;font-weight:400;font-size:16.5px;line-height:1.8}
+.essay .body[lang="en"] p{margin:0 0 1em}
+.essay .body .lb{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;letter-spacing:.06em;margin:1.4em 0 .5em;color:var(--text)}
+.essay .body ol{padding-left:2.2em;margin:0 0 1em}
+.essay .body li{margin:0 0 .6em}
+.essay .body li p{margin:0 0 .6em}
+.essay .body em{color:var(--dim)}
+.toplink{display:inline-block;margin-top:10px;font-size:12px;color:var(--faint);text-decoration:none}
+.toplink:hover{color:var(--navy)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:40px;flex-wrap:wrap}
+.pager a{color:var(--navy);text-decoration:none;font-size:13.5px;border-bottom:1px solid var(--line2)}
+@media(max-width:600px){
+ .qcard{padding:14px 14px}
+ .essay{padding:16px 14px 20px}
+ .essay .body{font-size:16.5px;line-height:1.95}
+ details.sx .bd{padding:2px 12px 12px}
+}
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header><div class="hd narrow">
+  <div class="no">02</div>
+  <div>
+    <div class="tag">範文 · 中文卷 3 篇 · 英文卷 1 篇</div>
+    <h1>醫療衞生與基層醫療</h1>
+    <div class="en-t">Health Services and Primary Care · Model essays</div>
+  </div>
+  <div class="right">
+    <a class="back" href="../index.html">← 範文首頁</a>
+    <a class="back" href="../../議題庫/02-healthcare/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../答題框架/index.html">答題框架</a>
+  </div>
+</div></header>
+<nav class="quicknav" aria-label="本頁四題"><div class="in narrow"><a href="#q1"><span class="zh">題一</span> 公營醫療收費改革：首階段成效與下一步</a><a href="#q2"><span class="zh">題二</span> 專科輪候減半：分流是不是關鍵</a><a href="#q3"><span class="zh">題三</span> 社區藥房計劃：應否盡快擴展至全港</a><a href="#q4"><span class="en">題四</span> Price transparency in private healthcare</a></div></nav>
+<div class="wrap narrow">
+<section class="qa" id="q1">
+<div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>公營醫療收費改革：首階段成效與下一步</h2><span class="wc">範文 1,495 字</span></div>
+<div class="qcard zh"><div class="ql">題目</div><div class="qb"><blockquote>
+<p><strong>資料：</strong> 公營醫療收費改革首階段於2026年1月推行。《行政長官2026年施政報告》指出，改革加強對「貧、急、重、危」病人的保障：急症室非緊急個案明顯減少，危殆和危急個案費用全數豁免；獲全額醫療費用減免的人數，由過往全年少於14 000人增至逾25萬人；病人全年收費設1萬元上限、無須審查，已有超過17 000人獲批其後費用全免；醫管局亦把16項新藥納入藥物名冊，並把53項新增藥械納入撒瑪利亞基金的資助範圍。</p>
+<p>有意見認為，公營醫療收費改革能令公營醫療資源集中照顧最有需要的病人。你是否同意？請分析首階段改革推行後的現況，提出下一階段的優化措施，分析有關措施的執行挑戰及處理方法，並游說病人組織支持你的方案。</p>
+<p>請用中文作答。</p>
+</blockquote></div></div>
+<details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> ①表態（是否同意）②分析現況（成效＋不足）③下一階段優化措施 ④這些措施的執行挑戰 ⑤處理方法 ⑥游說病人組織支持你的方案。④批評的是<strong>自己</strong>的措施，不是首階段改革。</p>
+<p><strong>立場一句話：</strong> 同意方向——首階段已把資助「指向」最有需要的人，但未解決「被引離醫院的人去哪裏」；下一階段要由「調整收費」轉向「建好承接」。</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>內容</th>
+<th>路標</th>
+<th>字數</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一</td>
+<td>拆政策目的→三項評估標準→有條件同意</td>
+<td>「本文同意……但……」</td>
+<td>177</td>
+</tr>
+<tr>
+<td>二</td>
+<td>現況：成效（用資料，收束成一句判斷）</td>
+<td>「就現況而言」</td>
+<td>139</td>
+</tr>
+<tr>
+<td>三</td>
+<td>現況：不足——推力無拉力、懸崖效應、申請制</td>
+<td>「然而」</td>
+<td>206</td>
+</tr>
+<tr>
+<td>四</td>
+<td>四項措施，逐項對應第三段</td>
+<td>「針對上述癥結」</td>
+<td>265</td>
+</tr>
+<tr>
+<td>五</td>
+<td>三項挑戰，各配處理</td>
+<td>「上述措施在執行上會遇到三項挑戰」</td>
+<td>259</td>
+</tr>
+<tr>
+<td>六</td>
+<td>駁論：不如回復低收費？</td>
+<td>「或有意見認為」</td>
+<td>149</td>
+</tr>
+<tr>
+<td>七</td>
+<td>游說病人組織</td>
+<td>「要爭取病人組織支持，關鍵在於」</td>
+<td>219</td>
+</tr>
+<tr>
+<td>八</td>
+<td>結語</td>
+<td>「歸根究柢」</td>
+<td>81</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<article class="essay"><div class="eh">範文<span class="wc">1,495 字</span></div><div class="body"><p>公營醫療收費改革實質是把公帑資助由「人人平均」改為「按需要分配」。判斷其成效，應看三項標準：最貧困和最危重的人是否得到更好保障；被引離醫院的非緊急病人，在社區有沒有負擔得起的去處；剛好不符合減免資格的人，會否因收費而延誤求醫。<strong>本文同意改革方向能令資源更集中於最有需要的病人，首階段亦已達到第一項標準；但後兩項尚未達到。下一階段的重點應由「調整收費」轉向「建好承接」，否則資源集中只會變成需求轉移。</strong></p>
+<p>　　<strong>就現況而言，首階段的成效集中在保障面。</strong>《施政報告》指出，危殆和危急個案費用全數豁免，急症室非緊急個案明顯減少；獲全額醫療費用減免的人數由全年少於一萬四千人增至逾二十五萬人；全年收費設一萬元上限而無須審查，已有逾一萬七千人其後費用全免；可見「貧、急、重、危」病人得到更多保障，改革的性質是重新分配資助，而非削減資助。</p>
+<p>　　<strong>然而，首階段只回答了「資助給誰」，未回答「病人去哪裏」。</strong> 其一，價格訊號只有推力，欠缺拉力。非緊急病人被推離急症室，但夜間及假期的社區門診有限，私家收費又不透明；非緊急個案減少，也可能只是延後求診，待病情惡化後以更高成本回到醫院。其二，減免以門檻劃界，形成「懸崖效應」：收入剛高於門檻的在職家庭要全額付費，卻未必負擔得起私家醫療，這群夾心層最可能因價錢而卻步。其三，減免須由病人申請，而最需要幫助的獨居長者，往往最不熟悉申請程序。換言之，界線畫得過硬，界線以外的人又缺乏出路。</p>
+<p>　　<strong>針對上述癥結，本文建議下一階段從四方面優化。第一，減免由「申請制」轉向「主動識別」。</strong> 由醫務衞生局牽頭，與社會福利署核對已通過其他經濟審查的福利受助人資料，讓合資格者自動獲得減免；並在全免之上增設半免一級，緩和懸崖效應。<strong>第二，以獎勵代替懲罰。</strong> 持家庭醫生轉介的專科新症收取較低費用，令「先看家庭醫生」成為最划算的選擇。<strong>第三，補上拉力。</strong> 把試行中統一發布公私營夜間及假期門診資訊的平台恆常化，並與私營醫療收費透明度規例銜接，讓市民知道附近哪間診所應診、大約收費多少；新增的夜診名額優先投放於非緊急求診偏高的地區。<strong>第四，按年公布成效。</strong> 加入急症室非緊急病人重返率、夾心層求診變化等指標，由醫管局每年公布。</p>
+<p>　　<strong>上述措施在執行上會遇到三項挑戰。其一是私隱與法律授權。</strong> 跨部門核對入息資料，市民會擔心「被查」。處理方法是先完成修例和私隱影響評估，資料只用於判斷資格並保留審計紀錄，市民可選擇退出；首年只以已領取其他經審查福利的人士試行。<strong>其二是財政質疑。</strong> 擴大減免和轉介優惠都會減少收入。處理方法是轉介優惠先在指定專科試行兩年，以非緊急求診減少所省的成本作對照，超出預算即調整。<strong>其三是基層承接能力與公眾觀感。</strong> 若市民仍找不到家庭醫生，轉介優惠便變相懲罰沒有固定醫生的人，強化「加價」印象。因此次序必須是先承接、後引導：某區地區康健中心和共同治理網絡的覆蓋達到指定水平，才在該區推出差別收費。</p>
+<p>　　<strong>或有意見認為，收費改革實為變相加價，不如回復原來的低收費。</strong> 此說用意可取，惟忽略了兩點。第一，舊制下資助平均攤分，非緊急病人與危重病人同樣排隊，輪候時間本身就是一種隱性收費，而且由最沒有選擇的人支付。第二，首階段獲全額減免的人數已增至過往的十多倍，受惠最多的正是低收入者和重病者。問題不在改革方向，而在界線與配套，應該修補的是後者。</p>
+<p>　　<strong>要爭取病人組織支持，關鍵在於明白他們在意甚麼：</strong> 長期病患者的累積開支、新藥能否盡快獲得資助，以及病人在政策檢討中有沒有發言權。第一，下一階段的措施正照顧他們所代表的人：主動識別和半免一級針對低收入長期病患者，一萬元全年上限維持不變。第二，改革與新藥資助掛鈎，醫管局每年公布新納入藥物名冊和撒瑪利亞基金的藥械，讓病人看見改革的回報。第三，在程序上讓步：邀請病人組織代表加入成效檢討小組，數據每年公開，一旦顯示夾心層延誤求醫即啟動檢討。病人組織需要的不是口頭保證，而是可以監察的承諾。</p>
+<p>　　<strong>歸根究柢，收費改革能否令資源集中照顧最有需要的人，不取決於收費高低，而取決於被引離醫院的病人在社區有沒有去處。</strong> 首階段證明了保障可以更精準；下一階段要證明的，是分流不會變成卻步。</p></div></article>
+<details class="sx how2" open><summary>這篇在做什麼<span class="s">逐段拆解</span></summary><div class="bd"><div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>動作</th>
+<th>要學的地方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一</td>
+<td>用三項標準把「是否同意」變成可檢驗的判斷</td>
+<td>標準由政策目的推出；「同意方向、後兩項標準未達」是有條件的清晰立場，不是騎牆</td>
+</tr>
+<tr>
+<td>二–三</td>
+<td>先認成效，再用機制講不足</td>
+<td>不羅列數字；用「推力／拉力」「懸崖效應」兩個概念診斷，資料只作支持判斷之用</td>
+</tr>
+<tr>
+<td>四</td>
+<td>措施逐項回扣不足</td>
+<td>主動識別↔申請制、半免一級↔懸崖、轉介優惠＋夜診資訊↔欠拉力、成效指標↔監察；第三項借另一項政策（收費透明度規例）做配套</td>
+</tr>
+<tr>
+<td>五</td>
+<td>挑戰真的批評自己</td>
+<td>三項挑戰全由自己的措施引出；第三項的處理是「先承接、後引導」的推行次序，不是口號</td>
+</tr>
+<tr>
+<td>六</td>
+<td>駁最強反方</td>
+<td>承認「變相加價」的憂慮，再用「輪候是隱性收費」翻轉，把爭議由「方向」收窄到「界線與配套」</td>
+</tr>
+<tr>
+<td>七</td>
+<td>游說＝對方利益＋可監察的讓步</td>
+<td>先點出病人組織在意的三件事，再逐一回應；讓步是程序性的（檢討小組、數據公開、觸發檢討）</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<a class="toplink" href="#top">↑ 回到頂部</a></section>
+<section class="qa" id="q2">
+<div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>專科輪候減半：分流是不是關鍵</h2><span class="wc">範文 1,493 字</span></div>
+<div class="qcard zh"><div class="ql">題目</div><div class="qb"><blockquote>
+<p><strong>資料：</strong> 醫院管理局已訂立目標，五年內把七個指定專科（耳鼻喉科、眼科、婦科、內科、骨科、精神科及外科）門診穩定新症的輪候時間（以第90個百分位數計）縮短一半，首階段於2027-28年度縮短10%。醫管局會透過「截上游、放下游、中間分流」，減少不必要轉介，把病情穩定的舊症病人分流至基層醫療跟進，擴展跨專業綜合臨床服務，並優化預約安排。</p>
+<p>有意見認為，要達到上述目標，關鍵在於把病情穩定的舊症病人分流至基層醫療跟進。你是否同意？請分析專科門診輪候的現況，提出具體措施，分析有關措施的執行挑戰及處理方法，並游說私家家庭醫生參與。</p>
+<p>請用中文作答。</p>
+</blockquote></div></div>
+<details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> ①表態（是否同意「分流是關鍵」）②分析現況 ③具體措施 ④這些措施的執行挑戰 ⑤處理方法 ⑥游說私家家庭醫生參與。</p>
+<p><strong>立場一句話：</strong> 不同意分流是「關鍵」——它是必要條件；真正的關鍵是轉介鏈閉合：上游把關、下游承接、騰出的名額鎖定給新症。</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>內容</th>
+<th>路標</th>
+<th>字數</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一</td>
+<td>拆題目隱含前提（新症指標 vs 舊症分流）→評估標準→不同意</td>
+<td>「本文不同意……它是必要條件，但……」</td>
+<td>206</td>
+</tr>
+<tr>
+<td>二</td>
+<td>現況：容量、入口、出口三重成因</td>
+<td>「就現況而言」</td>
+<td>219</td>
+</tr>
+<tr>
+<td>三</td>
+<td>三項措施：上游、下游、名額鎖定</td>
+<td>「針對上述癥結」</td>
+<td>335</td>
+</tr>
+<tr>
+<td>四</td>
+<td>三項挑戰，各配處理</td>
+<td>「上述措施在執行上會遇到三項挑戰」</td>
+<td>289</td>
+</tr>
+<tr>
+<td>五</td>
+<td>駁論：增聘醫生才是根本？</td>
+<td>「或有意見認為」</td>
+<td>157</td>
+</tr>
+<tr>
+<td>六</td>
+<td>游說私家家庭醫生</td>
+<td>「要爭取私家家庭醫生參與，關鍵在於」</td>
+<td>218</td>
+</tr>
+<tr>
+<td>七</td>
+<td>結語</td>
+<td>「歸根究柢」</td>
+<td>69</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<article class="essay"><div class="eh">範文<span class="wc">1,493 字</span></div><div class="body"><p>醫管局訂下的五年減半目標，量度的是「新症」要等多久；而分流處理的是「舊症」由誰跟進。兩者並無自動的因果關係：把病情穩定的舊症轉往基層，只是騰出名額；名額能否變成較短的新症輪候，還要看騰出的時段是否真的撥給新症、新症轉介會否同時增加，以及基層能否接得住被分流的病人。因此，評估這個說法的標準，不是分流了多少人，而是新症輪候是否因而縮短，而照顧質素沒有下降。<strong>據此，本文不同意分流是達標的「關鍵」：它是必要條件，但若沒有上游把關和下游承接，分流只會把輪候由專科搬到基層。</strong></p>
+<p>　　<strong>就現況而言，專科門診的輪候困局有三重成因。</strong> 第一，容量被覆診佔用。不少病情穩定的長期病患者仍定期回專科覆診取藥，專科醫生相當部分時間用於「維持」而非「診斷」。第二，入口缺乏把關。轉介資料參差，部分本可由家庭醫生處理的個案進入專科輪候，新症名單持續膨脹。第三，出口缺乏信任。社區基層醫療大部分由私家醫生提供，病人擔心被「降級」、擔心收費，也擔心病情轉差時要重新排隊；專科醫生亦顧慮社區跟進的質素，寧可把病人留在自己手上。三者環環相扣：出口不暢，覆診便不會減少；入口不收窄，騰出的名額又很快被新轉介填滿。</p>
+<p>　　<strong>針對上述癥結，本文建議「上游把關、下游承接、名額鎖定」三管齊下。第一，上游設電子轉介及專科意見渠道。</strong> 醫管局為家庭醫生設立電子轉介範本，列明各專科須附上的檢查結果；並讓家庭醫生先以書面向專科醫生徵詢處理意見，能在社區處理的個案毋須進入輪候。一年內在七個指定專科推行，以不必要轉介的比率作指標。<strong>第二，下游訂立共同照顧協議及快速回流承諾。</strong> 每個專科訂明哪些穩定病情可轉回基層跟進，專科與家庭醫生共用照顧計劃，並透過醫健通互通病歷和化驗結果；病人在社區跟進期間若病情轉差，可在限期內重返原專科，毋須重新排隊。可先從《施政報告》已提出銜接至基層的低風險癌症康復者做起。<strong>第三，鎖定騰出的名額。</strong> 分流騰出的覆診時段須按比例撥作新症；新症中屬藥物調整或健康教育性質的部分，交由護士及專職醫療人員主導的跨專業診所處理，確保分流的成果真正反映在新症輪候上。</p>
+<p>　　<strong>上述措施在執行上會遇到三項挑戰。其一是基層人手與私家醫生的參與意願。</strong> 若參與共同治理網絡的私家醫生不足，輪候只會轉移。處理方法是把對私家醫生的資助由按次付費改為按登記病人每年付費，部分款項按血壓、血糖達標率等成效發放；同時以家庭醫學門診每年新增的名額，承接無力負擔私家收費的病人。<strong>其二是病人的信任與負擔。</strong> 病人視轉回社區為降級，私家共付額亦可能高於公營覆診。處理方法是以書面列明快速回流安排，共付額設上限並與公營覆診相若，首年以自願參與為主，以滿意度和回流率檢討。<strong>其三是專科部門的誘因。</strong> 若騰出的名額被挪作他用，或以縮短覆診間隔填補，目標便會落空。處理方法是把新症名額比例寫入各聯網的年度服務指標，按月監察並與輪候時間一併公布。</p>
+<p>　　<strong>或有意見認為，專科醫生不足才是根本，與其分流，不如增聘醫生、增加診症時段。</strong> 此說有一定道理，容量不足時，任何分流都只是重新排隊。惟人手增長需時：五年規劃把每千人口醫生比由2.25提升至2.43，是五年的漸進目標；第三所醫學院要到2028年才迎接首批學生，其畢業生成為專科醫生更需多年。在人手到位之前，提高現有專科時間的運用效率，是兩三年內最可行的方法。兩者並非取捨，而是先後。</p>
+<p>　　<strong>要爭取私家家庭醫生參與，關鍵在於明白他們在意甚麼：</strong> 穩定的病人來源、合理的回報、行政負擔，以及病人病情轉差時的醫療責任。其一，跟進穩定的專科病人是持續而可預計的業務，按登記人數付費令收入穩定；其二，轉介和病歷經電子平台處理，毋須重複填表；其三，專科提供書面照顧計劃、諮詢渠道和快速回流安排，臨床風險不由家庭醫生獨自承擔。政府亦可作出讓步：首兩年為試行期，醫生可隨時退出；付費水平每年與醫生組織共同檢討。對私家醫生而言，這不是政府把病人「推」給他們，而是把家庭醫生放回醫療系統守門人的位置。</p>
+<p>　　<strong>歸根究柢，專科輪候能否減半，不在於分流了多少病人，而在於整條轉介鏈能否閉合：</strong> 入口有把關，出口有承接，騰出的名額真正留給新症。分流是這條鏈的一環，卻不是全部。</p></div></article>
+<details class="sx how2" open><summary>這篇在做什麼<span class="s">逐段拆解</span></summary><div class="bd"><div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>動作</th>
+<th>要學的地方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一</td>
+<td>拆題目的隱含前提</td>
+<td>指出「新症」指標與「舊症」分流之間沒有自動因果，由此導出評估標準；「不同意＝必要但不充分」清楚而不騎牆</td>
+</tr>
+<tr>
+<td>二</td>
+<td>現況用「容量—入口—出口」診斷</td>
+<td>三個成因環環相扣，最後一句扣成一條鏈；後面三項措施正好落在鏈上三個位置</td>
+</tr>
+<tr>
+<td>三</td>
+<td>措施超出題目命題</td>
+<td>既然不同意「分流是關鍵」，措施就不能只有分流；第三項「名額鎖定」直接對準指標本身</td>
+</tr>
+<tr>
+<td>四</td>
+<td>挑戰包括「自己人」</td>
+<td>第三項挑戰是專科部門的誘因（名額被挪用），顯示懂得機構行為，不只寫外部阻力</td>
+</tr>
+<tr>
+<td>五</td>
+<td>駁論用時間差</td>
+<td>承認人手論有理，再以「人手增長需時」把兩者由取捨改為先後</td>
+</tr>
+<tr>
+<td>六</td>
+<td>游說私家醫生</td>
+<td>列出四項關注（病源、回報、文書、醫療責任）逐一回應；讓步是試行期和共同檢討；最後一句重新定位對方角色</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<a class="toplink" href="#top">↑ 回到頂部</a></section>
+<section class="qa" id="q3">
+<div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>社區藥房計劃：應否盡快擴展至全港</h2><span class="wc">範文 1,247 字</span></div>
+<div class="qcard zh"><div class="ql">題目</div><div class="qb"><blockquote>
+<p><strong>資料：</strong> 《行政長官2026年施政報告》宣布，政府於2026年年底開展社區藥房計劃，首階段涵蓋東區、油尖旺、元朗及沙田四區，並逐步擴展至全港，同時推出社區藥物名冊，逐步增加名冊內的藥物。政府在《行政長官2024年施政報告》表示，計劃配合集中採購和社區網絡，令市民可以更方便地獲得價錢相宜的基層醫療藥物。</p>
+<p>有意見認為，政府應盡快把社區藥房計劃擴展至全港十八區，讓更多市民受惠。請分析上述建議的利弊，表明你支持抑或反對，並就你的立場提出理據。如果支持，請提出建議，確保計劃可有效達致其政策目的；如果反對，請提出其他措施，讓有需要的市民在社區取得價錢相宜的藥物。</p>
+<p>請用中文作答。</p>
+</blockquote></div></div>
+<details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> ①利 ②弊 ③表態 ④理據 ⑤條件分支：支持→確保達到政策目的的建議；反對→讓有需要市民在社區取得價錢相宜藥物的<strong>其他措施</strong>。選了哪一邊，就只寫那一邊的分支。</p>
+<p><strong>立場一句話：</strong> 反對「盡快」全港推行——計劃的核心目的是支援基層慢病管理，應先把模式做對、按指標分批擴展，同時先讓最有需要的人跨區受惠。</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>內容</th>
+<th>路標</th>
+<th>字數</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一</td>
+<td>拆政策目的：「便宜」vs「慢病管理」→兩種擴展速度→反對</td>
+<td>「本文認為……因此反對……」</td>
+<td>235</td>
+</tr>
+<tr>
+<td>二</td>
+<td>利：公平、規模效益</td>
+<td>「誠然」</td>
+<td>117</td>
+</tr>
+<tr>
+<td>三</td>
+<td>弊兼反對理據：缺依據、人手分布、與醫生配藥分工</td>
+<td>「惟……這亦是本文反對的理據」</td>
+<td>261</td>
+</tr>
+<tr>
+<td>四</td>
+<td>駁論：分批推行令其他地區向隅</td>
+<td>「或有意見認為」</td>
+<td>156</td>
+</tr>
+<tr>
+<td>五</td>
+<td>反對分支：四項其他措施</td>
+<td>「基於上述立場，本文建議」</td>
+<td>386</td>
+</tr>
+<tr>
+<td>六</td>
+<td>結語</td>
+<td>「歸根究柢」</td>
+<td>92</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<article class="essay"><div class="eh">範文<span class="wc">1,247 字</span></div><div class="body"><p>有意見建議政府盡快把社區藥房計劃擴展至全港十八區。要判斷應否加快，必先釐清計劃要達到甚麼目的。政府的說法是令市民更方便地獲得價錢相宜的藥物；而《施政報告》把計劃列於「強化基層醫療服務」之下，可見更深一層的目的，是讓長期病患者在社區取藥和管理用藥，減少對醫院的依賴。若目的只是「便宜」，衡量標準是藥價和覆蓋人數，擴展自然愈快愈好；若目的是支援基層的慢病管理，標準則是病人能否在社區持續而正確地用藥，那就必須先把模式做對。<strong>本文認為後者才是計劃的核心，因此反對在首階段未有成效數據前急於擴展至全港，主張按明確指標分批推行。</strong></p>
+<p>　　<strong>誠然，盡快擴展有其可取之處。</strong> 其一是公平。首階段只涵蓋東區、油尖旺、元朗和沙田四區，其餘地區的居民即使同樣需要長期服藥，也要等待，形成「住在哪區決定能否受惠」的不公。其二是規模效益。社區藥物名冊配合集中採購，參與藥房和使用人數愈多，議價能力愈強，藥房亦愈容易收支平衡。</p>
+<p>　　<strong>惟急於擴展有三項問題，這亦是本文反對的理據。第一，擴展缺乏依據。</strong> 首階段年底才開始，若短期內即決定全港推行，藥房的營運狀況、名冊藥物是否切合病人需要、病人實際使用率等關鍵數據都未齊備；模式若有缺陷，全港推行等於把缺陷複製十八次。<strong>第二，藥劑人手和藥房分布不均。</strong> 各區藥房密度和駐場藥劑師數目差異甚大，倉卒擴展可能令部分藥房只能「賣藥」，無法提供用藥覆核和諮詢，計劃淪為廉價藥物派發點，偏離支援慢病管理的目的。<strong>第三，與醫生配藥模式的關係未理順。</strong> 本港不少私家醫生診症連配藥，社區藥房若被視為競爭者，醫生未必願意開處方讓病人往藥房取藥，使用率便會偏低。這種分工需要在首階段先試出可行安排。</p>
+<p>　　<strong>或有意見認為，等待成效數據會令其餘地區居民長期向隅，任何計劃都不可能先完美後推行。</strong> 此說觸及公平這個最有力的理由，本文亦承認分批推行有代價。惟社區藥房計劃有一項特性，令「先做後改」的成本特別高：藥房一旦簽約、病人一旦習慣取藥安排，改動便牽涉合約責任和病人信任，難以逆轉。較好的做法不是讓其餘地區乾等，而是在地區擴展之前，先讓最有需要的人跨區受惠。</p>
+<p>　　<strong>基於上述立場，本文建議以下四項措施，讓有需要的市民盡早在社區取得價錢相宜的藥物。第一，先擴對象，後擴地區。</strong> 首階段優先照顧已參與基層醫療共同治理網絡或地區康健中心的長期病患者，並容許非試點地區的病人憑電子處方在四區參與藥房取藥，或由藥房安排送遞，使受惠與否不再取決於住址。<strong>第二，先深化名冊，後擴大覆蓋。</strong> 名冊優先納入高血壓、糖尿病、高血脂等常見慢性病藥物，按實際處方數據每半年增補，把有限資源集中在需求最大的藥物上。<strong>第三，訂立擴展的觸發指標。</strong> 由基層醫療署訂明每批擴展的門檻，例如藥劑師用藥覆核的覆蓋率、病人持續取藥率、名冊藥價與市價的差距，以及參與醫生的處方量；首階段運作一年後公布評估，達標即推展下一批，並優先考慮長期病患者比例高而藥房服務不足的地區。<strong>第四，理順醫生與藥房的分工。</strong> 處方權仍在醫生，藥房負責配藥、用藥覆核和跟進，並透過醫健通互通處方和用藥紀錄；對藥房採用「基本服務費加按服務量付費」，令藥劑師的專業服務有回報，而不是只靠藥物差價維持營運。</p>
+<p>　　<strong>歸根究柢，社區藥房計劃的價值不在於多快鋪滿十八區，而在於能否讓藥劑師成為基層醫療團隊的一員，使長期病患者在社區用得起藥、也用得對藥。</strong> 先把模式做對，再按數據擴展，既是對公帑負責，也是對尚未受惠的地區負責。</p></div></article>
+<details class="sx how2" open><summary>這篇在做什麼<span class="s">逐段拆解</span></summary><div class="bd"><div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>動作</th>
+<th>要學的地方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一</td>
+<td>用政策目的決定擴展速度</td>
+<td>「便宜」與「慢病管理」兩種目的推出兩種速度，立場自然落在後者；這是 08 範文第一段動作的翻版</td>
+</tr>
+<tr>
+<td>二</td>
+<td>利處寫最強的兩點</td>
+<td>公平（住址決定受惠）和規模效益都是真正的支持理由；第四段就駁其中最強的「公平」</td>
+</tr>
+<tr>
+<td>三</td>
+<td>弊處兼作理據</td>
+<td>樣本版同時要求「利弊」和「理據」，用一句路標把弊處標明為反對理據，省字又不漏任務</td>
+</tr>
+<tr>
+<td>四</td>
+<td>駁論承認代價</td>
+<td>不否認分批推行有代價，而用「不可逆」說明先做後改為何特別昂貴，並為第五段第一項措施鋪路</td>
+</tr>
+<tr>
+<td>五</td>
+<td>走對條件分支</td>
+<td>反對分支要求「其他措施」：四項都用「先……後……」表達次序取捨；第一項直接回應公平問題，第三項給出擴展的觸發指標</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<a class="toplink" href="#top">↑ 回到頂部</a></section>
+<section class="qa" id="q4">
+<div class="qh"><span class="qno">題四</span><span class="pp en">英文卷</span><h2>Price transparency in private healthcare</h2><span class="wc">範文 934 words</span></div>
+<div class="qcard en"><div class="ql">題目</div><div class="qb" lang="en"><blockquote>
+<p class="lb">CASE BACKGROUND</p>
+<p>The City of Jade has a mixed healthcare system. Public hospitals provide most inpatient care, but private practitioners handle about two-thirds of outpatient consultations, and private hospitals perform a growing share of elective surgery, much of it paid for through employer or individual insurance.</p>
+<p>Since 2020, private hospitals have been asked under a voluntary code to publish "reference fees" for 25 common procedures. Compliance is uneven. A review last year found that published fee ranges were often very wide (for a hip replacement, the top of the range was 3.2 times the bottom), that doctors' fees were usually quoted separately from hospital charges, and that hospitals described the same procedure in different ways.</p>
+<p>Complaints to the Consumer Board about medical bills have risen by 45 per cent over three years. In a survey of patients who had elective treatment, 38 per cent said they had received no written estimate, and one in four said the final bill exceeded the estimate by more than 20 per cent.</p>
+<p>The Ministry of Health proposes legislation requiring all private hospitals, day procedure centres and clinics to (i) publish price lists; (ii) give patients a written fee estimate before elective treatment; and (iii) report billing statistics to the Health Facilities Regulator, which would publish them. Around 4,000 clinics would be covered, most of them run by a single doctor.</p>
+<p>In consultation, private hospitals broadly accepted the proposals. The Jade Medical Association objected that price lists cannot reflect clinical complexity and that reporting would be costly for small clinics. Insurers welcomed the statistics. Patient groups asked for fees to be published doctor by doctor.</p>
+<p class="lb">QUESTION</p>
+<p>You work in the Ministry of Health of the Government of the City of Jade. You have been tasked to draft an internal discussion paper on improving the price transparency of private healthcare services, in which you should:—</p>
+<p>(a) set out two major problems facing the introduction of the proposed price transparency requirements for private healthcare providers and explain the implication of the identified issues; and</p>
+<p>(b) recommend feasible measures to address the major problems identified.</p>
+<p>Please draft the paper in English.</p>
+</blockquote>
+<p>（CASE BACKGROUND 268 words；所有數字均屬虛構。）</p></div></div>
+<details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> (a) 恰好兩個 major problems（facing the introduction，即推行時的問題，不是透明度本身的好壞）；每個問題後獨立的 implications 段；(b) feasible measures，每項標明對應哪個問題。</p>
+<p><strong>主線一句話：</strong> 困難在設計與比例，不在原則——Problem 1：資訊無法比較（定義不一、醫生費另計、範圍過闊）；Problem 2：同一套規定套在極不均勻的行業上（約 4,000 間單人診所、執法能力不足）。</p>
+<p><strong>背景用法：</strong> 只取「定義不一、醫生費另計、範圍過闊」「約 4,000 間診所多為單人執業」「醫學會反對、病人組織要求逐個醫生公布」作診斷材料；投訴和調查數字不必複述，背景段一句帶過即可。</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>內容</th>
+<th>字數</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PURPOSE 1</td>
+<td>鏡像 (a)(b)</td>
+<td>33</td>
+</tr>
+<tr>
+<td>BACKGROUND 2–3</td>
+<td>政策目的→重新界定問題（設計與比例，而非原則）</td>
+<td>116</td>
+</tr>
+<tr>
+<td>PROBLEM 1 4–5</td>
+<td>資訊無法比較＋四層影響</td>
+<td>180</td>
+</tr>
+<tr>
+<td>PROBLEM 2 6–7</td>
+<td>劃一規管套在不均勻的行業＋三層影響</td>
+<td>160</td>
+</tr>
+<tr>
+<td>RECOMMENDATIONS 8–13</td>
+<td>方案比較一段＋五項建議，各註明對應問題</td>
+<td>298</td>
+</tr>
+<tr>
+<td>IMPLEMENTATION AND MONITORING 14</td>
+<td>次序、檢討時點、指標</td>
+<td>82</td>
+</tr>
+<tr>
+<td>ADVICE SOUGHT 15</td>
+<td>收尾</td>
+<td>23</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<article class="essay"><div class="eh">範文<span class="wc">934 words</span></div><div class="body" lang="en"><p><strong>DISCUSSION PAPER</strong>
+<strong>PRICE TRANSPARENCY IN PRIVATE HEALTHCARE: INTRODUCING THE PROPOSED REQUIREMENTS</strong></p>
+<p class="lb">PURPOSE</p>
+<ol>
+<li>This paper (a) sets out two major problems facing the introduction of the proposed price transparency requirements for private healthcare providers and explains their implications; and (b) recommends measures to address them.</li>
+</ol>
+<p class="lb">BACKGROUND</p>
+<ol start="2">
+<li>
+<p>The policy objective is not disclosure for its own sake. It is to let patients know, before they commit to treatment, roughly what they will pay and how that compares with alternatives, so that billing disputes fall and competition works on value rather than on opacity. A regime that generates information patients cannot use would impose the costs of regulation without delivering its purpose.</p>
+</li>
+<li>
+<p>Measured against that objective, the voluntary code has failed less because providers refused to disclose than because what they disclosed could not be compared or relied upon. The difficulty facing the new requirements is therefore one of design and proportionality, not of principle: almost no stakeholder opposes transparency as such.</p>
+</li>
+</ol>
+<p class="lb">PROBLEM 1 — INFORMATION THAT CANNOT BE COMPARED</p>
+<ol start="4">
+<li>
+<p>A price means little unless the thing being priced is defined. The same procedure is described differently by different hospitals, doctors' fees are quoted apart from hospital charges, and published ranges are too wide to guide a decision. Requiring price lists without first fixing these definitions would oblige providers to publish more figures, but not more comparable ones.</p>
+</li>
+<li>
+<p><strong>Implications.</strong> The immediate implication is that patients would still be unable to choose on an informed basis, so the regime would incur its full compliance cost while missing its objective. Second, unreliable estimates would sustain the very disputes the legislation is meant to reduce; if complaints do not fall after enactment, the regime's credibility will suffer. Third, and less visibly, statistics that do not adjust for case mix would make providers who treat complex patients appear to overcharge, inviting legal challenge and handing opponents a legitimate grievance. Finally, there is a risk of upward convergence: once prices are visible, cheaper providers may raise fees towards the published median, the opposite of the intended effect, with knock-on effects on insurance premiums.</p>
+</li>
+</ol>
+<p class="lb">PROBLEM 2 — A UNIFORM REGIME FOR A VERY UNEVEN SECTOR</p>
+<ol start="6">
+<li>
+<p>The requirements would apply alike to large hospitals with billing departments and to some 4,000 clinics, most run by a single doctor. For the former, compliance is an administrative adjustment; for the latter, a new and recurrent cost. Enforcement capacity is similarly mismatched: the Regulator can inspect a few dozen hospitals, but not thousands of clinics with any regularity.</p>
+</li>
+<li>
+<p><strong>Implications.</strong> The first implication is political. Organised opposition from practitioners could delay the Bill or narrow it in ways that weaken its core. Second, compliance costs are likely to be passed to patients through consultation fees, or avoided by clinics withdrawing from low-margin services; the burden would then fall on primary care, the sector the City most wants to strengthen. Third, a regulator unable to enforce evenly would enforce selectively, and a regime seen to bind some providers but not others soon loses legitimacy. Poor-quality returns from small clinics would also contaminate the published statistics, compounding Problem 1.</p>
+</li>
+</ol>
+<p class="lb">RECOMMENDATIONS</p>
+<ol start="8">
+<li>
+<p>Three broad approaches are available: keeping voluntary disclosure, which the evidence shows has not worked; full mandatory disclosure, including doctor-level statistics, from commencement; or phased mandatory disclosure that standardises first and differentiates by provider type. We recommend the third.</p>
+</li>
+<li>
+<p><strong>Standardise before publishing (Problem 1).</strong> The Regulator should work with hospitals, insurers and the Medical Association to define standard packages for about 20 high-volume elective procedures, specifying what each price covers: facility, surgeon, anaesthetist and a standard length of stay.</p>
+</li>
+<li>
+<p><strong>All-inclusive estimates with a variance rule (Problem 1).</strong> For listed procedures, and for any elective treatment above a cost threshold, providers should give a single written estimate covering both doctor and hospital fees. Where the final bill exceeds it by more than a set margin, the provider must explain the difference in writing. This targets surprise rather than price, and is not price control.</p>
+</li>
+<li>
+<p><strong>Aggregate statistics first (Problems 1 and 2).</strong> The Regulator should initially publish the median and range by procedure and by hospital, with case-mix notes, rather than doctor-level figures. Doctor-level publication, which patient groups seek, can be reviewed after two years once data quality is established.</p>
+</li>
+<li>
+<p><strong>Tiered obligations (Problem 2).</strong> Hospitals and day procedure centres should meet all three requirements from commencement. Clinics should display consultation and common item fees and give estimates only above the threshold, with statistical reporting deferred to a second phase.</p>
+</li>
+<li>
+<p><strong>Lower the cost of compliance (Problem 2).</strong> The Ministry should provide free templates and an online reporting portal, allow clinics a twelve-month transition, and set out graduated enforcement (guidance, then warning, then penalty) in a code of practice. A joint working group with the Medical Association on package definitions would give practitioners a stake in the design rather than only a reason to oppose it.</p>
+</li>
+</ol>
+<p class="lb">IMPLEMENTATION AND MONITORING</p>
+<ol start="14">
+<li>Package definitions should be completed before the legislation takes effect. Hospitals and day procedure centres would comply in year one; clinics' obligations and the first published statistics would follow in year two; a review at 24 months would consider doctor-level publication and a longer package list. Indicators should include the share of elective patients receiving a written estimate, the share of bills within the variance margin, billing complaints, and price movements for listed procedures, the last to detect upward convergence early.</li>
+</ol>
+<p class="lb">ADVICE SOUGHT</p>
+<ol start="15">
+<li>Members are invited to comment on the problems identified in paragraphs 4 to 7 and the recommendations in paragraphs 8 to 14.</li>
+</ol>
+<p><em>Ministry of Health</em>
+<em>[Month] [Year]</em></p></div></article>
+<details class="sx how2" open><summary>這篇在做什麼<span class="s">逐段拆解</span></summary><div class="bd"><div class="tbl"><table>
+<thead>
+<tr>
+<th>段</th>
+<th>動作</th>
+<th>要學的地方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2–3</td>
+<td>先定義政策目的，再重新界定問題</td>
+<td>「不是為公開而公開」導出評估標準；第 3 段把爭議由「應否透明」收窄到「設計與比例」，全篇由此立論</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Implications 四層</td>
+<td>目的落空→爭議持續、公信力受損→未調整個案組合的統計造成誤導與法律挑戰（隱藏後果）→價格向上靠攏（反直覺後果）</td>
+</tr>
+<tr>
+<td>7</td>
+<td>第二個問題連回第一個</td>
+<td>最後一句指出小診所數據質素差會「污染」統計，令兩個問題互相加劇</td>
+</tr>
+<tr>
+<td>8</td>
+<td>方案比較壓成一段</td>
+<td>原題的比較角度用一段交代，再進入建議，不另開 OPTIONS 大段</td>
+</tr>
+<tr>
+<td>9–13</td>
+<td>建議逐項標明對應問題</td>
+<td>括號註明 (Problem 1/2)；「針對意外而非價格」安撫業界、「先匯總、兩年後檢討逐個醫生公布」回應病人組織</td>
+</tr>
+<tr>
+<td>14</td>
+<td>監察指標含風險指標</td>
+<td>價格走勢一項專門監察第 5 段指出的向上靠攏</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<a class="toplink" href="#top">↑ 回到頂部</a></section>
+<div class="pager"><a href="../01-ageing/index.html">← 01 人口老化與安老服務</a><a href="../03-mental-health/index.html">03 精神健康 →</a></div>
+<div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/02-healthcare/index.html">議題庫：醫療衞生與基層醫療</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
+</div>
+</body>
+</html>
