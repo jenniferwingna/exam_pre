@@ -1,0 +1,600 @@
+{
+  "topic": "03",
+  "title": "精神健康",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "精神健康分層護理",
+      "stance": "同意全面推行，但三年分階段達到",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "合適層級可上可落",
+              "c": [],
+              "d": "分層不是把病人分類，而是按需要配對合適強度的支援，病情有變可上落。"
+            },
+            {
+              "t": "標準：輕中度及時介入",
+              "c": [],
+              "d": "標準之一：輕中度個案能否在合理時間內獲得學校、社區或基層的介入。"
+            },
+            {
+              "t": "標準：上轉快、輪候短",
+              "c": [],
+              "d": "標準之二三：需要升級時能否迅速上轉，專科輪候能否真正縮短。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "層間沒有樓梯",
+              "c": [],
+              "d": "真正癥結不在缺少層，而在層與層之間沒有樓梯，個案上不去也落不來。"
+            },
+            {
+              "t": "①無共同評估語言",
+              "c": [],
+              "d": "醫療、社福、教育各有前線卻無共同評估工具，同一求助者可得三個不同判斷。"
+            },
+            {
+              "t": "②中層防衞性轉介",
+              "c": [],
+              "d": "中層欠能力標準和專科後援，便把個案往上推，令輪候更長、輕症惡化，形成惡性循環。"
+            },
+            {
+              "t": "③無人擁有個案",
+              "c": [],
+              "d": "沒有人負責整個個案，個案在系統之間轉手時最容易流失。"
+            }
+          ],
+          "d": "用機制診斷，癥結編號與措施對應"
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①統一入口及工具",
+              "c": [],
+              "d": "基層醫療署牽頭制定共用評估工具和轉介表格，以地區康健中心作統一入口。"
+            },
+            {
+              "t": "②中層能力標準",
+              "c": [],
+              "d": "按層級訂明社工、家庭醫生、學校人員等可處理的範圍和培訓督導要求，與法定名冊銜接。"
+            },
+            {
+              "t": "③專科諮詢＋統籌者",
+              "c": [],
+              "d": "精神科設諮詢時段，下轉附回轉保證，每個中度個案指定統籌者跟進到底。"
+            },
+            {
+              "t": "兩三區試行",
+              "c": [],
+              "d": "先在兩至三個先導地區試行十八個月，以首次評估等候、上轉時間和重複危機比率為指標。"
+            }
+          ],
+          "d": "逐項回扣癥結，附指標或試行"
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "中層人手參差",
+              "c": [
+                "能力標準分級"
+              ],
+              "d": "中層人手不足、資歷參差；不降門檻而把能力標準分級，資歷淺者在督導下處理較低層級。"
+            },
+            {
+              "t": "三局各自為政",
+              "c": [
+                "跨局督導委員會"
+              ],
+              "d": "三局分工撥款各自為政；設醫衞局牽頭跨局督導委員會，以共同指標問責。"
+            },
+            {
+              "t": "怕質素和責任",
+              "c": [
+                "專科訂上轉條件"
+              ],
+              "d": "專業界擔心質素和法律責任；由專科主導訂上轉條件，各層責任寫成明文。"
+            }
+          ],
+          "d": "批評自己的措施，逐項配處理"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "低成本「降級」",
+              "c": [
+                "現狀才是降級"
+              ],
+              "d": "承認無標準後援時憂慮會成真；但輕中度個案輪候期間零服務，現狀才是降級。"
+            },
+            {
+              "t": "分層＝等候有人跟",
+              "c": [],
+              "d": "分層以能力標準和雙向通道，讓每人在等候期間已有人跟進，有需要時又能回到專科。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "游說：精神科醫生",
+          "items": [
+            {
+              "t": "臨床把關",
+              "c": [
+                "上轉標準由專科訂"
+              ],
+              "d": "專科最在意病人安全；上轉標準由專科訂立，並在督導委員會佔有議席。"
+            },
+            {
+              "t": "門診量",
+              "c": [
+                "諮詢計入服務量"
+              ],
+              "d": "分層讓專科集中處理真正需要專科的個案，諮詢時段計入服務量而非額外工作。"
+            }
+          ],
+          "d": "抓對方在意的事，給理由和讓步"
+        },
+        {
+          "label": "游說：社工界",
+          "items": [
+            {
+              "t": "怕成風險下游",
+              "c": [
+                "劃清做與不做"
+              ],
+              "d": "社工怕成醫療風險下游；能力標準劃定做什麼、不做什麼，減少灰色地帶。"
+            },
+            {
+              "t": "專業地位",
+              "c": [
+                "培訓資歷認可"
+              ],
+              "d": "培訓和資歷認可提升社工的專業地位，令分層成為專業發展而非額外負擔。"
+            },
+            {
+              "t": "人手",
+              "c": [
+                "個案量上限"
+              ],
+              "d": "新增個案須有相應人手撥款，試行期內設個案量上限和工作量監察。"
+            }
+          ],
+          "d": "抓對方在意的事，給理由和讓步"
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "限制兒童用社交媒體",
+      "stance": "支持立法：先管平台設計，年齡限制第二步",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "傷害三源",
+              "c": [],
+              "d": "傷害來自有害內容、無限捲動等設計，以及與陌生人和AI互動的接觸風險。"
+            },
+            {
+              "t": "標準：源頭減害",
+              "c": [],
+              "d": "首要標準是措施能否在源頭減少傷害，而非只限制兒童進入。"
+            },
+            {
+              "t": "標準：可執行",
+              "c": [],
+              "d": "措施須能切實執行，並且不會把兒童推往更隱蔽的空間。"
+            },
+            {
+              "t": "標準：私隱相稱",
+              "c": [],
+              "d": "年齡驗證的私隱代價必須與保護兒童的效果相稱。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "家長共同底線",
+              "c": [],
+              "d": "家長個別限制因同學都在用而失效，屬集體行動困境；法律令所有家庭面對同一規則。"
+            },
+            {
+              "t": "責任歸平台",
+              "c": [],
+              "d": "平台掌握產品設計和數據，由它承擔預設保護責任，遠比要求每個家長逐一設定有效。"
+            }
+          ],
+          "d": "公允寫最強的支持理由"
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "①私隱代價",
+              "c": [],
+              "d": "要確認誰未成年就要核實所有用戶年齡，處理不當會變成大規模收集身份資料的理由。"
+            },
+            {
+              "t": "②執法難、擠壓效應",
+              "c": [],
+              "d": "平台多在境外營運；兒童被擋在主流平台外，可能轉用更隱蔽的應用程式，風險不減反增。"
+            },
+            {
+              "t": "③誤傷求助渠道",
+              "c": [],
+              "d": "網上空間是部分兒童維繫朋輩、尋求支援的渠道，一刀切可能擋走正在求助的孩子。"
+            }
+          ],
+          "d": "弊處寫機制，為建議鋪路"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "理據：傷害來自設計",
+              "c": [],
+              "d": "禁令針對進入，傷害主要來自設計；規管設計既能源頭減害，又不必先解決全面年齡驗證。"
+            },
+            {
+              "t": "教育已足夠",
+              "c": [
+                "改變不了產品"
+              ],
+              "d": "政府已推家長資源套和AI課程，但教育改變使用者卻改變不了產品，是必要非充分條件。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "分階段先管設計",
+              "c": [],
+              "d": "首階段要求未成年用戶預設私隱帳戶、關閉推送和深夜通知；再考慮年齡。"
+            },
+            {
+              "t": "①最少資料驗證",
+              "c": [],
+              "d": "容許年齡估算或第三方核實，不准保存身份資料，私隱專員參與訂標準。"
+            },
+            {
+              "t": "②罰款＋透明報告",
+              "c": [],
+              "d": "以罰款作執法槓桿，並要求平台定期公布涉及兒童用戶的投訴和處理數據，回應執法難。"
+            },
+            {
+              "t": "③保留求助渠道",
+              "c": [],
+              "d": "規管不阻隔網上青年支援隊等服務；兩年後以深夜使用和求助數據檢討。"
+            }
+          ],
+          "d": "逐項對應弊處，附檢討指標"
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "小學三層應急機制",
+      "stance": "同意恆常化，但須修正流程和配套",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "及早識別、及時支援",
+              "c": [],
+              "d": "機制目的是讓高自殺風險學生被及早識別，並在最短時間內得到專業支援。"
+            },
+            {
+              "t": "標準：準確、快速",
+              "c": [],
+              "d": "標準一二：識別是否準確，不遺漏也不過度轉介；由識別到專業介入需時多久。"
+            },
+            {
+              "t": "標準：可承擔、不標籤",
+              "c": [],
+              "d": "前線能否持續承擔、會否令學生被標籤；中學已恆常化，小學撤回會斷層。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①幼童少言語表達",
+              "c": [],
+              "d": "年幼學生多以行為轉變、身體不適或拒學表現困擾，識別更依賴教師觀察和家長資料。"
+            },
+            {
+              "t": "②識別後無處安置",
+              "c": [],
+              "d": "瓶頸不在識別而在識別之後：轉介後仍長時間輪候，學校只能識別而無處安置。"
+            },
+            {
+              "t": "③多計劃多頭轉介",
+              "c": [],
+              "d": "小學同時推行多個支援計劃，各自設識別轉介流程，前線負擔倍增、資料分散。"
+            }
+          ],
+          "d": "用機制診斷，癥結編號與措施對應"
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "先公布試行評估",
+              "c": [],
+              "d": "恆常化前完成並公布試行評估，以介入時間、跟進完成率和教師工時修訂流程。"
+            },
+            {
+              "t": "③統籌人員＋撥款",
+              "c": [],
+              "d": "專項撥款購買臨床心理時數，校內指定統籌人員並調整課節，集中處理不同計劃的轉介。"
+            },
+            {
+              "t": "②打通中間層",
+              "c": [],
+              "d": "由網上青年支援隊和社區服務承接中風險個案，並與兒童精神科設優先評估安排。"
+            },
+            {
+              "t": "①家長參與＋升中",
+              "c": [],
+              "d": "統一家長通知和同意程序；家長同意下，升中時把支援紀錄移交中學，兩階段連成一線。"
+            }
+          ],
+          "d": "逐項回扣癥結，附指標或試行"
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "經常開支",
+              "c": [
+                "三年一期撥款"
+              ],
+              "d": "專項撥款屬經常開支易受質疑；以三年為一期撥款，期滿按指標檢討，優先需要較大學校。"
+            },
+            {
+              "t": "擠壓其他病童",
+              "c": [
+                "只上轉高風險"
+              ],
+              "d": "優先安排可能擠壓其他病童；中間層先承接，只上轉高風險，公布輪候。"
+            },
+            {
+              "t": "家長不同意",
+              "c": [
+                "社工以支援框架"
+              ],
+              "d": "家長怕標籤和影響升學；由社工溝通，以支援而非診斷為框架。"
+            }
+          ],
+          "d": "批評自己的措施，逐項配處理"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "延長試行",
+              "c": [
+                "臨時狀態留不住人"
+              ],
+              "d": "長期試行有代價：學校不投放培訓人手，合約人員流失，機制停在臨時狀態。"
+            },
+            {
+              "t": "恆常化≠不檢討",
+              "c": [],
+              "d": "數據可在恆常化後繼續收集，只要內置定期檢討和調整機制，恆常化不等於永不檢討。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "游說：小學教師",
+          "items": [
+            {
+              "t": "工作量",
+              "c": [
+                "撥款＋減課節"
+              ],
+              "d": "教師擔心工作量；以專項撥款和課節調整回應，並延續教師身心健康課程。"
+            },
+            {
+              "t": "怕被追究",
+              "c": [
+                "只管識別轉介"
+              ],
+              "d": "教師怕未能識別而被追究；明確職責界線只限識別與轉介，而非判斷與治療。"
+            }
+          ],
+          "d": "抓對方在意的事，給理由和讓步"
+        },
+        {
+          "label": "游說：家長",
+          "items": [
+            {
+              "t": "標籤前途",
+              "c": [
+                "紀錄只作支援"
+              ],
+              "d": "家長在意子女被標籤和前途；說明機制目的是支援而非診斷，紀錄只作支援用途。"
+            },
+            {
+              "t": "知情權",
+              "c": [
+                "重要決定須同意"
+              ],
+              "d": "除非出現即時危險，重要決定必須取得家長同意；家長亦透過資源套成為機制一部分。"
+            }
+          ],
+          "d": "抓對方在意的事，給理由和讓步"
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "Workplace stress assessments",
+      "stance": "Compulsion adds assessments, not candour or help",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Identify risk, change conditions",
+              "c": [],
+              "d": "The objective is to identify at-risk employees early and give employers a reason to change the conditions that generate stress."
+            },
+            {
+              "t": "Tests: honesty, help follows",
+              "c": [],
+              "d": "An assessment is useful only if people answer it honestly and if a result leads to help."
+            },
+            {
+              "t": "Pilot fails both tests",
+              "c": [],
+              "d": "The pilot suggests the proposal meets neither test; compulsion would increase assessments, not their candour or usefulness."
+            }
+          ],
+          "d": "Define the objective and reset the success test"
+        },
+        {
+          "label": "Problem 1: trust in results",
+          "items": [
+            {
+              "t": "Staff fear supervisors",
+              "c": [
+                "Candour falls"
+              ],
+              "d": "Fear that supervisors see individual results was the main reason for non-response; participation may rise while candour falls."
+            },
+            {
+              "t": "Employers fear liability",
+              "c": [
+                "Defensive manage-outs"
+              ],
+              "d": "Once an employer holds a result it is arguably on notice, so it may respond defensively by quietly managing out disclosers."
+            },
+            {
+              "t": "Same flaw: employer data",
+              "c": [
+                "False reassurance"
+              ],
+              "d": "The employer holding individual data drives both objections; low scores may only mean low trust, giving false reassurance."
+            }
+          ],
+          "d": "Diagnose the mechanism; implications to second layer"
+        },
+        {
+          "label": "Problem 2: no pathway to help",
+          "items": [
+            {
+              "t": "Helpline-only follow-up",
+              "c": [
+                "At-risk staff worse off"
+              ],
+              "d": "Most high scorers did not use support, usually just a helpline; being told one is at risk without help may leave staff worse off."
+            },
+            {
+              "t": "No added capacity",
+              "c": [
+                "Longer public waits"
+              ],
+              "d": "The proposal adds identification without capacity, so those seeking help are displaced into public services, lengthening waits."
+            },
+            {
+              "t": "SMEs excluded",
+              "c": [
+                "Wider large–small gap"
+              ],
+              "d": "SMEs fall below the threshold, so two-thirds of the workforce is excluded, widening the gap between large and small workplaces."
+            },
+            {
+              "t": "Stress seen as individual",
+              "c": [
+                "Statistic, not change"
+              ],
+              "d": "Much stress originates in workload, hours and management; employers may comply at minimum cost, producing a statistic, not change."
+            }
+          ],
+          "d": "Diagnose the mechanism; implications to second layer"
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Independent platform, aggregated data",
+              "c": [
+                "→P1"
+              ],
+              "d": "An independent platform gives individuals their own results; employers receive only anonymised unit data, withheld for groups under ten."
+            },
+            {
+              "t": "Ban misuse, safe harbour",
+              "c": [
+                "→P1"
+              ],
+              "d": "Legislate a ban on using data in appraisal, promotion or redundancy, and treat employers acting on aggregated findings as compliant."
+            },
+            {
+              "t": "Stepped pathway, pooled support",
+              "c": [
+                "→P2"
+              ],
+              "d": "Put a stepped route in place before any mandate, with co-funded pooled assistance via trade associations for small firms."
+            },
+            {
+              "t": "Organisational action plans",
+              "c": [
+                "→P2"
+              ],
+              "d": "Require organisations to produce action plans on workload, hours and management practice, turning screening into a lever for change."
+            }
+          ],
+          "d": "Each measure tagged to the problem it answers"
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "Large employers first",
+              "c": [],
+              "d": "Apply the duty first to the public sector and firms over 500 staff, extending to 100+ once the platform and pooled assistance operate."
+            },
+            {
+              "t": "Review end of year three",
+              "c": [],
+              "d": "Commission the platform within twelve months, start in year two, and decide on extension after a review at the end of year three."
+            },
+            {
+              "t": "Public waits must not rise",
+              "c": [],
+              "d": "Indicators include response rate, support within four weeks, action plans, misuse complaints, and public waiting times, which must not rise."
+            }
+          ],
+          "d": "Timeline, indicators and review point"
+        }
+      ]
+    }
+  ]
+}

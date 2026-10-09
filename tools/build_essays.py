@@ -37,6 +37,8 @@ UPSTREAM = os.path.expanduser("~/jre")
 TOPIC_DIR = os.path.join(REPO, "議題庫")
 ESSAY_DIR = os.path.join(REPO, "範文")
 FRAME_DIR = os.path.join(REPO, "答題框架")
+MM_DIR = os.path.join(REPO, "腦圖")
+SRC_MM = os.path.join(os.path.dirname(os.path.abspath(__file__)), "src", "mindmaps")
 
 CN_NUM = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8}
 IDEO_SPACE = "\u3000"
@@ -46,6 +48,10 @@ FONTS = ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
          '&family=Noto+Serif+HK:wght@500;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap">')
 
 # ---------------------------------------------------------------- CSS
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from mindmap import MINDMAP_CSS, MINDMAP_JS, load_mindmaps, render_mindmap  # noqa: E402
+MINDMAPS = {}
+
 BASE_CSS = r"""
 :root{--bg:#EDEFF3;--surface:#FFF;--surface-2:#F5F7FA;--surface-3:#E8ECF3;
 --text:#141C2E;--dim:#54607A;--faint:#8892A6;--line:#D6DBE5;--line2:#B4BDCE;
@@ -143,7 +149,7 @@ INDEX_CSS = r"""
 .how b{color:var(--text)}
 """
 
-PAGE_CSS = r"""
+PAGE_CSS = MINDMAP_CSS + r"""
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -381,6 +387,7 @@ def render_topic_page(doc, topic, prev_t, next_t):
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/{slug}/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t{nn}">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -399,6 +406,9 @@ def render_topic_page(doc, topic, prev_t, next_t):
             s.append(f'<div class="qnote">{md_to_html(q["pre"])}</div>')
         s.append(f'<div class="qcard {cls}"><div class="ql">{esc(q["qkind"])}</div>'
                  f'<div class="qb"{lang_attr}>{bold_labels(md_to_html(q["question"]))}</div></div>')
+        mm = render_mindmap(MINDMAPS.get(nn, {}).get(q["n"]), q["english"])
+        if mm:
+            s.append(f'<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary>{mm}</details>')
         if q["analysis"] is not None:
             sub = q.get("analysis_sub") or ""
             s.append(f'<details class="sx"><summary>審題<span class="s">{esc(sub)}{"　·　" if sub else ""}預設收起：先自己審題，再展開對照</span></summary>'
@@ -420,8 +430,45 @@ def render_topic_page(doc, topic, prev_t, next_t):
     out.append(f'<div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。'
                f'<br><a href="../../議題庫/{slug}/index.html">議題庫：{esc(name)}</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>')
     out.append("</div>")
-    body = '<div id="top"></div>\n' + "\n".join(out)
+    body = '<div id="top"></div>\n' + "\n".join(out) + (MINDMAP_JS if MINDMAPS.get(nn) else "")
     return page(f"{name}｜JRE 範文", PAGE_CSS, body, desc=f"{name}：四篇定稿題目範文、審題與逐段拆解")
+
+
+def render_mindmap_index(docs, topics):
+    toc, secs = [], []
+    for d in docs:
+        t = topics[d["nn"]]
+        maps = MINDMAPS.get(d["nn"], {})
+        if not maps:
+            continue
+        toc.append(f'<a href="#t{d["nn"]}">{d["nn"]} {esc(t["name"])}</a>')
+        s = [f'<section class="mmt" id="t{d["nn"]}"><h2><span class="no">{d["nn"]}</span>{esc(t["name"])}'
+             f'<a class="back" href="../範文/{t["slug"]}/index.html">讀範文 →</a></h2>']
+        for q in d["qs"]:
+            m = maps.get(q["n"])
+            if not m:
+                continue
+            cls = "en" if q["english"] else "zh"
+            s.append(f'<div class="mmq"><div class="mmh"><span class="pp {cls}">{q["paper"]}</span> '
+                     f'<a href="../範文/{t["slug"]}/index.html#q{q["n"]}">{esc(q["label"])}｜{esc(q["short"])}</a></div>'
+                     f'{render_mindmap(m, q["english"])}</div>')
+        s.append("</section>")
+        secs.append("".join(s))
+    css = PAGE_CSS + """
+.mmt{margin-top:40px}.mmt h2{font-size:21px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;border-bottom:2px solid var(--navy);padding-bottom:6px}
+.mmt h2 .no{font-family:"IBM Plex Mono",monospace;color:var(--faint);font-size:16px}.mmt h2 .back{margin-left:auto;font-size:12.5px;font-family:inherit;font-weight:400}
+.mmq{margin-top:22px}.mmh{font-weight:700;font-size:15px}.mmh a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--line2)}
+.pp{font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px}.pp.zh{background:var(--zh-bg);color:var(--zh)}.pp.en{background:var(--en-bg);color:var(--en)}
+"""
+    body = f"""<div id="top"></div><header><div class="hd narrow"><div class="no">MAP</div><div>
+<div class="tag">考前複習 · {sum(len(v) for v in MINDMAPS.values())} 張思路腦圖</div><h1>思路腦圖</h1>
+<div class="en-t">Mind maps · 立場 → 癥結 → 措施 → 挑戰與處理 → 游說</div></div>
+<div class="right"><a class="back" href="../範文/index.html">← 範文首頁</a><a class="back" href="../議題庫/index.html">議題庫</a><a class="back" href="../答題框架/index.html">答題框架</a></div></div></header>
+<nav class="quicknav" aria-label="議題"><div class="in narrow">{''.join(toc)}</div></nav>
+<div class="wrap narrow"><p class="lede" style="margin-top:22px">每題一張：中心是題目，第一層是答題次序，編號把「癥結」和「措施」一一扣起來。「簡圖」只有關鍵詞，「詳解」改為直排並附一句說明；點分支標籤可單獨收起。複習法：先全部收起，憑題目默寫每一枝，再逐枝展開對照。</p>
+{''.join(secs)}
+<div class="foot">腦圖由範文提煉，只作記憶線索；完整論證見各議題範文頁。本頁為備考筆記，不代表政府立場。</div></div>""" + MINDMAP_JS
+    return page("思路腦圖｜JRE 範文", css, body, desc="64 題範文的思路腦圖")
 
 
 def render_index(docs, topics):
@@ -448,6 +495,7 @@ def render_index(docs, topics):
 <nav class="quicknav"><div class="in">
  <a href="../議題庫/index.html">← 議題庫</a>
  <a href="#topics" class="cur">範文</a>
+ <a href="../腦圖/index.html">腦圖</a>
  <a href="../答題框架/index.html">答題框架</a>
  <span class="sep"></span>
  <a href="#howto">怎樣用</a>
@@ -507,6 +555,7 @@ def render_framework(path):
   <div class="right">
     <a class="back" href="../議題庫/index.html">← 議題庫</a>
     <a class="back" href="../範文/index.html">範文</a>
+    <a class="back" href="../腦圖/index.html">腦圖</a>
   </div>
 </div></header>
 <nav class="quicknav" aria-label="本頁章節"><div class="in">{nav}<span class="sep"></span><a href="#toc">目錄</a></div></nav>
@@ -537,6 +586,7 @@ def patch_topic_index():
     s = open(path, encoding="utf-8").read()
     block = ('<span class="sep" style="flex:none;width:1px;background:var(--line2);margin:10px 6px"></span>'
              '<a href="../範文/index.html" id="nav-essays">範文</a>'
+             '<a href="../腦圖/index.html" id="nav-mindmap">腦圖</a>'
              '<a href="../答題框架/index.html" id="nav-framework">答題框架</a>')
 
     def anchor(t):
@@ -617,6 +667,7 @@ def main():
     if not args.no_sync:
         sync_sources()
 
+    MINDMAPS.update(load_mindmaps(SRC_MM))
     topics = load_topics()
     files = sorted(glob.glob(os.path.join(SRC_ESSAYS, "[0-9][0-9]-*.md")))
     docs = []
@@ -639,6 +690,9 @@ def main():
     write(os.path.join(ESSAY_DIR, "index.html"), render_index(docs, topics))
     print(f"built 範文/index.html + {len(docs)} topic page(s); {sum(len(d['qs']) for d in docs)} essays")
 
+    if MINDMAPS:
+        write(os.path.join(MM_DIR, "index.html"), render_mindmap_index(docs, topics))
+        print(f"built 腦圖/index.html ({sum(len(v) for v in MINDMAPS.values())} maps)")
     if os.path.isfile(SRC_FRAMEWORK):
         write(os.path.join(FRAME_DIR, "index.html"), render_framework(SRC_FRAMEWORK))
         print("built 答題框架/index.html")

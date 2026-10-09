@@ -1,0 +1,521 @@
+{
+ "topic": "07",
+ "title": "土地、房屋與居住質素",
+ "questions": [
+  {
+   "q": 1,
+   "paper": "zh",
+   "center": "2030解決劣質劏房",
+   "stance": "不同意過進取：風險在執法與安置同步",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "保障性命安全",
+       "c": [],
+       "d": "規劃說明目的是保障住戶的性命和財產安全，簡樸房制度並非要消滅所有分間單位。"
+      },
+      {
+       "t": "留下單位達標",
+       "c": [],
+       "d": "底線一：留下的單位符合安全、消防、衞生等法定標準，成敗不在數目歸零。"
+      },
+      {
+       "t": "住戶有更好去處",
+       "c": [],
+       "d": "底線二：被取締單位的住戶有更好的去處，而不是流向更隱蔽的居所。"
+      }
+     ]
+    },
+    {
+     "label": "現況與癥結",
+     "items": [
+      {
+       "t": "有利條件已具備",
+       "c": [],
+       "d": "寬限期登記反應理想，公屋綜合輪候時間降至4.8年，簡約公屋大部分已經入伙。"
+      },
+      {
+       "t": "①登記自我篩選",
+       "c": [],
+       "d": "主動登記的是願意守法的業主，最危險的單位往往根本不在登記冊上。"
+      },
+      {
+       "t": "②業主的算盤",
+       "c": [],
+       "d": "改裝達標通常意味可收租的房間減少，部分業主因此寧可轉為隱蔽出租。"
+      },
+      {
+       "t": "③限期懸崖",
+       "c": [],
+       "d": "業主拖到限期前才申請認證，不達標單位便在2030年同時退出，單身住戶最易落空。"
+      }
+     ]
+    },
+    {
+     "label": "措施",
+     "items": [
+      {
+       "t": "①按風險排序執法",
+       "c": [],
+       "d": "房屋局聯同消防、屋宇部門，先處理未登記而消防風險最高的單位，每季按區公布，扣①。"
+      },
+      {
+       "t": "②去處先行",
+       "c": [],
+       "d": "執法前逐戶評估並配對去處，沒有安置方案不發遷出指示，以獲安排比例量度，扣②。"
+      },
+      {
+       "t": "③拆除懸崖",
+       "c": [],
+       "d": "已登記單位訂分年度認證目標，提供標準圖則、承建商名單和附續租條件貸款，扣③。"
+      }
+     ]
+    },
+    {
+     "label": "挑戰 → 處理",
+     "items": [
+      {
+       "t": "安置容量不足",
+       "c": [
+        "批次配安置容量"
+       ],
+       "d": "單身住戶只靠過渡房屋和宿舍；改裝空置校舍、資助機構長租轉租，執法批次配安置容量。"
+      },
+      {
+       "t": "租金上升",
+       "c": [
+        "監察租金＋調解"
+       ],
+       "d": "達標單位減少、成本轉嫁令租金上升；按區監察租金，貸款附續租條件，糾紛交義務調解。"
+      },
+      {
+       "t": "隱蔽出租",
+       "c": [
+        "水電錶篩查"
+       ],
+       "d": "租戶怕失去居所不會舉報；以同一單位多個水電錶等資料篩查，舉報者優先獲安置配對。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "應延後目標",
+       "c": [
+        "延後亦有代價"
+       ],
+       "d": "延後的代價是住戶多一年暴露於火險，業主亦得到「拖下去便不用改」的訊號，懸崖更陡。"
+      },
+      {
+       "t": "怕基層無處住",
+       "c": [
+        "問次序非應否"
+       ],
+       "d": "寬限期已長達四年並備替代供應；把執法批次與安置容量掛鈎，便不必以犧牲住戶為代價。"
+      }
+     ]
+    },
+    {
+     "label": "游說：劏房業主",
+     "items": [
+      {
+       "t": "租金收入",
+       "c": [
+        "只認證單位可租"
+       ],
+       "d": "寬限期屆滿後只有通過認證的單位可合法出租，及早改裝是保住租金收入的唯一途徑。"
+      },
+      {
+       "t": "改裝成本",
+       "c": [
+        "圖則、名單、貸款"
+       ],
+       "d": "越近限期承建商越緊張、工程越貴；有圖則、承建商名單和貸款支援，毋須獨擔風險。"
+      },
+      {
+       "t": "官非風險",
+       "c": [
+        "火警索償更貴"
+       ],
+       "d": "出租不達標單位一旦發生火警，業主面對檢控以至民事索償，代價遠高於改裝費。"
+      },
+      {
+       "t": "手續麻煩",
+       "c": [
+        "一站式＋調解"
+       ],
+       "d": "政府讓步：認證一站式並公布時限，糾紛交調解，把有法律風險的生意轉為合法穩定生意。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 2,
+   "paper": "zh",
+   "center": "資助房十年轉讓",
+   "stance": "支持，但只做一半：須把上流轉為流轉",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "上流≠流轉",
+       "c": [],
+       "d": "上流看業主能否進入私人市場，流轉看單位能否交到下一個有需要家庭，兩者方向不同。"
+      },
+      {
+       "t": "騰出單位？",
+       "c": [],
+       "d": "評估問題一：措施是否真的為下一批有需要的家庭騰出單位。"
+      },
+      {
+       "t": "補貼合理？",
+       "c": [],
+       "d": "評估問題二：資助出售單位內含的公帑補貼是否得到合理處理。"
+      },
+      {
+       "t": "自住守住？",
+       "c": [],
+       "d": "評估問題三：資助出售單位的「自住」原意在縮短限制後能否守得住。"
+      }
+     ]
+    },
+    {
+     "label": "利",
+     "items": [
+      {
+       "t": "合家庭生命周期",
+       "c": [],
+       "d": "家庭十多年間子女成長、收入改變，限制過長把家庭鎖在不合適單位；十年較貼近周期。"
+      },
+      {
+       "t": "觸發連鎖空置",
+       "c": [],
+       "d": "業主出售後若買家是綠表家庭便會交還公屋，一宗轉讓可帶動兩三個家庭改善居住。"
+      }
+     ]
+    },
+    {
+     "label": "弊",
+     "items": [
+      {
+       "t": "①動機扭曲",
+       "c": [],
+       "d": "限制愈短，單位愈易被視為十年後可套現的資產，投資型申請者擠壓自住家庭中籤機會。"
+      },
+      {
+       "t": "②存量流失",
+       "c": [],
+       "d": "補價後在公開市場出售，單位便永久離開資助體系，政府要以成本更高的新供應填補。"
+      },
+      {
+       "t": "③受惠面窄",
+       "c": [],
+       "d": "能補價的多是收入較高業主，收入一般者只能在第二市場出售，最需要上流的未必受惠。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "公帑化私利",
+       "c": [
+        "補價並非無償"
+       ],
+       "d": "公開市場出售須先向政府補價，補貼並非無償帶走；第二市場轉手則補貼仍留在體系之內。"
+      },
+      {
+       "t": "應維持十五年",
+       "c": [
+        "錯配隱藏成本"
+       ],
+       "d": "限制過長令單位錯配、輪候隊伍無法因流轉縮短，這成本不上帳目，卻由輪候家庭承擔。"
+      }
+     ]
+    },
+    {
+     "label": "建議",
+     "items": [
+      {
+       "t": "②③第二市場優先",
+       "c": [],
+       "d": "增加白表第二市場配額，十年期滿後設第二市場優先期，回應存量流失並擴闊受惠面。"
+      },
+      {
+       "t": "按補貼幅度分級",
+       "c": [],
+       "d": "新加坡按地段分類可借鑑但不能照搬，只在補貼幅度特別大的新項目試行較嚴的轉售安排。"
+      },
+      {
+       "t": "①守住自住原意",
+       "c": [],
+       "d": "加強抽查空置和違規出租，借用房委會打擊濫用公屋的數據分析，令投資者無利可圖。"
+      },
+      {
+       "t": "定期檢討",
+       "c": [
+        "比例高即收緊"
+       ],
+       "d": "每年公布轉讓宗數、兩市場比例和交還公屋數目，三年檢討；公開市場比例過高即收緊。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 3,
+   "paper": "zh",
+   "center": "新區支援舊區重建",
+   "stance": "同意：對準瓶頸；成敗看選擇和新區承接",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "避免單一拆建",
+       "c": [],
+       "d": "五年規劃要避免單一項目式拆建，讓舊區轉化為環境、交通、公共空間達現代標準的社區。"
+      },
+      {
+       "t": "動得起來？",
+       "c": [],
+       "d": "「加快」只是手段，第一個評估標準是重建是否真的動得起來。"
+      },
+      {
+       "t": "舊區改善？",
+       "c": [],
+       "d": "第二個評估標準是舊區本身是否得到改善，而不是只換來更密的高樓。"
+      },
+      {
+       "t": "居民更好？",
+       "c": [],
+       "d": "第三個評估標準是受重建影響的居民是否過得比以前更好。"
+      }
+     ]
+    },
+    {
+     "label": "利",
+     "items": [
+      {
+       "t": "拆基建飽和死結",
+       "c": [],
+       "d": "舊區基建承受不了更高密度；地積比率跨區轉移，把發展價值移到有容量的地方兌現。"
+      },
+      {
+       "t": "樓換樓多一工具",
+       "c": [],
+       "d": "北都預留地興建樓換樓單位，業主多了以舊換新的選擇，市建局不必只靠現金收購。"
+      }
+     ]
+    },
+    {
+     "label": "弊",
+     "items": [
+      {
+       "t": "①社區網絡斷裂",
+       "c": [],
+       "d": "舊區長者的醫生、街坊和社區服務都在原區，北都單位對他們是「搬走」而非「換新」。"
+      },
+      {
+       "t": "②壓力轉移新區",
+       "c": [],
+       "d": "轉移令新區人口和樓面多於原規劃，若交通、學額、醫療慢於入伙，早期居民承擔代價。"
+      },
+      {
+       "t": "③租戶被忽略",
+       "c": [],
+       "d": "樓換樓和賠償只針對業主，舊樓大量租戶包括劏房戶被迫遷出更快，卻不在保障之內。"
+      },
+      {
+       "t": "④七年樓齡爭議",
+       "c": [],
+       "d": "「七年樓齡」檢視若被理解為削減補償，業主抗拒令收購更慢，與「加快」背道而馳。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "補貼發展商",
+       "c": [
+        "掛鈎舊區改善"
+       ],
+       "d": "發展商在新區取得額外樓面值得正視；但若放棄，舊區繼續動不了，失修風險由住戶承擔。"
+      },
+      {
+       "t": "應否轉移",
+       "c": [
+        "問條件不問應否"
+       ],
+       "d": "轉移與舊區完成重建、交出公共空間掛鈎並公開計算方法，便是交易而非單方面饋贈。"
+      }
+     ]
+    },
+    {
+     "label": "建議",
+     "items": [
+      {
+       "t": "①原區安置選擇",
+       "c": [],
+       "d": "樓換樓是現金以外的選項而非取代，並在舊區或鄰近項目預留原區安置單位，回應弊一。"
+      },
+      {
+       "t": "②配套先於入伙",
+       "c": [],
+       "d": "交通、診所和長者服務須在入伙前到位，按基建容量設接收轉移樓面上限，回應弊二。"
+      },
+      {
+       "t": "③租戶納安置網",
+       "c": [],
+       "d": "服務隊與市建局評估租戶，安排公屋、簡約公屋或過渡房屋，列為推展條件，回應弊三。"
+      },
+      {
+       "t": "④賠償檢視透明",
+       "c": [],
+       "d": "2027年公開七年樓齡檢視原則和過渡安排，轉移收益部分用於改善舊區，回應弊四。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 4,
+   "paper": "en",
+   "center": "Subdivided unit standards enforcement",
+   "stance": "Law is in place; risk is delivery: no closure without destination",
+   "branches": [
+    {
+     "label": "Purpose / reframing",
+     "items": [
+      {
+       "t": "Protect lives, not cut numbers",
+       "c": [],
+       "d": "The regime exists to protect the lives and safety of residents, not to reduce subdivided units for its own sake."
+      },
+      {
+       "t": "Remaining units safe",
+       "c": [],
+       "d": "A compliant unit is an acceptable outcome, so the first test is whether the units that remain are safe."
+      },
+      {
+       "t": "Displaced households better housed",
+       "c": [],
+       "d": "The second test is whether households whose units close end up better housed, not in worse unregistered rooms."
+      }
+     ]
+    },
+    {
+     "label": "Problem 1: certification cliff edge",
+     "items": [
+      {
+       "t": "Owner delay is rational",
+       "c": [
+        "Final-year surge"
+       ],
+       "d": "Upgrading means fewer rooms to let, and registered units stay lawful until the deadline, so owners rationally delay."
+      },
+      {
+       "t": "Contractor shortage",
+       "c": [
+        "Units fail by default"
+       ],
+       "d": "With too few contractors and inspectors, a final-year surge means many units fail by default rather than on assessment."
+      },
+      {
+       "t": "Compliance seems unaffordable",
+       "c": [
+        "Informal letting, unseen"
+       ],
+       "d": "Owners who judge compliance unaffordable may let informally, moving the most dangerous units out of the Ministry's sight."
+      }
+     ]
+    },
+    {
+     "label": "Problem 2: rehousing mismatch",
+     "items": [
+      {
+       "t": "Single adults wait longest",
+       "c": [
+        "Burden on the voiceless"
+       ],
+       "d": "Single adults wait longer for public housing and rely on temporary options already about ninety per cent occupied."
+      },
+      {
+       "t": "Enforcement, rehousing on separate tracks",
+       "c": [
+        "Homelessness or soft deadlines"
+       ],
+       "d": "Complaint-led enforcement and queue-based rehousing run separately, so the Ministry faces homelessness or signalling that deadlines are negotiable."
+      },
+      {
+       "t": "Complaint-led inspection",
+       "c": [
+        "Tenants stop reporting"
+       ],
+       "d": "Tenants fearing eviction stop reporting unsafe conditions, so complaints dry up precisely where the risk is highest."
+      }
+     ]
+    },
+    {
+     "label": "Recommendations",
+     "items": [
+      {
+       "t": "Annual district milestones",
+       "c": [
+        "→P1"
+       ],
+       "d": "Set annual certification milestones published by district, prioritising inspection visits for buildings that fall behind."
+      },
+      {
+       "t": "Layouts, contractors, conditional loans",
+       "c": [
+        "→P1"
+       ],
+       "d": "Offer standard layouts, accredited contractors and low-interest loans conditional on offering existing tenants renewal after certification."
+      },
+      {
+       "t": "Assess households before closure",
+       "c": [
+        "→P2"
+       ],
+       "d": "Before any vacate order, a district team assesses each household and matches it to public, temporary or assisted housing."
+      },
+      {
+       "t": "Batches sized to rehousing",
+       "c": [
+        "→P2"
+       ],
+       "d": "Size each enforcement batch to the district's rehousing capacity, and convert vacant government premises into hostels for single adults."
+      }
+     ]
+    },
+    {
+     "label": "Implementation & monitoring",
+     "items": [
+      {
+       "t": "Start alongside enforcement",
+       "c": [],
+       "d": "Risk-based inspection and household assessments begin together when enforcement against unregistered units starts in six months."
+      },
+      {
+       "t": "Four quarterly indicators",
+       "c": [],
+       "d": "Report quarterly on certifications against milestones, units closed, households rehoused within a set period and rents by district."
+      },
+      {
+       "t": "Adjust batches, not deadline",
+       "c": [],
+       "d": "Where rehousing falls behind closures in a district, adjust the size of enforcement batches there rather than the deadline."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

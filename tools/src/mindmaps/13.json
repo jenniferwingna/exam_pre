@@ -1,0 +1,589 @@
+{
+  "topic": "13",
+  "title": "文化、體育與歷史保育",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "藝團資助進出機制",
+      "stance": "同意；以藝術水平為本、評審透明、進出緩衝",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "創新·流動·產業化",
+              "c": [],
+              "d": "先拆三個目的：藝團不因撥款穩定而停步、中型藝團可晉升、擴闊觀眾和收入。"
+            },
+            {
+              "t": "獎藝術非票房",
+              "c": [],
+              "d": "標準一：機制獎勵的是否真正的藝術水平，而非單純票房。"
+            },
+            {
+              "t": "保留穩定",
+              "c": [],
+              "d": "標準二：能否保留藝團長遠規劃所需的穩定，例如樂季編排和人事規劃。"
+            },
+            {
+              "t": "評審服眾",
+              "c": [],
+              "d": "標準三：評審能否令業界信服；立場的三個前提正好對應這三項標準。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "結構非金額",
+              "c": [
+                "資源跟身份走"
+              ],
+              "d": "主要藝團沒有進出機制，資格一經確立便長期延續，資源跟隨身份而非表現。"
+            },
+            {
+              "t": "① 創新誘因弱",
+              "c": [],
+              "d": "撥款與表現無關，主要藝團最理性的策略便是穩妥編排節目，創新誘因減弱。"
+            },
+            {
+              "t": "② 中層無路上",
+              "c": [],
+              "d": "頂層名額封閉，中型藝團連年出色也難取得擴充資源；西九不缺舞台，缺高質製作。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "偏向票房",
+              "c": [
+                "原文掛藝術水平"
+              ],
+              "d": "反方指掛鈎終會偏向票房；但原文掛的是表現和藝術水平，偏向票房是設計失誤而非必然。"
+            },
+            {
+              "t": "不確定致流失",
+              "c": [
+                "現狀亦非中性"
+              ],
+              "d": "只進不出同樣扭曲生態，頂層缺更新、中層無路上；真正要討論的是如何掛鈎。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "① 基本＋表現撥款",
+              "c": [],
+              "d": "大部分撥款列三年期基本撥款保穩定，二億作表現撥款，先以獎勵起步，回應創新誘因弱。"
+            },
+            {
+              "t": "② 候補晉升",
+              "c": [],
+              "d": "中型藝團先入候補階段獲遞增資助再晉升；主要藝團連續兩周期未達標才逐步遞減。"
+            },
+            {
+              "t": "多元指標",
+              "c": [],
+              "d": "同儕評審藝術質素佔最大權重，輔以觀眾拓展、非政府收入、教育，按藝團定位議定。"
+            },
+            {
+              "t": "獨立評審",
+              "c": [],
+              "d": "文體旅局委任本地及非本地專家，申報利益、定期輪換，準則事先公布並設覆檢。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "質素難量化",
+              "c": [
+                "多人評分＋公開"
+              ],
+              "d": "同儕評審難免主觀，由多名評審獨立評分並公開準則和評語，以程序嚴謹補量化局限。"
+            },
+            {
+              "t": "評審公信力",
+              "c": [
+                "外地評審＋迴避"
+              ],
+              "d": "本地藝術圈子小，評審或與藝團有人脈；以非本地評審、利益迴避和覆檢渠道處理。"
+            },
+            {
+              "t": "人才流失",
+              "c": [
+                "預警＋遞減過渡"
+              ],
+              "d": "藝團怕被調出而不敢簽長約；多年期撥款、兩周期預警和遞減式過渡避免驟然斷崖。"
+            }
+          ]
+        },
+        {
+          "label": "游說",
+          "items": [
+            {
+              "t": "藝團：撥款穩定",
+              "c": [
+                "整體不減＋二億"
+              ],
+              "d": "整體資助水平不變，另有二億新資源；但坦白說明個別撥款會隨表現上落，以誠信換信任。"
+            },
+            {
+              "t": "藝團：藝術自主",
+              "c": [
+                "同儕評，非官員"
+              ],
+              "d": "指標由藝團參與議定，藝術質素由同儕而非官員評定，票房只是眾多參考之一。"
+            },
+            {
+              "t": "藝團：聲譽",
+              "c": [
+                "表現為據更服眾"
+              ],
+              "d": "以表現為依據的資助更經得起公眾和議會質詢，表現優秀的藝團正是最大受惠者。"
+            },
+            {
+              "t": "讓步",
+              "c": [
+                "首周期只獎不罰"
+              ],
+              "d": "政府承諾首個周期只設獎勵、不作調出，讓業界先檢驗評審是否公正。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "維園網球場重建",
+      "stance": "有條件支持：體育為主、啟德互補、康樂不減",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "盛事 vs 公園",
+              "c": [
+                "值得做 vs 做得成"
+              ],
+              "d": "分清兩類服務對象：盛事決定項目值不值得做，公園使用者決定項目做不做得成。"
+            },
+            {
+              "t": "不與啟德重疊",
+              "c": [],
+              "d": "標準一：新場館能否填補啟德體育園以外的空缺，而非與之重疊。"
+            },
+            {
+              "t": "康樂零淨損失",
+              "c": [],
+              "d": "標準二：市民的公共康樂空間會否淨減少；這是設計底線。"
+            },
+            {
+              "t": "落成不閒置",
+              "c": [],
+              "d": "標準三：落成後有否足夠活動；若主要靠演唱會維持而公眾使用大減，則不應推行。"
+            }
+          ]
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "全天候＝競爭力",
+              "c": [],
+              "d": "露天場地受天雨酷熱影響；賽期可預測，香港爭取更高級別賽事才有籌碼。"
+            },
+            {
+              "t": "票尾經濟",
+              "c": [],
+              "d": "維園位處市區核心，觀眾散場後可就近消費，效益易於擴散至社區。"
+            }
+          ]
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "① 公共空間",
+              "c": [],
+              "d": "場館若更大型，佔地高度增加，盛事期間人流管制令市民不能如常使用公園。"
+            },
+            {
+              "t": "② 與啟德重疊",
+              "c": [],
+              "d": "定位不清便會與啟德爭逐同一批賽事和演出，兩者都未能充分使用。"
+            },
+            {
+              "t": "③ 社區承受力",
+              "c": [],
+              "d": "銅鑼灣本已擠迫，散場人流、交通和噪音落在居民身上，施工期原有球場流失。"
+            }
+          ]
+        },
+        {
+          "label": "理據",
+          "items": [
+            {
+              "t": "原址省地",
+              "c": [],
+              "d": "原址重建比另覓新地更省土地，亦符合五年規劃檢視現有大型場地潛質的方向。"
+            },
+            {
+              "t": "場地需層級",
+              "c": [],
+              "d": "啟德適合最大型盛事且演唱會需求殷切，規模適中、以體育為主的場館服務另一層級市場。"
+            },
+            {
+              "t": "弊屬設計問題",
+              "c": [],
+              "d": "三項隱憂都屬設計和管理問題，可在研究階段處理，不足以否定項目本身。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "應投社區設施",
+              "c": [
+                "非二選一"
+              ],
+              "d": "普及化是根基，但高級別賽事正是運動誘因；守住零淨損失，社區使用不減反增。"
+            },
+            {
+              "t": "需求未證",
+              "c": [
+                "研究以數據證明"
+              ],
+              "d": "吸收反方提醒：另一個層級的市場是否存在，須由研究以數據證明。"
+            }
+          ]
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "① 康樂底線＋配額",
+              "c": [],
+              "d": "重建後球場、休憩空間和開放時數不少於現時，非賽事日設社區使用配額，回應弊一。"
+            },
+            {
+              "t": "② 定位先行",
+              "c": [],
+              "d": "研究報告公布目標賽事、座位規模及與啟德分工，體育為主，表演日數設上限，回應弊二。"
+            },
+            {
+              "t": "③ 社區措施同步",
+              "c": [],
+              "d": "分期施工設臨時球場、隔音和結束時間上限，康文署聯同居民設聯絡小組，回應弊三。"
+            },
+            {
+              "t": "合約綁公共目標",
+              "c": [
+                "未達標收回"
+              ],
+              "d": "合約列明賽事日數、公眾時數和本地賽事比例；借鑑新加坡體育城但不照搬。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "體總資助與管治掛鈎",
+      "stance": "同意；分級掛鈎，運動員與管理層分開",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "總會掌運動員前途",
+              "c": [],
+              "d": "總會負責選拔、分配培訓和辦賽；五年規劃精英運動員增兩成，利害只會更大。"
+            },
+            {
+              "t": "改變行為非文件",
+              "c": [],
+              "d": "標準一：掛鈎能否改變總會的實際行為，而不只是文件上的合規。"
+            },
+            {
+              "t": "要求與規模相稱",
+              "c": [],
+              "d": "標準二：要求是否與總會規模相稱，大小總會的行政能力懸殊。"
+            },
+            {
+              "t": "不罰運動員",
+              "c": [],
+              "d": "標準三：懲處失當管理層時，會否連帶懲罰運動員。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "① 權力問責不對稱",
+              "c": [],
+              "d": "委員多屬義務，選拔卻決定運動員前途；準則不公開、帳目不透明，受影響者無從申訴。"
+            },
+            {
+              "t": "② 規模懸殊",
+              "c": [],
+              "d": "大型總會有專職團隊，小型總會只靠少數職員和義工，管治參差多因能力不足而非不願。"
+            },
+            {
+              "t": "方向：問責＋扶持",
+              "c": [],
+              "d": "兩個癥結合起來決定改革方向：既要問責，也要扶持；下文措施由此而來。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "體育應自治",
+              "c": [
+                "發證者是港協"
+              ],
+              "d": "接受公帑便須達基本標準；證書由港協暨奧委會而非政府發出，評核留在體育界內部。"
+            },
+            {
+              "t": "多數運作正常",
+              "c": [
+                "分級而非放棄"
+              ],
+              "d": "為少數個案規管全體的負擔問題，答案是按規模分級，而非放棄掛鈎。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "① 運動員資助分開",
+              "c": [],
+              "d": "運動員訓練和參賽支援直接保障，使問責落在管理層而非運動員身上，扣標準三。"
+            },
+            {
+              "t": "① 持續評核＋申訴",
+              "c": [],
+              "d": "證書定期續期、抽查和運動員意見調查；借體育爭議解決先導計劃設獨立申訴渠道。"
+            },
+            {
+              "t": "② 分級要求",
+              "c": [],
+              "d": "所有總會須達核心要求，大型總會另加董事會組成等；未達標先暫緩部分撥款限期改善。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "形式合規",
+              "c": [
+                "看結果＋突擊抽查"
+              ],
+              "d": "總會可補齊文件而行為不變；評核兼看選拔爭議和投訴紀錄，以突擊抽查代替審閱文件。"
+            },
+            {
+              "t": "小總會負擔",
+              "c": [
+                "共享行政＋範本"
+              ],
+              "d": "提供共享財務法律秘書服務和標準範本，體院體育行政人員培訓計劃輸送人才。"
+            },
+            {
+              "t": "評核者公信力",
+              "c": [
+                "獨立人士加入"
+              ],
+              "d": "港協與總會關係密切或被質疑寬鬆；公開準則、邀會計法律獨立人士加入並公布摘要。"
+            }
+          ]
+        },
+        {
+          "label": "游說",
+          "items": [
+            {
+              "t": "小總會：怕削資助",
+              "c": [
+                "首周期寬限"
+              ],
+              "d": "首個周期設寬限期，已提交改善計劃的總會不會即時被削資助。"
+            },
+            {
+              "t": "小總會：怕人手不足",
+              "c": [
+                "只需核心要求"
+              ],
+              "d": "要求按規模分級，小型總會只需達核心要求，並有共享服務和範本支援，額外工作有限。"
+            },
+            {
+              "t": "證書＝資產",
+              "c": [
+                "助爭取贊助"
+              ],
+              "d": "小型項目最難爭取贊助商、學校和家長信任，證書正好證明總會管理妥善。"
+            },
+            {
+              "t": "底線",
+              "c": [
+                "核心要求不讓"
+              ],
+              "d": "坦白說明核心要求不容妥協，因為選拔公平是所有運動員應有保障，與總會大小無關。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "Film Fund reform",
+      "stance": "Move from grants to co-investment; ring-fence new talent",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Extra investment per dollar",
+              "c": [],
+              "d": "Judge the Fund not by films supported but by how much additional investment, talent and audience each public dollar brings in."
+            },
+            {
+              "t": "Not a money shortage",
+              "c": [],
+              "d": "Two top-ups have not changed the pattern, so the difficulty is not principally a shortage of money."
+            },
+            {
+              "t": "Problems: terms, decisions",
+              "c": [],
+              "d": "The difficulty lies in the terms on which the Fund provides money and in the way it makes decisions."
+            }
+          ]
+        },
+        {
+          "label": "Problem 1: Crowding out",
+          "items": [
+            {
+              "t": "Cheap grants deter investors",
+              "c": [
+                "Fund depends on top-ups"
+              ],
+              "d": "Grants are cheaper than private money, so private funding stays near 15 per cent and a fund that recycles nothing needs top-ups."
+            },
+            {
+              "t": "Grant-shaped projects",
+              "c": [
+                "Industry cannot raise finance"
+              ],
+              "d": "Producers learn to apply for public money rather than assemble finance and distribution, just as streaming platforms set the terms."
+            },
+            {
+              "t": "Fund backing as signal",
+              "c": [
+                "Deters investors"
+              ],
+              "d": "The market may read Fund backing as a sign a project could not attract commercial support, deterring the investors sought."
+            }
+          ]
+        },
+        {
+          "label": "Problem 2: Grant-style decisions",
+          "items": [
+            {
+              "t": "Seven-month decisions",
+              "c": [
+                "Fund becomes sole financier"
+              ],
+              "d": "Investors work to talent and platform windows; a seven-month process lets opportunities lapse, so the Fund becomes sole financier by default."
+            },
+            {
+              "t": "No risk-sharing rules",
+              "c": [
+                "Investors cannot price"
+              ],
+              "d": "The committee was designed to judge cultural merit, and without published risk and return rules investors cannot price participation."
+            },
+            {
+              "t": "No outcome measures",
+              "c": [
+                "No value-for-money proof"
+              ],
+              "d": "Without outcome measures the Ministry cannot show value for money or tell a deliberate cultural investment from a failed commercial one."
+            }
+          ]
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Co-investment, matched share",
+              "c": [
+                "→P1"
+              ],
+              "d": "Invest only alongside private investors committing a matching share of about half the budget, recycling returns; tax incentives are not recommended yet."
+            },
+            {
+              "t": "Ring-fenced talent window",
+              "c": [
+                "→P1"
+              ],
+              "d": "A capped window keeps grants for first-time directors and cultural projects, answering the Producers' Association and protecting the talent pipeline."
+            },
+            {
+              "t": "Independent investment committee",
+              "c": [
+                "→P2"
+              ],
+              "d": "Financiers, distributors and producers on fixed terms with conflict rules take investment decisions, replacing a committee built for grants."
+            },
+            {
+              "t": "60-day deadline, outcome reports",
+              "c": [
+                "→P2"
+              ],
+              "d": "Publish criteria, risk-sharing terms and a 60-working-day deadline, and report private-to-public ratio, recoupment, new directors and reach annually."
+            }
+          ]
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "Rules in 6 months",
+              "c": [],
+              "d": "Establish investment rules and the committee within six months after consulting producers, financiers and platforms."
+            },
+            {
+              "t": "Pilot in 12 months",
+              "c": [],
+              "d": "Open a co-investment pilot with a capped allocation within twelve months, alongside the talent window."
+            },
+            {
+              "t": "Review after 3 years",
+              "c": [],
+              "d": "Complete a full review after three years, including whether tax incentives should be revisited, reporting indicators annually."
+            },
+            {
+              "t": "Slow take-up: adjust share",
+              "c": [],
+              "d": "The main risk is slow investor response; adjust the pilot's matching share at the mid-point if take-up is weak."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

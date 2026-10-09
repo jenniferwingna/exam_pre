@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/14-digital/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t14">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>立法賦權下架網上詐騙內容</h2><span class="wc">範文 1,483 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《施政報告》提出研究優化法律框架並就此諮詢公眾，推動科技與電訊等行業加強偵測和刪除網上潛在金融詐騙內容（包括濫用人工智能生成的內容）。有意見認為，政府應立法賦權當局，要求網上平台在限定時間內刪除這類內容。你是否同意？試分析現況，提出立法框架建議，分析執行挑戰及處理方法，並游說網上平台營運者支持。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意；定義窄、限時、可覆核、按規模分級</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">立法下架詐騙內容</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">縮短接觸時間<span class="d">下架的第一個目的，是縮短詐騙內容接觸市民的時間，趕在受害之前處理。</span></div></li><li><div class="it">責任歸攔截者<span class="d">第二個目的，是把防騙責任重新分配給最有能力攔截的一方，即網上平台。</span></div></li><li><div class="it">速度·準確·可執行<span class="d">三項標準：能否趕在受害前、會否誤傷合法內容、對境外平台是否同樣有效。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">詐騙生產線<span class="d">假廣告和深偽短片引流、通訊群組建立信任、最後轉帳；人工智能令引流成本近乎歸零。</span></div></li><li><div class="it">① 速度錯配<span class="d">詐騙內容以分鐘計生成，平台卻按各自守則逐條處理，沒有法定時限。</span></div></li><li><div class="it">② 誘因錯配<span class="d">平台從廣告與流量獲益，損失卻由市民承擔，攔截誘因不足。</span></div></li><li><div class="it">③ 防線分散<span class="d">警方、銀行、電訊商和平台各掌一段，沒有把偵測、下架、截款連起來的機制。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">未定罪先刪<span class="d">誤刪風險真實，但詐騙內容生命周期以日計、刑事程序以月計，等定罪才下架並不可行。</span></div><ul class="tree l3"><li><div class="sub">定罪太慢損失已成</div></li></ul></li><li><div class="it">擴權誤傷<span class="d">答案是把權力寫窄、程序寫清：只涵蓋金融詐騙，合理懷疑門檻並列明理由，可獨立覆核。</span></div><ul class="tree l3"><li><div class="sub">寫窄＋可覆核</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">① 法定限時指令<span class="d">執法部門有合理懷疑時可發書面指令，平台須在法定時限內移除，回應速度錯配。</span></div></li><li><div class="it">② 分級預防責任<span class="d">大型平台須主動偵測並核實金融廣告主，中小平台只按指令處理，回應誘因錯配。</span></div></li><li><div class="it">③ 情報共享截款<span class="d">建立跨界別情報共享，令下架與截款同步，回應防線分散；三年檢討。</span></div></li><li><div class="it">收窄定義＋覆核<span class="d">附表列明受規管內容，擴大須經立法會；設獨立覆核和恢復。新加坡可借鑑，不宜照搬。</span></div><ul class="tree l3"><li><div class="sub">→防誤傷</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">境外平台<span class="d">以向本地用戶提供服務為基準，大型平台指定本地代表；先罰款，限制存取作最後手段。</span></div><ul class="tree l3"><li><div class="sub">本地代表＋罰款</div></li></ul></li><li><div class="it">誤刪憂慮<span class="d">指令附書面理由、設覆核和恢復機制；覆核推翻率偏高即表示標準過寬，須即時收緊。</span></div><ul class="tree l3"><li><div class="sub">看覆核推翻率</div></li></ul></li><li><div class="it">合規成本<span class="d">分級義務加過渡期，政府以共用資料庫提供詐騙情報，執法部門以人工智能協助篩選。</span></div><ul class="tree l3"><li><div class="sub">分級＋共用資料庫</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說</button><ul class="tree l2"><li><div class="it">平台：責任不清<span class="d">清晰法定規則比模糊壓力更有利營運；遵從指令即可免責，這是自願機制得不到的安全港。</span></div><ul class="tree l3"><li><div class="sub">安全港免責</div></li></ul></li><li><div class="it">平台：事前審查<span class="d">法例不設一般性的事前審查責任，回應平台最擔心被要求逐條預先審查。</span></div><ul class="tree l3"><li><div class="sub">法例不設</div></li></ul></li><li><div class="it">平台：商譽<span class="d">被冒充的品牌、失去信任的用戶，最終都是平台本身的商業損失。</span></div><ul class="tree l3"><li><div class="sub">詐騙亦損平台</div></li></ul></li><li><div class="it">讓步<span class="d">邀平台參與制定實務守則、設過渡期、共享情報；現在參與設計勝過事後面對更嚴要求。</span></div><ul class="tree l3"><li><div class="sub">共訂守則＋過渡期</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態（是否同意立法）② 分析現況 ③ 提出立法框架建議 ④ 分析執行挑戰 ⑤ 提出處理方法 ⑥ 游說網上平台營運者。另加一段駁論（不是題目要求，但是拉分位）。</li>
 <li><strong>本文立場：</strong> 同意立法，條件是「定義收窄、限時處理、可獨立覆核、義務按規模分級」；條件不滿足就寧可暫緩。</li>
@@ -207,6 +279,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>「AI城市大腦」與跨部門數據整合</h2><span class="wc">範文 1,285 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《施政報告》提出研究和建設「AI城市大腦」綜合城市管理系統，連結工務、環境、交通、應急等城市治理部門的數據，由政務司司長任組長的工作組研究及推進；首階段接入保安局緊急事故監察及支援中心的數碼基建，再逐步擴展至全面的城市管理系統。有意見認為，政府應建設「AI城市大腦」，整合部門數據，以提升城市管理和應急能力。請分析上述建議有何利弊，表明你是支持抑或反對有關建議，並就你的立場提出理據。如果是支持的話，請提出建議，確保系統可有效達致其政策目的；如果是反對的話，請提出其他提升城市管理和應急能力的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持；應急先行、規則先行、聯而不集</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">AI城市大腦</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">決策更快非看更多<span class="d">價值在讓各部門在災難中看到同一幅實時圖像，日常由事後處理投訴轉為事前預警。</span></div></li><li><div class="it">量度反應時間<span class="d">成效應以跨部門反應時間是否縮短來衡量，而非接入了多少數據。</span></div></li><li><div class="it">前提：市民信任<span class="d">系統能否持續運作，取決於市民是否相信數據只會用於既定用途。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">破資訊分散<span class="d">暴雨時雨量、水浸、山泥和交通分屬不同部門；數據連結後可更早判斷封路和疏散。</span></div></li><li><div class="it">被動轉主動<span class="d">不少問題要待投訴才被察覺；數據交叉分析可讓部門在問題惡化前介入。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">① 用途擴張<span class="d">為救災建立的數據連結易延伸至原意以外，市民心存保留，連帶影響其他數字政府項目。</span></div></li><li><div class="it">② 單點失效<span class="d">數據越集中，被入侵或癱瘓的後果越嚴重，而最可能出事的正是最需要它的災難時刻。</span></div></li><li><div class="it">③ 數據質素<span class="d">各部門格式不一、視數據為部門資產；未經核對就接入，AI只會更快輸出錯誤判斷。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">理據</button><ul class="tree l2"><li><div class="it">不整合有代價<span class="d">資訊碎片化本身就是風險；以私隱為由維持現狀，等同接受較慢應急，承受者是受災市民。</span></div></li><li><div class="it">應急先行降風險<span class="d">首階段只接保安局緊急事故中心；香港須為每項用途找法律依據。</span></div></li><li><div class="it">風險可制度控制<span class="d">五年規劃已訂明須在保障私隱、依法合規、建立公眾信任前提下推展，城市大腦應適用。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">集中即風險<span class="d">部分同意反方：城市大腦不應是存放所有原始數據的中央資料庫，但這指向設計而非放棄。</span></div><ul class="tree l3"><li><div class="sub">部分同意</div></li></ul></li><li><div class="it">部門直接互通<span class="d">數據留在原部門，按授權按需調用並記錄存取，正是五年規劃授權數據交換閘的思路。</span></div><ul class="tree l3"><li><div class="sub">改為聯而不集</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">① 封閉用途清單<span class="d">每類數據只可用於列明用途，新增用途先完成私隱影響評估並訂明保留期限，回應弊一。</span></div></li><li><div class="it">② 聯而不集＋後備<span class="d">採聯而不集架構，按關鍵基建標準做網安測試，保留不依賴系統的後備指揮，回應弊二。</span></div></li><li><div class="it">③ 統一數據標準<span class="d">工作組訂統一標準，數據經核對才接入，首階段只處理少數高價值數據，回應弊三。</span></div></li><li><div class="it">指標決定擴展<span class="d">私隱公署參與審核，每年公布用途和事故，以資訊傳遞時間等指標決定是否進入下一階段。</span></div><ul class="tree l3"><li><div class="sub">未達標暫緩</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 分析利弊 ② 表明支持或反對 ③ 就立場提出理據 ④（因支持）提出確保系統有效達致政策目的的建議。另加駁論一段。</li>
 <li><strong>本文立場：</strong> 支持，條件是應急先行、規則先於擴展、用途有明確邊界、「聯而不集」。</li>
@@ -253,6 +326,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>公務中應用人工智能及AI Agent</h2><span class="wc">範文 1,481 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《施政報告》指出，「AI效能提升組」至今已促成及落實30個項目，數字政策辦公室亦正於政府內部試行AI Agent，並已在部門應用指南加入相關規範；五年規劃則提出嚴控公務員編制，透過數字化流程與人工智能的應用，讓現有人力專注於高價值工作。有意見認為，政府應在公務中廣泛應用人工智能（包括AI Agent），以提升公共服務效率。你是否同意？試分析現況，提出政府應用人工智能的規範措施，分析有關措施的執行挑戰及處理方法，並游說公務員團體支持。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意擴展；按風險分級，權益由具名人員決定</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">公務應用AI</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">效率＝速度準確問責<span class="d">公共行政的效率包括速度、準確、出錯時有人負責；三者缺一，速度越快錯誤擴散越快。</span></div></li><li><div class="it">廣泛＝風險分級<span class="d">內部標準化工序大膽推進；凡直接影響市民權益的決定，最終必須由具名人員作出。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">單點工具→規模化<span class="d">效能提升組已落實30個項目，但多屬單點工具；下一步是跨部門流程重組。</span></div></li><li><div class="it">① 錯誤規模化<span class="d">AI會把錯誤自動化和規模化：一條錯誤規則過去影響一宗，現在可影響上萬宗。</span></div></li><li><div class="it">② 責任鏈不清<span class="d">供應商開發、部門使用、人員處理，出錯時誰負責未清，部門於是只做最安全的小項目。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">① 風險分級<span class="d">低風險部門自批，中風險須評估及人手覆核，高風險AI只可提供建議，回應癥結一。</span></div></li><li><div class="it">① 人為最終決定<span class="d">與政府現行AI Agent規範一致：只用於標準化內部政務，不直接面向公眾作決定。</span></div></li><li><div class="it">② 具名負責<span class="d">每個系統由首長級人員負責，不因外判轉移；每項決定可追查數據和覆核人，回應癥結二。</span></div></li><li><div class="it">公開登記＋檢討<span class="d">設AI應用登記冊，個人資料不輸外部平台；每年公布錯誤率和覆核推翻率作擴展依據。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">規範太保守<span class="d">簡單個案確不必逐宗由人審批，但界線不應劃在簡單與否，而應劃在能否解釋。</span></div><ul class="tree l3"><li><div class="sub">界線在能否解釋</div></li></ul></li><li><div class="it">簡單個案直批<span class="d">規則明確的續期可用規則式系統直批；判斷性個案交生成式AI，難向被拒市民說明理由。</span></div><ul class="tree l3"><li><div class="sub">規則式系統可以</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">數據參差<span class="d">先做數據盤點，善用授權數據交換閘統一格式，數據未達標的流程不得接入AI。</span></div><ul class="tree l3"><li><div class="sub">盤點＋交換閘</div></li></ul></li><li><div class="it">覆核變蓋印<span class="d">系統多數時候對，覆核易流於形式；規定記錄同意或推翻理由，並以預設錯誤個案抽查。</span></div><ul class="tree l3"><li><div class="sub">記理由＋測試抽查</div></li></ul></li><li><div class="it">前線憂慮<span class="d">推行前與職方溝通、讓前線參與設計，按程序覆核者不因系統缺陷被個人追究。</span></div><ul class="tree l3"><li><div class="sub">參與設計＋免追究</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說</button><ul class="tree l2"><li><div class="it">職方：職位<span class="d">編制調整以自然流失和內部調配處理，承諾不以人工智能為由裁員，並每年公開調配情況。</span></div><ul class="tree l3"><li><div class="sub">不以AI裁員</div></li></ul></li><li><div class="it">職方：工作量<span class="d">編制受嚴控，不用AI只會令同一批人更忙；AI接手重複工序，人員轉往判斷性工作。</span></div><ul class="tree l3"><li><div class="sub">AI接重複工序</div></li></ul></li><li><div class="it">職方：責任<span class="d">人為最終決定的原則本身保障公務員的專業地位：系統只是工具，判斷仍屬人員。</span></div><ul class="tree l3"><li><div class="sub">人作決定保專業</div></li></ul></li><li><div class="it">讓步<span class="d">邀請職方參與評審，為受影響職系提供在職培訓；以數據說話比口頭保證更能建立信任。</span></div><ul class="tree l3"><li><div class="sub">培訓＋公開調配</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態（是否同意「廣泛應用」）② 分析現況 ③ 提出規範措施 ④ 分析執行挑戰 ⑤ 提出處理方法 ⑥ 游說公務員團體。駁論放在措施之後，處理「規範太保守」的反對意見。</li>
 <li><strong>本文立場：</strong> 同意大幅擴展，但「廣泛」應理解為「按風險分級的深度應用」；直接影響市民權益的決定，最終必須由具名人員作出。</li>
@@ -317,6 +391,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the extension of the declaration requirement to all government departments and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Defer six months; verify, update, simplify declarations</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">AI procurement declarations</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Promise, not proof<span class="d">The requirement was meant to make vendors answerable, but a declaration on its own is a promise rather than proof.</span></div></li><li><div class="it">Checked, current, enforceable<span class="d">A declaration adds value only if it is checked, remains true after signing, and a false one has consequences.</span></div></li><li><div class="it">Extend in present form?<span class="d">The question is not whether to extend, but whether to extend a weak control that also narrows the market.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: Unverified, not current</button><ul class="tree l2"><li><div class="it">38 accepted, 4 checked<span class="d">Procurement staff are trained on price, not model testing; departments holding signed declarations relax their own scrutiny, creating moral hazard.</span></div><ul class="tree l3"><li><div class="sub">False assurance</div></li></ul></li><li><div class="it">Fixed at tender<span class="d">AI systems change after award, so a tender-date declaration gives little remedy, as the vendor&#x27;s chatbot response shows.</span></div><ul class="tree l3"><li><div class="sub">No contractual remedy</div></li></ul></li><li><div class="it">Extended Government-wide<span class="d">Extension multiplies the gap, and one serious incident could undermine confidence in public-facing AI and delay sound projects.</span></div><ul class="tree l3"><li><div class="sub">One incident hits all AI</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: Market narrows</button><ul class="tree l2"><li><div class="it">Bids halved, small firms out<span class="d">Bids fell from six to three and small firms&#x27; share from 45 to 20 per cent, weakening competition.</span></div><ul class="tree l3"><li><div class="sub">Less competition, lock-in</div></li></ul></li><li><div class="it">Fixed compliance cost<span class="d">An unclear form&#x27;s largely fixed cost falls hardest on small firms, undercutting the aim of giving local firms reference projects.</span></div><ul class="tree l3"><li><div class="sub">Local firms lose references</div></li></ul></li><li><div class="it">Burden invites evasion<span class="d">Departments under pressure may avoid AI procurement or describe services to fall outside the definition of public-facing AI.</span></div><ul class="tree l3"><li><div class="sub">Control evaded, not met</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Tier by risk<span class="d">Services affecting eligibility, enforcement or vulnerable users get independent testing; information-only services need self-declaration alone.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Testable, continuing declarations<span class="d">Replace general assurances with testable statements, treat falsity as breach, and require updates before any model change.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Central assurance unit<span class="d">A small unit in the Ministry vets high-risk declarations and advises departments, pooling scarce expertise rather than spreading it thinly.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Simpler form, free toolkit<span class="d">Shorten the form with worked examples, offer a free testing toolkit and brief small firms, keeping entry costs low.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Defer six months<span class="d">A short deferral beats extending a known weak control; test the revised template and unit in the three pilot departments.</span></div></li><li><div class="it">High-risk departments first<span class="d">Departments with high-risk services adopt the requirement first, with the remaining departments following a year later.</span></div></li><li><div class="it">Track bids, verification, incidents<span class="d">Indicators include bids per tender, small-firm share, high-risk declarations verified, procurement time added and incidents involving declared systems.</span></div></li><li><div class="it">Zero findings = warning<span class="d">An absence of adverse findings should be read as a sign verification is failing, not as proof every system is safe.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> (a) 兩個問題（數目不能多也不能少）＋每個問題一段獨立的 implications；(b) 可行措施，逐項回扣兩個問題。文體：internal discussion paper。</li>
 <li><strong>兩個問題（從背景資料歸納，不照抄）：</strong> ① 申報既沒有人核實，也不會隨系統更新而更新——是「保證落差」（assurance gap）；② 合規負擔令市場收窄——是「入場門檻」問題。38份全數接納、模型更新出錯屬第一個；投標數減半、業界投訴屬第二個。</li>
@@ -417,6 +492,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../13-culture/index.html">← 13 文化、體育與歷史保育</a><a href="../15-governance/index.html">15 公務員制度與公共治理改革 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/14-digital/index.html">議題庫：數字政府、人工智能與數據治理</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

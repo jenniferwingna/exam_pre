@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/07-housing/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t07">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>2030年基本解決劣質劏房</h2><span class="wc">範文 約 1,487 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《簡樸房條例》已於2026年3月實施，按「先登記、後執法」原則分階段推展：2027年3月起，政府會就違法出租無登記、無認證的分間單位進行巡查、執法及檢控；2030年2月底寬限期屆滿後，會嚴厲打擊出租劣質劏房的違法行為。五年規劃訂下目標，在2030年內基本解決住宅大廈內的劣質劏房問題。有意見認為，這個目標過於進取。你是否同意？請分析現況，提出確保目標達成的措施，分析這些措施在執行上的挑戰（特別是住戶安置）及處理方法，並游說劏房業主遵從簡樸房制度。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>不同意過進取：風險在執法與安置同步</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">2030解決劣質劏房</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">保障性命安全<span class="d">規劃說明目的是保障住戶的性命和財產安全，簡樸房制度並非要消滅所有分間單位。</span></div></li><li><div class="it">留下單位達標<span class="d">底線一：留下的單位符合安全、消防、衞生等法定標準，成敗不在數目歸零。</span></div></li><li><div class="it">住戶有更好去處<span class="d">底線二：被取締單位的住戶有更好的去處，而不是流向更隱蔽的居所。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">有利條件已具備<span class="d">寬限期登記反應理想，公屋綜合輪候時間降至4.8年，簡約公屋大部分已經入伙。</span></div></li><li><div class="it">①登記自我篩選<span class="d">主動登記的是願意守法的業主，最危險的單位往往根本不在登記冊上。</span></div></li><li><div class="it">②業主的算盤<span class="d">改裝達標通常意味可收租的房間減少，部分業主因此寧可轉為隱蔽出租。</span></div></li><li><div class="it">③限期懸崖<span class="d">業主拖到限期前才申請認證，不達標單位便在2030年同時退出，單身住戶最易落空。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①按風險排序執法<span class="d">房屋局聯同消防、屋宇部門，先處理未登記而消防風險最高的單位，每季按區公布，扣①。</span></div></li><li><div class="it">②去處先行<span class="d">執法前逐戶評估並配對去處，沒有安置方案不發遷出指示，以獲安排比例量度，扣②。</span></div></li><li><div class="it">③拆除懸崖<span class="d">已登記單位訂分年度認證目標，提供標準圖則、承建商名單和附續租條件貸款，扣③。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">安置容量不足<span class="d">單身住戶只靠過渡房屋和宿舍；改裝空置校舍、資助機構長租轉租，執法批次配安置容量。</span></div><ul class="tree l3"><li><div class="sub">批次配安置容量</div></li></ul></li><li><div class="it">租金上升<span class="d">達標單位減少、成本轉嫁令租金上升；按區監察租金，貸款附續租條件，糾紛交義務調解。</span></div><ul class="tree l3"><li><div class="sub">監察租金＋調解</div></li></ul></li><li><div class="it">隱蔽出租<span class="d">租戶怕失去居所不會舉報；以同一單位多個水電錶等資料篩查，舉報者優先獲安置配對。</span></div><ul class="tree l3"><li><div class="sub">水電錶篩查</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">應延後目標<span class="d">延後的代價是住戶多一年暴露於火險，業主亦得到「拖下去便不用改」的訊號，懸崖更陡。</span></div><ul class="tree l3"><li><div class="sub">延後亦有代價</div></li></ul></li><li><div class="it">怕基層無處住<span class="d">寬限期已長達四年並備替代供應；把執法批次與安置容量掛鈎，便不必以犧牲住戶為代價。</span></div><ul class="tree l3"><li><div class="sub">問次序非應否</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：劏房業主</button><ul class="tree l2"><li><div class="it">租金收入<span class="d">寬限期屆滿後只有通過認證的單位可合法出租，及早改裝是保住租金收入的唯一途徑。</span></div><ul class="tree l3"><li><div class="sub">只認證單位可租</div></li></ul></li><li><div class="it">改裝成本<span class="d">越近限期承建商越緊張、工程越貴；有圖則、承建商名單和貸款支援，毋須獨擔風險。</span></div><ul class="tree l3"><li><div class="sub">圖則、名單、貸款</div></li></ul></li><li><div class="it">官非風險<span class="d">出租不達標單位一旦發生火警，業主面對檢控以至民事索償，代價遠高於改裝費。</span></div><ul class="tree l3"><li><div class="sub">火警索償更貴</div></li></ul></li><li><div class="it">手續麻煩<span class="d">政府讓步：認證一站式並公布時限，糾紛交調解，把有法律風險的生意轉為合法穩定生意。</span></div><ul class="tree l3"><li><div class="sub">一站式＋調解</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態：是否同意目標過於進取；② 分析現況；③ 提出確保目標達成的措施；④ 分析措施的執行挑戰，要特別處理住戶安置，並逐一給出處理方法；⑤ 游說劏房業主。</li>
 <li><strong>立場一句話：</strong> 不同意。目標有法例和供應作基礎，真正的風險在於執法次序和安置容量能否同步。</li>
@@ -207,6 +279,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>資助出售單位轉讓限制縮至十年</h2><span class="wc">範文 約 1,278 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>政府去年把新推售資助出售單位的轉讓限制年期由十五年縮短至十年，今年再把2022年至2025年期間首次出售的資助出售單位同樣縮短至十年，以鼓勵業主循置業階梯向上流動、加快房屋資源流轉。有意見認為，這項措施能有效促進流轉和上流；亦有意見擔心，資助出售單位會因此淪為投資工具。請分析這項措施的利弊，表明你是否支持，並提出理據。如果支持，請提出配套建議，確保措施能達致其政策目的；如果反對，請提出其他促進房屋流轉、鼓勵上流的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持，但只做一半：須把上流轉為流轉</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">資助房十年轉讓</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">上流≠流轉<span class="d">上流看業主能否進入私人市場，流轉看單位能否交到下一個有需要家庭，兩者方向不同。</span></div></li><li><div class="it">騰出單位？<span class="d">評估問題一：措施是否真的為下一批有需要的家庭騰出單位。</span></div></li><li><div class="it">補貼合理？<span class="d">評估問題二：資助出售單位內含的公帑補貼是否得到合理處理。</span></div></li><li><div class="it">自住守住？<span class="d">評估問題三：資助出售單位的「自住」原意在縮短限制後能否守得住。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">合家庭生命周期<span class="d">家庭十多年間子女成長、收入改變，限制過長把家庭鎖在不合適單位；十年較貼近周期。</span></div></li><li><div class="it">觸發連鎖空置<span class="d">業主出售後若買家是綠表家庭便會交還公屋，一宗轉讓可帶動兩三個家庭改善居住。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">①動機扭曲<span class="d">限制愈短，單位愈易被視為十年後可套現的資產，投資型申請者擠壓自住家庭中籤機會。</span></div></li><li><div class="it">②存量流失<span class="d">補價後在公開市場出售，單位便永久離開資助體系，政府要以成本更高的新供應填補。</span></div></li><li><div class="it">③受惠面窄<span class="d">能補價的多是收入較高業主，收入一般者只能在第二市場出售，最需要上流的未必受惠。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">公帑化私利<span class="d">公開市場出售須先向政府補價，補貼並非無償帶走；第二市場轉手則補貼仍留在體系之內。</span></div><ul class="tree l3"><li><div class="sub">補價並非無償</div></li></ul></li><li><div class="it">應維持十五年<span class="d">限制過長令單位錯配、輪候隊伍無法因流轉縮短，這成本不上帳目，卻由輪候家庭承擔。</span></div><ul class="tree l3"><li><div class="sub">錯配隱藏成本</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">②③第二市場優先<span class="d">增加白表第二市場配額，十年期滿後設第二市場優先期，回應存量流失並擴闊受惠面。</span></div></li><li><div class="it">按補貼幅度分級<span class="d">新加坡按地段分類可借鑑但不能照搬，只在補貼幅度特別大的新項目試行較嚴的轉售安排。</span></div></li><li><div class="it">①守住自住原意<span class="d">加強抽查空置和違規出租，借用房委會打擊濫用公屋的數據分析，令投資者無利可圖。</span></div></li><li><div class="it">定期檢討<span class="d">每年公布轉讓宗數、兩市場比例和交還公屋數目，三年檢討；公開市場比例過高即收緊。</span></div><ul class="tree l3"><li><div class="sub">比例高即收緊</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 分析利弊；② 表明是否支持，並提出理據；③ 條件式任務：支持就提出配套，反對就提出替代措施。</li>
 <li><strong>立場一句話：</strong> 支持，但這項措施只做了一半，要有配套把個別業主的「上流」轉化為整條階梯的「流轉」。</li>
@@ -252,6 +325,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>以新發展區土地支援舊區重建</h2><span class="wc">範文 約 1,286 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>政府提出「以新區發展支援舊區重建」：在北部都會區新發展區預留土地，讓市區重建局提供全新「樓換樓」安排；容許重建項目未用盡的地積比率跨區轉移至其他地區以至新發展區；並試行適度增加私人重建項目的地積比率。五年規劃亦提出檢視「同區七年樓齡」賠償安排；發展局與市建局正進行政策檢討，將於2027年內提出建議並展開諮詢。有意見認為，以新發展區土地支援舊區重建，是加快市區更新的有效方法。請分析這個方向的利弊，表明你是否同意，並提出理據。如果同意，請提出建議，確保這個方向能達致其政策目的（包括照顧受影響居民）；如果不同意，請提出其他加快市區更新的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意：對準瓶頸；成敗看選擇和新區承接</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">新區支援舊區重建</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">避免單一拆建<span class="d">五年規劃要避免單一項目式拆建，讓舊區轉化為環境、交通、公共空間達現代標準的社區。</span></div></li><li><div class="it">動得起來？<span class="d">「加快」只是手段，第一個評估標準是重建是否真的動得起來。</span></div></li><li><div class="it">舊區改善？<span class="d">第二個評估標準是舊區本身是否得到改善，而不是只換來更密的高樓。</span></div></li><li><div class="it">居民更好？<span class="d">第三個評估標準是受重建影響的居民是否過得比以前更好。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">拆基建飽和死結<span class="d">舊區基建承受不了更高密度；地積比率跨區轉移，把發展價值移到有容量的地方兌現。</span></div></li><li><div class="it">樓換樓多一工具<span class="d">北都預留地興建樓換樓單位，業主多了以舊換新的選擇，市建局不必只靠現金收購。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">①社區網絡斷裂<span class="d">舊區長者的醫生、街坊和社區服務都在原區，北都單位對他們是「搬走」而非「換新」。</span></div></li><li><div class="it">②壓力轉移新區<span class="d">轉移令新區人口和樓面多於原規劃，若交通、學額、醫療慢於入伙，早期居民承擔代價。</span></div></li><li><div class="it">③租戶被忽略<span class="d">樓換樓和賠償只針對業主，舊樓大量租戶包括劏房戶被迫遷出更快，卻不在保障之內。</span></div></li><li><div class="it">④七年樓齡爭議<span class="d">「七年樓齡」檢視若被理解為削減補償，業主抗拒令收購更慢，與「加快」背道而馳。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">補貼發展商<span class="d">發展商在新區取得額外樓面值得正視；但若放棄，舊區繼續動不了，失修風險由住戶承擔。</span></div><ul class="tree l3"><li><div class="sub">掛鈎舊區改善</div></li></ul></li><li><div class="it">應否轉移<span class="d">轉移與舊區完成重建、交出公共空間掛鈎並公開計算方法，便是交易而非單方面饋贈。</span></div><ul class="tree l3"><li><div class="sub">問條件不問應否</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">①原區安置選擇<span class="d">樓換樓是現金以外的選項而非取代，並在舊區或鄰近項目預留原區安置單位，回應弊一。</span></div></li><li><div class="it">②配套先於入伙<span class="d">交通、診所和長者服務須在入伙前到位，按基建容量設接收轉移樓面上限，回應弊二。</span></div></li><li><div class="it">③租戶納安置網<span class="d">服務隊與市建局評估租戶，安排公屋、簡約公屋或過渡房屋，列為推展條件，回應弊三。</span></div></li><li><div class="it">④賠償檢視透明<span class="d">2027年公開七年樓齡檢視原則和過渡安排，轉移收益部分用於改善舊區，回應弊四。</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 分析利弊；② 表明是否同意，並提出理據；③ 條件式任務：同意就提出確保達致政策目的的建議，而且必須包括照顧受影響居民；不同意就提出其他加快市區更新的措施。</li>
 <li><strong>立場一句話：</strong> 同意，因為這個方向對準了舊區重建的根本瓶頸；但能否「有效」，取決於居民有沒有真實選擇，以及新區能否承接轉移過去的人口和樓面。</li>
@@ -311,6 +385,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the enforcement of the minimum standards regime for subdivided units and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Law is in place; risk is delivery: no closure without destination</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Subdivided unit standards enforcement</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Protect lives, not cut numbers<span class="d">The regime exists to protect the lives and safety of residents, not to reduce subdivided units for its own sake.</span></div></li><li><div class="it">Remaining units safe<span class="d">A compliant unit is an acceptable outcome, so the first test is whether the units that remain are safe.</span></div></li><li><div class="it">Displaced households better housed<span class="d">The second test is whether households whose units close end up better housed, not in worse unregistered rooms.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: certification cliff edge</button><ul class="tree l2"><li><div class="it">Owner delay is rational<span class="d">Upgrading means fewer rooms to let, and registered units stay lawful until the deadline, so owners rationally delay.</span></div><ul class="tree l3"><li><div class="sub">Final-year surge</div></li></ul></li><li><div class="it">Contractor shortage<span class="d">With too few contractors and inspectors, a final-year surge means many units fail by default rather than on assessment.</span></div><ul class="tree l3"><li><div class="sub">Units fail by default</div></li></ul></li><li><div class="it">Compliance seems unaffordable<span class="d">Owners who judge compliance unaffordable may let informally, moving the most dangerous units out of the Ministry&#x27;s sight.</span></div><ul class="tree l3"><li><div class="sub">Informal letting, unseen</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: rehousing mismatch</button><ul class="tree l2"><li><div class="it">Single adults wait longest<span class="d">Single adults wait longer for public housing and rely on temporary options already about ninety per cent occupied.</span></div><ul class="tree l3"><li><div class="sub">Burden on the voiceless</div></li></ul></li><li><div class="it">Enforcement, rehousing on separate tracks<span class="d">Complaint-led enforcement and queue-based rehousing run separately, so the Ministry faces homelessness or signalling that deadlines are negotiable.</span></div><ul class="tree l3"><li><div class="sub">Homelessness or soft deadlines</div></li></ul></li><li><div class="it">Complaint-led inspection<span class="d">Tenants fearing eviction stop reporting unsafe conditions, so complaints dry up precisely where the risk is highest.</span></div><ul class="tree l3"><li><div class="sub">Tenants stop reporting</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Annual district milestones<span class="d">Set annual certification milestones published by district, prioritising inspection visits for buildings that fall behind.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Layouts, contractors, conditional loans<span class="d">Offer standard layouts, accredited contractors and low-interest loans conditional on offering existing tenants renewal after certification.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Assess households before closure<span class="d">Before any vacate order, a district team assesses each household and matches it to public, temporary or assisted housing.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Batches sized to rehousing<span class="d">Size each enforcement batch to the district&#x27;s rehousing capacity, and convert vacant government premises into hostels for single adults.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Start alongside enforcement<span class="d">Risk-based inspection and household assessments begin together when enforcement against unregistered units starts in six months.</span></div></li><li><div class="it">Four quarterly indicators<span class="d">Report quarterly on certifications against milestones, units closed, households rehoused within a set period and rents by district.</span></div></li><li><div class="it">Adjust batches, not deadline<span class="d">Where rehousing falls behind closures in a district, adjust the size of enforcement batches there rather than the deadline.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> (a) 寫<strong>兩個</strong>主要問題，數目不可多也不可少；每個問題後面要有獨立的 Implications 段。(b) 建議要逐項回扣兩個問題，並有誰做、何時做、指標。</li>
 <li><strong>從資料中找問題：</strong> 認證申請只有約 6%，加上業主的成本理由和限期設計，構成問題一：懸崖效應。約 40% 住戶是單身、臨時住屋已滿九成、執法由投訴觸發，構成問題二：安置容量與受影響者錯配。三個部門分權屬於執法人手問題，不另立第三個問題，收進建議。</li>
@@ -415,6 +490,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../06-welfare/index.html">← 06 福利、扶貧與社會流動</a><a href="../08-innovation/index.html">08 創新科技與新型工業 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/07-housing/index.html">議題庫：土地、房屋與居住質素</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/01-ageing/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t01">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>輸入外籍家居照顧員</h2><span class="wc">範文 1,437 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《行政長官2026年施政報告》提出，政府會參照現有輸入外籍家庭傭工制度，試行輸入具備較高護老技能培訓水平及經驗的外籍家居照顧員，以滿足居家長者的照顧需要。有意見認為，這是應對居家安老人手短缺的有效方法。你是否同意？試分析現時居家照顧的人手狀況，提出優化此試行計劃的措施，分析這些措施在執行上的挑戰及處理方法，並嘗試游說勞工界支持此計劃。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意，前提：技能把關、對象門檻、家庭支援</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">輸入外籍家居照顧員</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><div class="bd">先拆政策目的，導出評估標準再表態</div><ul class="tree l2"><li><div class="it">可靠居家照顧<span class="d">居家安老要讓體弱長者在家中得到可靠照顧，這是評估計劃是否有效的出發點。</span></div></li><li><div class="it">延後入院<span class="d">目的包括盡量延後入住院舍，同時不讓家人照顧者被拖垮。</span></div></li><li><div class="it">標準：技能可信<span class="d">第一項標準：照顧員的護老技能是否可信，對應措施一的本地認證。</span></div></li><li><div class="it">標準：惠及最需要<span class="d">第二項標準：計劃能否惠及最需要全日照顧的家庭，否則只是收費較高的外傭計劃。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><div class="bd">用機制診斷，癥結編號與措施對應</div><ul class="tree l2"><li><div class="it">形態錯配非數量<span class="d">缺口不是數量不足而是形態錯配：長者需要全日照顧，本地服務卻以日間按節數提供。</span></div></li><li><div class="it">①外傭無護老技能<span class="d">外傭制度原本只為家務而設，從不要求護老技能，卻由不少家庭用來兼顧護老。</span></div></li><li><div class="it">②體弱者提早入院<span class="d">家人和外傭撐不住時長者便提早入院，由最昂貴的服務承擔本可在家處理的需要。</span></div></li><li><div class="it">③以老護老<span class="d">填補空隙的家人愈來愈多是以老護老；真正癥結是缺少留宿而又受過訓練的人手層級。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><div class="bd">逐項回扣癥結，附指標或試行</div><ul class="tree l2"><li><div class="it">①本地技能認證<span class="d">照顧員來港前通過本地認可評核，抵港三個月內再完成實務評核，回應技能是否可信。</span></div></li><li><div class="it">②中度缺損門檻<span class="d">首階段只限中度或以上缺損、或輪候長期護理長者的家庭，把名額用在最可能延後入院者。</span></div></li><li><div class="it">③僱傭支援中心<span class="d">由社福機構提供聘前配對、僱主培訓、訂明工時上限的標準合約及投訴渠道。</span></div></li><li><div class="it">聘用資助<span class="d">照顧員工資若高於外傭，為經審查合格家庭提供聘用資助，避免計劃只惠及中產。</span></div><ul class="tree l3"><li><div class="sub">→負擔能力</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><div class="bd">批評自己的措施，逐項配處理</div><ul class="tree l2"><li><div class="it">認證成本高<span class="d">認證成本高、培訓參差；首階段只與一兩個來源地互認，委託機構抽樣覆核。</span></div><ul class="tree l3"><li><div class="sub">一兩來源地互認</div></li></ul></li><li><div class="it">工時休息爭議<span class="d">僱主不懂管理易生爭議；支援中心家訪，休息日由暫託補位，先調解後轉介。</span></div><ul class="tree l3"><li><div class="sub">家訪＋暫託補位</div></li></ul></li><li><div class="it">勞工界反對<span class="d">勞工界憂慮繞過本地優先；設配額上限、只限留宿式，按公開數據增減配額。</span></div><ul class="tree l3"><li><div class="sub">配額上限＋數據</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><div class="bd">駁最強反方，不打稻草人</div><ul class="tree l2"><li><div class="it">加薪即可<span class="d">加薪解決的是有沒有人入行，解決不了有沒有人願意留宿照顧一名長者。</span></div><ul class="tree l3"><li><div class="sub">入行≠願留宿</div></li></ul></li><li><div class="it">兩者分工非取捨<span class="d">本地人手往督導、社區和院舍等專業崗位發展，外籍照顧員填補留宿式居家照顧。</span></div></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：勞工界</button><div class="bd">抓對方在意的事，給理由和讓步</div><ul class="tree l2"><li><div class="it">飯碗<span class="d">配額與公開數據掛鈎，若本地居家照顧員的就業或薪酬受壓，配額即凍結檢討。</span></div><ul class="tree l3"><li><div class="sub">受壓即凍結配額</div></li></ul></li><li><div class="it">議價能力<span class="d">政府同步為本地護理員建立職級和晉升階梯，並資助在職培訓，提升議價能力。</span></div><ul class="tree l3"><li><div class="sub">晉升階梯</div></li></ul></li><li><div class="it">先例<span class="d">承諾計劃只限居家照顧，任何擴展至其他工種的建議須經勞資政三方重新討論。</span></div><ul class="tree l3"><li><div class="sub">擴展須三方議</div></li></ul></li><li><div class="it">專業化<span class="d">把護老技能寫入入境安排並設認證，等於承認照顧是專業，長遠有利本地護理員爭取待遇。</span></div><ul class="tree l3"><li><div class="sub">認證抬高照顧價值</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> ⓪ 表態（你是否同意）→ ① 分析居家照顧人手狀況 → ② 優化措施 → ③ 執行挑戰＋處理方法（逐一配對）→ ④ 游說勞工界。另加一段駁論。</p>
 <p><strong>本文立場一句話：</strong> 同意這是有效方法之一，但有三個前提——技能有把關、對象有門檻、家庭有支援。</p>
 <div class="tbl"><table>
@@ -265,6 +337,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>提升長者券比重</h2><span class="wc">範文 1,177 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《香港第一個五年規劃》提出，逐步增加長者社區照顧服務券和院舍照顧服務券（統稱「長者券」）的數量，並逐步提升長者券在整體資助照顧服務中的比重。有意見認為，這個方向能讓長者有更多選擇、令服務更有效率，政府應積極推行。請分析這個方向的利弊，表明你是支持抑或反對，並就你的立場提出理據。如果是支持的話，請提出建議，確保長者券能惠及最有需要的長者；如果是反對的話，請提出其他能讓最有需要的長者得到適切照顧的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持；比重非目標，把關機制先行</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">提升長者券比重</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><div class="bd">先拆政策目的，導出評估標準再表態</div><ul class="tree l2"><li><div class="it">錢跟人走<span class="d">資助由政府撥款予機構按名額提供，轉為錢跟人走，由長者自選服務提供者。</span></div></li><li><div class="it">標準：最需要者易得<span class="d">第一項標準：最有需要的長者是否更容易得到合適服務，即公平。</span></div></li><li><div class="it">標準：公帑買更多<span class="d">第二項標準：同一筆公帑能否買到更多用得上的服務，即效率。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><div class="bd">公允寫最強的支持理由</div><ul class="tree l2"><li><div class="it">迫營辦者回應需要<span class="d">營辦者若要爭取持券長者便須調整服務，覆蓋名額模式下無人照顧的夜間和周末。</span></div></li><li><div class="it">供應擴展更快<span class="d">更多營辦者可加入，增加服務不必等政府逐一開設中心，有助達到五年規劃目標。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><div class="bd">弊處寫機制，為建議鋪路</div><ul class="tree l2"><li><div class="it">①不懂得選<span class="d">認知障礙、獨居或缺乏家人支援的長者最需要照顧，卻最難比較服務和處理申請。</span></div></li><li><div class="it">②營辦者揀客<span class="d">若券值不分照顧難度，高依賴長者成本較高，營辦者自然傾向接收較易照顧的個案。</span></div></li><li><div class="it">③地區供應不均<span class="d">營辦者集中在需求密集地區，偏遠或新發展區的長者可能有券無服務。</span></div></li><li><div class="it">結果：流向易服務者<span class="d">三項風險指向同一結果：資源流向較易服務的人，與精準照顧的原意相反。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><div class="bd">駁最強反方，不打稻草人</div><ul class="tree l2"><li><div class="it">理據：名額亦隱性篩選<span class="d">按名額撥款同樣有隱性篩選：誰能排到、排在哪區，取決於機構地點和輪候次序。</span></div></li><li><div class="it">維持名額模式<span class="d">問題不在券還是名額，而在誰替長者選擇、券值是否反映照顧難度；名額保留作安全網。</span></div><ul class="tree l3"><li><div class="sub">問題是誰替長者選</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><div class="bd">逐項對應弊處，附檢討指標</div><ul class="tree l2"><li><div class="it">①獨立個案經理<span class="d">個案經理由不提供服務的社福單位擔任，避免球員兼球證；借鑑日本不照搬。</span></div></li><li><div class="it">①數據主動識別<span class="d">利用社福數據分享平台，在保障私隱下找出未申請的高風險長者，由個案經理主動接觸。</span></div></li><li><div class="it">②分級券值＋接收<span class="d">高依賴個案券值較高令營辦者接得起，營辦者不得無合理理由拒收轉介長者，回應揀客。</span></div></li><li><div class="it">③按區安全網<span class="d">每年公布各區持券人數、服務點和輪候時間，供應不足地區以直接資助名額補位。</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> ① 利 → ② 弊 → ③ 表明立場＋理據 → ④ 條件式分支（本文支持，所以寫「確保長者券惠及最有需要的長者」的建議）。</p>
 <p><strong>本文立場一句話：</strong> 支持這個方向，但「比重」本身不是目標；替長者把關的機制必須先行。</p>
 <div class="tbl"><table>
@@ -361,6 +434,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>跨境養老與院舍輪候</h2><span class="wc">範文 1,109 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《行政長官2026年施政報告》提出持續擴展「廣東院舍照顧服務計劃」，物色更多大灣區內地城市安老院加入，為本港長者提供更多院舍選擇；《香港第一個五年規劃》亦提出資助參加計劃的長者購買當地醫療保險，並向跨境養老長者直接發放可攜現金援助。有意見認為，政府應以擴展跨境養老作為紓緩本地資助安老院舍輪候壓力的主要方法。請分析這個建議的利弊，表明你是支持抑或反對，並就你的立場提出理據。如果是支持的話，請提出建議，確保這個方法能有效紓緩輪候壓力；如果是反對的話，請提出其他紓緩本地資助安老院舍輪候壓力的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>反對作主要方法；支持作自願選項</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">跨境養老紓緩輪候</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><div class="bd">先拆政策目的，導出評估標準再表態</div><ul class="tree l2"><li><div class="it">擴大選擇→消化需求<span class="d">施政報告的目的是擴大院舍選擇；作為主要方法，目的便偷換成消化本地需求。</span></div></li><li><div class="it">標準：自願真實<span class="d">擴大選擇的評估標準是長者是否自願、選擇是否真實，本文支持這個定位。</span></div></li><li><div class="it">標準：持續減輪候<span class="d">消化需求的標準是能否大規模而持續地減少本地輪候，跨境養老達不到。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><div class="bd">公允寫最強的支持理由</div><ul class="tree l2"><li><div class="it">成本低擴充快<span class="d">大灣區內地城市的土地和人手成本較低，院舍擴充比本地覓地興建快。</span></div></li><li><div class="it">有親友者合意<span class="d">對在內地有親友、熟悉當地生活的長者，跨境院舍本身就是更合意的選擇。</span></div></li><li><div class="it">北上一人少一人<span class="d">醫療保險資助和可攜現金援助降低跨境成本；每有一人自願北上，輪候便少一人。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><div class="bd">弊處寫機制，為建議鋪路</div><ul class="tree l2"><li><div class="it">①對象錯配<span class="d">輪候最急切的是體弱常需就醫者，最適合跨境的卻是身體尚可、有親友在當地的長者。</span></div></li><li><div class="it">②需求回流<span class="d">長者健康轉差時，家人多希望接回香港就醫照顧，需求重回本地，紓緩只屬暫時。</span></div></li><li><div class="it">③削弱本地規劃<span class="d">以跨境為主渠道會延後本地院舍規劃，社會亦可能理解為把長者送走，令選擇蒙上污名。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><div class="bd">駁最強反方，不打稻草人</div><ul class="tree l2"><li><div class="it">本地追不上需求<span class="d">承認本地土地和人手緊絀屬實，但紓緩輪候的關鍵是減少過早或不必要的入院。</span></div><ul class="tree l3"><li><div class="sub">減過早入院</div></li></ul></li><li><div class="it">前提錯：只靠加宿位<span class="d">對方假設輪候只能靠增加宿位解決，部分長者在家中得到足夠支援便可延後入院。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">替代措施</button><div class="bd">反對分支：提出完整替代方案</div><ul class="tree l2"><li><div class="it">社區照顧延後入院<span class="d">善用社區照顧服務券和日間護理名額作過渡，配合外籍家居照顧員，讓長者延後入院。</span></div><ul class="tree l3"><li><div class="sub">→駁論</div></li></ul></li><li><div class="it">③多渠道增宿位<span class="d">落實新增院舍、新建院舍交業界自資營運、私人發展物業提供院址，並檢視規劃比率。</span></div></li><li><div class="it">①把好入院閘門<span class="d">定期為輪候長者重新評估，惡化者優先，社區可應付者轉介，宿位留給最急切個案。</span></div></li><li><div class="it">②試住＋回流安排<span class="d">設試住期和回流安排，配對內地醫療機構，公開巡查收費，讓選擇非出於無奈。</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> ① 利 → ② 弊 → ③ 表明立場＋理據 → ④ 條件式分支（本文反對，所以寫「其他紓緩輪候壓力的措施」）。</p>
 <p><strong>本文立場一句話：</strong> 反對以跨境養老作為紓緩輪候的「主要方法」，但支持把它作為長者自願的選項繼續擴展。這不是騎牆：反對的是題目的主張本身，支持的是另一件事。</p>
 <p><strong>紅線：</strong> 不把「把長者送走」寫成自己的觀點（只可作為社會觀感的風險）；不評價內地醫療制度的優劣。</p>
@@ -467,6 +541,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the implementation of the pilot and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Judge by shorter waits and protection, not occupancy</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Self-financed care homes pilot</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><div class="bd">Define the objective and reset the success test</div><ul class="tree l2"><li><div class="it">Subsidy follows the resident<span class="d">The government still supplies the buildings, but subsidy follows the resident through the voucher instead of flowing to operators as grants.</span></div></li><li><div class="it">Faster places, no recurrent grants<span class="d">The objective is to add places faster and widen choice without a matching rise in recurrent grants.</span></div></li><li><div class="it">Occupancy proves nothing<span class="d">With a 23-month queue the homes will fill anyway; the test is shorter waits for the neediest and resident protection.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: access</button><div class="bd">Diagnose the mechanism; implications to second layer</div><ul class="tree l2"><li><div class="it">Unaffordable top-ups<span class="d">The voucher covers only part of a typical fee, so operators rationally charge top-ups many voucher holders cannot afford.</span></div><ul class="tree l3"><li><div class="sub">Frailest still wait</div></li></ul></li><li><div class="it">Lighter-care admissions<span class="d">Operators admit lighter-care residents; passed-over frail elders stay in hospital or at home, displacing cost to health system and families.</span></div><ul class="tree l3"><li><div class="sub">Costs shift to hospitals</div></li></ul></li><li><div class="it">Top-up pressure<span class="d">As top-ups rise, pressure builds to raise the voucher value, creating recurrent expenditure by the back door.</span></div><ul class="tree l3"><li><div class="sub">Back-door recurrent spending</div></li></ul></li><li><div class="it">Nominal-rent public buildings<span class="d">Public buildings let at nominal rent to better-off residents invite the charge that public assets subsidise private profit.</span></div><ul class="tree l3"><li><div class="sub">Subsidising private profit</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: resident protection</button><div class="bd">Diagnose the mechanism; implications to second layer</div><ul class="tree l2"><li><div class="it">Residents cannot easily leave<span class="d">Market discipline assumes customers can leave, but moving frail residents is harmful, so poor quality is tolerated rather than punished.</span></div><ul class="tree l3"><li><div class="sub">Poor quality tolerated</div></li></ul></li><li><div class="it">Operator failure<span class="d">Operators carry financial but not political risk; failure means emergency relocation, and expected rescue creates moral hazard.</span></div><ul class="tree l3"><li><div class="sub">Relocation, moral hazard</div></li></ul></li><li><div class="it">Staff poaching<span class="d">With one post in seven vacant, new homes recruit from existing ones, raising wages and weakening subvented homes.</span></div><ul class="tree l3"><li><div class="sub">Moves workers, adds none</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><div class="bd">Each measure tagged to the problem it answers</div><ul class="tree l2"><li><div class="it">Tender on access, not rent<span class="d">Award premises on a scored service plan, with marks for places reserved for voucher holders at no or capped top-up.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Tiered voucher, acceptance duty<span class="d">A higher voucher for high-dependency residents makes them viable; operators must admit referred voucher holders and publish admission profiles.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Lease safeguards, step-in rights<span class="d">Leases specify staffing ratios, a performance bond, minimum exit notice and a transition plan; the Ministry holds step-in rights.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Inspect, publish, train entrants<span class="d">Add unannounced inspections with published findings, and require a share of new trained entrants so operators grow the workforce.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><div class="bd">Timeline, indicators and review point</div><ul class="tree l2"><li><div class="it">Test two contract variants<span class="d">Safeguards may deter bidders; test a capped-top-up variant and a tiered-voucher variant across the four sites.</span></div></li><li><div class="it">Five half-yearly indicators<span class="d">Report half-yearly on high-dependency share, admissions from the list, top-ups, inspections and complaints, and staff turnover.</span></div></li><li><div class="it">Review before extending<span class="d">A mid-term review after the first homes run a full year should precede any decision to extend the model.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> (a) 兩個問題，每個問題後接獨立的 Implications 段；(b) 措施，逐項回扣兩個問題。數目是兩個，不多不少。</p>
 <p><strong>本文立場一句話（政策目的）：</strong> 試行的目的不是多加 650 個宿位，而是在不增加經常撥款的前提下更快增加宿位、擴大選擇；所以成功標準不是入住率，而是最有需要的人是否少等了、住客是否受保障。</p>
 <p><strong>從背景抽問題：</strong> 營辦者協會要「自訂收費、自選住客」＋院舍券只付約七成 → 問題一（服務對象）；North Bay 倒閉先例＋七分之一職位空缺 → 問題二（住客保障：質素與延續）。工會的挖角憂慮併入問題二，不另立第三個問題。</p>
@@ -614,6 +689,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><span></span><a href="../02-healthcare/index.html">02 醫療衞生與基層醫療 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/01-ageing/index.html">議題庫：人口老化與安老服務</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

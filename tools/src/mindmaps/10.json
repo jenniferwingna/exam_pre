@@ -1,0 +1,555 @@
+{
+  "topic": "10",
+  "title": "交通運輸與智慧出行",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "網約車上限",
+      "stance": "不急放寬：先訂指標，按缺口增發",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "公共交通為本",
+              "c": [],
+              "d": "政府一貫以公共交通為本，點對點服務屬輔助，規管目的不是單純增加路面車輛。"
+            },
+            {
+              "t": "補緊絀時地",
+              "c": [],
+              "d": "第一項標準：供應最緊絀的時段和地區能否改善，「市場需求」只回答了這一項的一部分。"
+            },
+            {
+              "t": "不損道路承載",
+              "c": [],
+              "d": "第二項標準：道路承載力和公共交通生態不受損害，新增車輛不應加劇擠塞。"
+            },
+            {
+              "t": "行業可持續",
+              "c": [],
+              "d": "第三項標準是點對點行業能否健康持續，三項合起來才是判斷放寬的依據。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①不足與否未知",
+              "c": [],
+              "d": "許可證第四季才發，人車綁定等限制下多少人申請未知，未量度供應便判不足。"
+            },
+            {
+              "t": "②錯配多於總量",
+              "c": [],
+              "d": "叫車難集中於繁忙、惡劣天氣、深夜和偏遠，放寬總數，新增車輛仍擠在市區。"
+            },
+            {
+              "t": "③數據在平台手",
+              "c": [],
+              "d": "需求數據在平台手上，平台有誘因放大需求，以其需求為準等於把發牌交給受規管者。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①基線期訂指標",
+              "c": [],
+              "d": "2027年上半年公布分區分時段候車時間等指標，首十二個月為基線期，不調整上限。"
+            },
+            {
+              "t": "②按缺口增發",
+              "c": [
+                "附條件＋擠塞閘門"
+              ],
+              "d": "個別地區時段持續未達標才增發，附新界離島深夜服務條件，車速跌破即暫停增發。"
+            },
+            {
+              "t": "③數據寫入牌照",
+              "c": [],
+              "d": "把定期提交數據寫入平台牌照條件，由運輸署掌握數據，扣數據不對稱的癥結。"
+            },
+            {
+              "t": "的士同步提升",
+              "c": [
+                "同一套指標"
+              ],
+              "d": "鼓勵的士全面接入召車平台，以同一套指標公開評核的士與網約車。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "平台操控數據",
+              "c": [
+                "抽查交叉核對"
+              ],
+              "d": "平台可能選擇性提交數據，故訂明欄位頻率、運輸署抽查，以車速和問卷交叉核對。"
+            },
+            {
+              "t": "淪為政治角力",
+              "c": [
+                "規則事先公布"
+              ],
+              "d": "平台嫌慢、的士嫌快，故事先公布指標門檻、每半年公開評估，決定權歸運輸署。"
+            },
+            {
+              "t": "行政負擔重",
+              "c": [
+                "先粗後細"
+              ],
+              "d": "分區分時段監察加重負擔，故首階段只分數個大區和兩類時段，並以系統自動比對。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "重蹈稀缺牌照",
+              "c": [
+                "人車綁定無炒賣"
+              ],
+              "d": "稀缺牌照確是的士困局根源，但人車綁定杜絕許可證轉手出租，稀缺不會變成炒賣價值。"
+            },
+            {
+              "t": "上限延續叫車難",
+              "c": [
+                "擠塞成本全民付"
+              ],
+              "d": "每多一輛車，擠塞成本由全體道路使用者承擔，市場需求必然高估社會需要。"
+            }
+          ]
+        },
+        {
+          "label": "游說：的士業界",
+          "items": [
+            {
+              "t": "怕收入攤薄",
+              "c": [
+                "規則公開可預期"
+              ],
+              "d": "增發須通過公開指標和擠塞閘門，業界可預見規則，而非面對隨平台游說變動的數字。"
+            },
+            {
+              "t": "怕厚此薄彼",
+              "c": [
+                "同指標、鬆綁的士"
+              ],
+              "d": "兩者以同一套指標評核，並檢討的士過時限制，例如研究經平台預約時的收費彈性。"
+            },
+            {
+              "t": "要話事權",
+              "c": [
+                "諮詢小組一席"
+              ],
+              "d": "的士業界在諮詢小組佔一席並取得匯總數據；的士司機正是最快取得網約車資格的一群。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "自動車擴展公交",
+      "stance": "不急擴展：先建減人制度，分級補位",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "商業化≠省人手",
+              "c": [],
+              "d": "車上仍需安全員便是一車一人，商業化本身不等於紓緩人手，題目把兩者混為一談。"
+            },
+            {
+              "t": "安全可控",
+              "c": [],
+              "d": "第一項標準是安全風險是否可控，一宗嚴重事故足以令整條技術路線停擺。"
+            },
+            {
+              "t": "責任保險清楚",
+              "c": [],
+              "d": "第二項標準是事故責任與保險是否清楚，否則保險缺乏定價基礎、商業營運卡住。"
+            },
+            {
+              "t": "一人多車",
+              "c": [],
+              "d": "真正能紓緩人手，是一名遙距人員可同時監察多輛車，故以每人監察車數作標準。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①責任未明",
+              "c": [],
+              "d": "無人駕駛事故責任在製造商、營運商還是遙距操作員未有完整安排，保險缺定價基礎。"
+            },
+            {
+              "t": "②安全員未減人",
+              "c": [],
+              "d": "測試和初期營運多配備安全員，人手需求不減反增，紓緩人手的效益未現。"
+            },
+            {
+              "t": "③路況複雜風險高",
+              "c": [],
+              "d": "小巴巴士路線要應付頻密上落客、違泊和斜路急彎，與首個項目所在的機場截然不同。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①先立法定責任",
+              "c": [],
+              "d": "兩年內修例訂營運商為首要責任人，先行賠償再追討製造商，並訂遙距監察車數上限。"
+            },
+            {
+              "t": "②補位難招路線",
+              "c": [
+                "轉型遙距調度"
+              ],
+              "d": "第二級路線優先選深夜接駁和新發展區循環線，並資助司機轉型安全員、遙距和調度。"
+            },
+            {
+              "t": "③按場景分級",
+              "c": [
+                "安全數據作閘門"
+              ],
+              "d": "分封閉範圍、固定低速接駁、一般道路三級，每升一級須達接管頻率和事故率等指標。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "業界嫌慢",
+              "c": [
+                "公布審批時間"
+              ],
+              "d": "企業或轉往寬鬆城市，故公布每級準入條件和審批時間，並容許同級內擴大車隊。"
+            },
+            {
+              "t": "立法需時",
+              "c": [
+                "牌照條件過渡"
+              ],
+              "d": "保險業嫌數據不足，故以牌照條件先行過渡，營運商先行賠償，政府與業界共享匿名數據。"
+            },
+            {
+              "t": "公眾信任",
+              "c": [
+                "獨立調查只停一線"
+              ],
+              "d": "定期公開營運數據，設獨立事故調查，事故後只暫停涉事路線，避免拖垮整個計劃。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "落後內地城市",
+              "c": [
+                "借定責不抄速度"
+              ],
+              "d": "內地先以法規明確責任再擴大營運可借鑑，但香港路窄、人車密度高，速度不可照搬。"
+            },
+            {
+              "t": "技術需真實路面",
+              "c": [
+                "第二級已上路"
+              ],
+              "d": "技術需要真實路面數據才會成熟，本文的第二級正是在真實道路上累積數據。"
+            }
+          ]
+        },
+        {
+          "label": "游說：職工團體",
+          "items": [
+            {
+              "t": "怕失飯碗",
+              "c": [
+                "補位、自然流失"
+              ],
+              "d": "自動車優先用於招不到司機的路線，要求營運商以自然流失處理人手，不取代在職司機。"
+            },
+            {
+              "t": "怕被淘汰",
+              "c": [
+                "優先轉型培訓"
+              ],
+              "d": "遙距操作和車隊調度需要熟悉本地路況的人，正是資深司機經驗的延伸，現職者優先受訓。"
+            },
+            {
+              "t": "要話事權",
+              "c": [
+                "參與指標檢討"
+              ],
+              "d": "讓職工代表參與安全指標檢討，由旁觀者變監察者，參與決定技術進入行業的速度和條件。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "粵車南下名額",
+      "stance": "支持增加，反對劃一：按日分層",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "雙向便利",
+              "c": [],
+              "d": "計劃與「港車北上」對應，令兩地自駕往來成為真正的雙向便利。"
+            },
+            {
+              "t": "高消費客群",
+              "c": [],
+              "d": "第二個目的是吸引消費力較高的家庭和小團體旅客來港消費。"
+            },
+            {
+              "t": "看分布非總量",
+              "c": [],
+              "d": "標準是每增一個名額帶來多少消費、在何時何地產生多少負擔，關鍵在分布非總量。"
+            }
+          ]
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "需求真實",
+              "c": [],
+              "d": "內地長假期曾超額預約，自駕旅客多為家庭、傾向過夜，消費集中於住宿、餐飲和購物。"
+            },
+            {
+              "t": "雙向對等",
+              "c": [],
+              "d": "港車北上已廣泛使用，南下名額長期偏緊則兩地互惠欠對等，亦未發揮大橋效益。"
+            }
+          ]
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "①長假期需求集中",
+              "c": [],
+              "d": "名額在長假期最緊，正是景點商場和過海通道最擠之時，劃一增加令新車流落在最擠處。"
+            },
+            {
+              "t": "②駕駛規則不同",
+              "c": [],
+              "d": "內地左軚車靠右行駛，香港靠左、路窄彎多，短期來港者未必熟悉巴士站和黃線規則。"
+            },
+            {
+              "t": "③跨境執法難",
+              "c": [],
+              "d": "違例罰款難向已離境車主追討，本地駕駛者覺不公平，居民觀感轉差反拖慢擴展。"
+            }
+          ]
+        },
+        {
+          "label": "理據＋駁論",
+          "items": [
+            {
+              "t": "名額是管理工具",
+              "c": [],
+              "d": "消費發生在商場酒店景點，旅客毋須把車開進核心區，名額應用來引導車流而非追求數量。"
+            },
+            {
+              "t": "分層效率更高",
+              "c": [],
+              "d": "把有限道路容量優先分給有確定落腳點的行程，每個名額轉化為消費的比率更高。"
+            },
+            {
+              "t": "穩步累積支持",
+              "c": [],
+              "d": "施政報告定下「穩步擴展」方針，逐步加碼讓政府以數據回應居民疑慮，擴展走得更遠。"
+            },
+            {
+              "t": "分層太複雜",
+              "c": [
+                "不增申請步驟"
+              ],
+              "d": "現行已按指定日子預約，分層只改每天名額、不增步驟；長假期擠塞才最損吸引力。"
+            }
+          ]
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "①按日子分層",
+              "c": [],
+              "d": "平日名額大幅提高，長假期審慎，額外名額只發給已預約酒店或商場泊位的旅客。"
+            },
+            {
+              "t": "①泊車轉乘",
+              "c": [],
+              "d": "擴大口岸停車場轉乘容量，配合景點公共交通套票和鐵路站停車場轉乘優惠。"
+            },
+            {
+              "t": "②③查驗＋欠罰停約",
+              "c": [],
+              "d": "查驗中心加入本地交通規則簡介和網上測驗；違例資料互通，欠罰款不能再預約。"
+            },
+            {
+              "t": "每季公布數據",
+              "c": [],
+              "d": "運輸署聯同業界每季公布名額使用率、熱點車速和違例率，作下一輪加名額依據。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "Westbank transit line",
+      "stance": "Mode is defensible; risks are interchange and procurement",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Whole journey, not line",
+              "c": [],
+              "d": "The test is a reliable journey to jobs and services from the outset, judged by the whole journey, not the line alone."
+            },
+            {
+              "t": "Avoid car dependence",
+              "c": [],
+              "d": "The NDA should grow as a public-transport-oriented community rather than a car-dependent one, at a cost the City can sustain."
+            },
+            {
+              "t": "Medium capacity is defensible",
+              "c": [],
+              "d": "Measured against the journey test, medium capacity over heavy rail is defensible; the risks lie at the interchange and in procurement."
+            }
+          ]
+        },
+        {
+          "label": "Problem 1: Northgate bottleneck",
+          "items": [
+            {
+              "t": "Northgate already 95% full",
+              "c": [
+                "Crowding hits others too"
+              ],
+              "d": "Northgate platforms run at 95 per cent in the peak with no extra trains before 2033, so crowding also burdens passengers from other districts."
+            },
+            {
+              "t": "Slow first months",
+              "c": [
+                "Car habits lock in"
+              ],
+              "d": "Habits form in the first months after moving; slow, uncertain journeys push early residents to buy cars, locking in car dependence."
+            },
+            {
+              "t": "'Second-class tram' validated",
+              "c": [
+                "Pay for both systems"
+              ],
+              "d": "The 'second-class tram' campaign would be validated by experience, raising pressure for heavy rail and the risk of paying for both systems."
+            }
+          ]
+        },
+        {
+          "label": "Problem 2: first-of-its-kind delivery",
+          "items": [
+            {
+              "t": "Rules written mid-tender",
+              "c": [
+                "Delay beyond 2031"
+              ],
+              "d": "The City is writing an approval regime while the tender is live; slippage beyond 2031 widens the service gap after residents arrive in 2028."
+            },
+            {
+              "t": "Only two bidders",
+              "c": [
+                "Weak price competition"
+              ],
+              "d": "With only two bidders competitive tension is weak, and later design changes will be priced without it."
+            },
+            {
+              "t": "Proprietary technology",
+              "c": [
+                "Decades of lock-in"
+              ],
+              "d": "The chosen system defines interfaces, spare parts and software for decades, constraining every later extension and upgrade."
+            }
+          ]
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Northgate inside project scope",
+              "c": [
+                "→P1"
+              ],
+              "d": "Scope and fund extra platform access, concourse capacity and crowd management at Northgate, plus a peak express bus bypassing it."
+            },
+            {
+              "t": "Through-fares, buses from 2028",
+              "c": [
+                "→P1"
+              ],
+              "d": "Through-ticketing with an interchange discount from opening; buses use the reserved lanes from 2028 so residents start with public transport."
+            },
+            {
+              "t": "Protected upgrade path",
+              "c": [
+                "→P1, P2"
+              ],
+              "d": "Protect the alignment for higher capacity with published loading triggers, answering residents through a transparent mechanism rather than a promise."
+            },
+            {
+              "t": "Rules first, open interfaces",
+              "c": [
+                "→P2"
+              ],
+              "d": "Designate the regulator and adopt an international standard before award; use performance specifications and open interfaces, separating civil works from systems."
+            }
+          ]
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "Framework within six months",
+              "c": [],
+              "d": "Finalise the approval framework and Northgate works scope within six months, then award the systems contract."
+            },
+            {
+              "t": "Keep 2031 target",
+              "c": [],
+              "d": "Bus services on the reserved lanes start with the first intake, while Phase 1 keeps its 2031 opening target."
+            },
+            {
+              "t": "Five indicators, quarterly",
+              "c": [],
+              "d": "Report quarterly on Northgate occupancy, door-to-door time, public transport share, availability, and cost and schedule variance."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

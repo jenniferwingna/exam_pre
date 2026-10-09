@@ -1,0 +1,586 @@
+{
+ "topic": "08",
+ "title": "創新科技與新型工業",
+ "questions": [
+  {
+   "q": 1,
+   "paper": "zh",
+   "center": "新型工業化",
+   "stance": "同意，但非帶回製造：中試留港、量產分工",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "恢復廠房？",
+       "c": [],
+       "d": "若目的是恢復製造業比重，標準便是廠房數目，會驅使政府以補貼追逐廠房。"
+      },
+      {
+       "t": "成果變本地產業",
+       "c": [],
+       "d": "若目的是把科研成果變成留港的產業、職位和稅基，標準是能否在本地走完樣品到首產。"
+      },
+      {
+       "t": "守住中游",
+       "c": [],
+       "d": "後者要求守住最易流失的中游：中試、首產和國際認證留港，量產則與大灣區分工。"
+      }
+     ]
+    },
+    {
+     "label": "現況與癥結",
+     "items": [
+      {
+       "t": "有利條件已具",
+       "c": [],
+       "d": "五所大學躋身全球百強，逾一百三十條智能生產線提早達標，新田科技城將提供中試空間。"
+      },
+      {
+       "t": "①地電成本高",
+       "c": [],
+       "d": "土地和電力成本高昂，本地技術人才持續短缺，新田要到年底起才陸續產出科研用地。"
+      },
+      {
+       "t": "②缺中試、工程師",
+       "c": [],
+       "d": "缺的不是工廠而是中游：中試線、工藝驗證工程師和第一張訂單；中試外流，量產跟著走。"
+      },
+      {
+       "t": "③指標缺中期",
+       "c": [],
+       "d": "5.5%指標屬「預期性」並以「2030年後」為期，沒有中期指標便難以問責。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "成本高不成立",
+       "c": [
+        "地人只佔小部分"
+       ],
+       "d": "自動化並須國際認證的產品，地和人手只佔成本小部分，成敗在知識產權、認證和融資。"
+      },
+      {
+       "t": "灣區鏈更完整",
+       "c": [
+        "問製造哪一段"
+       ],
+       "d": "五年規劃本是「高校研發—灣區製造—港澳融資—國際市場」，真正問題是製造哪一段。"
+      }
+     ]
+    },
+    {
+     "label": "措施",
+     "items": [
+      {
+       "t": "③準則聚焦＋指標",
+       "c": [],
+       "d": "以國際認證、高增值、高自動化篩選產品，首要指標是在港完成中試及首產項目數，扣③。"
+      },
+      {
+       "t": "②共用中試平台",
+       "c": [],
+       "d": "以微電子研發院中試線為樣板，企業按使用量付費，在新田首批用地預留中試樓面，扣②。"
+      },
+      {
+       "t": "①以承諾換土地",
+       "c": [],
+       "d": "產業用地以長期租約、低於市值批出，附投資額和本地職位承諾，未達承諾須退還，扣①。"
+      },
+      {
+       "t": "②培養產線人才",
+       "c": [],
+       "d": "資助延伸至工藝、驗證和品質工程，由應用科學大學與企業合辦學徒式課程，扣②。"
+      }
+     ]
+    },
+    {
+     "label": "挑戰 → 處理",
+     "items": [
+      {
+       "t": "用地時間差",
+       "c": [
+        "過渡空間＋優先權"
+       ],
+       "d": "用地分階段交付，企業兩三年內便決定；先用科學園、創新園過渡，給遷入新田的優先權。"
+      },
+      {
+       "t": "補貼企業觀感",
+       "c": [
+        "里程碑分期"
+       ],
+       "d": "補貼個別企業有觀感和虧損風險；公開準則、獨立評審，按里程碑分期，以整體組合評估。"
+      },
+      {
+       "t": "灣區互相壓價",
+       "c": [
+        "一區兩園分流"
+       ],
+       "d": "灣區城市互相壓價；透過河套一區兩園，把香港做中試融資、灣區做量產訂為分流原則。"
+      }
+     ]
+    },
+    {
+     "label": "游說：立法會",
+     "items": [
+      {
+       "t": "錢用得其所",
+       "c": [
+        "里程碑、可暫停"
+       ],
+       "d": "撥款按里程碑分期，每期附中試項目和本地職位指標，未達標即暫停，議員握實質監察權。"
+      },
+      {
+       "t": "向選民交代",
+       "c": [
+        "每年公布職位"
+       ],
+       "d": "政府每年向事務委員會公布本地職位、薪酬和培訓名額，並配合五年規劃中期評估檢討。"
+      },
+      {
+       "t": "機會成本",
+       "c": [
+        "擴稅基撐民生"
+       ],
+       "d": "錢投醫療安老受惠更即時，但沒有新產業擴闊稅基，未來民生開支只會更難支撐。"
+      },
+      {
+       "t": "怕一次背書",
+       "c": [
+        "首期兩三產業"
+       ],
+       "d": "讓步：首期撥款只覆蓋兩至三個重點產業，中期評估達標才擴展，議員毋須一次過背書。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 2,
+   "paper": "zh",
+   "center": "引導基金揀贏家？",
+   "stance": "不同意：揀賽道和經理非企業，以管治控風險",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "補融資斷層",
+       "c": [],
+       "d": "早期硬科技研發周期長、失敗率高，私人資本多在企業成熟後才入場，中間形成融資斷層。"
+      },
+      {
+       "t": "標準：額外性",
+       "c": [],
+       "d": "衡量基金的標準是額外性：帶動的是否確屬新增、並投向香港策略產業的私人資金。"
+      },
+      {
+       "t": "不單看回報",
+       "c": [],
+       "d": "基金目的是分擔私人不願獨擔的風險、帶動原本不會出現的投資，所以不單看回報。"
+      }
+     ]
+    },
+    {
+     "label": "利",
+     "items": [
+      {
+       "t": "補位非搶位",
+       "c": [],
+       "d": "初創由實驗室走到產品化的階段最缺資金，基金專門承擔這一段，屬補位而非搶位。"
+      },
+      {
+       "t": "撬動三倍資金",
+       "c": [],
+       "d": "以少量公帑撬動私人資金，五年規劃預期市場投入至少為政府出資的三倍。"
+      },
+      {
+       "t": "形成產業集群",
+       "c": [],
+       "d": "集中資源發展香港有優勢、國家有需要的產業，形成集群，外溢效益遠高於個別企業回報。"
+      }
+     ]
+    },
+    {
+     "label": "弊",
+     "items": [
+      {
+       "t": "①方向錯損失集中",
+       "c": [],
+       "d": "劃定主題板塊本身就是政府對產業方向的判斷，方向一旦錯誤，損失會集中而非分散。"
+      },
+      {
+       "t": "②游說俘獲",
+       "c": [],
+       "d": "資訊不對稱之下，最懂得游說和爭取資源的企業，未必是最有前景的企業。"
+      },
+      {
+       "t": "③讓利搭便車",
+       "c": [],
+       "d": "為吸引跟投須讓利，安排不當則私人搭便車、虧損由公帑承擔，責任誰屬亦欠清晰。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "揀選贏家",
+       "c": [
+        "揀賽道不揀企業"
+       ],
+       "d": "母基金形式下投資哪家企業由專業經理決定，政府揀的是規則和經理，而不是企業。"
+      },
+      {
+       "t": "公帑補貼私人",
+       "c": [
+        "私人跟投即檢驗"
+       ],
+       "d": "私人投資者以自己的資金同步投入，若項目不值得投資，配對資金根本不會出現。"
+      },
+      {
+       "t": "經理迎合熱門",
+       "c": [
+        "激勵設計可修"
+       ],
+       "d": "經理迎合政策熱門屬激勵設計問題：讓利設上限、同輪同價投入、報酬與整體表現掛鈎。"
+      }
+     ]
+    },
+    {
+     "label": "建議",
+     "items": [
+      {
+       "t": "①分散投資上限",
+       "c": [],
+       "d": "為單一子基金、企業及板塊設投資上限，避免資金追逐一兩個熱門題材，回應弊一。"
+      },
+      {
+       "t": "②決策分隔迴避",
+       "c": [],
+       "d": "獨立專業人士主導投委會，官員只訂投資政策、不參與個別項目，須申報迴避，回應弊二。"
+      },
+      {
+       "t": "③讓利上限公開",
+       "c": [],
+       "d": "訂明子基金私人資金最低比例和政府讓利上限並公開，回應弊三的搭便車問題。"
+      },
+      {
+       "t": "組合評估與退出",
+       "c": [
+        "→揀錯不退"
+       ],
+       "d": "以整體組合衡量成敗並每年匯報立法會，連續未達標的子基金不續期，並訂明年期和退出。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 3,
+   "paper": "zh",
+   "center": "政府作首個用家",
+   "stance": "同意：做首個試用者，非保證買家",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "產業：可引用案例",
+       "c": [],
+       "d": "產業目的是讓本地企業取得首個可公開引用的案例，打破「沒有用戶便沒有案例」的循環。"
+      },
+      {
+       "t": "服務：改善服務",
+       "c": [],
+       "d": "服務目的是讓公營部門以新技術改善服務，與產業目的並不必然一致。"
+      },
+      {
+       "t": "兩者會衝突",
+       "c": [],
+       "d": "本地產品未及現有方案時，前者要求遷就、後者要求拒絕，故應做試用者而非保證買家。"
+      }
+     ]
+    },
+    {
+     "label": "現況與癥結",
+     "items": [
+      {
+       "t": "已用新技術",
+       "c": [],
+       "d": "AI效能提升組已落實三十個項目，醫創辦公室將籌設、促進中心在研究，多屬部門自用。"
+      },
+      {
+       "t": "①越新越難入圍",
+       "c": [],
+       "d": "採購以既定規格和往績為入圍條件，新產品天生缺乏往績，形成越新越難入圍。"
+      },
+      {
+       "t": "②部門風險不對稱",
+       "c": [],
+       "d": "部門試用出錯會被追究，成功卻未必獲記一功，面對不對稱風險自然不願試新。"
+      },
+      {
+       "t": "③試用成果不公開",
+       "c": [],
+       "d": "試用成果多不公開，企業即使完成試用，也拿不出可供私人或海外買家參考的評估。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "公共服務非試驗場",
+       "c": [
+        "後勤先行、並行"
+       ],
+       "d": "試用可先在後勤和非關鍵環節進行，與現有方案並行比較，失敗即回復，不必犧牲服務。"
+      },
+      {
+       "t": "本地優先不公",
+       "c": [
+        "同意；不限來源"
+       ],
+       "d": "同意「本地優先」不可取；以公開問題、不限來源的方式採購，本地優勢應來自貼近用家。"
+      }
+     ]
+    },
+    {
+     "label": "措施",
+     "items": [
+      {
+       "t": "①問題清單代規格",
+       "c": [],
+       "d": "部門每年公布待解決問題，以成效要求而非技術規格邀請方案，由促進中心配對，扣①。"
+      },
+      {
+       "t": "③分段付費＋公開報告",
+       "c": [],
+       "d": "合約分概念驗證、小規模試用、擴大採用三段；成功不保證採購，但發公開評估，扣③。"
+      },
+      {
+       "t": "②中央試用預算",
+       "c": [],
+       "d": "試用經費由中央撥出、不佔部門經常開支，技術評估亦由中央團隊承擔，扣②。"
+      },
+      {
+       "t": "以下一客戶衡量",
+       "c": [
+        "→防長期依賴"
+       ],
+       "d": "核心指標是獲試用企業其後取得私人或海外客戶的比例，而非採購金額，試行三年檢討。"
+      }
+     ]
+    },
+    {
+     "label": "挑戰 → 處理",
+     "items": [
+      {
+       "t": "公平廉潔質疑",
+       "c": [
+        "公開準則與理由"
+       ],
+       "d": "落選企業或質疑程序；事先公布準則，跨部門小組評審並申報利益，結果連同理由公開。"
+      },
+      {
+       "t": "部門不願試新",
+       "c": [
+        "容錯指引＋績效"
+       ],
+       "d": "部門不願試新；中央發容錯指引，按程序而結果未如預期者不追究，成功試用計入績效。"
+      },
+      {
+       "t": "私隱網絡安全",
+       "c": [
+        "去識別化數據"
+       ],
+       "d": "醫療和個人資料場景風險高；優先用去識別化數據，沿用AI投標者安全及道德合規申報。"
+      }
+     ]
+    },
+    {
+     "label": "游說：部門首長",
+     "items": [
+      {
+       "t": "服務出錯",
+       "c": [
+        "後勤先行可終止"
+       ],
+       "d": "部門可自選範疇，先由後勤環節開始，原有方案並行，隨時可以終止，服務不會出錯。"
+      },
+      {
+       "t": "預算",
+       "c": [
+        "中央撥款"
+       ],
+       "d": "試用經費由中央撥出，不佔部門的預算和經常開支，預算不會失控。"
+      },
+      {
+       "t": "問責",
+       "c": [
+        "容錯指引"
+       ],
+       "d": "容錯指引列明按程序試用者不會因結果未如預期被追究，成功個案則計入部門績效。"
+      },
+      {
+       "t": "人手",
+       "c": [
+        "中央技術評估"
+       ],
+       "d": "技術評估由中央專責團隊承擔，不會加重部門前線人手的負擔。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 4,
+   "paper": "en",
+   "center": "Urban drone delivery trial",
+   "stance": "Cargo only, set corridors, after shared traffic picture and liability",
+   "branches": [
+    {
+     "label": "Purpose / reframing",
+     "items": [
+      {
+       "t": "Test sharing urban airspace",
+       "c": [],
+       "d": "The trial tests whether routine commercial flights can share dense urban airspace safely and with public consent."
+      },
+      {
+       "t": "Build regulator capability",
+       "c": [],
+       "d": "It should build the regulatory capability a wider low-altitude economy needs, judged by what the regulator learns."
+      },
+      {
+       "t": "Sandbox: change in kind",
+       "c": [],
+       "d": "Sandbox flights were over closed sites with one operator; repeated competing flights over non-consenting residents differ in kind."
+      }
+     ]
+    },
+    {
+     "label": "Problem 1: built for isolated flights",
+     "items": [
+      {
+       "t": "No shared traffic picture",
+       "c": [
+        "Collision, helicopter risk"
+       ],
+       "d": "Each operator sees only its own drones while emergency helicopters fly low, so risk rises with the number of operators."
+      },
+      {
+       "t": "Liability undefined",
+       "c": [
+        "Compensation disputes"
+       ],
+       "d": "The law does not say who pays if a drone injures someone on the ground, so incidents bring prolonged compensation disputes."
+      },
+      {
+       "t": "Only two insurers",
+       "c": [
+        "Near-monopoly trial"
+       ],
+       "d": "With only two insurers, uncertainty is priced into premiums, favouring the largest applicants so findings would not hold later."
+      }
+     ]
+    },
+    {
+     "label": "Problem 2: local costs, dispersed benefits",
+     "items": [
+      {
+       "t": "Yes, but not here",
+       "c": [
+        "300+ complaints"
+       ],
+       "d": "Residents support drone delivery in general but not over their homes, because noise and surveillance are borne locally."
+      },
+      {
+       "t": "Free routing, shortest path",
+       "c": [
+        "Councillors oppose all"
+       ],
+       "d": "Operators choosing the shortest routes turn every route into a local dispute, pressing councillors to oppose the whole programme."
+      },
+      {
+       "t": "Flights avoid organised districts",
+       "c": [
+        "Inequity, distorted evidence"
+       ],
+       "d": "Flights would shift to districts least able to organise, creating inequity and overstating public acceptance for expansion decisions."
+      },
+      {
+       "t": "Camera imagery",
+       "c": [
+        "Privacy challenge"
+       ],
+       "d": "Imagery retained or reused beyond navigation would expose operators and the Government to challenge under data protection law."
+      }
+     ]
+    },
+    {
+     "label": "Recommendations",
+     "items": [
+      {
+       "t": "Single traffic platform",
+       "c": [
+        "→P1"
+       ],
+       "d": "Every operator feeds real-time data into one Ministry platform showing emergency aircraft; otherwise start with fewer operators."
+      },
+      {
+       "t": "Strict liability; passengers separate",
+       "c": [
+        "→P1"
+       ],
+       "d": "Licences make operators strictly liable with minimum insurance; passenger aircraft stay out because a cargo trial cannot supply that safety case."
+      },
+      {
+       "t": "Designated corridors, hospital link",
+       "c": [
+        "→P2"
+       ],
+       "d": "Flights follow published corridors over roads, railways and waterfronts with noise limits, including the hospital link as visible public benefit."
+      },
+      {
+       "t": "Privacy code, early engagement",
+       "c": [
+        "→P2"
+       ],
+       "d": "Cameras serve navigation only, with prompt deletion and audits; consult councillors on corridors and publish complaints by corridor."
+      }
+     ]
+    },
+    {
+     "label": "Implementation & monitoring",
+     "items": [
+      {
+       "t": "Six months' preparation",
+       "c": [],
+       "d": "Complete licence conditions, the privacy code and corridor consultation within six months before flights begin."
+      },
+      {
+       "t": "Two corridors, not three districts",
+       "c": [],
+       "d": "Run the twelve-month trial in two designated corridors rather than across all three districts."
+      },
+      {
+       "t": "Independent panel, preset indicators",
+       "c": [],
+       "d": "An independent panel reviews incidents per 10,000 flights, complaints, data breaches and reliability; expansion depends on these."
+      },
+      {
+       "t": "Slower beats suspension",
+       "c": [],
+       "d": "A slower trial that keeps public trust is preferable to a faster one that ends in suspension."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

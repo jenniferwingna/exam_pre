@@ -1,0 +1,555 @@
+{
+ "topic": "06",
+ "title": "福利、扶貧與社會流動",
+ "questions": [
+  {
+   "q": 1,
+   "paper": "zh",
+   "center": "社福數據平台AI",
+   "stance": "同意，但只解找人：限用途、人把關、配承接",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "被動→主動識別",
+       "c": [],
+       "d": "平台的政策目的，是把社福服務由被動回應轉為主動識別，在風險累積之前介入。"
+      },
+      {
+       "t": "找到漏網者？",
+       "c": [],
+       "d": "標準一：能否找出現時被漏掉的人，而非重複標示已在個案名單上的家庭。"
+      },
+      {
+       "t": "有人跟進？",
+       "c": [],
+       "d": "標準二：識別之後能否及時有人跟進，否則預警只是另一份名單。"
+      },
+      {
+       "t": "更信任？",
+       "c": [],
+       "d": "標準三：市民會否因平台更信任社福服務，而不是更迴避服務。"
+      }
+     ]
+    },
+    {
+     "label": "現況與癥結",
+     "items": [
+      {
+       "t": "資料分散、等求助",
+       "c": [
+        "平台只解找人"
+       ],
+       "d": "覆診缺席、欠租、照顧者求助分散各系統，單看不高危、合起來是前兆；平台只解此癥結。"
+      },
+      {
+       "t": "①盲點被放大",
+       "c": [],
+       "d": "系統只看見曾接觸政府或機構的人，最隱蔽的家庭紀錄最少，人工智能反而放大盲點。"
+      },
+      {
+       "t": "②被監察而迴避",
+       "c": [],
+       "d": "市民若相信求助會被記錄評分，便避免留紀錄；數據越完整，最需要的人越早離開系統。"
+      },
+      {
+       "t": "③預警變輪候隊",
+       "c": [],
+       "d": "前線人手被危機個案佔據，若人手不變，預警名單只會變成另一條輪候隊。"
+      }
+     ]
+    },
+    {
+     "label": "措施",
+     "items": [
+      {
+       "t": "②先立規則後接數據",
+       "c": [],
+       "d": "訂明只用於支援，不用於執法或審查資格；最小必要分層存取，完成私隱影響評估，扣②。"
+      },
+      {
+       "t": "③AI預警、人決定",
+       "c": [],
+       "d": "每項預警須社工覆核才接觸家庭，按風險訂回應時限，按承接能力設預警數量，扣③。"
+      },
+      {
+       "t": "①試行＋回溯測試",
+       "c": [],
+       "d": "試行集中高風險照顧者和雙老家庭，以過往個案回溯測試，看從未接觸服務的比例，扣①。"
+      },
+      {
+       "t": "②申訴與獨立監察",
+       "c": [],
+       "d": "家庭可查閱更正資料並對標示提出異議；獨立監察小組每年公開準確度和誤判率，扣②。"
+      }
+     ]
+    },
+    {
+     "label": "挑戰 → 處理",
+     "items": [
+      {
+       "t": "法律授權",
+       "c": [
+        "勞福局統一協議"
+       ],
+       "d": "部門擔心法律責任；勞福局訂統一數據分享協議，先在現行法律內試行，再檢討應否立法。"
+      },
+      {
+       "t": "機構系統參差",
+       "c": [
+        "統一標準＋資助"
+       ],
+       "d": "機構紀錄格式不一、小機構難負擔接駁；統一數據標準，給技術資助，具條件者先參與。"
+      },
+      {
+       "t": "初期個案積壓",
+       "c": [
+        "有時限外展人手"
+       ],
+       "d": "過往未被發現的高風險家庭集中浮現；試行時增撥有時限的外展人手，先處理最高風險。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "私隱不可逆",
+       "c": [
+        "不建亦有代價"
+       ],
+       "d": "私隱外洩不可逆，但不建亦有代價：數據早已存在只是分散，悲劇往往事後拼合才看清。"
+      },
+      {
+       "t": "不如投放前線",
+       "c": [
+        "平台引導有限人手"
+       ],
+       "d": "前線人手有限，平台正把人手引向最需要的家庭；問題在用途和監察，不在建與不建。"
+      }
+     ]
+    },
+    {
+     "label": "游說：社福界",
+     "items": [
+      {
+       "t": "前線：工作量",
+       "c": [
+        "預警與人手掛鈎"
+       ],
+       "d": "前線社工擔心工作量：預警數量與人手掛鈎，確保平台不會只增個案而不增資源。"
+      },
+      {
+       "t": "前線：專業角色",
+       "c": [
+        "社工覆核決定"
+       ],
+       "d": "前線社工擔心專業角色：人工覆核保證社工是決策者，而非系統的執行者。"
+      },
+      {
+       "t": "管理層：撥款",
+       "c": [
+        "不用作削撥款"
+       ],
+       "d": "政府承擔接駁成本，承諾數據不用作評核或削減撥款；機構可得地區需求分析爭取資源。"
+      },
+      {
+       "t": "界別：用者信任",
+       "c": [
+        "入監察小組"
+       ],
+       "d": "社福界代表加入監察小組，檢討演算法和處理申訴；試行期滿誤判率過高即暫停擴展。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 2,
+   "paper": "zh",
+   "center": "照顧者：錢或喘息",
+   "stance": "同意先投喘息，但津貼不削，與服務掛鈎",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "補收入：靠現金",
+       "c": [],
+       "d": "津貼補償的是照顧者失去的收入，這是現金能解決的問題。"
+      },
+      {
+       "t": "補時間：靠服務",
+       "c": [],
+       "d": "喘息補償的是照顧者失去的時間和健康，必須靠服務才能解決。"
+      },
+      {
+       "t": "非二擇一",
+       "c": [],
+       "d": "兩者解決不同問題：同意新增資源優先投放喘息，但津貼不削，並與服務掛鈎。"
+      }
+     ]
+    },
+    {
+     "label": "現況與癥結",
+     "items": [
+      {
+       "t": "①照顧者隱形",
+       "c": [],
+       "d": "服務系統登記的是被照顧者，照顧者身心少人評估，往往到崩潰或出事才被發現。"
+      },
+      {
+       "t": "②喘息有而難用",
+       "c": [],
+       "d": "暫託分散於安老、康復、兒童系統且須預早申請；照顧者突然撐不住時恰恰最難安排。"
+      },
+      {
+       "t": "③錢買不到時間",
+       "c": [],
+       "d": "以老護老家庭有錢也不能讓年邁照顧者休息，短時臨時照顧服務本來就少，錢買不到時間。"
+      }
+     ]
+    },
+    {
+     "label": "措施",
+     "items": [
+      {
+       "t": "①主動識別篩查",
+       "c": [],
+       "d": "被照顧者評估、出院或申請服務時，同時為照顧者做壓力篩查，高風險者主動聯絡，扣①。"
+      },
+      {
+       "t": "②喘息時數＋單一入口",
+       "c": [],
+       "d": "津貼受惠者每年獲喘息額度，以支援專線作單一預約入口，領津貼即自動合資格，扣②。"
+      },
+      {
+       "t": "③上門短時段喘息",
+       "c": [],
+       "d": "受訓照顧員上門替手數小時，讓照顧者覆診或休息，被照顧者毋須離家，扣③。"
+      },
+      {
+       "t": "兩年指標檢討",
+       "c": [],
+       "d": "以喘息使用率、照顧者壓力評分、被照顧者入住院舍是否延後為指標，兩年後檢討。"
+      }
+     ]
+    },
+    {
+     "label": "挑戰 → 處理",
+     "items": [
+      {
+       "t": "人手不足",
+       "c": [
+        "先用現有容量"
+       ],
+       "d": "照顧行業缺人；先用院舍短期宿位和日間中心延時，配合恆常化的外傭護老培訓分擔。"
+      },
+      {
+       "t": "照顧者內疚",
+       "c": [
+        "上門、短時試用"
+       ],
+       "d": "照顧者內疚、怕被照顧者不適應；以上門服務為先，盡量同一照顧員，容許短時段試用。"
+      },
+      {
+       "t": "系統分割",
+       "c": [
+        "一兩區試行"
+       ],
+       "d": "各系統評估輪候不同；先在一兩區試行，專線負責前台預約，後台由各系統配對。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "津貼尊重自主",
+       "c": [
+        "前提：有服務可買"
+       ],
+       "d": "自主選擇的前提是有服務可買；短時照顧稀少，3,300元換來的替手時間十分有限。"
+      },
+      {
+       "t": "政府不必包辦",
+       "c": [
+        "供應責任不能卸"
+       ],
+       "d": "津貼應該保留，但不能以此取代政府在服務供應上的責任，否則選擇只在紙上。"
+      }
+     ]
+    },
+    {
+     "label": "游說：財政當局",
+     "items": [
+      {
+       "t": "經常開支膨脹",
+       "c": [
+        "時數設上限"
+       ],
+       "d": "喘息時數設上限，首階段以現有宿位和日間中心時段為主，不設無底承擔。"
+      },
+      {
+       "t": "回報何在",
+       "c": [
+        "延後入院舍成本"
+       ],
+       "d": "照顧者崩潰令被照顧者提早入院舍、自己亦病倒；及時替手延後兩項成本，合居家安老。"
+      },
+      {
+       "t": "風險失控",
+       "c": [
+        "兩年試行可收縮"
+       ],
+       "d": "兩年試行、公開指標；入住院舍時間未見延後即調整或收縮，是可量度的成本控制措施。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 3,
+   "paper": "zh",
+   "center": "政商民三方扶貧",
+   "stance": "支持：只作補充試驗，不替代政府責任",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "額外：不取代承擔",
+       "c": [],
+       "d": "若只是多一筆錢便不必另建機制；資源須屬額外，不取代政府對基本保障的承擔。"
+      },
+      {
+       "t": "成效可量度",
+       "c": [],
+       "d": "項目要有可量度的成效，看服務對象生活的實際改變，而非活動人次。"
+      },
+      {
+       "t": "配對公開問責",
+       "c": [],
+       "d": "配對過程須公開、可問責；平台只作基本保障以外的補充和試驗。"
+      }
+     ]
+    },
+    {
+     "label": "利",
+     "items": [
+      {
+       "t": "承擔試驗風險",
+       "c": [],
+       "d": "政府撥款講求程序、難容失敗；商界和家族辦公室資源較彈性，可承擔試驗，成效好再擴。"
+      },
+      {
+       "t": "善款導向缺口",
+       "c": [],
+       "d": "由精準扶貧委員會定群組和主題，把隨捐助者喜好流動的善款集中到政策已確認的缺口。"
+      }
+     ]
+    },
+    {
+     "label": "弊",
+     "items": [
+      {
+       "t": "①偏向看得見項目",
+       "c": [],
+       "d": "捐助者傾向短期、易宣傳的活動，精神健康、照顧者喘息等成效慢的需要可能乏人問津。"
+      },
+      {
+       "t": "②項目完結斷崖",
+       "c": [],
+       "d": "捐助者兩三年後轉移興趣，服務使用者剛建立的信任落空，傷害可能比從未開展更大。"
+      },
+      {
+       "t": "③問責公平不足",
+       "c": [],
+       "d": "配對不透明易被質疑為企業宣傳或利益交換；小型機構無人手撰寫建議書而被邊緣化。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "引入商界＝卸責",
+       "c": [
+        "把不取代寫成規則"
+       ],
+       "d": "若平台填補恆常撥款缺口，卸責憂慮便成真；應把「不取代」寫成規則，而非拒絕合作。"
+      },
+      {
+       "t": "政府全包更好",
+       "c": [
+        "財政有上限"
+       ],
+       "d": "政府財政有上限，「全包」不等於支援更多；有系統引入既有資源，是在承擔之上加碼。"
+      }
+     ]
+    },
+    {
+     "label": "建議",
+     "items": [
+      {
+       "t": "①成效協議三年",
+       "c": [],
+       "d": "配對時訂明成效指標，看生活實際改變而非人次，捐助者承諾最少三年，回應弊一。"
+      },
+      {
+       "t": "②延續與退場",
+       "c": [],
+       "d": "達標項目可擴展或納入恆常資助，未達標有序結束並預先轉介，避免斷崖，回應弊二。"
+      },
+      {
+       "t": "③公開配對＋扶小機構",
+       "c": [],
+       "d": "公布評審準則、獲配項目、金額及捐助者，成效報告好壞並陳；扶助小型機構，回應弊三。"
+      },
+      {
+       "t": "額外性原則",
+       "c": [
+        "→防卸責"
+       ],
+       "d": "平台項目不得取代現有資助服務，每輪列明不屬平台範圍的服務，防止以捐款代替撥款。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 4,
+   "paper": "en",
+   "center": "Community canteens in youth centres",
+   "stance": "Identification of need is easily lost; build the pathway first",
+   "branches": [
+    {
+     "label": "Purpose / reframing",
+     "items": [
+      {
+       "t": "Nutrition, connection, identification",
+       "c": [],
+       "d": "The canteens aim at affordable nutrition, neighbourhood connection and early identification of need among vulnerable groups."
+      },
+      {
+       "t": "Identification most easily lost",
+       "c": [],
+       "d": "Identification distinguishes the scheme from ordinary meal services, but meals are easy to count and identification is not."
+      },
+      {
+       "t": "Trial: warning, not success",
+       "c": [],
+       "d": "The trial reached elders, already best served, barely reached carers and families, and few noticed needs led to support."
+      }
+     ]
+    },
+    {
+     "label": "Problem 1: premises for another purpose",
+     "items": [
+      {
+       "t": "Free hours suit elders only",
+       "c": [
+        "Lunch clubs for elders"
+       ],
+       "d": "Centres are free only while young people are at school, which suits elders but not carers or school-age children."
+      },
+      {
+       "t": "Few licensed kitchens",
+       "c": [
+        "Food safety incident"
+       ],
+       "d": "Three-quarters of selected centres lack licensed kitchens; target pressure risks unsafe cooking and a programme-wide loss of confidence."
+      },
+      {
+       "t": "Youth workers serve meals",
+       "c": [
+        "Youth sector turns hostile"
+       ],
+       "d": "Youth workers serving meals lose time with young people, turning the youth sector from partner into opponent."
+      }
+     ]
+    },
+    {
+     "label": "Problem 2: no pathway to support",
+     "items": [
+      {
+       "t": "Weak referral chain",
+       "c": [
+        "Disclosers lose trust"
+       ],
+       "d": "Staff had no agreed way to record or refer needs; only one case in eleven received help within a month."
+      },
+      {
+       "t": "Stigma: too poor to cook",
+       "c": [
+        "Reaches only the connected"
+       ],
+       "d": "If canteens look like places for people who cannot afford food, those most reluctant to accept help will stay away."
+      },
+      {
+       "t": "Meals easy to count",
+       "c": [
+        "Failure reported as success"
+       ],
+       "d": "Evaluation defaults to meals served, so a scheme that feeds many but helps few may be reported as a success."
+      }
+     ]
+    },
+    {
+     "label": "Recommendations",
+     "items": [
+      {
+       "t": "Central kitchens, separate staff",
+       "c": [
+        "→P1"
+       ],
+       "d": "Licensed central kitchens prepare meals for reheating, and each canteen has its own small team, so youth work hours are protected."
+      },
+      {
+       "t": "Match sessions to groups",
+       "c": [
+        "→P1"
+       ],
+       "d": "Weekday lunches serve elders, while a few centres with spare evening or weekend capacity run family sessions."
+      },
+      {
+       "t": "Referral pathway before opening",
+       "c": [
+        "→P2"
+       ],
+       "d": "Each canteen gets a needs checklist, a named link social worker and a referral route with target response times."
+      },
+      {
+       "t": "Open to all, sliding price",
+       "c": [
+        "→P2"
+       ],
+       "d": "Canteens open to all residents on a sliding price scale, presented as community dining to protect dignity."
+      }
+     ]
+    },
+    {
+     "label": "Implementation & monitoring",
+     "items": [
+      {
+       "t": "Phased rollout, kitchens first",
+       "c": [],
+       "d": "Treat the 12-month target as a phased rollout: central kitchens and referral arrangements first, then openings in tranches."
+      },
+      {
+       "t": "Six-month indicator review",
+       "c": [],
+       "d": "A six-month review reports carer share, new users and referrals completed; further expansion depends on these indicators."
+      },
+      {
+       "t": "Accept a slower rollout",
+       "c": [],
+       "d": "A slower rollout than announced is preferable to scaling up a model that misses its intended users."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

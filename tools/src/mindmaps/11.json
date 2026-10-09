@@ -1,0 +1,559 @@
+{
+  "topic": "11",
+  "title": "環境、氣候與城市韌性",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "零廢堆填靠什麼",
+      "stance": "同意設施不足：先誘因規管，收費後議",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "零廢堆填≠減廢",
+              "c": [],
+              "d": "零廢堆填是處理端目標，減廢是源頭目標；只擴建焚化，堆填會降但廢物量不變。"
+            },
+            {
+              "t": "量降至容量內",
+              "c": [],
+              "d": "第一項標準：棄置量能否持續降至回收和轉廢為能設施的容量以內。"
+            },
+            {
+              "t": "回收真再造",
+              "c": [],
+              "d": "第二項標準：回收物是否真正再造利用，而非收集後仍送往堆填。"
+            },
+            {
+              "t": "成本落產生者",
+              "c": [],
+              "d": "第三項標準：減廢成本是否落在產生廢物的一方，配合循環經濟方向。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①設施追趕廢物",
+              "c": [],
+              "d": "I·PARK1日處理3,000公噸，不足棄置量三成，設施只能追趕而不能減少廢物。"
+            },
+            {
+              "t": "②棄置免費",
+              "c": [],
+              "d": "收費擱置後棄置沒有邊際成本，回收卻要花時間，自助回收也改變不了此格局。"
+            },
+            {
+              "t": "③責任斷點",
+              "c": [],
+              "d": "垃圾房集中收集，住戶有否分類無從分辨，物業管理公司亦沒有誘因推動分類。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "②生產者責任",
+              "c": [],
+              "d": "由環保署擴展生產者責任計劃，先從膠樽和包裝着手，讓產品價格反映處理成本。"
+            },
+            {
+              "t": "②綠綠賞回贈",
+              "c": [],
+              "d": "綠綠賞積分與智能回收箱數據連通自動記分，大廈達標獲資助清運，是反向價格訊號。"
+            },
+            {
+              "t": "③屋苑分類責任",
+              "c": [],
+              "d": "兩年內要求大型屋苑設分類點、按季申報回收量並按區公布，令回收成管理表現。"
+            },
+            {
+              "t": "①收費設檢討點",
+              "c": [],
+              "d": "綠在區區升級後一年公布人均棄置量，若下降停滯才在單一業權物業試行收費。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "收費最有效",
+              "c": [
+                "香港難追溯住戶"
+              ],
+              "d": "價格訊號有效的前提是能追溯到產生廢物的人；香港高樓集中收集，難追溯到個別住戶。"
+            },
+            {
+              "t": "台北隨袋徵收",
+              "c": [
+                "借次序不抄制度"
+              ],
+              "d": "台北「收費與免費回收同步推出」的次序可借鑑，但其垃圾車定點收集制度不能照搬。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "舊樓空間人手",
+              "c": [
+                "先只做大型屋苑"
+              ],
+              "d": "舊樓垃圾房狹小，故分類責任先只適用大型屋苑，舊樓納入綠在區區網絡在樓外收集。"
+            },
+            {
+              "t": "回收物無出路",
+              "c": [
+                "長約＋公布去向"
+              ],
+              "d": "收得多卻無人接收會打擊信心，故以長期合約保證處理，工程優先用再造物料並公布去向。"
+            },
+            {
+              "t": "生產商反對",
+              "c": [
+                "過渡期、守規少繳"
+              ],
+              "d": "業界擔心成本上升，故設一年過渡期、公開成本計算，回收率高者少繳，令守規者得益。"
+            }
+          ]
+        },
+        {
+          "label": "游說：物管業界",
+          "items": [
+            {
+              "t": "人手緊",
+              "c": [
+                "政府供設備清運"
+              ],
+              "d": "物管人手緊絀，故由政府提供設備及定時收集，物管只負責場地管理。"
+            },
+            {
+              "t": "怕投訴合規",
+              "c": [
+                "指引＋自動申報"
+              ],
+              "d": "物管怕投訴和法定要求日增，故發指引訂明不佔走火通道，數據由智能設備自動申報。"
+            },
+            {
+              "t": "生意",
+              "c": [
+                "表現成投標賣點"
+              ],
+              "d": "回收表現公開後可成投標續約賣點；日後若再議收費，已分類屋苑的負擔和爭議較少。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "混能車2035後登記",
+      "stance": "反對：2035前解決充電，不放寬目標",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "市場訊號清晰",
+              "c": [],
+              "d": "目標不是即時禁止任何車輛，而是給汽車市場一個不會改變的時間點。"
+            },
+            {
+              "t": "新車決定2050",
+              "c": [],
+              "d": "私家車一經登記便行走多年，2035年前後的新車決定2050年能否車輛零排放。"
+            },
+            {
+              "t": "充電難者有出路",
+              "c": [],
+              "d": "要問充電困難的居民是否真的無路可走，這是建議背後真實的問題。"
+            }
+          ]
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "舊樓村屋難充電",
+              "c": [],
+              "d": "舊樓缺固定車位和電力容量，村屋居民多路邊泊車，混合動力車比燃油車省油可作過渡。"
+            },
+            {
+              "t": "防舊燃油車延用",
+              "c": [],
+              "d": "新車不供應混能車，部分車主或延用舊燃油車，車隊老化排放反增，是建議最有力理據。"
+            }
+          ]
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "①削弱政策訊號",
+              "c": [],
+              "d": "現時每十輛新私家車逾七輛是電動車；終點前放寬令投資者懷疑目標，充電投資反而放緩。"
+            },
+            {
+              "t": "②混能實為燃油跑",
+              "c": [],
+              "d": "缺充電條件者才選混能車，大部分時間仍燒油，等於繼續引入燃油車，衝擊2050目標。"
+            },
+            {
+              "t": "③治標推遲問題",
+              "c": [],
+              "d": "放寬不會令舊樓多一個充電位，只把問題推遲，2040年代仍要面對同一批居民。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "舊車延用反效果",
+              "c": [
+                "幅度取決充電"
+              ],
+              "d": "本文承認舊車延用效應，但其幅度取決於2035年前充電是否方便，而非目標本身。"
+            },
+            {
+              "t": "車主無車可用",
+              "c": [
+                "只限新登記"
+              ],
+              "d": "目標只限新登記，不影響現有車輛使用和二手買賣，並以中途檢討代替預先放寬。"
+            }
+          ]
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "舊樓車場充電",
+              "c": [
+                "→舊樓居民"
+              ],
+              "d": "政府資助舊樓停車場鋪設充電設施，機電署訂標準設計及消防指引，為法團提供免費顧問。"
+            },
+            {
+              "t": "公共快充5,000支",
+              "c": [
+                "→無固定車位"
+              ],
+              "d": "高速充電樁五年內增至5,000支，優先布點舊區、村屋區和公眾停車場，並加快閃充。"
+            },
+            {
+              "t": "村屋路邊試點",
+              "c": [
+                "→村屋居民"
+              ],
+              "d": "在新界村屋集中區的路旁或政府停車場設充電試點，兩年後按使用率決定推廣範圍。"
+            },
+            {
+              "t": "2030中期檢討",
+              "c": [
+                "落後即加碼"
+              ],
+              "d": "公布舊樓充電覆蓋率等三項指標，落後便加碼資助而非放寬，並資助維修業轉型培訓。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "換水管排序",
+      "stance": "不同意：水管先篩，人口作後果權重",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "風險＝可能性×後果",
+              "c": [],
+              "d": "風險有兩部分：管齡物料決定的爆裂可能性，以及受影響人數和應付能力決定的後果。"
+            },
+            {
+              "t": "減最多損害",
+              "c": [],
+              "d": "第一項標準是有限的工程資源能否減少最多的實際損害，公屋爆管影響數以千計住戶。"
+            },
+            {
+              "t": "透明可查核",
+              "c": [],
+              "d": "第二項標準是排序是否透明、可以查核，避免資源被政治壓力推向最近爆過的地方。"
+            },
+            {
+              "t": "等待可預期",
+              "c": [],
+              "d": "第三項標準是未獲優先處理的地區，能否得到可預期的施工時間表。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①次序就是政策",
+              "c": [],
+              "d": "每年能換的長度受掘路許可、交通和人手所限，先做哪區便決定哪區多承受幾年風險。"
+            },
+            {
+              "t": "②風險看不見",
+              "c": [],
+              "d": "水管埋在地底，市民只在爆管時才感受到問題，資源易被推向最近爆過的地方。"
+            },
+            {
+              "t": "③掘路社會成本",
+              "c": [],
+              "d": "道路逾2,200公里、地下設施疊加約11萬公里，舊區每次開挖都影響交通商戶居民。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①公開風險評分",
+              "c": [],
+              "d": "水務署先以管齡、物料和爆管紀錄篩選，再以住戶數和長者比例作後果權重並公布。"
+            },
+            {
+              "t": "③一次掘路共用",
+              "c": [],
+              "d": "發展局統籌電纜、煤氣、通訊與換水管同期施工，以管線資訊系統減少重複開挖。"
+            },
+            {
+              "t": "③減少工程影響",
+              "c": [],
+              "d": "分短段及非繁忙時段施工，採免開挖修復；停水前預早通知，為獨居長者送水。"
+            },
+            {
+              "t": "②監測未輪到區",
+              "c": [],
+              "d": "以智慧水網實時監測排序較後的高風險路段，並公布各區預計施工年份。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "按身份分配不公",
+              "c": [
+                "看受影響程度"
+              ],
+              "d": "後果權重看的不是居民是誰，而是一次爆管影響多少人；影響五千戶與五十戶損失不同。"
+            },
+            {
+              "t": "公屋插隊",
+              "c": [
+                "只在高風險間排"
+              ],
+              "d": "人口權重只在高風險水管之間排序，狀況良好的水管不會因位處公屋區而插隊。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "石棉憂慮",
+              "c": [
+                "內部修復減擾動"
+              ],
+              "d": "居民擔心石棉纖維，故由合資格承建商施工、公布工序，可行時以內部修復代替拆除。"
+            },
+            {
+              "t": "承建商容量",
+              "c": [
+                "長年期合約"
+              ],
+              "d": "工程量倍增，故分批批出較長年期合約，讓承建商有穩定工作量投資培訓。"
+            },
+            {
+              "t": "地區要求插隊",
+              "c": [
+                "例外公開理由"
+              ],
+              "d": "個別地區要求插隊，故評分方法公布後不輕易更改，例外須公開理由並每年匯報。"
+            }
+          ]
+        },
+        {
+          "label": "游說：地區商戶",
+          "items": [
+            {
+              "t": "怕人流減少",
+              "c": [
+                "出入口保持暢通"
+              ],
+              "d": "行人路被圍令人流減少，故保持店舖出入口暢通、預留上落貨時段，並設地區聯絡人。"
+            },
+            {
+              "t": "怕停水停業",
+              "c": [
+                "非營業時間停水"
+              ],
+              "d": "食肆停水等於停業，故把食肆的停水安排在非營業時間進行。"
+            },
+            {
+              "t": "怕工期拖延",
+              "c": [
+                "公布分段完工日"
+              ],
+              "d": "商戶最怕工期一拖再拖，故預先向商戶公布分段工期和完工日期。"
+            },
+            {
+              "t": "為何配合",
+              "c": [
+                "勝過突發爆管"
+              ],
+              "d": "突發爆管帶來無預警的封路停水，計劃換管雖短期不便，卻換來日後爆管減少。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "Zero-carbon electricity",
+      "stance": "Both routes, defined roles; manage concentration and cost",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Carbon, reliability, affordability",
+              "c": [],
+              "d": "The objective is to decarbonise while keeping supply reliable and tariffs affordable, since failure on either would lose public support."
+            },
+            {
+              "t": "Not rival routes",
+              "c": [],
+              "d": "Imports deliver zero-carbon energy in volume while local facilities provide capacity the City controls, so the two routes complement each other."
+            },
+            {
+              "t": "Real issues: risk, payment",
+              "c": [],
+              "d": "The real difficulties are the risk of relying on a few large assets, and who pays, and when, under current agreements."
+            }
+          ]
+        },
+        {
+          "label": "Problem 1: concentrated supply risk",
+          "items": [
+            {
+              "t": "Few links, single failures",
+              "c": [
+                "Standby keeps fossil units"
+              ],
+              "d": "Much supply will flow through a few links and one reclaimed site; covering their loss needs standby fossil units, deferring emissions gains."
+            },
+            {
+              "t": "30% met without projects",
+              "c": [
+                "Decisive projects slip silently"
+              ],
+              "d": "The binding 30 per cent target can likely be met without either project, so decisive ten-year projects could slip unnoticed."
+            },
+            {
+              "t": "Major outage",
+              "c": [
+                "Data centres, public trust lost"
+              ],
+              "d": "A serious outage would make data centre operators reconsider the City and lead residents to associate decarbonisation with blackouts."
+            }
+          ]
+        },
+        {
+          "label": "Problem 2: who pays, when",
+          "items": [
+            {
+              "t": "Costs before benefits",
+              "c": [
+                "Regressive tariff shock"
+              ],
+              "d": "Capital costs reach households through tariffs before benefits arrive, hitting low-income households hardest and creating pressure to slow the programme."
+            },
+            {
+              "t": "Return rewards building",
+              "c": [
+                "Incentives diverge from target"
+              ],
+              "d": "Fixed returns on assets reward building a local plant over buying imported power, so company interests may diverge from the cheapest path."
+            },
+            {
+              "t": "Agreements expire in four years",
+              "c": [
+                "Old terms fix decade"
+              ],
+              "d": "If the renegotiation in four years does not realign incentives, investment plans for the decisive decade will be fixed on old terms."
+            }
+          ]
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Defined roles, security standard",
+              "c": [
+                "→P1"
+              ],
+              "d": "Imports supply bulk energy while the local site provides firm capacity covering loss of the largest link, backed by a reserve margin and two corridors."
+            },
+            {
+              "t": "Coal exit by milestones",
+              "c": [
+                "→P1"
+              ],
+              "d": "Coal units close as each new link or facility is commissioned and proven, so emissions fall as fast as security allows."
+            },
+            {
+              "t": "Reward outcomes in renegotiation",
+              "c": [
+                "→P2"
+              ],
+              "d": "Make part of the permitted return depend on zero-carbon share, reliability and cost control, not on the asset base alone."
+            },
+            {
+              "t": "Tariff path plus relief",
+              "c": [
+                "→P2"
+              ],
+              "d": "Publish projected tariffs for the decade, introduce targeted relief for low-income households with the first increase, and fund energy efficiency."
+            }
+          ]
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "Security standard in six months",
+              "c": [],
+              "d": "Settle the security standard and the role of the local site within six months."
+            },
+            {
+              "t": "Imports, regulation in parallel",
+              "c": [],
+              "d": "Run import negotiations and the regulatory review in parallel over the next two years."
+            },
+            {
+              "t": "Relief with first increase",
+              "c": [],
+              "d": "Relief accompanies the first tariff increase; indicators include outage minutes and low-income households' electricity spending, reported annually."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

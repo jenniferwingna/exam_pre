@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/06-welfare/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t06">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>社福數據平台與人工智能識別高風險家庭</h2><span class="wc">範文 約 1,480 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《施政報告》提出分階段建立「社福數據分享平台」，整合相關政府部門及非政府機構的社福數據，利用人工智能及早識別高風險人士或家庭以提早介入，並計劃於2027年上半年先聯同個別政府部門及非政府機構試行。有意見認為，這可以令支援更精準。你是否同意？請分析現時識別高風險家庭的情況，提出確保平台有效及得到公眾信任的措施，分析這些措施在執行上的挑戰及處理方法，並游說社福界支持你的方案。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意，但只解找人：限用途、人把關、配承接</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">社福數據平台AI</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">被動→主動識別<span class="d">平台的政策目的，是把社福服務由被動回應轉為主動識別，在風險累積之前介入。</span></div></li><li><div class="it">找到漏網者？<span class="d">標準一：能否找出現時被漏掉的人，而非重複標示已在個案名單上的家庭。</span></div></li><li><div class="it">有人跟進？<span class="d">標準二：識別之後能否及時有人跟進，否則預警只是另一份名單。</span></div></li><li><div class="it">更信任？<span class="d">標準三：市民會否因平台更信任社福服務，而不是更迴避服務。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">資料分散、等求助<span class="d">覆診缺席、欠租、照顧者求助分散各系統，單看不高危、合起來是前兆；平台只解此癥結。</span></div><ul class="tree l3"><li><div class="sub">平台只解找人</div></li></ul></li><li><div class="it">①盲點被放大<span class="d">系統只看見曾接觸政府或機構的人，最隱蔽的家庭紀錄最少，人工智能反而放大盲點。</span></div></li><li><div class="it">②被監察而迴避<span class="d">市民若相信求助會被記錄評分，便避免留紀錄；數據越完整，最需要的人越早離開系統。</span></div></li><li><div class="it">③預警變輪候隊<span class="d">前線人手被危機個案佔據，若人手不變，預警名單只會變成另一條輪候隊。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">②先立規則後接數據<span class="d">訂明只用於支援，不用於執法或審查資格；最小必要分層存取，完成私隱影響評估，扣②。</span></div></li><li><div class="it">③AI預警、人決定<span class="d">每項預警須社工覆核才接觸家庭，按風險訂回應時限，按承接能力設預警數量，扣③。</span></div></li><li><div class="it">①試行＋回溯測試<span class="d">試行集中高風險照顧者和雙老家庭，以過往個案回溯測試，看從未接觸服務的比例，扣①。</span></div></li><li><div class="it">②申訴與獨立監察<span class="d">家庭可查閱更正資料並對標示提出異議；獨立監察小組每年公開準確度和誤判率，扣②。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">法律授權<span class="d">部門擔心法律責任；勞福局訂統一數據分享協議，先在現行法律內試行，再檢討應否立法。</span></div><ul class="tree l3"><li><div class="sub">勞福局統一協議</div></li></ul></li><li><div class="it">機構系統參差<span class="d">機構紀錄格式不一、小機構難負擔接駁；統一數據標準，給技術資助，具條件者先參與。</span></div><ul class="tree l3"><li><div class="sub">統一標準＋資助</div></li></ul></li><li><div class="it">初期個案積壓<span class="d">過往未被發現的高風險家庭集中浮現；試行時增撥有時限的外展人手，先處理最高風險。</span></div><ul class="tree l3"><li><div class="sub">有時限外展人手</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">私隱不可逆<span class="d">私隱外洩不可逆，但不建亦有代價：數據早已存在只是分散，悲劇往往事後拼合才看清。</span></div><ul class="tree l3"><li><div class="sub">不建亦有代價</div></li></ul></li><li><div class="it">不如投放前線<span class="d">前線人手有限，平台正把人手引向最需要的家庭；問題在用途和監察，不在建與不建。</span></div><ul class="tree l3"><li><div class="sub">平台引導有限人手</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：社福界</button><ul class="tree l2"><li><div class="it">前線：工作量<span class="d">前線社工擔心工作量：預警數量與人手掛鈎，確保平台不會只增個案而不增資源。</span></div><ul class="tree l3"><li><div class="sub">預警與人手掛鈎</div></li></ul></li><li><div class="it">前線：專業角色<span class="d">前線社工擔心專業角色：人工覆核保證社工是決策者，而非系統的執行者。</span></div><ul class="tree l3"><li><div class="sub">社工覆核決定</div></li></ul></li><li><div class="it">管理層：撥款<span class="d">政府承擔接駁成本，承諾數據不用作評核或削減撥款；機構可得地區需求分析爭取資源。</span></div><ul class="tree l3"><li><div class="sub">不用作削撥款</div></li></ul></li><li><div class="it">界別：用者信任<span class="d">社福界代表加入監察小組，檢討演算法和處理申訴；試行期滿誤判率過高即暫停擴展。</span></div><ul class="tree l3"><li><div class="sub">入監察小組</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><div class="tbl"><table>
 <thead>
 <tr>
@@ -238,6 +310,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>照顧者：津貼還是喘息服務</h2><span class="wc">範文 約 1,420 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《施政報告》把有需要的照顧者（尤其是「以老護老」、「以老護殘」和照顧有特殊需要兒童的人士）納入精準扶貧目標群組，並把兩項低收入照顧者生活津貼增加一成至每月3,300元。有意見認為，照顧者最需要的不是津貼，而是喘息服務。你是否同意？請分析照顧者的現況，提出完善照顧者支援的措施，分析這些措施在執行上的挑戰及處理方法，並游說財政當局支持你的方案。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意先投喘息，但津貼不削，與服務掛鈎</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">照顧者：錢或喘息</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">補收入：靠現金<span class="d">津貼補償的是照顧者失去的收入，這是現金能解決的問題。</span></div></li><li><div class="it">補時間：靠服務<span class="d">喘息補償的是照顧者失去的時間和健康，必須靠服務才能解決。</span></div></li><li><div class="it">非二擇一<span class="d">兩者解決不同問題：同意新增資源優先投放喘息，但津貼不削，並與服務掛鈎。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①照顧者隱形<span class="d">服務系統登記的是被照顧者，照顧者身心少人評估，往往到崩潰或出事才被發現。</span></div></li><li><div class="it">②喘息有而難用<span class="d">暫託分散於安老、康復、兒童系統且須預早申請；照顧者突然撐不住時恰恰最難安排。</span></div></li><li><div class="it">③錢買不到時間<span class="d">以老護老家庭有錢也不能讓年邁照顧者休息，短時臨時照顧服務本來就少，錢買不到時間。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①主動識別篩查<span class="d">被照顧者評估、出院或申請服務時，同時為照顧者做壓力篩查，高風險者主動聯絡，扣①。</span></div></li><li><div class="it">②喘息時數＋單一入口<span class="d">津貼受惠者每年獲喘息額度，以支援專線作單一預約入口，領津貼即自動合資格，扣②。</span></div></li><li><div class="it">③上門短時段喘息<span class="d">受訓照顧員上門替手數小時，讓照顧者覆診或休息，被照顧者毋須離家，扣③。</span></div></li><li><div class="it">兩年指標檢討<span class="d">以喘息使用率、照顧者壓力評分、被照顧者入住院舍是否延後為指標，兩年後檢討。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">人手不足<span class="d">照顧行業缺人；先用院舍短期宿位和日間中心延時，配合恆常化的外傭護老培訓分擔。</span></div><ul class="tree l3"><li><div class="sub">先用現有容量</div></li></ul></li><li><div class="it">照顧者內疚<span class="d">照顧者內疚、怕被照顧者不適應；以上門服務為先，盡量同一照顧員，容許短時段試用。</span></div><ul class="tree l3"><li><div class="sub">上門、短時試用</div></li></ul></li><li><div class="it">系統分割<span class="d">各系統評估輪候不同；先在一兩區試行，專線負責前台預約，後台由各系統配對。</span></div><ul class="tree l3"><li><div class="sub">一兩區試行</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">津貼尊重自主<span class="d">自主選擇的前提是有服務可買；短時照顧稀少，3,300元換來的替手時間十分有限。</span></div><ul class="tree l3"><li><div class="sub">前提：有服務可買</div></li></ul></li><li><div class="it">政府不必包辦<span class="d">津貼應該保留，但不能以此取代政府在服務供應上的責任，否則選擇只在紙上。</span></div><ul class="tree l3"><li><div class="sub">供應責任不能卸</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：財政當局</button><ul class="tree l2"><li><div class="it">經常開支膨脹<span class="d">喘息時數設上限，首階段以現有宿位和日間中心時段為主，不設無底承擔。</span></div><ul class="tree l3"><li><div class="sub">時數設上限</div></li></ul></li><li><div class="it">回報何在<span class="d">照顧者崩潰令被照顧者提早入院舍、自己亦病倒；及時替手延後兩項成本，合居家安老。</span></div><ul class="tree l3"><li><div class="sub">延後入院舍成本</div></li></ul></li><li><div class="it">風險失控<span class="d">兩年試行、公開指標；入住院舍時間未見延後即調整或收縮，是可量度的成本控制措施。</span></div><ul class="tree l3"><li><div class="sub">兩年試行可收縮</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><div class="tbl"><table>
 <thead>
 <tr>
@@ -319,6 +392,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>「政、商、民」三方協作扶貧</h2><span class="wc">範文 約 1,270 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《施政報告》提出由政府牽頭構建配對平台，推動「政、商、民」三方扶弱模式制度化：由精準扶貧委員會訂定目標群組和主題，邀請非政府組織提交建議書，促進家族辦公室及商界資源與民間社福項目對接。有意見認為，這種做法能匯聚社會資源幫助弱勢社群；亦有意見認為，基本保障應由政府承擔，引入商界只會令政府卸責。請分析上述做法的利弊，表明你是支持抑或反對，並就你的立場提出理據。如果是支持的話，請提出建議，確保有關做法能有效達致其政策目的並受到問責；如果是反對的話，請提出其他匯聚社會資源幫助弱勢社群的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持：只作補充試驗，不替代政府責任</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">政商民三方扶貧</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">額外：不取代承擔<span class="d">若只是多一筆錢便不必另建機制；資源須屬額外，不取代政府對基本保障的承擔。</span></div></li><li><div class="it">成效可量度<span class="d">項目要有可量度的成效，看服務對象生活的實際改變，而非活動人次。</span></div></li><li><div class="it">配對公開問責<span class="d">配對過程須公開、可問責；平台只作基本保障以外的補充和試驗。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">承擔試驗風險<span class="d">政府撥款講求程序、難容失敗；商界和家族辦公室資源較彈性，可承擔試驗，成效好再擴。</span></div></li><li><div class="it">善款導向缺口<span class="d">由精準扶貧委員會定群組和主題，把隨捐助者喜好流動的善款集中到政策已確認的缺口。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">①偏向看得見項目<span class="d">捐助者傾向短期、易宣傳的活動，精神健康、照顧者喘息等成效慢的需要可能乏人問津。</span></div></li><li><div class="it">②項目完結斷崖<span class="d">捐助者兩三年後轉移興趣，服務使用者剛建立的信任落空，傷害可能比從未開展更大。</span></div></li><li><div class="it">③問責公平不足<span class="d">配對不透明易被質疑為企業宣傳或利益交換；小型機構無人手撰寫建議書而被邊緣化。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">引入商界＝卸責<span class="d">若平台填補恆常撥款缺口，卸責憂慮便成真；應把「不取代」寫成規則，而非拒絕合作。</span></div><ul class="tree l3"><li><div class="sub">把不取代寫成規則</div></li></ul></li><li><div class="it">政府全包更好<span class="d">政府財政有上限，「全包」不等於支援更多；有系統引入既有資源，是在承擔之上加碼。</span></div><ul class="tree l3"><li><div class="sub">財政有上限</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">①成效協議三年<span class="d">配對時訂明成效指標，看生活實際改變而非人次，捐助者承諾最少三年，回應弊一。</span></div></li><li><div class="it">②延續與退場<span class="d">達標項目可擴展或納入恆常資助，未達標有序結束並預先轉介，避免斷崖，回應弊二。</span></div></li><li><div class="it">③公開配對＋扶小機構<span class="d">公布評審準則、獲配項目、金額及捐助者，成效報告好壞並陳；扶助小型機構，回應弊三。</span></div></li><li><div class="it">額外性原則<span class="d">平台項目不得取代現有資助服務，每輪列明不屬平台範圍的服務，防止以捐款代替撥款。</span></div><ul class="tree l3"><li><div class="sub">→防卸責</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><div class="tbl"><table>
 <thead>
 <tr>
@@ -401,6 +475,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the introduction of community canteens in integrated youth centres and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Identification of need is easily lost; build the pathway first</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Community canteens in youth centres</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Nutrition, connection, identification<span class="d">The canteens aim at affordable nutrition, neighbourhood connection and early identification of need among vulnerable groups.</span></div></li><li><div class="it">Identification most easily lost<span class="d">Identification distinguishes the scheme from ordinary meal services, but meals are easy to count and identification is not.</span></div></li><li><div class="it">Trial: warning, not success<span class="d">The trial reached elders, already best served, barely reached carers and families, and few noticed needs led to support.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: premises for another purpose</button><ul class="tree l2"><li><div class="it">Free hours suit elders only<span class="d">Centres are free only while young people are at school, which suits elders but not carers or school-age children.</span></div><ul class="tree l3"><li><div class="sub">Lunch clubs for elders</div></li></ul></li><li><div class="it">Few licensed kitchens<span class="d">Three-quarters of selected centres lack licensed kitchens; target pressure risks unsafe cooking and a programme-wide loss of confidence.</span></div><ul class="tree l3"><li><div class="sub">Food safety incident</div></li></ul></li><li><div class="it">Youth workers serve meals<span class="d">Youth workers serving meals lose time with young people, turning the youth sector from partner into opponent.</span></div><ul class="tree l3"><li><div class="sub">Youth sector turns hostile</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: no pathway to support</button><ul class="tree l2"><li><div class="it">Weak referral chain<span class="d">Staff had no agreed way to record or refer needs; only one case in eleven received help within a month.</span></div><ul class="tree l3"><li><div class="sub">Disclosers lose trust</div></li></ul></li><li><div class="it">Stigma: too poor to cook<span class="d">If canteens look like places for people who cannot afford food, those most reluctant to accept help will stay away.</span></div><ul class="tree l3"><li><div class="sub">Reaches only the connected</div></li></ul></li><li><div class="it">Meals easy to count<span class="d">Evaluation defaults to meals served, so a scheme that feeds many but helps few may be reported as a success.</span></div><ul class="tree l3"><li><div class="sub">Failure reported as success</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Central kitchens, separate staff<span class="d">Licensed central kitchens prepare meals for reheating, and each canteen has its own small team, so youth work hours are protected.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Match sessions to groups<span class="d">Weekday lunches serve elders, while a few centres with spare evening or weekend capacity run family sessions.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Referral pathway before opening<span class="d">Each canteen gets a needs checklist, a named link social worker and a referral route with target response times.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Open to all, sliding price<span class="d">Canteens open to all residents on a sliding price scale, presented as community dining to protect dignity.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Phased rollout, kitchens first<span class="d">Treat the 12-month target as a phased rollout: central kitchens and referral arrangements first, then openings in tranches.</span></div></li><li><div class="it">Six-month indicator review<span class="d">A six-month review reports carer share, new users and referrals completed; further expansion depends on these indicators.</span></div></li><li><div class="it">Accept a slower rollout<span class="d">A slower rollout than announced is preferable to scaling up a model that misses its intended users.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務：</strong> (a) 恰好兩個問題，每個問題後獨立一段 Implications；(b) 建議逐項標明對應哪個問題。</li>
 <li><strong>選題判斷：</strong> 背景五項資料可歸成兩組——場地、時段、廚房、青年工作者（→ Problem 1：設施為另一目的而設，只適合長者）；轉介鏈斷裂、標籤（→ Problem 2：識別了需要卻沒有出路）。「85% 是長者」是兩個問題的交匯點，BACKGROUND 段要點出。</li>
@@ -504,6 +579,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../05-population/index.html">← 05 人口、生育與人才</a><a href="../07-housing/index.html">07 土地、房屋與居住質素 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/06-welfare/index.html">議題庫：福利、扶貧與社會流動</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

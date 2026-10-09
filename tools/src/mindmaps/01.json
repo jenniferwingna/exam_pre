@@ -1,0 +1,550 @@
+{
+  "topic": "01",
+  "title": "人口老化與安老服務",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "輸入外籍家居照顧員",
+      "stance": "同意，前提：技能把關、對象門檻、家庭支援",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "可靠居家照顧",
+              "c": [],
+              "d": "居家安老要讓體弱長者在家中得到可靠照顧，這是評估計劃是否有效的出發點。"
+            },
+            {
+              "t": "延後入院",
+              "c": [],
+              "d": "目的包括盡量延後入住院舍，同時不讓家人照顧者被拖垮。"
+            },
+            {
+              "t": "標準：技能可信",
+              "c": [],
+              "d": "第一項標準：照顧員的護老技能是否可信，對應措施一的本地認證。"
+            },
+            {
+              "t": "標準：惠及最需要",
+              "c": [],
+              "d": "第二項標準：計劃能否惠及最需要全日照顧的家庭，否則只是收費較高的外傭計劃。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "形態錯配非數量",
+              "c": [],
+              "d": "缺口不是數量不足而是形態錯配：長者需要全日照顧，本地服務卻以日間按節數提供。"
+            },
+            {
+              "t": "①外傭無護老技能",
+              "c": [],
+              "d": "外傭制度原本只為家務而設，從不要求護老技能，卻由不少家庭用來兼顧護老。"
+            },
+            {
+              "t": "②體弱者提早入院",
+              "c": [],
+              "d": "家人和外傭撐不住時長者便提早入院，由最昂貴的服務承擔本可在家處理的需要。"
+            },
+            {
+              "t": "③以老護老",
+              "c": [],
+              "d": "填補空隙的家人愈來愈多是以老護老；真正癥結是缺少留宿而又受過訓練的人手層級。"
+            }
+          ],
+          "d": "用機制診斷，癥結編號與措施對應"
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①本地技能認證",
+              "c": [],
+              "d": "照顧員來港前通過本地認可評核，抵港三個月內再完成實務評核，回應技能是否可信。"
+            },
+            {
+              "t": "②中度缺損門檻",
+              "c": [],
+              "d": "首階段只限中度或以上缺損、或輪候長期護理長者的家庭，把名額用在最可能延後入院者。"
+            },
+            {
+              "t": "③僱傭支援中心",
+              "c": [],
+              "d": "由社福機構提供聘前配對、僱主培訓、訂明工時上限的標準合約及投訴渠道。"
+            },
+            {
+              "t": "聘用資助",
+              "c": [
+                "→負擔能力"
+              ],
+              "d": "照顧員工資若高於外傭，為經審查合格家庭提供聘用資助，避免計劃只惠及中產。"
+            }
+          ],
+          "d": "逐項回扣癥結，附指標或試行"
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "認證成本高",
+              "c": [
+                "一兩來源地互認"
+              ],
+              "d": "認證成本高、培訓參差；首階段只與一兩個來源地互認，委託機構抽樣覆核。"
+            },
+            {
+              "t": "工時休息爭議",
+              "c": [
+                "家訪＋暫託補位"
+              ],
+              "d": "僱主不懂管理易生爭議；支援中心家訪，休息日由暫託補位，先調解後轉介。"
+            },
+            {
+              "t": "勞工界反對",
+              "c": [
+                "配額上限＋數據"
+              ],
+              "d": "勞工界憂慮繞過本地優先；設配額上限、只限留宿式，按公開數據增減配額。"
+            }
+          ],
+          "d": "批評自己的措施，逐項配處理"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "加薪即可",
+              "c": [
+                "入行≠願留宿"
+              ],
+              "d": "加薪解決的是有沒有人入行，解決不了有沒有人願意留宿照顧一名長者。"
+            },
+            {
+              "t": "兩者分工非取捨",
+              "c": [],
+              "d": "本地人手往督導、社區和院舍等專業崗位發展，外籍照顧員填補留宿式居家照顧。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "游說：勞工界",
+          "items": [
+            {
+              "t": "飯碗",
+              "c": [
+                "受壓即凍結配額"
+              ],
+              "d": "配額與公開數據掛鈎，若本地居家照顧員的就業或薪酬受壓，配額即凍結檢討。"
+            },
+            {
+              "t": "議價能力",
+              "c": [
+                "晉升階梯"
+              ],
+              "d": "政府同步為本地護理員建立職級和晉升階梯，並資助在職培訓，提升議價能力。"
+            },
+            {
+              "t": "先例",
+              "c": [
+                "擴展須三方議"
+              ],
+              "d": "承諾計劃只限居家照顧，任何擴展至其他工種的建議須經勞資政三方重新討論。"
+            },
+            {
+              "t": "專業化",
+              "c": [
+                "認證抬高照顧價值"
+              ],
+              "d": "把護老技能寫入入境安排並設認證，等於承認照顧是專業，長遠有利本地護理員爭取待遇。"
+            }
+          ],
+          "d": "抓對方在意的事，給理由和讓步"
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "提升長者券比重",
+      "stance": "支持；比重非目標，把關機制先行",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "錢跟人走",
+              "c": [],
+              "d": "資助由政府撥款予機構按名額提供，轉為錢跟人走，由長者自選服務提供者。"
+            },
+            {
+              "t": "標準：最需要者易得",
+              "c": [],
+              "d": "第一項標準：最有需要的長者是否更容易得到合適服務，即公平。"
+            },
+            {
+              "t": "標準：公帑買更多",
+              "c": [],
+              "d": "第二項標準：同一筆公帑能否買到更多用得上的服務，即效率。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "迫營辦者回應需要",
+              "c": [],
+              "d": "營辦者若要爭取持券長者便須調整服務，覆蓋名額模式下無人照顧的夜間和周末。"
+            },
+            {
+              "t": "供應擴展更快",
+              "c": [],
+              "d": "更多營辦者可加入，增加服務不必等政府逐一開設中心，有助達到五年規劃目標。"
+            }
+          ],
+          "d": "公允寫最強的支持理由"
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "①不懂得選",
+              "c": [],
+              "d": "認知障礙、獨居或缺乏家人支援的長者最需要照顧，卻最難比較服務和處理申請。"
+            },
+            {
+              "t": "②營辦者揀客",
+              "c": [],
+              "d": "若券值不分照顧難度，高依賴長者成本較高，營辦者自然傾向接收較易照顧的個案。"
+            },
+            {
+              "t": "③地區供應不均",
+              "c": [],
+              "d": "營辦者集中在需求密集地區，偏遠或新發展區的長者可能有券無服務。"
+            },
+            {
+              "t": "結果：流向易服務者",
+              "c": [],
+              "d": "三項風險指向同一結果：資源流向較易服務的人，與精準照顧的原意相反。"
+            }
+          ],
+          "d": "弊處寫機制，為建議鋪路"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "理據：名額亦隱性篩選",
+              "c": [],
+              "d": "按名額撥款同樣有隱性篩選：誰能排到、排在哪區，取決於機構地點和輪候次序。"
+            },
+            {
+              "t": "維持名額模式",
+              "c": [
+                "問題是誰替長者選"
+              ],
+              "d": "問題不在券還是名額，而在誰替長者選擇、券值是否反映照顧難度；名額保留作安全網。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "①獨立個案經理",
+              "c": [],
+              "d": "個案經理由不提供服務的社福單位擔任，避免球員兼球證；借鑑日本不照搬。"
+            },
+            {
+              "t": "①數據主動識別",
+              "c": [],
+              "d": "利用社福數據分享平台，在保障私隱下找出未申請的高風險長者，由個案經理主動接觸。"
+            },
+            {
+              "t": "②分級券值＋接收",
+              "c": [],
+              "d": "高依賴個案券值較高令營辦者接得起，營辦者不得無合理理由拒收轉介長者，回應揀客。"
+            },
+            {
+              "t": "③按區安全網",
+              "c": [],
+              "d": "每年公布各區持券人數、服務點和輪候時間，供應不足地區以直接資助名額補位。"
+            }
+          ],
+          "d": "逐項對應弊處，附檢討指標"
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "跨境養老紓緩輪候",
+      "stance": "反對作主要方法；支持作自願選項",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "擴大選擇→消化需求",
+              "c": [],
+              "d": "施政報告的目的是擴大院舍選擇；作為主要方法，目的便偷換成消化本地需求。"
+            },
+            {
+              "t": "標準：自願真實",
+              "c": [],
+              "d": "擴大選擇的評估標準是長者是否自願、選擇是否真實，本文支持這個定位。"
+            },
+            {
+              "t": "標準：持續減輪候",
+              "c": [],
+              "d": "消化需求的標準是能否大規模而持續地減少本地輪候，跨境養老達不到。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "成本低擴充快",
+              "c": [],
+              "d": "大灣區內地城市的土地和人手成本較低，院舍擴充比本地覓地興建快。"
+            },
+            {
+              "t": "有親友者合意",
+              "c": [],
+              "d": "對在內地有親友、熟悉當地生活的長者，跨境院舍本身就是更合意的選擇。"
+            },
+            {
+              "t": "北上一人少一人",
+              "c": [],
+              "d": "醫療保險資助和可攜現金援助降低跨境成本；每有一人自願北上，輪候便少一人。"
+            }
+          ],
+          "d": "公允寫最強的支持理由"
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "①對象錯配",
+              "c": [],
+              "d": "輪候最急切的是體弱常需就醫者，最適合跨境的卻是身體尚可、有親友在當地的長者。"
+            },
+            {
+              "t": "②需求回流",
+              "c": [],
+              "d": "長者健康轉差時，家人多希望接回香港就醫照顧，需求重回本地，紓緩只屬暫時。"
+            },
+            {
+              "t": "③削弱本地規劃",
+              "c": [],
+              "d": "以跨境為主渠道會延後本地院舍規劃，社會亦可能理解為把長者送走，令選擇蒙上污名。"
+            }
+          ],
+          "d": "弊處寫機制，為建議鋪路"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "本地追不上需求",
+              "c": [
+                "減過早入院"
+              ],
+              "d": "承認本地土地和人手緊絀屬實，但紓緩輪候的關鍵是減少過早或不必要的入院。"
+            },
+            {
+              "t": "前提錯：只靠加宿位",
+              "c": [],
+              "d": "對方假設輪候只能靠增加宿位解決，部分長者在家中得到足夠支援便可延後入院。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "替代措施",
+          "items": [
+            {
+              "t": "社區照顧延後入院",
+              "c": [
+                "→駁論"
+              ],
+              "d": "善用社區照顧服務券和日間護理名額作過渡，配合外籍家居照顧員，讓長者延後入院。"
+            },
+            {
+              "t": "③多渠道增宿位",
+              "c": [],
+              "d": "落實新增院舍、新建院舍交業界自資營運、私人發展物業提供院址，並檢視規劃比率。"
+            },
+            {
+              "t": "①把好入院閘門",
+              "c": [],
+              "d": "定期為輪候長者重新評估，惡化者優先，社區可應付者轉介，宿位留給最急切個案。"
+            },
+            {
+              "t": "②試住＋回流安排",
+              "c": [],
+              "d": "設試住期和回流安排，配對內地醫療機構，公開巡查收費，讓選擇非出於無奈。"
+            }
+          ],
+          "d": "反對分支：提出完整替代方案"
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "Self-financed care homes pilot",
+      "stance": "Judge by shorter waits and protection, not occupancy",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Subsidy follows the resident",
+              "c": [],
+              "d": "The government still supplies the buildings, but subsidy follows the resident through the voucher instead of flowing to operators as grants."
+            },
+            {
+              "t": "Faster places, no recurrent grants",
+              "c": [],
+              "d": "The objective is to add places faster and widen choice without a matching rise in recurrent grants."
+            },
+            {
+              "t": "Occupancy proves nothing",
+              "c": [],
+              "d": "With a 23-month queue the homes will fill anyway; the test is shorter waits for the neediest and resident protection."
+            }
+          ],
+          "d": "Define the objective and reset the success test"
+        },
+        {
+          "label": "Problem 1: access",
+          "items": [
+            {
+              "t": "Unaffordable top-ups",
+              "c": [
+                "Frailest still wait"
+              ],
+              "d": "The voucher covers only part of a typical fee, so operators rationally charge top-ups many voucher holders cannot afford."
+            },
+            {
+              "t": "Lighter-care admissions",
+              "c": [
+                "Costs shift to hospitals"
+              ],
+              "d": "Operators admit lighter-care residents; passed-over frail elders stay in hospital or at home, displacing cost to health system and families."
+            },
+            {
+              "t": "Top-up pressure",
+              "c": [
+                "Back-door recurrent spending"
+              ],
+              "d": "As top-ups rise, pressure builds to raise the voucher value, creating recurrent expenditure by the back door."
+            },
+            {
+              "t": "Nominal-rent public buildings",
+              "c": [
+                "Subsidising private profit"
+              ],
+              "d": "Public buildings let at nominal rent to better-off residents invite the charge that public assets subsidise private profit."
+            }
+          ],
+          "d": "Diagnose the mechanism; implications to second layer"
+        },
+        {
+          "label": "Problem 2: resident protection",
+          "items": [
+            {
+              "t": "Residents cannot easily leave",
+              "c": [
+                "Poor quality tolerated"
+              ],
+              "d": "Market discipline assumes customers can leave, but moving frail residents is harmful, so poor quality is tolerated rather than punished."
+            },
+            {
+              "t": "Operator failure",
+              "c": [
+                "Relocation, moral hazard"
+              ],
+              "d": "Operators carry financial but not political risk; failure means emergency relocation, and expected rescue creates moral hazard."
+            },
+            {
+              "t": "Staff poaching",
+              "c": [
+                "Moves workers, adds none"
+              ],
+              "d": "With one post in seven vacant, new homes recruit from existing ones, raising wages and weakening subvented homes."
+            }
+          ],
+          "d": "Diagnose the mechanism; implications to second layer"
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Tender on access, not rent",
+              "c": [
+                "→P1"
+              ],
+              "d": "Award premises on a scored service plan, with marks for places reserved for voucher holders at no or capped top-up."
+            },
+            {
+              "t": "Tiered voucher, acceptance duty",
+              "c": [
+                "→P1"
+              ],
+              "d": "A higher voucher for high-dependency residents makes them viable; operators must admit referred voucher holders and publish admission profiles."
+            },
+            {
+              "t": "Lease safeguards, step-in rights",
+              "c": [
+                "→P2"
+              ],
+              "d": "Leases specify staffing ratios, a performance bond, minimum exit notice and a transition plan; the Ministry holds step-in rights."
+            },
+            {
+              "t": "Inspect, publish, train entrants",
+              "c": [
+                "→P2"
+              ],
+              "d": "Add unannounced inspections with published findings, and require a share of new trained entrants so operators grow the workforce."
+            }
+          ],
+          "d": "Each measure tagged to the problem it answers"
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "Test two contract variants",
+              "c": [],
+              "d": "Safeguards may deter bidders; test a capped-top-up variant and a tiered-voucher variant across the four sites."
+            },
+            {
+              "t": "Five half-yearly indicators",
+              "c": [],
+              "d": "Report half-yearly on high-dependency share, admissions from the list, top-ups, inspections and complaints, and staff turnover."
+            },
+            {
+              "t": "Review before extending",
+              "c": [],
+              "d": "A mid-term review after the first homes run a full year should precede any decision to extend the model."
+            }
+          ],
+          "d": "Timeline, indicators and review point"
+        }
+      ]
+    }
+  ]
+}

@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/12-education/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t12">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -160,6 +231,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>學校合併與「滙流升級計劃」</h2><span class="wc">範文 1488 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>有意見認為，面對學齡人口持續下降，政府應積極推動公帑資助中小學合併，令具質素的學校「做大、做強」。《行政長官2026年施政報告》提出在2026/27學年內推出公帑資助學校「滙流升級計劃」，加大鼓勵和支援合適的公帑資助中小學合併，以整合資源及提升教育質素。你是否同意上述意見？試分析現況，就如何推行「滙流升級計劃」提出建議，分析有關建議的執行挑戰及處理方法，並游說辦學團體參與。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意：及早規劃、質素為準、自願合併</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">滙流升級合併</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">省錢vs提升質素<span class="d">若只為省錢，成敗看學校減少多少；施政報告把目的定為整合資源及提升教育質素。</span></div></li><li><div class="it">課程完整<span class="d">衡量標準是合併後學生能否得到更完整的課程，例如多元選科和課外活動。</span></div></li><li><div class="it">專科師資<span class="d">另一標準是能否有更專科的師資，即五年規劃要具質素學校「做大、做強」。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①小校難保質素<span class="d">教師編制隨班數增減，班數一減便難維持專科教師、多元選科和課外活動。</span></div></li><li><div class="it">②欠及早誘因<span class="d">學校為保班爭奪生源，仍能維持時觀望比主動合併安全，缺乏及早合併的誘因。</span></div></li><li><div class="it">③怕失傳統人手<span class="d">合併涉及校名、傳統和校董會席位的取捨，加上教師去留，令辦學團體不願主動談合併。</span></div></li><li><div class="it">合併總在最壞時機<span class="d">結果合併多在學校無法開班時才被迫進行，合在一起的是兩間同樣疲弱的學校。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">②公開推算準則<span class="d">教育局按區公布學齡人口推算和合併準則，讓辦學團體有數年時間自行規劃。</span></div></li><li><div class="it">①質素資源包<span class="d">合併學校獲一筆過撥款及額外資源，條件是訂明專科師資和選科指標，資源跟計劃走。</span></div></li><li><div class="it">③過渡保障<span class="d">過渡期內不因合併裁減教師，以自然流失吸納；新校保留雙方校名元素和校史。</span></div></li><li><div class="it">③聯校一條龍<span class="d">可推動中小學一條龍，或不同團體先以聯校共享師資課程，再決定是否正式合併。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">公帑買合併<span class="d">保障職位和額外資源令短期開支增加，故資源包設年期和退場安排，並公布成效。</span></div><ul class="tree l3"><li><div class="sub">設年期公布成效</div></li></ul></li><li><div class="it">跨團體難協調<span class="d">團體宗教背景和理念各異易膠着，故設專責協調人員，提供校董席位及使命保障範本。</span></div><ul class="tree l3"><li><div class="sub">協調員＋協議範本</div></li></ul></li><li><div class="it">家長校友反對<span class="d">家長怕路程增加、校友怕傳統消失，故由新一屆小一中一開始合併，在校生原校畢業。</span></div><ul class="tree l3"><li><div class="sub">分階段、原校畢業</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">小班教學契機<span class="d">每級只有一班的學校，班額再小也難維持專科教師和選科組合；合併後同樣可推小班。</span></div><ul class="tree l3"><li><div class="sub">小班≠小校</div></li></ul></li><li><div class="it">資源保留每校<span class="d">把資源分散維持大量小型學校，最終削弱每間學校的質素；學齡人口下降屬結構性趨勢。</span></div><ul class="tree l3"><li><div class="sub">分散削弱質素</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：辦學團體</button><ul class="tree l2"><li><div class="it">使命延續<span class="d">及早與理念相近學校合併，可在協議中寫明辦學宗旨；等到不獲開班便失去談判籌碼。</span></div><ul class="tree l3"><li><div class="sub">主動合併寫明宗旨</div></li></ul></li><li><div class="it">收生穩定<span class="d">資源包令合併後學校在師資和課程上更具吸引力，有助穩定收生，是做大做強而非收縮。</span></div><ul class="tree l3"><li><div class="sub">資源包增吸引力</div></li></ul></li><li><div class="it">怕冒進<span class="d">容許先以聯校形式試行數年，過渡期不裁減教師，準則公開劃一，各團體一視同仁。</span></div><ul class="tree l3"><li><div class="sub">先聯校試行</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li>任務拆解：①表態（是否同意積極推動合併）②分析現況 ③就推行「滙流升級計劃」提出建議 ④分析建議的執行挑戰 ⑤提出處理方法 ⑥游說辦學團體參與。</li>
 <li>立場一句：同意，但「積極」＝及早規劃、以質素為準則、以誘因和過渡保障促成自願合併，不是等收生崩潰才處理。</li>
@@ -210,6 +282,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>教師執業證書</h2><span class="wc">範文 1490 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>政府表示會修訂《教育條例》，將持有執業證書訂為執教必備條件，完善教師註冊機制，並優化教師培訓框架、訂立具體培訓要求。有意見認為，此舉有助提升教師的專業水平。你是否同意？試分析教師專業發展的現況，就如何落實教師執業證書制度提出建議，分析執行挑戰及處理方法，並游說前線教師支持。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意：證書是發展憑證，非行政關卡</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">教師執業證書</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">培訓提升能力<span class="d">第一個目的是以持續培訓令教師能力跟上教學需要的轉變，看教學是否真的改善。</span></div></li><li><div class="it">註冊加強問責<span class="d">第二個目的是完善註冊機制、加強專業問責，看處理問題個案是否公平有效。</span></div></li><li><div class="it">清晰公正合理<span class="d">兩個目的都要求準則清晰、程序公正、負擔合理，這是評估制度設計的標準。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①質素看學校<span class="d">有學校有系統安排進修，有學校因人手緊絀難以抽身，專業發展的質素參差。</span></div></li><li><div class="it">②教學需要急變<span class="d">AI教學助理、數字教育和精神健康帶來新要求，入職前一次過培訓不足以支撐數十年。</span></div></li><li><div class="it">③只有批准取消<span class="d">註冊制度只有批准與取消兩端，缺乏中間手段，問題個案要麼不處理、要麼最嚴厲處理。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①工時內資助培訓<span class="d">培訓在工作時間內進行，政府資助代課，承認校本學習社群、網上課程和交流等多元模式。</span></div></li><li><div class="it">②清晰續證準則<span class="d">以數年為周期，規定學生支援、數字教學等核心培訓和自選時數，並預先公開準則。</span></div></li><li><div class="it">③分級處理覆核<span class="d">先提醒、再附條件續證，嚴重或屢勸不改才暫停資格，決定以書面交代並設獨立覆核。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">工作量<span class="d">代課難聘、怕擠佔備課，故讓學校彈性安排培訓日，並同步推行AI教學助理先騰出時間。</span></div><ul class="tree l3"><li><div class="sub">先用AI騰時間</div></li></ul></li><li><div class="it">行政負擔<span class="d">數以萬計續證集中處理會不勝負荷，故按註冊日期分批錯開周期，認可課程時數自動記錄。</span></div><ul class="tree l3"><li><div class="sub">分批＋網上記錄</div></li></ul></li><li><div class="it">程序公平疑慮<span class="d">教師怕準則被任意詮釋，故把程序寫入法例或指引，覆核委員會納入業界代表並公布統計。</span></div><ul class="tree l3"><li><div class="sub">寫入法例＋覆核</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">淪為儲時數<span class="d">時數確不等於質素，但證書把進修由個人負擔轉為政府和辦學團體須提供資源的責任。</span></div><ul class="tree l3"><li><div class="sub">變政府培訓責任</div></li></ul></li><li><div class="it">應先減工作量<span class="d">沒有全港劃一基本要求，專業發展只取決於個別學校，最缺支援的學校和教師最易被遺漏。</span></div><ul class="tree l3"><li><div class="sub">缺底線弱校被遺漏</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：前線教師</button><ul class="tree l2"><li><div class="it">工作量<span class="d">培訓在工作時間內進行並由政府資助代課，回應教師對工作量的擔心。</span></div><ul class="tree l3"><li><div class="sub">工時內、政府資助</div></li></ul></li><li><div class="it">職業保障<span class="d">現職教師首個周期自動獲發證書，過去進修計算在內，無人因制度轉變失去教席。</span></div><ul class="tree l3"><li><div class="sub">現職自動獲證</div></li></ul></li><li><div class="it">專業尊重<span class="d">證書與其他設續證制度的專業看齊，教師代表參與設計培訓框架，首周期後全面檢討。</span></div><ul class="tree l3"><li><div class="sub">看齊專業、參與設計</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li>任務拆解：①表態（是否同意此舉有助提升專業水平）②分析教師專業發展現況 ③就落實執業證書制度提出建議 ④分析執行挑戰 ⑤提出處理方法 ⑥游說前線教師支持。</li>
 <li>立場一句：同意，前提是證書成為專業發展的憑證，而非另一道行政關卡。</li>
@@ -260,6 +333,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>北都大學城用地審批條件</h2><span class="wc">範文 1202 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《香港第一個五年規劃》以「人才培養、科學研究、成果轉化、產業發展」四位一體定位北都大學城，並訂明洪水橋大學城於2026年啟動校園區用地的分配工作。有意見認為，政府在分配大學城校園用地時，應把院校與產業合作及推動科研成果轉化的具體承諾列為主要審批條件。請分析上述建議的利弊，表明你是支持抑或反對，並就你的立場提出理據。如果是支持的話，請提出建議，確保措施能有效達致其政策目的；如果是反對的話，請提出其他確保大學城能推動產學研協同發展的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持：按定位設計，長期評核</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">大學城用地條件</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">免地價＝公帑承擔<span class="d">政府以免地價和貸款支持院校建校，可見大學城的公共目的是成為北都產業人才引擎。</span></div></li><li><div class="it">能否結合產業<span class="d">第一項標準是審批條件能否令院校真正與周邊產業結合，體現四位一體定位。</span></div></li><li><div class="it">不損育才研究<span class="d">第二項標準是審批條件會否損害大學育才和基礎研究的本業。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">確保公共回報<span class="d">土地最稀缺、免地價更是可觀公帑承擔，寫入條件可避免大學城「只有校園、沒有城市」。</span></div></li><li><div class="it">補轉化短板<span class="d">成果轉化是創科鏈較弱一環，條件可推動院校設轉化平台、與企業共建實驗室補短板。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">①扭曲學術使命<span class="d">條件過度着重短期產值，院校集中資源於易商品化學科，人文和基礎學科被邊緣化。</span></div></li><li><div class="it">②時序錯配<span class="d">院校2027至28年進駐洪水橋，鐵路站2030年才啟用，產業未到位，承諾易落空。</span></div></li><li><div class="it">③學科不公平<span class="d">醫學工程較易對接產業，只比合作規模，人文社科見長或規模較小的院校處於劣勢。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">理據＋駁論</button><ul class="tree l2"><li><div class="it">風險在設計<span class="d">風險源於條件的設計方式而非條件本身；不設條件，大學城很可能只是校園擴建。</span></div></li><li><div class="it">起步時成本最低<span class="d">大學城正處起步階段，此時訂條件成本最低；待校舍落成才要求合作，院校已缺誘因。</span></div></li><li><div class="it">干預學術自主<span class="d">條件規範校園如何與地區連結，而非教什麼研究什麼；以公帑公地支持，要求承諾不矛盾。</span></div><ul class="tree l3"><li><div class="sub">管連結不管教研</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">③按定位度身訂<span class="d">新田以醫學和人工智能等為定位、洪水橋以應用型專上教育為定位，看方案是否配合定位。</span></div></li><li><div class="it">①過程指標為主<span class="d">首數年評核聯合實驗室、委託研究和實習，五至十年後才看衍生企業和技術授權。</span></div></li><li><div class="it">①保留教研比例<span class="d">訂明校園須保留一定比例作教學及非應用型研究，作為保障學術使命的底線。</span></div></li><li><div class="it">②分期批地<span class="d">按里程碑分期批地，承諾時間表與交通和產業用地落成掛鈎，未達標先檢討再批後期。</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li>任務拆解：①分析建議的利 ②分析建議的弊 ③表明支持抑或反對 ④提出理據 ⑤（支持）提出確保達致政策目的的建議。</li>
 <li>立場一句：支持把產業合作承諾列為審批條件，但承諾須按定位設計、以長期指標評核，並保留基礎研究空間。</li>
@@ -320,6 +394,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the city-wide roll-out of AI teaching assistants in publicly funded schools and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Problems are capacity and integrity, not technology</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">AI teaching assistants</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Free teacher time<span class="d">The objective is to release teacher time from routine preparation and marking so that it can be redirected to teaching.</span></div></li><li><div class="it">More individual feedback<span class="d">Every pupil should receive more frequent individual feedback than one teacher can provide on their own.</span></div></li><li><div class="it">Judge learning, not log-ins<span class="d">Success should be judged by teacher time and pupil learning, not by log-in rates or usage data.</span></div></li><li><div class="it">Data statement as precondition<span class="d">Parents&#x27; data concerns are real but more tractable, so they are treated as a condition of roll-out, not a third problem.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: uneven adoption</button><ul class="tree l2"><li><div class="it">No time, no trust<span class="d">Identical software saw use from over 70 to under 20 per cent; without protected time or trust in marking, not using it was rational.</span></div><ul class="tree l3"><li><div class="sub">Savings miss neediest schools</div></li></ul></li><li><div class="it">High-use schools pull ahead<span class="d">High-use schools give pupils more feedback and practice, so a policy meant to narrow differences between schools may widen them.</span></div><ul class="tree l3"><li><div class="sub">Equity gap widens</div></li></ul></li><li><div class="it">Poor early usage data<span class="d">A three-year budget will show low returns on usage before educational value is tested, inviting a premature verdict of failure.</span></div><ul class="tree l3"><li><div class="sub">Judged failure prematurely</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: bypassing learning</button><ul class="tree l2"><li><div class="it">Chatbot supplies answers<span class="d">A general-purpose model supplies finished answers unless configured otherwise, so homework marks rise while understanding does not.</span></div><ul class="tree l3"><li><div class="sub">Marks rise, learning doesn&#x27;t</div></li></ul></li><li><div class="it">Strugglers rely most<span class="d">Pupils most likely to take shortcuts are those already struggling, compounding the equity gap caused by uneven adoption.</span></div><ul class="tree l3"><li><div class="sub">Equity gap compounds</div></li></ul></li><li><div class="it">Seen as cheating tool<span class="d">If the platform is seen as a cheating tool, parental support falls and schools may restrict it, losing its legitimate benefits.</span></div><ul class="tree l3"><li><div class="sub">Schools restrict use</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Readiness phasing, funded time<span class="d">Schools join once they have an AI lead teacher and an adoption plan, with grants releasing that teacher&#x27;s time and funding substitute cover.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Peer pairing, accuracy data<span class="d">Pair high-use pilot schools with low-use ones for peer coaching, publish marking accuracy by subject, and limit automated marking to low-stakes tasks.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Default tutor mode<span class="d">The pupil chatbot defaults to tutor mode, offering hints, questions and worked examples rather than complete answers, adjustable by teachers.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Assessment rules, data statement<span class="d">Define acceptable AI use, shift some assessment to in-class writing, and publish a data statement ruling out model training and teacher appraisal.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Safeguards before next year<span class="d">Tutor mode, the data statement and the guidance should all be in place before the next school year begins.</span></div></li><li><div class="it">Three indicators, half-yearly<span class="d">Track net teacher time saved, the usage gap between schools, and supervised performance against homework, reporting half-yearly.</span></div></li><li><div class="it">Independent review, year two<span class="d">An independent evaluation at the end of year two should be completed before the final roll-out phase proceeds.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li>任務拆解：(a) 兩個主要問題，每個問題後獨立寫 implications；(b) 可行措施，逐項回扣兩個問題。</li>
 <li>主線一句：問題不在技術，而在學校能力（採用不均）和學習誠信（學生用AI走捷徑）；家長的數據疑慮列為推行前提，而非第三個問題。</li>
@@ -423,6 +498,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../11-environment/index.html">← 11 環境、氣候與城市韌性</a><a href="../13-culture/index.html">13 文化、體育與歷史保育 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/12-education/index.html">議題庫：教育、人才培育與青年發展</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

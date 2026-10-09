@@ -1,0 +1,564 @@
+{
+  "topic": "09",
+  "title": "旅遊、盛事與文體旅協同",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "郊野預約上限",
+      "stance": "同意推展：只限超載熱點，先分流後限流",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "生態承載",
+              "c": [],
+              "d": "施政報告把試行放在「生態保育＋綠色旅遊」下，首要目的是減輕生態承載壓力。"
+            },
+            {
+              "t": "遊覽體驗",
+              "c": [],
+              "d": "第二個目的是優化遊覽體驗，避免熱點擠迫令遊人冒險、體驗變差。"
+            },
+            {
+              "t": "＋公平親近自然",
+              "c": [],
+              "d": "郊野是市民日常康樂空間，任何限制都要讓長者和基層仍能公平親近自然。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①人流時地集中",
+              "c": [],
+              "d": "問題不是行山的人太多，而是打卡熱潮令人流在周末長假期湧向同一段步道。"
+            },
+            {
+              "t": "②超載傷生態安全",
+              "c": [],
+              "d": "熱點路徑狹窄偏遠，承載力取決於最窄最險一段，超載便損植被地貌、危及遊人。"
+            },
+            {
+              "t": "③推廣與限流矛盾",
+              "c": [],
+              "d": "政府一面以「＋旅遊」推廣景點、一面限流，推廣製造的需求只能由管理事後收拾。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①分流先於限流",
+              "c": [],
+              "d": "漁護署發布實時人流資訊，推介景觀相近的替代路線，扣癥結一。"
+            },
+            {
+              "t": "②準則定限流點",
+              "c": [
+                "達標即撤銷"
+              ],
+              "d": "只在人流集中、生態敏感、有安全風險的熱點限流，上限公開計算、每年檢討。"
+            },
+            {
+              "t": "③推廣避開熱點",
+              "c": [],
+              "d": "旅遊推廣避免在高峰期主打已超載地點，化解推廣與限流的矛盾，扣癥結三。"
+            },
+            {
+              "t": "預約免費實名",
+              "c": [
+                "→公平標準"
+              ],
+              "d": "預約免費、實名登記，多次不到場者暫停資格以防霸位，確保公平。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "限額＝限制自由",
+              "c": [
+                "排隊vs透明規則"
+              ],
+              "d": "超載熱點的名額早被最早到、最能忍擠迫的人取得，真正選擇在排隊與透明規則之間。"
+            },
+            {
+              "t": "直接收費（富士山）",
+              "c": [
+                "收費篩走基層"
+              ],
+              "d": "富士山收入用於管理可借鑑，但香港郊野主要服務本地康樂，收費篩走的是基層。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "數碼鴻溝",
+              "c": [
+                "即場名額、代登記"
+              ],
+              "d": "長者未必熟悉網上預約，故保留即場名額和電話預約，並容許長者中心代為登記。"
+            },
+            {
+              "t": "繞道小徑",
+              "c": [
+                "入口檢查點"
+              ],
+              "d": "遊人或改走未經管理小徑反更危險，故高峰時段在主要入口設檢查點配合人流感應器。"
+            },
+            {
+              "t": "需求轉移",
+              "c": [
+                "以區域作監測"
+              ],
+              "d": "限制一處人潮或湧往鄰近景點，故以整個區域作監測單位，預備第二層分流方案。"
+            },
+            {
+              "t": "怕收費封山",
+              "c": [
+                "公開數據不收費"
+              ],
+              "d": "市民或視預約為收費封山前奏，故定期公開預約率和生態數據，並寫明不收入場費。"
+            }
+          ]
+        },
+        {
+          "label": "游說：行山團體",
+          "items": [
+            {
+              "t": "珍惜清靜",
+              "c": [
+                "上限保障體驗"
+              ],
+              "d": "超載的打卡人潮首先犧牲真正行山的人，人數上限保障的正是他們最珍惜的體驗。"
+            },
+            {
+              "t": "怕滑坡至封山",
+              "c": [
+                "只限熱點＋撤銷"
+              ],
+              "d": "他們最怕「今天預約、明天收費、後天封山」，故承諾只限少數熱點，並設撤銷機制。"
+            },
+            {
+              "t": "要話事權",
+              "c": [
+                "共同管理＋配額"
+              ],
+              "d": "邀請行山團體參與訂上限和監測人流，並設團體預約配額，由被管理者變共同管理者。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "盛事消費出場館",
+      "stance": "同意帶動有限：補轉化機制，非削盛事",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "增加值非人次",
+              "c": [],
+              "d": "五年規劃以增加值為指標：由2024年862億元增至2030年1,260億元。"
+            },
+            {
+              "t": "新增消費？",
+              "c": [],
+              "d": "第一項標準是盛事有沒有帶來新增消費，而非把本地娛樂消費轉移過來。"
+            },
+            {
+              "t": "多留一晚？",
+              "c": [],
+              "d": "第二項標準是能否令旅客多留一晚，配合施政報告延長留港時間的目的。"
+            },
+            {
+              "t": "走出場館？",
+              "c": [],
+              "d": "第三項標準是消費有沒有走出場館，流到社區而非只停在門票和場內餐飲。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "供應已到位",
+              "c": [],
+              "d": "啟德體育園逾170場盛事、逾260萬人次，票務票房亞洲第一，問題不在供應。"
+            },
+            {
+              "t": "①消費路徑斷",
+              "c": [],
+              "d": "觀眾行程多是到場、散場、離開，消費集中於門票、場內和鄰近商場，消費鏈未成形。"
+            },
+            {
+              "t": "②日程公布太遲",
+              "c": [],
+              "d": "日程公布得遲，海外旅客難以安排多日行程，商戶亦來不及準備。"
+            },
+            {
+              "t": "③替代效應高估",
+              "c": [],
+              "d": "本地觀眾消費部分只是由其他娛樂轉移，按總消費計算會高估成效。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①票尾延長逗留",
+              "c": [],
+              "d": "優惠有效期延至演出後數天，以地區連結商會，把觀眾帶到舊區食肆小店，扣癥結一。"
+            },
+            {
+              "t": "①捆綁住宿多站",
+              "c": [],
+              "d": "把盛事與住宿及「一程多站」行程捆綁推廣，吸引非本地觀眾過夜，扣癥結一。"
+            },
+            {
+              "t": "②提早十二個月公布",
+              "c": [],
+              "d": "旅發局按三大主題季，以盛事前十二個月為目標公布主要日程，回應時間錯配。"
+            },
+            {
+              "t": "③獨立評估定撥款",
+              "c": [],
+              "d": "受資助盛事事前訂指標，由獨立機構扣除替代效應評估，結果作撥款續期依據。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "總消費已增一成",
+              "c": [
+                "分不出來源"
+              ],
+              "d": "入境旅遊總消費預計增約一成，但無法區分多少來自盛事、多少流到社區，正需評估。"
+            },
+            {
+              "t": "應削減資助",
+              "c": [
+                "只資助淨新增者"
+              ],
+              "d": "過夜及非本地觀眾消費屬淨增加，香港不辦觀眾便流向他處，應只資助能證明效益者。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "主辦不願早公布",
+              "c": [
+                "列為資助條件"
+              ],
+              "d": "藝人檔期有變數，故把提早公布列為受資助條件，非資助活動可先公布暫定檔期。"
+            },
+            {
+              "t": "商戶意欲低",
+              "c": [
+                "零費用集體登記"
+              ],
+              "d": "小店人手緊、怕蝕本、不熟數碼平台，故零費用加入、優惠自訂，以商會集體登記。"
+            },
+            {
+              "t": "居民交通噪音",
+              "c": [
+                "散場安排＋聯絡"
+              ],
+              "d": "得益的是商戶、承受擠迫的是居民，故同步公布散場交通及噪音安排，並與區議會聯絡。"
+            },
+            {
+              "t": "評估生爭議",
+              "c": [
+                "事前統一方法"
+              ],
+              "d": "評估方法易生爭議，故事前公布統一方法，數據只以匿名及匯總形式使用。"
+            }
+          ]
+        },
+        {
+          "label": "游說：中小商戶",
+          "items": [
+            {
+              "t": "成本",
+              "c": [
+                "零費用、自訂優惠"
+              ],
+              "d": "加入不收費，優惠多少由商戶自定，不設最低折扣，回應小店怕蝕本的顧慮。"
+            },
+            {
+              "t": "客源",
+              "c": [
+                "現成新客＋數據"
+              ],
+              "d": "盛事觀眾已在附近準備消費，非本地觀眾更是新客源；程式回饋兌換數據助判斷。"
+            },
+            {
+              "t": "麻煩",
+              "c": [
+                "試一季可退出"
+              ],
+              "d": "先試行一個盛事季，由旅發局統一宣傳，商戶隨時可退出，低成本試一試。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "騰出街市空間",
+      "stance": "支持：集中而非關閉",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "糧食可及",
+              "c": [],
+              "d": "街市公共價值在於讓長者和基層在居所附近買到價錢合理的新鮮糧食。"
+            },
+            {
+              "t": "善用空置空間",
+              "c": [],
+              "d": "另一方面，空置的公共空間本身就是浪費，騰出空間追求資源效益。"
+            },
+            {
+              "t": "兩者有張力",
+              "c": [],
+              "d": "騰出空間追求效益、保留街市守護糧食可及，立場須在兩個目的之間取得平衡。"
+            }
+          ]
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "社區設施覓地難",
+              "c": [],
+              "d": "長者日間護理設施和鄰舍中心最難找的是地方，街市位處社區中心、交通方便。"
+            },
+            {
+              "t": "混合用途帶人流",
+              "c": [],
+              "d": "每天前往長者中心或託兒服務的家庭，正是街市最需要的顧客，可為餘下攤檔帶人流。"
+            }
+          ]
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "①低使用≠無需要",
+              "c": [],
+              "d": "空置率反映經營意欲而非顧客依賴，半空街市仍可能是長者唯一步行可達的糧食來源。"
+            },
+            {
+              "t": "②衰退螺旋",
+              "c": [],
+              "d": "零散收回空間令攤檔分散冷清，生意更差、空置更多，最後整個街市名存實亡。"
+            },
+            {
+              "t": "③多部門無人牽頭",
+              "c": [],
+              "d": "改裝要符合消防建築規定，營運撥款屬其他範疇，無部門負責便停在報告階段。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "鄰近地區經驗",
+              "c": [
+                "借思路不抄設計"
+              ],
+              "d": "混合用途帶動人流的思路可借鑑，但各地業權、營運和租務與香港政府直管制度不同。"
+            },
+            {
+              "t": "先改善不騰出",
+              "c": [
+                "結構轉變不可逆"
+              ],
+              "d": "購買習慣轉變屬結構性，保留無人競投的空置攤位不會多帶來一個顧客。"
+            }
+          ]
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "①公開分類準則",
+              "c": [],
+              "d": "以顧客流量、糧食來源可達性及長者比例，把街市分為保留、集中騰出、整體轉型三類。"
+            },
+            {
+              "t": "②先安置後改裝",
+              "c": [],
+              "d": "攤檔集中至最方便樓層，政府付搬遷費並寬減租金，騰出空間優先作每天帶人流的設施。"
+            },
+            {
+              "t": "③單一牽頭部門",
+              "c": [],
+              "d": "每個項目動工前確定社區設施的營運部門和撥款，並諮詢區議會決定用途。"
+            },
+            {
+              "t": "先試點後推廣",
+              "c": [
+                "以指標定推廣"
+              ],
+              "d": "揀兩至三個空置嚴重街市試行兩年，以攤檔營業額、設施使用率和居民滿意度評估。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "Island homestays and DMCs",
+      "stance": "Proceed with safeguards; licence never overrides the covenant",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Day trips to overnight stays",
+              "c": [],
+              "d": "The objective is to turn day trips into overnight stays so visitor spending reaches island households rather than leaving on the last ferry."
+            },
+            {
+              "t": "Keep islands liveable",
+              "c": [],
+              "d": "The proposal must be judged by whether it achieves that objective while keeping the islands liveable for the people who live there."
+            },
+            {
+              "t": "Conflict relocated, not removed",
+              "c": [],
+              "d": "Removing the DMC from licensing does not remove the DMC; the conflict moves from the licensing counter to the staircase and the courts."
+            }
+          ]
+        },
+        {
+          "label": "Problem 1: legal uncertainty",
+          "items": [
+            {
+              "t": "Neighbours can still sue",
+              "c": [
+                "Prudent operators won't invest"
+              ],
+              "d": "Because neighbours can still obtain injunctions, prudent operators will not invest in renovation and fire safety, leaving the least compliant to proceed."
+            },
+            {
+              "t": "Costly civil litigation",
+              "c": [
+                "Modest residents disadvantaged"
+              ],
+              "d": "Disputes pushed into slow, costly civil litigation disadvantage residents of modest means, and the Government is seen as licensing a breach."
+            },
+            {
+              "t": "Precedent",
+              "c": [
+                "Property rights eroded"
+              ],
+              "d": "Other sectors may press for similar treatment of covenants elsewhere, eroding confidence in the certainty of property rights."
+            }
+          ]
+        },
+        {
+          "label": "Problem 2: residents and capacity",
+          "items": [
+            {
+              "t": "Strangers on shared stairs",
+              "c": [
+                "Complaints, thin enforcement"
+              ],
+              "d": "Guesthouses bring strangers into shared buildings at night; complaints fall on agencies with a thin weekend presence, so resentment grows."
+            },
+            {
+              "t": "Visitor lets beat rents",
+              "c": [
+                "Young households leave"
+              ],
+              "d": "If letting to visitors pays more than letting to residents, rents rise and younger households who sustain schools and shops leave."
+            },
+            {
+              "t": "Fire in licensed premises",
+              "c": [
+                "Whole policy reversed"
+              ],
+              "d": "Buildings not designed for transient occupancy carry fire risk; one serious fire in licensed premises would likely force a policy reversal."
+            }
+          ]
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Notify co-owners, 21 days",
+              "c": [
+                "→P1"
+              ],
+              "d": "Applicants notify all co-owners, who have 21 days to make representations; the Authority attaches conditions rather than refusing on the covenant."
+            },
+            {
+              "t": "Mediation, consent fast-track",
+              "c": [
+                "→P1"
+              ],
+              "d": "Guidance states a licence does not override a DMC; written consent earns faster processing, and free mediation precedes any court action."
+            },
+            {
+              "t": "Conditions tied to renewal",
+              "c": [
+                "→P2"
+              ],
+              "d": "Conditions on guest numbers, a 24-hour contact, noise rules and insurance; repeated substantiated complaints lead to suspension or non-renewal."
+            },
+            {
+              "t": "Two-island pilot, caps",
+              "c": [
+                "→P2"
+              ],
+              "d": "Begin on two islands, monitor licensed rooms against ferry and sewerage capacity, and cap the proportion of flats converted in any village."
+            }
+          ]
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "Guidance within six months",
+              "c": [],
+              "d": "Issue licensing guidance and standard conditions within six months, then launch the two-island pilot."
+            },
+            {
+              "t": "Track complaints and rents",
+              "c": [],
+              "d": "Indicators include licences issued, unlicensed premises regularised, complaints, mediation cases, overnight stays and local rents."
+            },
+            {
+              "t": "Review after two years",
+              "c": [],
+              "d": "Submit a review after two years, before any extension of the scheme to other islands."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

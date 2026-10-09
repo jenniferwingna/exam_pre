@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/16-northern-metropolis/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t16">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>產業和大學優先，還是職住同步？</h2><span class="wc">範文 1,499 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>有意見認為，北部都會區應優先發展產業和大學城，住屋發展應予押後，以免北都淪為「睡城」。你是否同意？試分析北都的發展現況，提出避免北都成為「睡城」的措施，分析有關措施的執行挑戰及處理方法，並游說發展商參與片區開發。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>不同意押後住屋；基建先行、職住綁定</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">北都職住同步</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">創科引擎＋房屋主力<span class="d">北都兩個目的：南金融北創科中的創科引擎，以及未來五年房屋供應主力，兩者不互斥。</span></div></li><li><div class="it">睡城＝時間差<span class="d">睡城本質並非住宅太多，而是住宅入伙跑在就業和交通前面，真正問題是時序。</span></div></li><li><div class="it">入伙即有工作交通<span class="d">評估標準：每期入伙的居民能否在合理通勤範圍內找到工作和服務。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">① 確定性不對稱<span class="d">住屋用地和公營房屋由政府控制，企業院校進駐則由它們自決；不刻意設計必然住屋先行。</span></div></li><li><div class="it">② 指標不對稱<span class="d">熟地和住宅有量化指標，經濟用地只有樓面目標，沒有就業落地指標，樓面可建成而空置。</span></div></li><li><div class="it">③ 時間不對稱<span class="d">七萬個單位會在北環線、青龍大橋等新幹線通車前陸續入伙，早期居民只能靠現有通道。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">住屋不可逆<span class="d">反方點出真風險卻開錯藥方：企業看人才交通配套，沒有居民的新區正是企業最不願去。</span></div><ul class="tree l3"><li><div class="sub">押後趕走企業</div></li></ul></li><li><div class="it">先確定產業<span class="d">押後住屋的代價由輪候公營房屋的家庭承擔；不可逆風險應以配對推出和基建先行管理。</span></div><ul class="tree l3"><li><div class="sub">代價由輪候者擔</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">① 片區捆綁產業<span class="d">招標以雙信封制把產業樓面和社區設施的承諾及交付時間計入評分，回應確定性不對稱。</span></div></li><li><div class="it">② 職住配對指標<span class="d">每區公布經濟樓面與住宅配對比例並同步推出，加設樓面使用率和區內就業人數指標。</span></div></li><li><div class="it">③ 交通與入伙掛鈎<span class="d">新幹線通車前以接駁巴士連鐵路站，入伙與交通時間表一併公布檢討，回應時間不對稱。</span></div></li><li><div class="it">大學城先建宿舍<span class="d">大學城先建宿舍和人才公寓，令首批人口本身就在區內讀書和工作，正是睡城的反面。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">配對拖慢住屋<span class="d">兩類用地同步推出而非同步成交；經濟用地流標由產業園區公司接手並以政策包招商。</span></div><ul class="tree l3"><li><div class="sub">配對推出非成交</div></li></ul></li><li><div class="it">削弱片區吸引<span class="d">產業樓面分期興建、按需求調整，借鑑按實補價分期繳地價，減輕發展商前期資金壓力。</span></div><ul class="tree l3"><li><div class="sub">分期＋按實補價</div></li></ul></li><li><div class="it">時間表滑動<span class="d">由財副領導的規劃及發展工作組統一監察，每季公布進度，一項延誤即同時調整其餘兩項。</span></div><ul class="tree l3"><li><div class="sub">工作組每季統籌</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說</button><ul class="tree l2"><li><div class="it">發展商：樓價<span class="d">睡城拖累樓價和去貨；大學和產業帶來穩定租住置業需求，捆綁產業是為住宅價值買保險。</span></div><ul class="tree l3"><li><div class="sub">產業＝住宅保險</div></li></ul></li><li><div class="it">發展商：確定性<span class="d">片區開發提供成片土地，比零碎收購更有確定性，主要對外交通由政府按時間表興建。</span></div><ul class="tree l3"><li><div class="sub">成片土地＋交通</div></li></ul></li><li><div class="it">讓步<span class="d">產業責任分期並設中期檢討，地價按實際規模分期繳付，定期公開熟地、交通和招商進度。</span></div><ul class="tree l3"><li><div class="sub">責任分期＋地價分期</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態（是否同意「產業和大學優先、住屋押後」）② 分析現況 ③ 提出避免睡城的措施 ④ 執行挑戰 ⑤ 處理方法 ⑥ 游說發展商參與片區開發。</li>
 <li><strong>陷阱：</strong> 「產業 vs 住屋」是假二分——政府取向是「以大學城為主線」、五大要素（含宜居社區）同步，五年規劃同時訂住宅和經濟樓面目標。同意方若主張削減住屋，會撞上住宅落成指標。</li>
@@ -204,6 +276,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>北都專屬法例：提速與參與</h2><span class="wc">範文 1,456 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>北部都會區「熟地」五年產出量已列為五年規劃的約束性指標。政府推動訂立《北部都會區發展條例》，並將提交涵蓋城市規劃、收地補償、建築工程審批等範疇的附屬法例，以精簡程序加快北都建設。有意見認為，以專屬法例精簡程序是加快北都發展的必要之舉；亦有意見擔心，程序縮短會削弱受影響居民和公眾參與的機會。你是否同意以專屬法例精簡北都的規劃和收地程序？試分析現況，提出在加快發展的同時保障受影響居民和公眾參與的措施，分析有關措施的執行挑戰及處理方法，並游說受影響的鄉郊居民支持。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意；精簡重複、不減參與、補償先行</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">北都專屬法例</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">保障＋正當性<span class="d">法定程序既保障業權人補償和市民發言，也令經公開程序的決定經得起質疑。</span></div></li><li><div class="it">時間從何而來<span class="d">關鍵在省下的時間從何而來：消除重複和輪候是改革，削減意見期和補償爭議機會是透支。</span></div><ul class="tree l3"><li><div class="sub">省重複非削參與</div></li></ul></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">指標壓後三年<span class="d">九百公頃熟地是約束性指標，首兩年合共不少於二百公頃，大部分產出壓在後三年。</span></div></li><li><div class="it">① 各關按次序<span class="d">規劃、收地和工程審批由不同部門按次序處理，每關各有諮詢反對，前關未完後關難開始。</span></div></li><li><div class="it">② 規劃爭議<span class="d">延誤最大來源是爭議而非法定期限：規劃被反對、決定被挑戰；削弱參與只會加倍輸回。</span></div></li><li><div class="it">③ 補償爭議<span class="d">補償不被接受是延誤的另一來源；附屬法例涵蓋收地補償，正是處理這個癥結的位置。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">時間即保障<span class="d">反方混淆兩種時間：政府內部輪候文件往返的時間應壓縮，公眾參與的時間應保留。</span></div><ul class="tree l3"><li><div class="sub">內部時間≠參與</div></li></ul></li><li><div class="it">提速必犧牲<span class="d">北都道路項目以環境數據庫比較走線，提速同時令受影響生態敏感區減近七成，並非零和。</span></div><ul class="tree l3"><li><div class="sub">環評例：生態減七成</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">① 並行不刪減<span class="d">規劃、收地和工程準備改為並行；時限只約束部門審批，不縮短法定查閱及反對期限。</span></div></li><li><div class="it">② 參與前置<span class="d">法定程序前先與村民、業權人和地區團體早期參與並設聯絡小組，讓分歧在設計階段浮現。</span></div></li><li><div class="it">③ 補償準則透明<span class="d">附屬法例訂明補償計算原則、發放時間表和上訴渠道，並提供原區或鄰近安置選項。</span></div></li><li><div class="it">公開進度＋檢討<span class="d">網上平台公開每宗申請進度和部門回覆時間，實施三年後檢討並公布省下時間及反對處理。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">前期工作增<span class="d">早期參與或抵銷提速；以數碼平台集中收集回應意見，安排在可並行階段，不另設關卡。</span></div><ul class="tree l3"><li><div class="sub">數碼平台並行</div></li></ul></li><li><div class="it">準則變底價<span class="d">居民或以公開準則為底價；準則與上訴機制一併公布，由獨立機制處理，避免逐宗議價。</span></div><ul class="tree l3"><li><div class="sub">準則＋上訴並公布</div></li></ul></li><li><div class="it">司法覆核<span class="d">不限制挑戰，而是每項決定記錄理由、回應意見、保留諮詢紀錄；程序越公平，拖延越少。</span></div><ul class="tree l3"><li><div class="sub">程序經得起挑戰</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說</button><ul class="tree l2"><li><div class="it">村民：補償安置<span class="d">居民在意補償是否公道、能否留在社區；新制度令他們更早知道補償安置並更快取得補償。</span></div><ul class="tree l3"><li><div class="sub">更早知、更快取</div></li></ul></li><li><div class="it">村民：被聽到<span class="d">參與前置令居民在布局仍可改動時表達意見，意見真的被聽到。</span></div><ul class="tree l3"><li><div class="sub">布局可改時參與</div></li></ul></li><li><div class="it">村民：生計傳統<span class="d">善用北都城鄉共融基金和新田時光步道，讓村民參與鄉郊旅遊、保留傳統，帶來新生計。</span></div><ul class="tree l3"><li><div class="sub">共融基金＋步道</div></li></ul></li><li><div class="it">翻轉直覺<span class="d">漫長程序並非純粹保障：多年懸而未決令人不敢修葺投資；快而公平勝過慢而不確定。</span></div><ul class="tree l3"><li><div class="sub">不確定即代價</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態 ② 分析現況 ③ 提出「提速＋保障參與」的措施 ④ 執行挑戰 ⑤ 處理方法 ⑥ 游說受影響鄉郊居民。</li>
 <li><strong>事實陷阱：</strong> 附屬法例範圍是城市規劃、收地補償、建築工程審批、噪音管制、跨境人員流動——<strong>不包括環評</strong>；環評提速靠環保署擴大應用「香港環境數據庫」，屬另一條線，不可寫成「條例縮短環評」。</li>
@@ -251,6 +324,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>度身訂造的稅務優惠：破壞公平，還是有規可循？</h2><span class="wc">範文 1,153 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>政府透過「招商引資優惠政策包」，因應個別企業的投資計劃和對香港經濟的貢獻，提供批地、地價優惠、財政資助及稅務減免，並計劃修訂法例，為金融、先進製造、創科研發等重點產業的個別企業提供5%或半稅優惠。有意見認為，這種「按個別企業度身訂造優惠」的做法有違香港簡單低稅、公平競爭的原則。請分析這個做法有何利弊，表明你支持抑或反對，並就你的立場提出理據。如果是支持的話，請提出建議，確保方案可有效達致其政策目的；如果是反對的話，請提出其他吸引高增值企業落戶香港的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持；公開準則、實質營運、回撥、披露</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">度身稅務優惠</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">規則清晰毋須談判<span class="d">簡單低稅的價值不在稅率相同，而在規則清晰、可預計、毋須談判，企業不必游說官員。</span></div></li><li><div class="it">不挑選贏家<span class="d">公平競爭的要義是政府不在同一市場內挑選贏家，問題在批出優惠的方式是否有規可循。</span></div></li><li><div class="it">早有行業優惠<span class="d">釐清前提：海運服務、大宗商品半稅、企業財資中心等按行業規則給予的優惠早已存在。</span></div></li><li><div class="it">癥結在酌情<span class="d">今次改變是由符合行業條件即可享，轉為按個別企業經委員會審批，風險正來自這份酌情。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">區內招商競爭<span class="d">區內不少經濟體以度身條件爭取總部和先進製造，香港只靠一般稅制可能連入圍也沒有。</span></div></li><li><div class="it">錨企業帶供應鏈<span class="d">錨企業帶動供應鏈和人才流入，助北都打破沒有企業就沒有人才的新區僵局。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">① 可預計性降<span class="d">酌情審批誘發游說，落選企業難理解準則，公眾易質疑利益輸送，損害簡單稅制的信任。</span></div></li><li><div class="it">② 市場扭曲<span class="d">獲優惠企業若與本地中小企在同一市場競爭，稅負差異會直接轉化為價格優勢。</span></div></li><li><div class="it">③ 掛名流失稅基<span class="d">企業可能只把利潤登記在港，沒有相應人手和投資，政府少收稅卻換不到經濟活動。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">閘門難收回<span class="d">滑坡論最有力；但5%或半稅須修例訂明行業，閘門由立法機關把守，非行政可隨意擴大。</span></div><ul class="tree l3"><li><div class="sub">須修例，立法把關</div></li></ul></li><li><div class="it">稅制名存實亡<span class="d">只要法例同時訂明準則和期限，真正要防範的是沒有界線的酌情，而非優惠本身。</span></div><ul class="tree l3"><li><div class="sub">防無界線酌情</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">① 準則公開<span class="d">公布評審準則及其比重，讓企業和公眾理解誰合資格，回應可預計性下降。</span></div></li><li><div class="it">② 限境外活動<span class="d">優惠限於區域總部、研發、供應鏈管理等服務境外市場的活動，減少對本地競爭的扭曲。</span></div></li><li><div class="it">③ 實質要求＋回撥<span class="d">優惠與在港聘用、本地開支和研發掛鈎並設最短承諾期；未達承諾按比例追回，杜絕掛名。</span></div></li><li><div class="it">年報＋獨立評估<span class="d">每年以總數向立法會匯報就業投資和少收稅款，三年後獨立評估，以成效決定是否延續。</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解（樣本版）：</strong> ① 分析利弊 ② 表明支持或反對 ③ 提出理據 ④ 條件式任務（支持→確保達致政策目的的建議）。</li>
 <li><strong>前提陷阱：</strong> 香港並非從不設行業優惠（《施政報告》同時提到海運服務稅務優惠、實物大宗商品交易半稅、企業財資中心稅務寬減）；新的是「按個別企業、經委員會審批」。不要寫「香港從來不設稅務優惠」，也不要寫原文沒有的稅率數字。</li>
@@ -306,6 +380,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the large-scale land disposal pilots and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Sound model; rebalance risk between developer and Government</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Large-scale land disposal</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Faster land, shared risk<span class="d">The pilots aim to deliver formed land faster than Government alone and transfer part of site formation cost and risk to the market.</span></div></li><li><div class="it">Tests: timely works, fair value<span class="d">Success is judged by whether attached public obligations are delivered on time and the public receives fair value, not by awards.</span></div></li><li><div class="it">Flaw: risk division<span class="d">The model is sound, but the developer takes the profitable part early while Government still carries timing risk on public works.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: Thin competition</button><ul class="tree l2"><li><div class="it">Big sites, few bidders<span class="d">A single large site suits few developers; six expressions of interest became two bids and a premium twenty per cent below estimate.</span></div><ul class="tree l3"><li><div class="sub">Low land return</div></li></ul></li><li><div class="it">Obligations hard to price<span class="d">In a falling market bidders price unseen risks low; without explaining the discount, the &#x27;sold cheaply&#x27; charge attaches to the model.</span></div><ul class="tree l3"><li><div class="sub">&#x27;Sold cheaply&#x27; sticks</div></li></ul></li><li><div class="it">Renegotiation requests<span class="d">If obligations can be renegotiated, as two developers request, each later pilot starts weaker, and a failed tender loses a year.</span></div><ul class="tree l3"><li><div class="sub">Precedent weakens later pilots</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: Public works last</button><ul class="tree l2"><li><div class="it">Profitable housing first<span class="d">Once land is granted the developer builds what sells first; the Ministry may fund interim works itself, paying twice for facilities.</span></div><ul class="tree l3"><li><div class="sub">Paying twice for interim works</div></li></ul></li><li><div class="it">Estate needs works earlier<span class="d">The neighbouring public estate needs drainage and the interchange three years before the developer&#x27;s programme delivers them.</span></div><ul class="tree l3"><li><div class="sub">8,000 flats stranded</div></li></ul></li><li><div class="it">Slow final phase<span class="d">Slowing the last phase is the developer&#x27;s cheapest hedge, creating a dormitory district and disproving the model&#x27;s claim to faster delivery.</span></div><ul class="tree l3"><li><div class="sub">Dormitory district; credibility lost</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Market sounding, smaller packages<span class="d">Publish draft obligations before the second tender, invite developer comments, and adjust site size and package so more firms can bid.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Score price and delivery<span class="d">Score bids on both price and delivery, weighting earlier public works so firms compete on what the Government actually needs.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Phased premium for earlier works<span class="d">Allow instalments linked to development phases, a concession on cash flow rather than value, in exchange for firm public-works commitments.</span></div><ul class="tree l3"><li><div class="sub">→P1, P2</div></li></ul></li><li><div class="it">Phased grants, bond, step-in<span class="d">Seek a supplementary deal for pilot one; later grant land in phases, tie occupation to facilities, and hold a bond with step-in rights.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Revised terms in 4 months<span class="d">Start market sounding for the second pilot immediately and finalise revised tender terms within four months.</span></div></li><li><div class="it">Renegotiate pilot in 6 months<span class="d">Conclude negotiation with the first pilot&#x27;s developer on bringing drainage and interchange forward within six months.</span></div></li><li><div class="it">Quarterly: bids, premium, milestones<span class="d">Report quarterly on compliant bids per tender, premium achieved against estimate, and public-works milestones met on time.</span></div></li><li><div class="it">Review after second award<span class="d">Review the whole large-scale land disposal model after the second pilot is awarded, drawing on the quarterly indicators.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>Tasks:</strong> (a) exactly two problems, each followed by a separate Implications paragraph; (b) measures labelled against each problem.</li>
 <li><strong>Reframe in one line:</strong> the model is sound; the flaw is how risk has been divided — the developer takes the profitable part first, the Government still carries the timing risk on the public part.</li>
@@ -397,6 +472,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../15-governance/index.html">← 15 公務員制度與公共治理改革</a><span></span></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/16-northern-metropolis/index.html">議題庫：北部都會區</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

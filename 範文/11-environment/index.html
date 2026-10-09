@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/11-environment/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t11">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -160,6 +231,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><span class="st" aria-label="可能性">★★★</span><h2>收費擱置後，單靠設施能否「零廢堆填」</h2><span class="wc">範文 約 1,483 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>五年規劃提出，力爭在2035年前基本擺脫依賴堆填處理都市固體廢物，實現「零廢堆填」。有意見認為，都市固體廢物收費擱置後，單靠增設回收及轉廢為能設施難以達標，政府須另行引入經濟誘因或規管措施，從源頭推動減廢。你是否同意？試分析現況，提出措施，分析有關措施在執行上的挑戰及處理方法，並游說物業管理業界配合。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意設施不足：先誘因規管，收費後議</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">零廢堆填靠什麼</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">零廢堆填≠減廢<span class="d">零廢堆填是處理端目標，減廢是源頭目標；只擴建焚化，堆填會降但廢物量不變。</span></div></li><li><div class="it">量降至容量內<span class="d">第一項標準：棄置量能否持續降至回收和轉廢為能設施的容量以內。</span></div></li><li><div class="it">回收真再造<span class="d">第二項標準：回收物是否真正再造利用，而非收集後仍送往堆填。</span></div></li><li><div class="it">成本落產生者<span class="d">第三項標準：減廢成本是否落在產生廢物的一方，配合循環經濟方向。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①設施追趕廢物<span class="d">I·PARK1日處理3,000公噸，不足棄置量三成，設施只能追趕而不能減少廢物。</span></div></li><li><div class="it">②棄置免費<span class="d">收費擱置後棄置沒有邊際成本，回收卻要花時間，自助回收也改變不了此格局。</span></div></li><li><div class="it">③責任斷點<span class="d">垃圾房集中收集，住戶有否分類無從分辨，物業管理公司亦沒有誘因推動分類。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">②生產者責任<span class="d">由環保署擴展生產者責任計劃，先從膠樽和包裝着手，讓產品價格反映處理成本。</span></div></li><li><div class="it">②綠綠賞回贈<span class="d">綠綠賞積分與智能回收箱數據連通自動記分，大廈達標獲資助清運，是反向價格訊號。</span></div></li><li><div class="it">③屋苑分類責任<span class="d">兩年內要求大型屋苑設分類點、按季申報回收量並按區公布，令回收成管理表現。</span></div></li><li><div class="it">①收費設檢討點<span class="d">綠在區區升級後一年公布人均棄置量，若下降停滯才在單一業權物業試行收費。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">收費最有效<span class="d">價格訊號有效的前提是能追溯到產生廢物的人；香港高樓集中收集，難追溯到個別住戶。</span></div><ul class="tree l3"><li><div class="sub">香港難追溯住戶</div></li></ul></li><li><div class="it">台北隨袋徵收<span class="d">台北「收費與免費回收同步推出」的次序可借鑑，但其垃圾車定點收集制度不能照搬。</span></div><ul class="tree l3"><li><div class="sub">借次序不抄制度</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">舊樓空間人手<span class="d">舊樓垃圾房狹小，故分類責任先只適用大型屋苑，舊樓納入綠在區區網絡在樓外收集。</span></div><ul class="tree l3"><li><div class="sub">先只做大型屋苑</div></li></ul></li><li><div class="it">回收物無出路<span class="d">收得多卻無人接收會打擊信心，故以長期合約保證處理，工程優先用再造物料並公布去向。</span></div><ul class="tree l3"><li><div class="sub">長約＋公布去向</div></li></ul></li><li><div class="it">生產商反對<span class="d">業界擔心成本上升，故設一年過渡期、公開成本計算，回收率高者少繳，令守規者得益。</span></div><ul class="tree l3"><li><div class="sub">過渡期、守規少繳</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：物管業界</button><ul class="tree l2"><li><div class="it">人手緊<span class="d">物管人手緊絀，故由政府提供設備及定時收集，物管只負責場地管理。</span></div><ul class="tree l3"><li><div class="sub">政府供設備清運</div></li></ul></li><li><div class="it">怕投訴合規<span class="d">物管怕投訴和法定要求日增，故發指引訂明不佔走火通道，數據由智能設備自動申報。</span></div><ul class="tree l3"><li><div class="sub">指引＋自動申報</div></li></ul></li><li><div class="it">生意<span class="d">回收表現公開後可成投標續約賣點；日後若再議收費，已分類屋苑的負擔和爭議較少。</span></div><ul class="tree l3"><li><div class="sub">表現成投標賣點</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態：單靠設施能否達標、應否另行引入誘因或規管；② 分析現況；③ 提出措施；④ 分析措施的執行挑戰；⑤ 提出處理方法；⑥ 游說物業管理業界。</li>
 <li><strong>本文立場：</strong> 同意單靠設施不足，須引入誘因和規管；但先用生產者責任、回收回贈和大型屋苑的分類責任，按量收費只設檢討點，不即時重推。</li>
@@ -210,6 +282,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><span class="st" aria-label="可能性">★★☆</span><h2>應否容許混合動力車在2035年後繼續登記</h2><span class="wc">範文 約 1,162 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>五年規劃訂明，目標是在2035年或之前停止新登記包括混合動力的燃油私家車。有意見認為，不少舊式樓宇及村屋居民難以安裝充電設施，因此建議政府修訂目標，容許混合動力私家車在2035年後繼續登記。請分析上述建議有何利弊，表明你是支持抑或反對有關建議，並就你的立場提出理據。如果是支持的話，請提出建議，確保方案仍能有效減少車輛排放；如果是反對的話，請提出配套措施，確保原定目標能如期達成。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>反對：2035前解決充電，不放寬目標</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">混能車2035後登記</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">市場訊號清晰<span class="d">目標不是即時禁止任何車輛，而是給汽車市場一個不會改變的時間點。</span></div></li><li><div class="it">新車決定2050<span class="d">私家車一經登記便行走多年，2035年前後的新車決定2050年能否車輛零排放。</span></div></li><li><div class="it">充電難者有出路<span class="d">要問充電困難的居民是否真的無路可走，這是建議背後真實的問題。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">舊樓村屋難充電<span class="d">舊樓缺固定車位和電力容量，村屋居民多路邊泊車，混合動力車比燃油車省油可作過渡。</span></div></li><li><div class="it">防舊燃油車延用<span class="d">新車不供應混能車，部分車主或延用舊燃油車，車隊老化排放反增，是建議最有力理據。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">①削弱政策訊號<span class="d">現時每十輛新私家車逾七輛是電動車；終點前放寬令投資者懷疑目標，充電投資反而放緩。</span></div></li><li><div class="it">②混能實為燃油跑<span class="d">缺充電條件者才選混能車，大部分時間仍燒油，等於繼續引入燃油車，衝擊2050目標。</span></div></li><li><div class="it">③治標推遲問題<span class="d">放寬不會令舊樓多一個充電位，只把問題推遲，2040年代仍要面對同一批居民。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">舊車延用反效果<span class="d">本文承認舊車延用效應，但其幅度取決於2035年前充電是否方便，而非目標本身。</span></div><ul class="tree l3"><li><div class="sub">幅度取決充電</div></li></ul></li><li><div class="it">車主無車可用<span class="d">目標只限新登記，不影響現有車輛使用和二手買賣，並以中途檢討代替預先放寬。</span></div><ul class="tree l3"><li><div class="sub">只限新登記</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">舊樓車場充電<span class="d">政府資助舊樓停車場鋪設充電設施，機電署訂標準設計及消防指引，為法團提供免費顧問。</span></div><ul class="tree l3"><li><div class="sub">→舊樓居民</div></li></ul></li><li><div class="it">公共快充5,000支<span class="d">高速充電樁五年內增至5,000支，優先布點舊區、村屋區和公眾停車場，並加快閃充。</span></div><ul class="tree l3"><li><div class="sub">→無固定車位</div></li></ul></li><li><div class="it">村屋路邊試點<span class="d">在新界村屋集中區的路旁或政府停車場設充電試點，兩年後按使用率決定推廣範圍。</span></div><ul class="tree l3"><li><div class="sub">→村屋居民</div></li></ul></li><li><div class="it">2030中期檢討<span class="d">公布舊樓充電覆蓋率等三項指標，落後便加碼資助而非放寬，並資助維修業轉型培訓。</span></div><ul class="tree l3"><li><div class="sub">落後即加碼</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 分析建議（容許混合動力車2035年後繼續登記）的利弊；② 表明支持或反對；③ 提出理據；④ 條件式任務：本文反對，所以要提出確保原定目標如期達成的配套措施（不是另寫一套減排措施）。</li>
 <li><strong>本文立場：</strong> 反對。充電困難是真問題，但答案是在2035年前解決充電，而不是放寬目標。</li>
@@ -259,6 +332,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><span class="st" aria-label="可能性">★☆☆</span><h2>更換老舊水管應否考慮地區人口特徵</h2><span class="wc">範文 約 1,485 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《行政長官2026年施政報告》提出推行供水網升級計劃：以風險為本，未來五年更換或修復約350公里滲漏風險較高的高齡水管，並在首幾年先聚焦公共屋邨和長者較多地區的鑄鐵及石棉水管。有意見認為，水管更換的先後次序只應按水管本身的狀況（例如管齡、物料和爆管紀錄）決定，不應考慮地區的人口特徵。你是否同意？試分析現況，提出措施（包括如何減少工程對市民的影響），分析有關措施在執行上的挑戰及處理方法，並游說受工程影響的地區商戶配合。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>不同意：水管先篩，人口作後果權重</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">換水管排序</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">風險＝可能性×後果<span class="d">風險有兩部分：管齡物料決定的爆裂可能性，以及受影響人數和應付能力決定的後果。</span></div></li><li><div class="it">減最多損害<span class="d">第一項標準是有限的工程資源能否減少最多的實際損害，公屋爆管影響數以千計住戶。</span></div></li><li><div class="it">透明可查核<span class="d">第二項標準是排序是否透明、可以查核，避免資源被政治壓力推向最近爆過的地方。</span></div></li><li><div class="it">等待可預期<span class="d">第三項標準是未獲優先處理的地區，能否得到可預期的施工時間表。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①次序就是政策<span class="d">每年能換的長度受掘路許可、交通和人手所限，先做哪區便決定哪區多承受幾年風險。</span></div></li><li><div class="it">②風險看不見<span class="d">水管埋在地底，市民只在爆管時才感受到問題，資源易被推向最近爆過的地方。</span></div></li><li><div class="it">③掘路社會成本<span class="d">道路逾2,200公里、地下設施疊加約11萬公里，舊區每次開挖都影響交通商戶居民。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①公開風險評分<span class="d">水務署先以管齡、物料和爆管紀錄篩選，再以住戶數和長者比例作後果權重並公布。</span></div></li><li><div class="it">③一次掘路共用<span class="d">發展局統籌電纜、煤氣、通訊與換水管同期施工，以管線資訊系統減少重複開挖。</span></div></li><li><div class="it">③減少工程影響<span class="d">分短段及非繁忙時段施工，採免開挖修復；停水前預早通知，為獨居長者送水。</span></div></li><li><div class="it">②監測未輪到區<span class="d">以智慧水網實時監測排序較後的高風險路段，並公布各區預計施工年份。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">按身份分配不公<span class="d">後果權重看的不是居民是誰，而是一次爆管影響多少人；影響五千戶與五十戶損失不同。</span></div><ul class="tree l3"><li><div class="sub">看受影響程度</div></li></ul></li><li><div class="it">公屋插隊<span class="d">人口權重只在高風險水管之間排序，狀況良好的水管不會因位處公屋區而插隊。</span></div><ul class="tree l3"><li><div class="sub">只在高風險間排</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">石棉憂慮<span class="d">居民擔心石棉纖維，故由合資格承建商施工、公布工序，可行時以內部修復代替拆除。</span></div><ul class="tree l3"><li><div class="sub">內部修復減擾動</div></li></ul></li><li><div class="it">承建商容量<span class="d">工程量倍增，故分批批出較長年期合約，讓承建商有穩定工作量投資培訓。</span></div><ul class="tree l3"><li><div class="sub">長年期合約</div></li></ul></li><li><div class="it">地區要求插隊<span class="d">個別地區要求插隊，故評分方法公布後不輕易更改，例外須公開理由並每年匯報。</span></div><ul class="tree l3"><li><div class="sub">例外公開理由</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：地區商戶</button><ul class="tree l2"><li><div class="it">怕人流減少<span class="d">行人路被圍令人流減少，故保持店舖出入口暢通、預留上落貨時段，並設地區聯絡人。</span></div><ul class="tree l3"><li><div class="sub">出入口保持暢通</div></li></ul></li><li><div class="it">怕停水停業<span class="d">食肆停水等於停業，故把食肆的停水安排在非營業時間進行。</span></div><ul class="tree l3"><li><div class="sub">非營業時間停水</div></li></ul></li><li><div class="it">怕工期拖延<span class="d">商戶最怕工期一拖再拖，故預先向商戶公布分段工期和完工日期。</span></div><ul class="tree l3"><li><div class="sub">公布分段完工日</div></li></ul></li><li><div class="it">為何配合<span class="d">突發爆管帶來無預警的封路停水，計劃換管雖短期不便，卻換來日後爆管減少。</span></div><ul class="tree l3"><li><div class="sub">勝過突發爆管</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態：排序應否只看水管狀況；② 分析現況；③ 提出措施，其中必須包括減少工程影響的做法；④ 執行挑戰；⑤ 處理方法；⑥ 游說受工程影響的地區商戶。</li>
 <li><strong>本文立場：</strong> 不同意。風險等於可能性乘後果，人口特徵屬於「後果」，應納入排序；但以水管狀況為第一道篩選，計算方法公開。</li>
@@ -318,6 +392,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the plan to raise the share of zero-carbon electricity through imported power and new local generation facilities and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Both routes, defined roles; manage concentration and cost</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Zero-carbon electricity</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Carbon, reliability, affordability<span class="d">The objective is to decarbonise while keeping supply reliable and tariffs affordable, since failure on either would lose public support.</span></div></li><li><div class="it">Not rival routes<span class="d">Imports deliver zero-carbon energy in volume while local facilities provide capacity the City controls, so the two routes complement each other.</span></div></li><li><div class="it">Real issues: risk, payment<span class="d">The real difficulties are the risk of relying on a few large assets, and who pays, and when, under current agreements.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: concentrated supply risk</button><ul class="tree l2"><li><div class="it">Few links, single failures<span class="d">Much supply will flow through a few links and one reclaimed site; covering their loss needs standby fossil units, deferring emissions gains.</span></div><ul class="tree l3"><li><div class="sub">Standby keeps fossil units</div></li></ul></li><li><div class="it">30% met without projects<span class="d">The binding 30 per cent target can likely be met without either project, so decisive ten-year projects could slip unnoticed.</span></div><ul class="tree l3"><li><div class="sub">Decisive projects slip silently</div></li></ul></li><li><div class="it">Major outage<span class="d">A serious outage would make data centre operators reconsider the City and lead residents to associate decarbonisation with blackouts.</span></div><ul class="tree l3"><li><div class="sub">Data centres, public trust lost</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: who pays, when</button><ul class="tree l2"><li><div class="it">Costs before benefits<span class="d">Capital costs reach households through tariffs before benefits arrive, hitting low-income households hardest and creating pressure to slow the programme.</span></div><ul class="tree l3"><li><div class="sub">Regressive tariff shock</div></li></ul></li><li><div class="it">Return rewards building<span class="d">Fixed returns on assets reward building a local plant over buying imported power, so company interests may diverge from the cheapest path.</span></div><ul class="tree l3"><li><div class="sub">Incentives diverge from target</div></li></ul></li><li><div class="it">Agreements expire in four years<span class="d">If the renegotiation in four years does not realign incentives, investment plans for the decisive decade will be fixed on old terms.</span></div><ul class="tree l3"><li><div class="sub">Old terms fix decade</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Defined roles, security standard<span class="d">Imports supply bulk energy while the local site provides firm capacity covering loss of the largest link, backed by a reserve margin and two corridors.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Coal exit by milestones<span class="d">Coal units close as each new link or facility is commissioned and proven, so emissions fall as fast as security allows.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Reward outcomes in renegotiation<span class="d">Make part of the permitted return depend on zero-carbon share, reliability and cost control, not on the asset base alone.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Tariff path plus relief<span class="d">Publish projected tariffs for the decade, introduce targeted relief for low-income households with the first increase, and fund energy efficiency.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Security standard in six months<span class="d">Settle the security standard and the role of the local site within six months.</span></div></li><li><div class="it">Imports, regulation in parallel<span class="d">Run import negotiations and the regulatory review in parallel over the next two years.</span></div></li><li><div class="it">Relief with first increase<span class="d">Relief accompanies the first tariff increase; indicators include outage minutes and low-income households&#x27; electricity spending, reported annually.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> (a) 兩個主要問題（數目不能多也不能少），每個問題配一段獨立的 Implications；(b) 可行措施，逐項標明回扣哪一個問題。</li>
 <li><strong>本文主線：</strong> 輸入電力與本地發電不是二選一；真正的問題是「供應集中帶來的風險」和「成本由誰承擔、何時承擔」（受回報率制度影響）。安全、電價、減排三個向度分佈在兩個問題之內。</li>
@@ -423,6 +498,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../10-transport/index.html">← 10 交通運輸與智慧出行</a><a href="../12-education/index.html">12 教育、人才培育與青年發展 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/11-environment/index.html">議題庫：環境、氣候與城市韌性</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

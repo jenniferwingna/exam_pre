@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/15-governance/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t15">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>政府應否深入介入私人樓宇大維修</h2><span class="wc">範文 約 1,485 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>有意見認為，私人樓宇大型維修工程的圍標和工程質素問題，單靠業主自行處理及事後執法難以解決，政府應更深入介入有關工程的招標和監督。你是否同意？試分析現況，提出措施，分析有關措施的執行挑戰及處理方法，並游說業主立案法團支持你的建議。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意；只管程序把關，決定權留業主</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">政府介入大維修</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">保護業主非懲處<span class="d">若只為懲處加重罰則已足；最大受害者是缺乏專業的業主，需要簽約前不被操控。</span></div></li><li><div class="it">公平程序合理價<span class="d">成敗標準：業主能否經公平程序、以合理價格聘得合資格顧問和承建商，並確保工程質素。</span></div></li><li><div class="it">個案交法院<span class="d">個別事故的成因和責任交由獨立委員會和法院釐清，本文只討論制度，不越界定責。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">① 一次性買家<span class="d">大廈數十年才大修一次，委員多屬義務；顧問和承建商卻年年參與，熟知如何上下其手。</span></div></li><li><div class="it">② 決策被捕捉<span class="d">業主大會出席率偏低時，手握大量授權票的少數人便足以左右採購決定。</span></div></li><li><div class="it">③ 監管偏事後<span class="d">多付的款項在簽約一刻已鎖定，不合格工程也不會因事後檢控而變得安全。</span></div></li><li><div class="it">關鍵：顧問招標<span class="d">誰控制標書和評標，誰就控制整項工程，所以關鍵節點是顧問和招標程序。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">① 把關前移顧問<span class="d">政府由聘用顧問起擬標書、邀標並主持評標；顧問獨立，承建商招標便難操控。</span></div></li><li><div class="it">① 名單流動＋隨機<span class="d">名單每年按表現覆核、違規即暫停，每項工程隨機抽選邀標對象，令圍標集團難預先分配。</span></div></li><li><div class="it">② 投票門檻分類<span class="d">大型維修採購提高門檻並會前核實授權票；緊急維修維持現行要求，以免必要工程拖延。</span></div></li><li><div class="it">③ 施工獨立監察<span class="d">物料由獨立實驗所抽驗，工程款按階段驗收發放，把監察由事後移到施工期間。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">干預產權<span class="d">業主在資訊和組織上結構性弱勢；不介入不是尊重自主，而是任由少數人以全體款項交易。</span></div><ul class="tree l3"><li><div class="sub">市場失靈非自主</div></li></ul></li><li><div class="it">政府變擔保<span class="d">此說點出介入的真正風險；本文介入只管程序，決定權仍在業主大會，並轉為挑戰一處理。</span></div><ul class="tree l3"><li><div class="sub">只管程序</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">責任邊界<span class="d">業主或視政府為擔保；服務協議寫明政府只負責程序公平，施工質素按合約向承建商追究。</span></div><ul class="tree l3"><li><div class="sub">協議寫明職責</div></li></ul></li><li><div class="it">人手不足<span class="d">舊樓眾多而編制收緊；政府定標準、管名單、保留審核權，標書擬備外判予認可專業機構。</span></div><ul class="tree l3"><li><div class="sub">外判認可機構</div></li></ul></li><li><div class="it">把關者被滲透<span class="d">圍標集團或設法入名單；邀廉署做防貪審視，評標人員申報利益並輪換，評標報告公開。</span></div><ul class="tree l3"><li><div class="sub">廉署審視＋輪換</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說</button><ul class="tree l2"><li><div class="it">法團：怕被質疑<span class="d">委員最怕被質疑收受利益或程序出錯負法律責任；有紀錄、可公開的程序是最有力保障。</span></div><ul class="tree l3"><li><div class="sub">公開程序護身</div></li></ul></li><li><div class="it">法團：失決定權<span class="d">決定權仍在業主大會，法團可選擇是否採用政府的評標意見。</span></div><ul class="tree l3"><li><div class="sub">業主大會決定</div></li></ul></li><li><div class="it">讓步<span class="d">首批大廈減免服務費，試行一年公布成效數據；政府亦協助核實授權票和籌備業主大會。</span></div><ul class="tree l3"><li><div class="sub">減費試行一年</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><div class="tbl"><table>
 <thead>
 <tr>
@@ -257,6 +329,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>跨部門投訴處理與地區治理</h2><span class="wc">範文 約 1,487 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>有意見認為，改善涉及跨部門的投訴處理機制，是提升地區治理效能的關鍵。你是否同意？試以1823聯絡中心的轉介和跟進為例分析現況，提出優化措施，分析有關措施的執行挑戰及處理方法，並游說各部門首長支持你的措施。</p>
 <p><strong>任務結構：</strong> 五層版。原因：題目的實質是「怎樣令部門合作」，執行挑戰和游說部門首長正是這類題目的核心，用樣本版（利弊）反而寫不出 AO 的行政判斷。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意；關鍵是牽頭、負責、考核，非熱線</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">跨部門投訴處理</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">解決非回覆<span class="d">地區治理的目的是令市民訴求得到解決，而不只是得到回覆。</span></div></li><li><div class="it">不再重複<span class="d">衡量成效要看問題有否解決、會否重複出現；只改善轉介速度，問題依然反覆。</span></div></li><li><div class="it">市民信反映有用<span class="d">第三項標準是市民是否相信向政府反映是有用的；信任在一宗宗小事中累積。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">轉介快≠辦得成<span class="d">1823滿意度4.6分反映的是轉介體驗；跨部門個案有提升空間，辦得成未有量度。</span></div></li><li><div class="it">① 無人當核心<span class="d">各部門按法定職權和指標運作，跨部門個案不屬任何部門核心指標，各自處理一小部分。</span></div></li><li><div class="it">② 回覆即結案<span class="d">個案以已回覆而非已解決作結，同一問題在系統中多次完成，在街上卻原封不動。</span></div></li><li><div class="it">③ 重複看不見<span class="d">重複投訴資料散落不同個案，部門只看到單宗，看不到同一地點反覆出現的規律。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">① 牽頭部門清單<span class="d">按常見問題類別預先訂明牽頭部門；清單未涵蓋者由民政事務專員暫任牽頭，回應癥結一。</span></div></li><li><div class="it">① 成效入評核<span class="d">把跨部門個案的解決情況納入監察人員以至部門首長的評核，與賞罰分明方向一致。</span></div></li><li><div class="it">② 以解決為指標<span class="d">須經投訴人確認或實地核實才結案，每季公布重複投訴率和平均解決時間，回應癥結二。</span></div></li><li><div class="it">③ AI熱點交地區<span class="d">數字辦識別的重複問題每月以熱點清單送民政處、區議會和關愛隊，牽頭部門限期根治。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">滿意度已高<span class="d">反方以滿意度已高為由；但滿意度量度的是轉介體驗，不等於問題已解決。</span></div><ul class="tree l3"><li><div class="sub">量的是轉介快</div></li></ul></li><li><div class="it">資源投地區力量<span class="d">地區力量收集的訴求仍要部門處理；接口不暢，關愛隊只成另一轉介站，兩者並非取捨。</span></div><ul class="tree l3"><li><div class="sub">接口不暢仍卡住</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">牽頭無法定權<span class="d">牽頭部門不能代行他部門權力；上報個案數目和原因向領導委員會匯報，讓不配合被看見。</span></div><ul class="tree l3"><li><div class="sub">上報數字高層看</div></li></ul></li><li><div class="it">指標被扭曲<span class="d">部門或收窄定義、拆細個案或勸撤回；以重複投訴率作反向指標，1823隨機回訪核實。</span></div><ul class="tree l3"><li><div class="sub">反向指標＋回訪</div></li></ul></li><li><div class="it">工作量增<span class="d">由AI分流歸類，首年只處理三至五類常見問題；長遠根治重複問題正是減輕工作量。</span></div><ul class="tree l3"><li><div class="sub">AI分流＋先三類</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說</button><ul class="tree l2"><li><div class="it">首長：怕越權責任<span class="d">牽頭清單其實為部門寫明誰負責什麼，部門毋須再為模糊個案被無限追究。</span></div><ul class="tree l3"><li><div class="sub">清單劃清界線</div></li></ul></li><li><div class="it">首長：怕人手不足<span class="d">重複投訴是最大的無效工作量，根治一個熱點便省下大量人力；並為牽頭部門調配資源。</span></div><ul class="tree l3"><li><div class="sub">根治省重複工</div></li></ul></li><li><div class="it">首長：怕被比較<span class="d">公開數據同樣可證明表現；讓步是邀部門參與訂指標，首年只作內部比較、次年才公開。</span></div><ul class="tree l3"><li><div class="sub">首年只內部比</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><div class="tbl"><table>
 <thead>
 <tr>
@@ -357,6 +430,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>公務員評核「賞罰分明」</h2><span class="wc">範文 約 1,178 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>政府正實施優化公務員評核機制，目標是更有效區分人員的工作表現，達致賞罰分明，並會在完成兩個評核周期後檢討成效。有意見認為，這個方向有助提升政府的執行力；亦有意見擔心，這會令同事之間互相競爭、令人員趨於保守。請分析這個方向的利弊，表明你支持抑或反對，並就你的立場提出理據。如果支持，請提出確保評核公平並能達致政策目的的措施；如果反對，請提出其他提升公務員隊伍效能的措施。</p>
 <p><strong>任務結構：</strong> 樣本版。原因：這是評價一個已定方向的題目，核心能力是權衡利弊和設計配套，不是游說某一持份者；而且本議題題一、題二已練五層版。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持；賞罰對稱，評成果和擔當</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">公務員評核賞罰分明</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">激勵：承擔<span class="d">評核第一項功能是激勵，讓表現出色的人得到認可，看的是有否勇於承擔。</span></div></li><li><div class="it">問責：盡責<span class="d">第二項功能是問責，讓表現欠佳者得到處理，看的是有否盡責。</span></div></li><li><div class="it">晉升：潛質<span class="d">第三項功能是作晉升和調配依據，看的是潛質；三項功能標準各不相同。</span></div></li><li><div class="it">最難是激勵<span class="d">只拉開等級最易做到的是問責，最難做到卻最重要的是激勵，所以賞罰必須對稱。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">區分即公平<span class="d">表現出色與平平者得相若評價，對前者不公平，也削弱努力誘因。</span></div></li><li><div class="it">嚴控編制需人崗配<span class="d">人手不增而要提升執行力，晉升和重要崗位須落在最能勝任者身上，可信評核是基礎。</span></div></li><li><div class="it">問責文化<span class="d">市民的信任部分來自做得好有獎、做得差有罰的觀感，有助建立問責文化。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">① 主觀性<span class="d">公務員工作難量化、成果數年才見；若依賴上司印象，區分愈細，偏見影響愈大。</span></div></li><li><div class="it">② 損害協作<span class="d">以同事比較為主，合作者變競爭者；而牽頭部門機制等治理改革最需要跨部門協作。</span></div></li><li><div class="it">③ 不做不錯<span class="d">首長責任制和兩級調查已加強追究失誤，評核若也只重懲處，人員便迴避有風險的工作。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">理據</button><ul class="tree l2"><li><div class="it">風險源於設計<span class="d">風險源於設計而非區分本身：主觀靠程序約束，協作寫進評核，不做不錯靠嘉獎擔當抵消。</span></div></li><li><div class="it">現狀亦有代價<span class="d">維持現狀並非沒有代價，不區分本身也是一種不公平，受損的是默默做事的人。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">不細分保士氣<span class="d">這種不公平不會引起投訴，因而更難察覺；長此下去，最先放棄努力的正是最有能力的人。</span></div><ul class="tree l3"><li><div class="sub">不區分亦不公</div></li></ul></li><li><div class="it">難以量化<span class="d">工作難量化帶來的主觀性，可以靠校準、事例和覆核等程序約束，而非放棄區分。</span></div><ul class="tree l3"><li><div class="sub">可靠程序約束</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">① 校準＋加簽覆核<span class="d">同職系評核人員定期校準評分尺度，每個評級附具體事例並由加簽人員覆核，回應主觀性。</span></div></li><li><div class="it">② 協作入指標<span class="d">把協作寫成行為指標，例如主動處理跨部門難題，與工作成果並列計分，回應弊二。</span></div></li><li><div class="it">③ 擔當指標＋容錯<span class="d">按五年規劃嘉獎勇於擔當；訂容錯指引，善意合理嘗試不等同失職，評核與紀律分開。</span></div></li><li><div class="it">兩周期檢討<span class="d">事先公布評級分佈、申訴、流失和員工調查等檢討指標，並邀職方代表參與。</span></div><ul class="tree l3"><li><div class="sub">預先公布指標</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><div class="tbl"><table>
 <thead>
 <tr>
@@ -459,6 +533,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the extension of the Tender Assistance Service to all buildings aged 40 years or more and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Sound model; fix capacity and gatekeeper role first</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Scaling tender assistance</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">One-off owners, repeat contractors<span class="d">Owners commission major repairs once in a generation while consultants and contractors tender every year; the Service corrects that imbalance.</span></div></li><li><div class="it">Neutral party; owners decide<span class="d">A neutral party handles tender drafting and evaluation, where the imbalance is exploited, while the decision and contract stay with owners.</span></div></li><li><div class="it">Can it scale 200-fold?<span class="d">The pilot works where applied; the question is whether it can be extended over two-hundredfold in three years without losing its qualities.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: Cannot scale</button><ul class="tree l2"><li><div class="it">12 staff, nine months<span class="d">Each tender is handled individually over most of a year, so buildings under repair orders would queue while their condition deteriorates.</span></div><ul class="tree l3"><li><div class="sub">Repair queues worsen safety</div></li></ul></li><li><div class="it">40 a year: two centuries<span class="d">At the pilot&#x27;s rate coverage would take over two centuries, and owners cannot credibly be prosecuted while waiting for the Service.</span></div><ul class="tree l3"><li><div class="sub">Enforcement dilemma</div></li></ul></li><li><div class="it">Staff hard to recruit<span class="d">The same professionals are sought by the private market; owners who cannot wait return to private routes where rings concentrate.</span></div><ul class="tree l3"><li><div class="sub">Rings move to weakest</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: Gatekeeper risk</button><ul class="tree l2"><li><div class="it">Seen as quality guarantee<span class="d">Seven in ten owners think the Ministry answers for quality, creating liability on contracts it never signed and relaxing owners&#x27; supervision.</span></div><ul class="tree l3"><li><div class="sub">Contingent liability; lax owners</div></li></ul></li><li><div class="it">Vetted list a target<span class="d">Two listed firms are under investigation; rings shut out of private tenders have every incentive to get inside the list.</span></div><ul class="tree l3"><li><div class="sub">One scandal discredits Service</div></li></ul></li><li><div class="it">Closed list favours big firms<span class="d">A small closed list is easier to collude within, and excluding smaller firms shrinks bidders and erodes the pilot&#x27;s price gains.</span></div><ul class="tree l3"><li><div class="sub">Fewer bids, gains erode</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Tier service by risk<span class="d">Reserve the full service for buildings under repair orders, without functioning associations or with complaints; others get standard documents and checks.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Benchmarks; accredit, not employ<span class="d">Publish price benchmarks needing no staff, and accredit professional firms to deliver tenders, turning the Ministry from producer into regulator.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Written role statement<span class="d">Service agreements state the Ministry answers for process fairness only, while works responsibility rests with owners and contractors, briefed before voting.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Open list; guard gatekeeper<span class="d">Publish admission criteria with a small-firm tier, re-vet annually, draw invitations at random, and have the Anti-Corruption Commission review procedures.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">6 months: role, benchmarks<span class="d">Within six months publish the role statement and price benchmarks, and re-vet the existing vetted list.</span></div></li><li><div class="it">18 months: accreditation, tiers<span class="d">Within eighteen months accredit the first professional firms and introduce the tiered service for different building risk levels.</span></div></li><li><div class="it">Then extend by risk<span class="d">Thereafter extend coverage according to risk tier rather than by building age alone, as the Minister&#x27;s plan currently proposes.</span></div></li><li><div class="it">Four indicators, half-yearly<span class="d">Report half-yearly on valid bids, prices against benchmarks, time to contract award and warranty defects, plus an annual owners&#x27; survey.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><div class="tbl"><table>
 <thead>
 <tr>
@@ -604,6 +679,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../14-digital/index.html">← 14 數字政府、人工智能與數據治理</a><a href="../16-northern-metropolis/index.html">16 北部都會區 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/15-governance/index.html">議題庫：公務員制度與公共治理改革</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

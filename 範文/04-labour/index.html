@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/04-labour/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t04">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>外送員立法：只補工傷夠不夠</h2><span class="wc">範文 約 1,493 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《行政長官2026年施政報告》提出，政府正制訂新法例，為負責食物及貨物外送的數碼平台工作者提供法定工傷補償。有意見認為，新法例只處理工傷補償並不足夠，應同時保障外送員的其他權益。你是否同意？試分析外送員的現況，就新法例的保障範圍提出建議，分析有關建議在執行上的挑戰及處理方法，並游說平台公司支持。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意不足；只加令工傷落實的程序保障</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">外送員工傷立法</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><div class="bd">先拆政策目的，導出評估標準再表態</div><ul class="tree l2"><li><div class="it">補安全網不改模式<span class="d">立法不改平台模式，只為法律上自僱、風險上與僱員無異的外送員補安全網。</span></div></li><li><div class="it">標準：補償確定<span class="d">第一項標準：受傷者能否得到確定而及時的補償。</span></div></li><li><div class="it">標準：彈性、不轉嫁<span class="d">第二三項標準：平台工作的彈性能否保留，新增成本會否轉嫁回外送員身上。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><div class="bd">用機制診斷，癥結編號與措施對應</div><ul class="tree l2"><li><div class="it">①身份缺口<span class="d">工傷補償建基於僱傭關係，平台卻把外送員列為自僱，管理上近似僱主卻毋須承擔責任。</span></div></li><li><div class="it">②多平台缺口<span class="d">外送員同時在多個平台接單，意外若發生在切換平台之間，責任無從界定。</span></div></li><li><div class="it">③誘因缺口<span class="d">按單計酬鼓勵趕時間，意外風險部分由計酬方式製造，醫療開支卻由個人承擔。</span></div></li><li><div class="it">癥結：風險成本錯配<span class="d">風險源於商業設計，成本卻落在最缺乏議價能力的一方，這是立法要處理的癥結。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><div class="bd">逐項回扣癥結，附指標或試行</div><ul class="tree l2"><li><div class="it">①法定工傷補償<span class="d">保障由接單至完成送遞，含取貨路程；不以僱傭關係為前提，回應身份缺口。</span></div></li><li><div class="it">②③按單投保平台付<span class="d">保費按單計由平台承擔，不得扣報酬；責任以受傷時執行的訂單為準。</span></div></li><li><div class="it">程序保障防架空<span class="d">平台須保存接單收入紀錄並限時提交，不得因申索停用帳戶，防止法定權利被架空。</span></div></li><li><div class="it">兩年後數據檢討<span class="d">身份、最低收入和集體談判留後，實施兩年後由勞工處公布傷亡、申索和停用數據再決定。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><div class="bd">駁最強反方，不打稻草人</div><ul class="tree l2"><li><div class="it">直接改僱員身份<span class="d">身份須逐案判斷、平台可改合約規避，曠日持久間傷者得不到補償。</span></div><ul class="tree l3"><li><div class="sub">曠日持久、損彈性</div></li></ul></li><li><div class="it">先解決最迫切風險<span class="d">先解決最迫切的風險，再以檢討條款保留下一步，並非避重就輕。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><div class="bd">批評自己的措施，逐項配處理</div><ul class="tree l2"><li><div class="it">數據在平台手<span class="d">外送員舉證處於劣勢；平台未按時交紀錄即推定工作期間受傷，勞工處抽查。</span></div><ul class="tree l3"><li><div class="sub">未交即推定工傷</div></li></ul></li><li><div class="it">成本轉嫁<span class="d">平台可能調低報酬或加佣金；禁止從報酬扣保費，並要求申報保費成本、公布行業平均。</span></div><ul class="tree l3"><li><div class="sub">禁扣報酬＋公布</div></li></ul></li><li><div class="it">保險承保能力<span class="d">保險公司或定價過高不願承保；立法前與業界及保監局商討標準保單，預留過渡期或共保。</span></div><ul class="tree l3"><li><div class="sub">標準保單、共保</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：平台公司</button><div class="bd">抓對方在意的事，給理由和讓步</div><ul class="tree l2"><li><div class="it">不被定性僱主<span class="d">法例只處理工傷及相關程序，毋須先解決身份爭議，平台不會因此被定性為僱主。</span></div><ul class="tree l3"><li><div class="sub">毋須解決身份</div></li></ul></li><li><div class="it">成本可預測<span class="d">保費按訂單計算，成本可隨業務量預算，平台毋須面對不確定的負擔。</span></div><ul class="tree l3"><li><div class="sub">保費按單計</div></li></ul></li><li><div class="it">公平競爭<span class="d">所有平台一律投保，已自願提供保障者不會在價格競爭中吃虧，亦減少輿論和訴訟風險。</span></div><ul class="tree l3"><li><div class="sub">一律投保</div></li></ul></li><li><div class="it">讓步<span class="d">給予準備期、邀請參與訂標準保單、兩年後檢討；今天參與總比日後被動合算。</span></div><ul class="tree l3"><li><div class="sub">準備期＋共同設計</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態：只補工傷是否足夠；② 分析外送員現況；③ 就保障範圍提出建議；④ 分析執行挑戰；⑤ 提出處理方法；⑥ 游說平台公司。</li>
 <li><strong>本文立場：</strong> 同意只補工傷並不足夠，但「其他權益」只應包括令工傷補償真正落實的程序保障；僱傭身份和最低收入留待實施後以數據檢討。</li>
@@ -210,6 +282,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>收緊輸入勞工會否窒礙中小企</h2><span class="wc">範文 約 1,487 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>勞工處自2026年6月起就「補充勞工優化計劃」實施分級審批。目前餐飲業廚房和樓面服務的主要工種已納入第二級，須符合更嚴格的本地與輸入勞工人手比例，參加指定就業中心的實體招聘會，並把本地招聘期由四星期增至六星期。有意見認為，政府收緊輸入勞工審批會窒礙中小企經營。你是否同意？試分析現況，提出在保障本地工人優先就業與紓緩行業人手短缺之間取得平衡的措施，分析措施在執行上的挑戰及處理方法，並游說餐飲業界支持你的方案。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>不同意：問題在準則不透明、程序負擔</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">收緊輸入勞工與中小企</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><div class="bd">先拆政策目的，導出評估標準再表態</div><ul class="tree l2"><li><div class="it">只填補真實短缺<span class="d">分級審批不是減少輸入，而是確保輸入只填補真實短缺，不取代本地工人。</span></div></li><li><div class="it">標準：分辨短缺/待遇<span class="d">第一項標準：收緊能否分辨真實短缺與待遇問題。</span></div></li><li><div class="it">標準：成本誰承擔<span class="d">第二項標準：收緊帶來的成本是否落在應承擔的一方。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><div class="bd">用機制診斷，癥結編號與措施對應</div><ul class="tree l2"><li><div class="it">兩說可同時成立<span class="d">本地人流失快、僱主難留人；但有輸入可用，改善待遇的壓力亦隨之減少。</span></div></li><li><div class="it">①缺公開分級準則<span class="d">中位工資只消除價格誘因，消除不了穩定誘因；納入第二級亦無公開準則。</span></div></li><li><div class="it">②程序負擔不成比例<span class="d">延長招聘期和實體招聘會屬固定成本，東主兼任人事的小食肆要讓職位多懸空兩星期。</span></div></li><li><div class="it">③長工時難留人<span class="d">廚房樓面工時長、輪班多、體力要求高，本地人入職後流失快，僱主確實難以留人。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">駁論</button><div class="bd">駁最強反方，不打稻草人</div><ul class="tree l2"><li><div class="it">勞動人口遞減<span class="d">勞動人口遞減是最有力的反方，但它支持的結論是分級要可升可降，而非不應分級。</span></div><ul class="tree l3"><li><div class="sub">應可升可降</div></li></ul></li><li><div class="it">本地足→待遇問題<span class="d">本地應徵長期不足便不應留在第二級；本地應徵充足而職位懸空，問題便在待遇。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">措施</button><div class="bd">逐項回扣癥結，附指標或試行</div><ul class="tree l2"><li><div class="it">①公開準則雙向調<span class="d">按空缺率、應徵錄取、工資走勢和懸空時間定級，每季公布，指標改善即調回第一級。</span></div></li><li><div class="it">②合辦招聘會<span class="d">就業中心為同區食肆合辦招聘會並提供招聘紀錄範本，降低程序負擔而非降低標準。</span></div></li><li><div class="it">③半職分段更<span class="d">餐飲需求集中於繁忙時段，推廣半職及分段更表，配合再就業津貼吸引中高齡和婦女。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><div class="bd">批評自己的措施，逐項配處理</div><ul class="tree l2"><li><div class="it">數據時差<span class="d">季度數據反映過去；以連續兩季數據決定升降級，避免短期波動頻繁改動。</span></div><ul class="tree l3"><li><div class="sub">連續兩季決定</div></li></ul></li><li><div class="it">指標被操控<span class="d">僱主或低薪製造無人應徵；本地招聘不低於中位工資，職位對應標準分類。</span></div><ul class="tree l3"><li><div class="sub">中位工資＋職業分類</div></li></ul></li><li><div class="it">勞資不信任<span class="d">工會視調級為讓步、商界游說放寬；勞資政每年共同檢視準則，決定連數據公開。</span></div><ul class="tree l3"><li><div class="sub">三方年檢＋公開</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：餐飲業界</button><div class="bd">抓對方在意的事，給理由和讓步</div><ul class="tree l2"><li><div class="it">請得到人<span class="d">本方案不即時放寬，但只要數據證明請不到人，工種便可調回第一級，毋須逐次游說。</span></div><ul class="tree l3"><li><div class="sub">可調回第一級</div></li></ul></li><li><div class="it">規則可預期<span class="d">新準則生效前給予預告期，並邀請業界代表參與年度檢討，規則可以預期。</span></div><ul class="tree l3"><li><div class="sub">預告期＋參與檢討</div></li></ul></li><li><div class="it">計劃公信<span class="d">業界若被視為以輸入取代本地工人，社會支持便流失；透明準則正保住計劃。</span></div><ul class="tree l3"><li><div class="sub">透明保住計劃</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態：收緊是否窒礙中小企；② 分析現況；③ 提出平衡措施；④ 分析執行挑戰；⑤ 提出處理方法；⑥ 游說餐飲業界。</li>
 <li><strong>本文立場：</strong> 不同意。窒礙中小企的不是收緊本身，而是準則不透明和程序負擔不成比例；處理這兩點便能兼顧兩方。</li>
@@ -257,6 +330,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>以公帑補貼青年職位薪酬</h2><span class="wc">範文 約 1,185 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>政府將聯同商界推出為期兩年的「三萬青年職位及實習計劃」。其中，政府會組織商界由2027年第一季起，為初入職青年額外提供1萬個全職職位，並由政府承擔部分薪酬開支（每月6,000元或不多於月薪三分之一），為期六個月。有意見認為，以公帑補貼薪酬能有效協助青年就業。請分析這種做法的利弊，表明你支持抑或反對，並就你的立場提出理據。如果支持，請提出建議，確保計劃能有效協助青年持續就業；如果反對，請提出其他協助缺乏工作經驗的青年就業的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持，但須留任掛鈎、核實額外性</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">公帑補貼青年薪酬</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><div class="bd">先拆政策目的，導出評估標準再表態</div><ul class="tree l2"><li><div class="it">打破無經驗循環<span class="d">計劃針對沒有經驗就找不到工作、找不到工作就沒有經驗的循環，而非整體職位不足。</span></div></li><li><div class="it">標準：額外性<span class="d">第一項標準：受資助的職位是否真屬額外，而不是名額填滿多少。</span></div></li><li><div class="it">標準：期滿留任<span class="d">第二項標準：青年在補貼期滿後能否留任或轉往其他工作。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><div class="bd">公允寫最強的支持理由</div><ul class="tree l2"><li><div class="it">降低試用風險<span class="d">僱主聘新人最大顧慮是試用風險而非薪金，政府在首六個月承擔部分薪酬正好降低風險。</span></div></li><li><div class="it">第一份工作紀錄<span class="d">第一份正式工作帶來的工作紀錄和推薦，是日後求職最有力的證明，價值遠超六個月收入。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><div class="bd">弊處寫機制，為建議鋪路</div><ul class="tree l2"><li><div class="it">①無謂損失<span class="d">補貼最易流向學歷較高、本來就會被聘用的青年，最難入職者反而未必受惠。</span></div></li><li><div class="it">②替代效應<span class="d">僱主可能以受資助青年填補原本會招聘的職位或取代現有員工，計劃卻未見核實方法。</span></div></li><li><div class="it">③期滿即止<span class="d">職位只須六個月、補貼亦正好六個月，沒有留任誘因，僱主可在補貼結束後不再續聘。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><div class="bd">駁最強反方，不打稻草人</div><ul class="tree l2"><li><div class="it">理據：弊源於設計<span class="d">起步失業的代價遠大於補貼；三項弊處都源於設計而非補貼本身，改發放和核實便可收窄。</span></div></li><li><div class="it">改投職業培訓<span class="d">培訓解決不了沒有經驗這一關，較好做法是在受資助職位內加入在職培訓。</span></div><ul class="tree l3"><li><div class="sub">培訓買不到經驗</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><div class="bd">逐項對應弊處，附檢討指標</div><ul class="tree l2"><li><div class="it">③補貼留任掛鈎<span class="d">總額不變，首四個月按月發放，其餘兩個月待青年留任滿一年才發，回應期滿即止。</span></div></li><li><div class="it">②強積金紀錄核實<span class="d">僱主授權查核強積金紀錄，前後數月裁減同類職位須退還補貼，以抽查為主減中小企負擔。</span></div></li><li><div class="it">①預留難就業名額<span class="d">撥出部分名額予長期待業或學歷較低青年，由就業中心轉介，回應無謂損失。</span></div></li><li><div class="it">導師＋技能紀錄<span class="d">每職位設導師和培訓計劃，期滿發技能紀錄；以期滿後就業率作檢討指標。</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 分析利弊；② 表明立場；③ 提出理據；④ 條件式任務：支持者提出確保有效的建議（反對者則提出其他措施）。</li>
 <li><strong>本文立場：</strong> 支持，但必須把補貼與留任掛鈎，並核實職位的額外性，否則「有效」之說無從證明。</li>
@@ -311,6 +385,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the Re-employment Allowance Pilot Scheme and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Buys job entry, not sustained employment</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Re-employment Allowance review</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><div class="bd">Define the objective and reset the success test</div><ul class="tree l2"><li><div class="it">Sustained work, not placements<span class="d">The objective is to bring people outside the labour market back into sustained employment, partly offsetting a shrinking workforce.</span></div></li><li><div class="it">Judge by 12-month retention<span class="d">Success should be judged by how many are still in work a year later and how many would not otherwise have returned.</span></div></li><li><div class="it">Popularity hides two weaknesses<span class="d">Placements far exceed the plan, but the headline figure conceals poor retention and allowance paid to people who would have returned anyway.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: entry, not retention</button><div class="bd">Diagnose the mechanism; implications to second layer</div><ul class="tree l2"><li><div class="it">Two in five leave<span class="d">Two in five participants leave before the final instalment, so early instalments are wasted on jobs that do not last.</span></div><ul class="tree l3"><li><div class="sub">Wasted early instalments</div></li></ul></li><li><div class="it">Jobs unsuited to returners<span class="d">Long shifts and physical demands suit older workers and carers least; failed returners may be pushed further from work.</span></div><ul class="tree l3"><li><div class="sub">Returners more discouraged</div></li></ul></li><li><div class="it">18-hour threshold<span class="d">The 18-hour threshold excludes carers who can work only short or irregular hours, though they are key targets.</span></div><ul class="tree l3"><li><div class="sub">Carers excluded</div></li></ul></li><li><div class="it">Employer churn<span class="d">Employers absorb repeated recruitment costs and may conclude older workers are not worthwhile, while placement figures overstate success.</span></div><ul class="tree l3"><li><div class="sub">Age bias reinforced</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: open budget, weak targeting</button><div class="bd">Diagnose the mechanism; implications to second layer</div><ul class="tree l2"><li><div class="it">Wide eligibility line<span class="d">A demand-led scheme with an eligibility line of age 40 and three months out captures many ordinary job-movers.</span></div><ul class="tree l3"><li><div class="sub">Pays ordinary job-movers</div></li></ul></li><li><div class="it">Half would return anyway<span class="d">Half of surveyed participants would have taken the same job anyway, so the budget is drained by deadweight, not success.</span></div><ul class="tree l3"><li><div class="sub">Deadweight drains budget</div></li></ul></li><li><div class="it">Across-the-board cuts<span class="d">Across-the-board funding cuts would squeeze out the hardest to help, who take longest to find work and reach the queue last.</span></div><ul class="tree l3"><li><div class="sub">Hardest-to-help squeezed out</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><div class="bd">Each measure tagged to the problem it answers</div><ul class="tree l2"><li><div class="it">Add twelve-month instalment<span class="d">Within the same total, reduce the first instalment and add a fourth at twelve months, rewarding staying rather than entering.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Shorter, split-shift jobs<span class="d">Job centres work with employers&#x27; associations in the four main sectors to create shorter and split-shift posts for older workers and carers.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Part-time counts for carers<span class="d">Carers qualify with jobs below 18 hours, paid pro rata, with referral to child-care and elderly day-care services.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Target priority groups, cap budget<span class="d">Limit full eligibility to the long-term unemployed, those 60 or above and returning carers, within a fixed budget with published priorities.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><div class="bd">Timeline, indicators and review point</div><ul class="tree l2"><li><div class="it">New rules next financial year<span class="d">Revised instalments and targeting take effect next financial year, with job redesign piloted in two sectors within six months.</span></div></li><li><div class="it">Test additionality<span class="d">Compare participants with similar job-seekers without the allowance, so the Ministry knows what the scheme adds before making it permanent.</span></div></li><li><div class="it">Cost per retained participant<span class="d">Track retention at six and twelve months, priority-group share, and cost per participant still in work after twelve months.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> (a) 兩個問題（數目不能多也不能少），每個問題配一段獨立的 Implications；(b) 可行措施，逐項回扣兩個問題。</li>
 <li><strong>本文主線：</strong> 計劃買到的是「入職」，不是「持續就業」；高參與率掩蓋了留任差和目標不準兩個問題。</li>
@@ -413,6 +488,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../03-mental-health/index.html">← 03 精神健康</a><a href="../05-population/index.html">05 人口、生育與人才 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/04-labour/index.html">議題庫：勞工、就業與人力</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

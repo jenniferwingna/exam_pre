@@ -1,0 +1,542 @@
+{
+  "topic": "12",
+  "title": "教育、人才培育與青年發展",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "滙流升級合併",
+      "stance": "同意：及早規劃、質素為準、自願合併",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "省錢vs提升質素",
+              "c": [],
+              "d": "若只為省錢，成敗看學校減少多少；施政報告把目的定為整合資源及提升教育質素。"
+            },
+            {
+              "t": "課程完整",
+              "c": [],
+              "d": "衡量標準是合併後學生能否得到更完整的課程，例如多元選科和課外活動。"
+            },
+            {
+              "t": "專科師資",
+              "c": [],
+              "d": "另一標準是能否有更專科的師資，即五年規劃要具質素學校「做大、做強」。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①小校難保質素",
+              "c": [],
+              "d": "教師編制隨班數增減，班數一減便難維持專科教師、多元選科和課外活動。"
+            },
+            {
+              "t": "②欠及早誘因",
+              "c": [],
+              "d": "學校為保班爭奪生源，仍能維持時觀望比主動合併安全，缺乏及早合併的誘因。"
+            },
+            {
+              "t": "③怕失傳統人手",
+              "c": [],
+              "d": "合併涉及校名、傳統和校董會席位的取捨，加上教師去留，令辦學團體不願主動談合併。"
+            },
+            {
+              "t": "合併總在最壞時機",
+              "c": [],
+              "d": "結果合併多在學校無法開班時才被迫進行，合在一起的是兩間同樣疲弱的學校。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "②公開推算準則",
+              "c": [],
+              "d": "教育局按區公布學齡人口推算和合併準則，讓辦學團體有數年時間自行規劃。"
+            },
+            {
+              "t": "①質素資源包",
+              "c": [],
+              "d": "合併學校獲一筆過撥款及額外資源，條件是訂明專科師資和選科指標，資源跟計劃走。"
+            },
+            {
+              "t": "③過渡保障",
+              "c": [],
+              "d": "過渡期內不因合併裁減教師，以自然流失吸納；新校保留雙方校名元素和校史。"
+            },
+            {
+              "t": "③聯校一條龍",
+              "c": [],
+              "d": "可推動中小學一條龍，或不同團體先以聯校共享師資課程，再決定是否正式合併。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "公帑買合併",
+              "c": [
+                "設年期公布成效"
+              ],
+              "d": "保障職位和額外資源令短期開支增加，故資源包設年期和退場安排，並公布成效。"
+            },
+            {
+              "t": "跨團體難協調",
+              "c": [
+                "協調員＋協議範本"
+              ],
+              "d": "團體宗教背景和理念各異易膠着，故設專責協調人員，提供校董席位及使命保障範本。"
+            },
+            {
+              "t": "家長校友反對",
+              "c": [
+                "分階段、原校畢業"
+              ],
+              "d": "家長怕路程增加、校友怕傳統消失，故由新一屆小一中一開始合併，在校生原校畢業。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "小班教學契機",
+              "c": [
+                "小班≠小校"
+              ],
+              "d": "每級只有一班的學校，班額再小也難維持專科教師和選科組合；合併後同樣可推小班。"
+            },
+            {
+              "t": "資源保留每校",
+              "c": [
+                "分散削弱質素"
+              ],
+              "d": "把資源分散維持大量小型學校，最終削弱每間學校的質素；學齡人口下降屬結構性趨勢。"
+            }
+          ]
+        },
+        {
+          "label": "游說：辦學團體",
+          "items": [
+            {
+              "t": "使命延續",
+              "c": [
+                "主動合併寫明宗旨"
+              ],
+              "d": "及早與理念相近學校合併，可在協議中寫明辦學宗旨；等到不獲開班便失去談判籌碼。"
+            },
+            {
+              "t": "收生穩定",
+              "c": [
+                "資源包增吸引力"
+              ],
+              "d": "資源包令合併後學校在師資和課程上更具吸引力，有助穩定收生，是做大做強而非收縮。"
+            },
+            {
+              "t": "怕冒進",
+              "c": [
+                "先聯校試行"
+              ],
+              "d": "容許先以聯校形式試行數年，過渡期不裁減教師，準則公開劃一，各團體一視同仁。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "教師執業證書",
+      "stance": "同意：證書是發展憑證，非行政關卡",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "培訓提升能力",
+              "c": [],
+              "d": "第一個目的是以持續培訓令教師能力跟上教學需要的轉變，看教學是否真的改善。"
+            },
+            {
+              "t": "註冊加強問責",
+              "c": [],
+              "d": "第二個目的是完善註冊機制、加強專業問責，看處理問題個案是否公平有效。"
+            },
+            {
+              "t": "清晰公正合理",
+              "c": [],
+              "d": "兩個目的都要求準則清晰、程序公正、負擔合理，這是評估制度設計的標準。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①質素看學校",
+              "c": [],
+              "d": "有學校有系統安排進修，有學校因人手緊絀難以抽身，專業發展的質素參差。"
+            },
+            {
+              "t": "②教學需要急變",
+              "c": [],
+              "d": "AI教學助理、數字教育和精神健康帶來新要求，入職前一次過培訓不足以支撐數十年。"
+            },
+            {
+              "t": "③只有批准取消",
+              "c": [],
+              "d": "註冊制度只有批准與取消兩端，缺乏中間手段，問題個案要麼不處理、要麼最嚴厲處理。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①工時內資助培訓",
+              "c": [],
+              "d": "培訓在工作時間內進行，政府資助代課，承認校本學習社群、網上課程和交流等多元模式。"
+            },
+            {
+              "t": "②清晰續證準則",
+              "c": [],
+              "d": "以數年為周期，規定學生支援、數字教學等核心培訓和自選時數，並預先公開準則。"
+            },
+            {
+              "t": "③分級處理覆核",
+              "c": [],
+              "d": "先提醒、再附條件續證，嚴重或屢勸不改才暫停資格，決定以書面交代並設獨立覆核。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "工作量",
+              "c": [
+                "先用AI騰時間"
+              ],
+              "d": "代課難聘、怕擠佔備課，故讓學校彈性安排培訓日，並同步推行AI教學助理先騰出時間。"
+            },
+            {
+              "t": "行政負擔",
+              "c": [
+                "分批＋網上記錄"
+              ],
+              "d": "數以萬計續證集中處理會不勝負荷，故按註冊日期分批錯開周期，認可課程時數自動記錄。"
+            },
+            {
+              "t": "程序公平疑慮",
+              "c": [
+                "寫入法例＋覆核"
+              ],
+              "d": "教師怕準則被任意詮釋，故把程序寫入法例或指引，覆核委員會納入業界代表並公布統計。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "淪為儲時數",
+              "c": [
+                "變政府培訓責任"
+              ],
+              "d": "時數確不等於質素，但證書把進修由個人負擔轉為政府和辦學團體須提供資源的責任。"
+            },
+            {
+              "t": "應先減工作量",
+              "c": [
+                "缺底線弱校被遺漏"
+              ],
+              "d": "沒有全港劃一基本要求，專業發展只取決於個別學校，最缺支援的學校和教師最易被遺漏。"
+            }
+          ]
+        },
+        {
+          "label": "游說：前線教師",
+          "items": [
+            {
+              "t": "工作量",
+              "c": [
+                "工時內、政府資助"
+              ],
+              "d": "培訓在工作時間內進行並由政府資助代課，回應教師對工作量的擔心。"
+            },
+            {
+              "t": "職業保障",
+              "c": [
+                "現職自動獲證"
+              ],
+              "d": "現職教師首個周期自動獲發證書，過去進修計算在內，無人因制度轉變失去教席。"
+            },
+            {
+              "t": "專業尊重",
+              "c": [
+                "看齊專業、參與設計"
+              ],
+              "d": "證書與其他設續證制度的專業看齊，教師代表參與設計培訓框架，首周期後全面檢討。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "大學城用地條件",
+      "stance": "支持：按定位設計，長期評核",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "免地價＝公帑承擔",
+              "c": [],
+              "d": "政府以免地價和貸款支持院校建校，可見大學城的公共目的是成為北都產業人才引擎。"
+            },
+            {
+              "t": "能否結合產業",
+              "c": [],
+              "d": "第一項標準是審批條件能否令院校真正與周邊產業結合，體現四位一體定位。"
+            },
+            {
+              "t": "不損育才研究",
+              "c": [],
+              "d": "第二項標準是審批條件會否損害大學育才和基礎研究的本業。"
+            }
+          ]
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "確保公共回報",
+              "c": [],
+              "d": "土地最稀缺、免地價更是可觀公帑承擔，寫入條件可避免大學城「只有校園、沒有城市」。"
+            },
+            {
+              "t": "補轉化短板",
+              "c": [],
+              "d": "成果轉化是創科鏈較弱一環，條件可推動院校設轉化平台、與企業共建實驗室補短板。"
+            }
+          ]
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "①扭曲學術使命",
+              "c": [],
+              "d": "條件過度着重短期產值，院校集中資源於易商品化學科，人文和基礎學科被邊緣化。"
+            },
+            {
+              "t": "②時序錯配",
+              "c": [],
+              "d": "院校2027至28年進駐洪水橋，鐵路站2030年才啟用，產業未到位，承諾易落空。"
+            },
+            {
+              "t": "③學科不公平",
+              "c": [],
+              "d": "醫學工程較易對接產業，只比合作規模，人文社科見長或規模較小的院校處於劣勢。"
+            }
+          ]
+        },
+        {
+          "label": "理據＋駁論",
+          "items": [
+            {
+              "t": "風險在設計",
+              "c": [],
+              "d": "風險源於條件的設計方式而非條件本身；不設條件，大學城很可能只是校園擴建。"
+            },
+            {
+              "t": "起步時成本最低",
+              "c": [],
+              "d": "大學城正處起步階段，此時訂條件成本最低；待校舍落成才要求合作，院校已缺誘因。"
+            },
+            {
+              "t": "干預學術自主",
+              "c": [
+                "管連結不管教研"
+              ],
+              "d": "條件規範校園如何與地區連結，而非教什麼研究什麼；以公帑公地支持，要求承諾不矛盾。"
+            }
+          ]
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "③按定位度身訂",
+              "c": [],
+              "d": "新田以醫學和人工智能等為定位、洪水橋以應用型專上教育為定位，看方案是否配合定位。"
+            },
+            {
+              "t": "①過程指標為主",
+              "c": [],
+              "d": "首數年評核聯合實驗室、委託研究和實習，五至十年後才看衍生企業和技術授權。"
+            },
+            {
+              "t": "①保留教研比例",
+              "c": [],
+              "d": "訂明校園須保留一定比例作教學及非應用型研究，作為保障學術使命的底線。"
+            },
+            {
+              "t": "②分期批地",
+              "c": [],
+              "d": "按里程碑分期批地，承諾時間表與交通和產業用地落成掛鈎，未達標先檢討再批後期。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "AI teaching assistants",
+      "stance": "Problems are capacity and integrity, not technology",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Free teacher time",
+              "c": [],
+              "d": "The objective is to release teacher time from routine preparation and marking so that it can be redirected to teaching."
+            },
+            {
+              "t": "More individual feedback",
+              "c": [],
+              "d": "Every pupil should receive more frequent individual feedback than one teacher can provide on their own."
+            },
+            {
+              "t": "Judge learning, not log-ins",
+              "c": [],
+              "d": "Success should be judged by teacher time and pupil learning, not by log-in rates or usage data."
+            },
+            {
+              "t": "Data statement as precondition",
+              "c": [],
+              "d": "Parents' data concerns are real but more tractable, so they are treated as a condition of roll-out, not a third problem."
+            }
+          ]
+        },
+        {
+          "label": "Problem 1: uneven adoption",
+          "items": [
+            {
+              "t": "No time, no trust",
+              "c": [
+                "Savings miss neediest schools"
+              ],
+              "d": "Identical software saw use from over 70 to under 20 per cent; without protected time or trust in marking, not using it was rational."
+            },
+            {
+              "t": "High-use schools pull ahead",
+              "c": [
+                "Equity gap widens"
+              ],
+              "d": "High-use schools give pupils more feedback and practice, so a policy meant to narrow differences between schools may widen them."
+            },
+            {
+              "t": "Poor early usage data",
+              "c": [
+                "Judged failure prematurely"
+              ],
+              "d": "A three-year budget will show low returns on usage before educational value is tested, inviting a premature verdict of failure."
+            }
+          ]
+        },
+        {
+          "label": "Problem 2: bypassing learning",
+          "items": [
+            {
+              "t": "Chatbot supplies answers",
+              "c": [
+                "Marks rise, learning doesn't"
+              ],
+              "d": "A general-purpose model supplies finished answers unless configured otherwise, so homework marks rise while understanding does not."
+            },
+            {
+              "t": "Strugglers rely most",
+              "c": [
+                "Equity gap compounds"
+              ],
+              "d": "Pupils most likely to take shortcuts are those already struggling, compounding the equity gap caused by uneven adoption."
+            },
+            {
+              "t": "Seen as cheating tool",
+              "c": [
+                "Schools restrict use"
+              ],
+              "d": "If the platform is seen as a cheating tool, parental support falls and schools may restrict it, losing its legitimate benefits."
+            }
+          ]
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Readiness phasing, funded time",
+              "c": [
+                "→P1"
+              ],
+              "d": "Schools join once they have an AI lead teacher and an adoption plan, with grants releasing that teacher's time and funding substitute cover."
+            },
+            {
+              "t": "Peer pairing, accuracy data",
+              "c": [
+                "→P1"
+              ],
+              "d": "Pair high-use pilot schools with low-use ones for peer coaching, publish marking accuracy by subject, and limit automated marking to low-stakes tasks."
+            },
+            {
+              "t": "Default tutor mode",
+              "c": [
+                "→P2"
+              ],
+              "d": "The pupil chatbot defaults to tutor mode, offering hints, questions and worked examples rather than complete answers, adjustable by teachers."
+            },
+            {
+              "t": "Assessment rules, data statement",
+              "c": [
+                "→P2"
+              ],
+              "d": "Define acceptable AI use, shift some assessment to in-class writing, and publish a data statement ruling out model training and teacher appraisal."
+            }
+          ]
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "Safeguards before next year",
+              "c": [],
+              "d": "Tutor mode, the data statement and the guidance should all be in place before the next school year begins."
+            },
+            {
+              "t": "Three indicators, half-yearly",
+              "c": [],
+              "d": "Track net teacher time saved, the usage gap between schools, and supervised performance against homework, reporting half-yearly."
+            },
+            {
+              "t": "Independent review, year two",
+              "c": [],
+              "d": "An independent evaluation at the end of year two should be completed before the final roll-out phase proceeds."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

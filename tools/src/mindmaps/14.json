@@ -1,0 +1,577 @@
+{
+  "topic": "14",
+  "title": "數字政府、人工智能與數據治理",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "立法下架詐騙內容",
+      "stance": "同意；定義窄、限時、可覆核、按規模分級",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "縮短接觸時間",
+              "c": [],
+              "d": "下架的第一個目的，是縮短詐騙內容接觸市民的時間，趕在受害之前處理。"
+            },
+            {
+              "t": "責任歸攔截者",
+              "c": [],
+              "d": "第二個目的，是把防騙責任重新分配給最有能力攔截的一方，即網上平台。"
+            },
+            {
+              "t": "速度·準確·可執行",
+              "c": [],
+              "d": "三項標準：能否趕在受害前、會否誤傷合法內容、對境外平台是否同樣有效。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "詐騙生產線",
+              "c": [],
+              "d": "假廣告和深偽短片引流、通訊群組建立信任、最後轉帳；人工智能令引流成本近乎歸零。"
+            },
+            {
+              "t": "① 速度錯配",
+              "c": [],
+              "d": "詐騙內容以分鐘計生成，平台卻按各自守則逐條處理，沒有法定時限。"
+            },
+            {
+              "t": "② 誘因錯配",
+              "c": [],
+              "d": "平台從廣告與流量獲益，損失卻由市民承擔，攔截誘因不足。"
+            },
+            {
+              "t": "③ 防線分散",
+              "c": [],
+              "d": "警方、銀行、電訊商和平台各掌一段，沒有把偵測、下架、截款連起來的機制。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "未定罪先刪",
+              "c": [
+                "定罪太慢損失已成"
+              ],
+              "d": "誤刪風險真實，但詐騙內容生命周期以日計、刑事程序以月計，等定罪才下架並不可行。"
+            },
+            {
+              "t": "擴權誤傷",
+              "c": [
+                "寫窄＋可覆核"
+              ],
+              "d": "答案是把權力寫窄、程序寫清：只涵蓋金融詐騙，合理懷疑門檻並列明理由，可獨立覆核。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "① 法定限時指令",
+              "c": [],
+              "d": "執法部門有合理懷疑時可發書面指令，平台須在法定時限內移除，回應速度錯配。"
+            },
+            {
+              "t": "② 分級預防責任",
+              "c": [],
+              "d": "大型平台須主動偵測並核實金融廣告主，中小平台只按指令處理，回應誘因錯配。"
+            },
+            {
+              "t": "③ 情報共享截款",
+              "c": [],
+              "d": "建立跨界別情報共享，令下架與截款同步，回應防線分散；三年檢討。"
+            },
+            {
+              "t": "收窄定義＋覆核",
+              "c": [
+                "→防誤傷"
+              ],
+              "d": "附表列明受規管內容，擴大須經立法會；設獨立覆核和恢復。新加坡可借鑑，不宜照搬。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "境外平台",
+              "c": [
+                "本地代表＋罰款"
+              ],
+              "d": "以向本地用戶提供服務為基準，大型平台指定本地代表；先罰款，限制存取作最後手段。"
+            },
+            {
+              "t": "誤刪憂慮",
+              "c": [
+                "看覆核推翻率"
+              ],
+              "d": "指令附書面理由、設覆核和恢復機制；覆核推翻率偏高即表示標準過寬，須即時收緊。"
+            },
+            {
+              "t": "合規成本",
+              "c": [
+                "分級＋共用資料庫"
+              ],
+              "d": "分級義務加過渡期，政府以共用資料庫提供詐騙情報，執法部門以人工智能協助篩選。"
+            }
+          ]
+        },
+        {
+          "label": "游說",
+          "items": [
+            {
+              "t": "平台：責任不清",
+              "c": [
+                "安全港免責"
+              ],
+              "d": "清晰法定規則比模糊壓力更有利營運；遵從指令即可免責，這是自願機制得不到的安全港。"
+            },
+            {
+              "t": "平台：事前審查",
+              "c": [
+                "法例不設"
+              ],
+              "d": "法例不設一般性的事前審查責任，回應平台最擔心被要求逐條預先審查。"
+            },
+            {
+              "t": "平台：商譽",
+              "c": [
+                "詐騙亦損平台"
+              ],
+              "d": "被冒充的品牌、失去信任的用戶，最終都是平台本身的商業損失。"
+            },
+            {
+              "t": "讓步",
+              "c": [
+                "共訂守則＋過渡期"
+              ],
+              "d": "邀平台參與制定實務守則、設過渡期、共享情報；現在參與設計勝過事後面對更嚴要求。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "AI城市大腦",
+      "stance": "支持；應急先行、規則先行、聯而不集",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "決策更快非看更多",
+              "c": [],
+              "d": "價值在讓各部門在災難中看到同一幅實時圖像，日常由事後處理投訴轉為事前預警。"
+            },
+            {
+              "t": "量度反應時間",
+              "c": [],
+              "d": "成效應以跨部門反應時間是否縮短來衡量，而非接入了多少數據。"
+            },
+            {
+              "t": "前提：市民信任",
+              "c": [],
+              "d": "系統能否持續運作，取決於市民是否相信數據只會用於既定用途。"
+            }
+          ]
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "破資訊分散",
+              "c": [],
+              "d": "暴雨時雨量、水浸、山泥和交通分屬不同部門；數據連結後可更早判斷封路和疏散。"
+            },
+            {
+              "t": "被動轉主動",
+              "c": [],
+              "d": "不少問題要待投訴才被察覺；數據交叉分析可讓部門在問題惡化前介入。"
+            }
+          ]
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "① 用途擴張",
+              "c": [],
+              "d": "為救災建立的數據連結易延伸至原意以外，市民心存保留，連帶影響其他數字政府項目。"
+            },
+            {
+              "t": "② 單點失效",
+              "c": [],
+              "d": "數據越集中，被入侵或癱瘓的後果越嚴重，而最可能出事的正是最需要它的災難時刻。"
+            },
+            {
+              "t": "③ 數據質素",
+              "c": [],
+              "d": "各部門格式不一、視數據為部門資產；未經核對就接入，AI只會更快輸出錯誤判斷。"
+            }
+          ]
+        },
+        {
+          "label": "理據",
+          "items": [
+            {
+              "t": "不整合有代價",
+              "c": [],
+              "d": "資訊碎片化本身就是風險；以私隱為由維持現狀，等同接受較慢應急，承受者是受災市民。"
+            },
+            {
+              "t": "應急先行降風險",
+              "c": [],
+              "d": "首階段只接保安局緊急事故中心；香港須為每項用途找法律依據。"
+            },
+            {
+              "t": "風險可制度控制",
+              "c": [],
+              "d": "五年規劃已訂明須在保障私隱、依法合規、建立公眾信任前提下推展，城市大腦應適用。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "集中即風險",
+              "c": [
+                "部分同意"
+              ],
+              "d": "部分同意反方：城市大腦不應是存放所有原始數據的中央資料庫，但這指向設計而非放棄。"
+            },
+            {
+              "t": "部門直接互通",
+              "c": [
+                "改為聯而不集"
+              ],
+              "d": "數據留在原部門，按授權按需調用並記錄存取，正是五年規劃授權數據交換閘的思路。"
+            }
+          ]
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "① 封閉用途清單",
+              "c": [],
+              "d": "每類數據只可用於列明用途，新增用途先完成私隱影響評估並訂明保留期限，回應弊一。"
+            },
+            {
+              "t": "② 聯而不集＋後備",
+              "c": [],
+              "d": "採聯而不集架構，按關鍵基建標準做網安測試，保留不依賴系統的後備指揮，回應弊二。"
+            },
+            {
+              "t": "③ 統一數據標準",
+              "c": [],
+              "d": "工作組訂統一標準，數據經核對才接入，首階段只處理少數高價值數據，回應弊三。"
+            },
+            {
+              "t": "指標決定擴展",
+              "c": [
+                "未達標暫緩"
+              ],
+              "d": "私隱公署參與審核，每年公布用途和事故，以資訊傳遞時間等指標決定是否進入下一階段。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "公務應用AI",
+      "stance": "同意擴展；按風險分級，權益由具名人員決定",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "效率＝速度準確問責",
+              "c": [],
+              "d": "公共行政的效率包括速度、準確、出錯時有人負責；三者缺一，速度越快錯誤擴散越快。"
+            },
+            {
+              "t": "廣泛＝風險分級",
+              "c": [],
+              "d": "內部標準化工序大膽推進；凡直接影響市民權益的決定，最終必須由具名人員作出。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "單點工具→規模化",
+              "c": [],
+              "d": "效能提升組已落實30個項目，但多屬單點工具；下一步是跨部門流程重組。"
+            },
+            {
+              "t": "① 錯誤規模化",
+              "c": [],
+              "d": "AI會把錯誤自動化和規模化：一條錯誤規則過去影響一宗，現在可影響上萬宗。"
+            },
+            {
+              "t": "② 責任鏈不清",
+              "c": [],
+              "d": "供應商開發、部門使用、人員處理，出錯時誰負責未清，部門於是只做最安全的小項目。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "① 風險分級",
+              "c": [],
+              "d": "低風險部門自批，中風險須評估及人手覆核，高風險AI只可提供建議，回應癥結一。"
+            },
+            {
+              "t": "① 人為最終決定",
+              "c": [],
+              "d": "與政府現行AI Agent規範一致：只用於標準化內部政務，不直接面向公眾作決定。"
+            },
+            {
+              "t": "② 具名負責",
+              "c": [],
+              "d": "每個系統由首長級人員負責，不因外判轉移；每項決定可追查數據和覆核人，回應癥結二。"
+            },
+            {
+              "t": "公開登記＋檢討",
+              "c": [],
+              "d": "設AI應用登記冊，個人資料不輸外部平台；每年公布錯誤率和覆核推翻率作擴展依據。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "規範太保守",
+              "c": [
+                "界線在能否解釋"
+              ],
+              "d": "簡單個案確不必逐宗由人審批，但界線不應劃在簡單與否，而應劃在能否解釋。"
+            },
+            {
+              "t": "簡單個案直批",
+              "c": [
+                "規則式系統可以"
+              ],
+              "d": "規則明確的續期可用規則式系統直批；判斷性個案交生成式AI，難向被拒市民說明理由。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "數據參差",
+              "c": [
+                "盤點＋交換閘"
+              ],
+              "d": "先做數據盤點，善用授權數據交換閘統一格式，數據未達標的流程不得接入AI。"
+            },
+            {
+              "t": "覆核變蓋印",
+              "c": [
+                "記理由＋測試抽查"
+              ],
+              "d": "系統多數時候對，覆核易流於形式；規定記錄同意或推翻理由，並以預設錯誤個案抽查。"
+            },
+            {
+              "t": "前線憂慮",
+              "c": [
+                "參與設計＋免追究"
+              ],
+              "d": "推行前與職方溝通、讓前線參與設計，按程序覆核者不因系統缺陷被個人追究。"
+            }
+          ]
+        },
+        {
+          "label": "游說",
+          "items": [
+            {
+              "t": "職方：職位",
+              "c": [
+                "不以AI裁員"
+              ],
+              "d": "編制調整以自然流失和內部調配處理，承諾不以人工智能為由裁員，並每年公開調配情況。"
+            },
+            {
+              "t": "職方：工作量",
+              "c": [
+                "AI接重複工序"
+              ],
+              "d": "編制受嚴控，不用AI只會令同一批人更忙；AI接手重複工序，人員轉往判斷性工作。"
+            },
+            {
+              "t": "職方：責任",
+              "c": [
+                "人作決定保專業"
+              ],
+              "d": "人為最終決定的原則本身保障公務員的專業地位：系統只是工具，判斷仍屬人員。"
+            },
+            {
+              "t": "讓步",
+              "c": [
+                "培訓＋公開調配"
+              ],
+              "d": "邀請職方參與評審，為受影響職系提供在職培訓；以數據說話比口頭保證更能建立信任。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "AI procurement declarations",
+      "stance": "Defer six months; verify, update, simplify declarations",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Promise, not proof",
+              "c": [],
+              "d": "The requirement was meant to make vendors answerable, but a declaration on its own is a promise rather than proof."
+            },
+            {
+              "t": "Checked, current, enforceable",
+              "c": [],
+              "d": "A declaration adds value only if it is checked, remains true after signing, and a false one has consequences."
+            },
+            {
+              "t": "Extend in present form?",
+              "c": [],
+              "d": "The question is not whether to extend, but whether to extend a weak control that also narrows the market."
+            }
+          ]
+        },
+        {
+          "label": "Problem 1: Unverified, not current",
+          "items": [
+            {
+              "t": "38 accepted, 4 checked",
+              "c": [
+                "False assurance"
+              ],
+              "d": "Procurement staff are trained on price, not model testing; departments holding signed declarations relax their own scrutiny, creating moral hazard."
+            },
+            {
+              "t": "Fixed at tender",
+              "c": [
+                "No contractual remedy"
+              ],
+              "d": "AI systems change after award, so a tender-date declaration gives little remedy, as the vendor's chatbot response shows."
+            },
+            {
+              "t": "Extended Government-wide",
+              "c": [
+                "One incident hits all AI"
+              ],
+              "d": "Extension multiplies the gap, and one serious incident could undermine confidence in public-facing AI and delay sound projects."
+            }
+          ]
+        },
+        {
+          "label": "Problem 2: Market narrows",
+          "items": [
+            {
+              "t": "Bids halved, small firms out",
+              "c": [
+                "Less competition, lock-in"
+              ],
+              "d": "Bids fell from six to three and small firms' share from 45 to 20 per cent, weakening competition."
+            },
+            {
+              "t": "Fixed compliance cost",
+              "c": [
+                "Local firms lose references"
+              ],
+              "d": "An unclear form's largely fixed cost falls hardest on small firms, undercutting the aim of giving local firms reference projects."
+            },
+            {
+              "t": "Burden invites evasion",
+              "c": [
+                "Control evaded, not met"
+              ],
+              "d": "Departments under pressure may avoid AI procurement or describe services to fall outside the definition of public-facing AI."
+            }
+          ]
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Tier by risk",
+              "c": [
+                "→P1"
+              ],
+              "d": "Services affecting eligibility, enforcement or vulnerable users get independent testing; information-only services need self-declaration alone."
+            },
+            {
+              "t": "Testable, continuing declarations",
+              "c": [
+                "→P1"
+              ],
+              "d": "Replace general assurances with testable statements, treat falsity as breach, and require updates before any model change."
+            },
+            {
+              "t": "Central assurance unit",
+              "c": [
+                "→P1"
+              ],
+              "d": "A small unit in the Ministry vets high-risk declarations and advises departments, pooling scarce expertise rather than spreading it thinly."
+            },
+            {
+              "t": "Simpler form, free toolkit",
+              "c": [
+                "→P2"
+              ],
+              "d": "Shorten the form with worked examples, offer a free testing toolkit and brief small firms, keeping entry costs low."
+            }
+          ]
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "Defer six months",
+              "c": [],
+              "d": "A short deferral beats extending a known weak control; test the revised template and unit in the three pilot departments."
+            },
+            {
+              "t": "High-risk departments first",
+              "c": [],
+              "d": "Departments with high-risk services adopt the requirement first, with the remaining departments following a year later."
+            },
+            {
+              "t": "Track bids, verification, incidents",
+              "c": [],
+              "d": "Indicators include bids per tender, small-firm share, high-risk declarations verified, procurement time added and incidents involving declared systems."
+            },
+            {
+              "t": "Zero findings = warning",
+              "c": [],
+              "d": "An absence of adverse findings should be read as a sign verification is failing, not as proof every system is safe."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/09-tourism/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t09">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>熱門郊野景點的預約與訪客上限</h2><span class="wc">範文 1,460 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>政府已在西貢萬宜地質步道破邊洲段試行周末及長假期的訪客網上預約制，並設定訪客上限，表示會總結試行經驗，制訂長遠郊野管理策略。有意見認為，政府應在更多熱門郊野景點實施網上預約及訪客上限，以保護生態和提升遊覽體驗。你是否同意？試分析現況，提出你的建議，分析有關建議的執行挑戰及處理方法，並游說行山團體支持你的建議。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意推展：只限超載熱點，先分流後限流</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">郊野預約上限</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">生態承載<span class="d">施政報告把試行放在「生態保育＋綠色旅遊」下，首要目的是減輕生態承載壓力。</span></div></li><li><div class="it">遊覽體驗<span class="d">第二個目的是優化遊覽體驗，避免熱點擠迫令遊人冒險、體驗變差。</span></div></li><li><div class="it">＋公平親近自然<span class="d">郊野是市民日常康樂空間，任何限制都要讓長者和基層仍能公平親近自然。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①人流時地集中<span class="d">問題不是行山的人太多，而是打卡熱潮令人流在周末長假期湧向同一段步道。</span></div></li><li><div class="it">②超載傷生態安全<span class="d">熱點路徑狹窄偏遠，承載力取決於最窄最險一段，超載便損植被地貌、危及遊人。</span></div></li><li><div class="it">③推廣與限流矛盾<span class="d">政府一面以「＋旅遊」推廣景點、一面限流，推廣製造的需求只能由管理事後收拾。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①分流先於限流<span class="d">漁護署發布實時人流資訊，推介景觀相近的替代路線，扣癥結一。</span></div></li><li><div class="it">②準則定限流點<span class="d">只在人流集中、生態敏感、有安全風險的熱點限流，上限公開計算、每年檢討。</span></div><ul class="tree l3"><li><div class="sub">達標即撤銷</div></li></ul></li><li><div class="it">③推廣避開熱點<span class="d">旅遊推廣避免在高峰期主打已超載地點，化解推廣與限流的矛盾，扣癥結三。</span></div></li><li><div class="it">預約免費實名<span class="d">預約免費、實名登記，多次不到場者暫停資格以防霸位，確保公平。</span></div><ul class="tree l3"><li><div class="sub">→公平標準</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">限額＝限制自由<span class="d">超載熱點的名額早被最早到、最能忍擠迫的人取得，真正選擇在排隊與透明規則之間。</span></div><ul class="tree l3"><li><div class="sub">排隊vs透明規則</div></li></ul></li><li><div class="it">直接收費（富士山）<span class="d">富士山收入用於管理可借鑑，但香港郊野主要服務本地康樂，收費篩走的是基層。</span></div><ul class="tree l3"><li><div class="sub">收費篩走基層</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">數碼鴻溝<span class="d">長者未必熟悉網上預約，故保留即場名額和電話預約，並容許長者中心代為登記。</span></div><ul class="tree l3"><li><div class="sub">即場名額、代登記</div></li></ul></li><li><div class="it">繞道小徑<span class="d">遊人或改走未經管理小徑反更危險，故高峰時段在主要入口設檢查點配合人流感應器。</span></div><ul class="tree l3"><li><div class="sub">入口檢查點</div></li></ul></li><li><div class="it">需求轉移<span class="d">限制一處人潮或湧往鄰近景點，故以整個區域作監測單位，預備第二層分流方案。</span></div><ul class="tree l3"><li><div class="sub">以區域作監測</div></li></ul></li><li><div class="it">怕收費封山<span class="d">市民或視預約為收費封山前奏，故定期公開預約率和生態數據，並寫明不收入場費。</span></div><ul class="tree l3"><li><div class="sub">公開數據不收費</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：行山團體</button><ul class="tree l2"><li><div class="it">珍惜清靜<span class="d">超載的打卡人潮首先犧牲真正行山的人，人數上限保障的正是他們最珍惜的體驗。</span></div><ul class="tree l3"><li><div class="sub">上限保障體驗</div></li></ul></li><li><div class="it">怕滑坡至封山<span class="d">他們最怕「今天預約、明天收費、後天封山」，故承諾只限少數熱點，並設撤銷機制。</span></div><ul class="tree l3"><li><div class="sub">只限熱點＋撤銷</div></li></ul></li><li><div class="it">要話事權<span class="d">邀請行山團體參與訂上限和監測人流，並設團體預約配額，由被管理者變共同管理者。</span></div><ul class="tree l3"><li><div class="sub">共同管理＋配額</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態（是否同意把預約及上限推展至更多熱點）② 分析現況 ③ 提出建議 ④ 執行挑戰 ⑤ 處理方法（與④逐一配對）⑥ 游說行山團體。</li>
 <li><strong>本文立場一句話：</strong> 同意推展，但只限經評估確實超載的地點和時段、分流先於限流，並不藉此引入入場費。</li>
@@ -207,6 +279,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>盛事消費能否走出場館</h2><span class="wc">範文 1,480 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《施政報告》提出，旅發局會把全年劃分為三大主題盛事季，政府會把舉辦旗艦盛事的額外撥款恆常化，並推動「票尾經濟」，打造由場館輻射至社區的消費鏈。有意見認為，盛事雖然吸引大量人流，但帶來的消費大多集中在門票和場館之內，對社區和整體經濟的帶動有限。你是否同意？試分析現況，就如何提升盛事的經濟效益提出建議，分析有關建議的執行挑戰及處理方法，並游說社區中小商戶參與「票尾經濟」。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意帶動有限：補轉化機制，非削盛事</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">盛事消費出場館</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">增加值非人次<span class="d">五年規劃以增加值為指標：由2024年862億元增至2030年1,260億元。</span></div></li><li><div class="it">新增消費？<span class="d">第一項標準是盛事有沒有帶來新增消費，而非把本地娛樂消費轉移過來。</span></div></li><li><div class="it">多留一晚？<span class="d">第二項標準是能否令旅客多留一晚，配合施政報告延長留港時間的目的。</span></div></li><li><div class="it">走出場館？<span class="d">第三項標準是消費有沒有走出場館，流到社區而非只停在門票和場內餐飲。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">供應已到位<span class="d">啟德體育園逾170場盛事、逾260萬人次，票務票房亞洲第一，問題不在供應。</span></div></li><li><div class="it">①消費路徑斷<span class="d">觀眾行程多是到場、散場、離開，消費集中於門票、場內和鄰近商場，消費鏈未成形。</span></div></li><li><div class="it">②日程公布太遲<span class="d">日程公布得遲，海外旅客難以安排多日行程，商戶亦來不及準備。</span></div></li><li><div class="it">③替代效應高估<span class="d">本地觀眾消費部分只是由其他娛樂轉移，按總消費計算會高估成效。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①票尾延長逗留<span class="d">優惠有效期延至演出後數天，以地區連結商會，把觀眾帶到舊區食肆小店，扣癥結一。</span></div></li><li><div class="it">①捆綁住宿多站<span class="d">把盛事與住宿及「一程多站」行程捆綁推廣，吸引非本地觀眾過夜，扣癥結一。</span></div></li><li><div class="it">②提早十二個月公布<span class="d">旅發局按三大主題季，以盛事前十二個月為目標公布主要日程，回應時間錯配。</span></div></li><li><div class="it">③獨立評估定撥款<span class="d">受資助盛事事前訂指標，由獨立機構扣除替代效應評估，結果作撥款續期依據。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">總消費已增一成<span class="d">入境旅遊總消費預計增約一成，但無法區分多少來自盛事、多少流到社區，正需評估。</span></div><ul class="tree l3"><li><div class="sub">分不出來源</div></li></ul></li><li><div class="it">應削減資助<span class="d">過夜及非本地觀眾消費屬淨增加，香港不辦觀眾便流向他處，應只資助能證明效益者。</span></div><ul class="tree l3"><li><div class="sub">只資助淨新增者</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">主辦不願早公布<span class="d">藝人檔期有變數，故把提早公布列為受資助條件，非資助活動可先公布暫定檔期。</span></div><ul class="tree l3"><li><div class="sub">列為資助條件</div></li></ul></li><li><div class="it">商戶意欲低<span class="d">小店人手緊、怕蝕本、不熟數碼平台，故零費用加入、優惠自訂，以商會集體登記。</span></div><ul class="tree l3"><li><div class="sub">零費用集體登記</div></li></ul></li><li><div class="it">居民交通噪音<span class="d">得益的是商戶、承受擠迫的是居民，故同步公布散場交通及噪音安排，並與區議會聯絡。</span></div><ul class="tree l3"><li><div class="sub">散場安排＋聯絡</div></li></ul></li><li><div class="it">評估生爭議<span class="d">評估方法易生爭議，故事前公布統一方法，數據只以匿名及匯總形式使用。</span></div><ul class="tree l3"><li><div class="sub">事前統一方法</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：中小商戶</button><ul class="tree l2"><li><div class="it">成本<span class="d">加入不收費，優惠多少由商戶自定，不設最低折扣，回應小店怕蝕本的顧慮。</span></div><ul class="tree l3"><li><div class="sub">零費用、自訂優惠</div></li></ul></li><li><div class="it">客源<span class="d">盛事觀眾已在附近準備消費，非本地觀眾更是新客源；程式回饋兌換數據助判斷。</span></div><ul class="tree l3"><li><div class="sub">現成新客＋數據</div></li></ul></li><li><div class="it">麻煩<span class="d">先試行一個盛事季，由旅發局統一宣傳，商戶隨時可退出，低成本試一試。</span></div><ul class="tree l3"><li><div class="sub">試一季可退出</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態（是否同意「消費停留在場館、帶動有限」）② 分析現況 ③ 提升經濟效益的建議 ④ 執行挑戰 ⑤ 處理方法 ⑥ 游說社區中小商戶參與票尾經濟。</li>
 <li><strong>本文立場一句話：</strong> 同意帶動有限，但病因是「人流轉化為社區消費」的機制未建立，所以要補機制，而非削減盛事。</li>
@@ -253,6 +326,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>騰出公眾街市空間作社區設施</h2><span class="wc">範文 1,287 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《施政報告》指出，市民購買糧食習慣已出現結構性轉變，並宣布由環境及生態局局長領導跨部門工作組，研究騰出街市空間作其他用途（例如社區設施）。有意見認為，政府應把使用率偏低的公眾街市空間騰出，改作社區設施等其他用途；論者並以鄰近地區活化傳統街市的經驗為例。請分析上述建議有何利弊，表明你支持抑或反對有關建議，並就你的立場提出理據。如果是支持的話，請提出建議，確保方案可有效達致其政策目的；如果是反對的話，請提出其他提升公眾街市使用效益的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持：集中而非關閉</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">騰出街市空間</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">糧食可及<span class="d">街市公共價值在於讓長者和基層在居所附近買到價錢合理的新鮮糧食。</span></div></li><li><div class="it">善用空置空間<span class="d">另一方面，空置的公共空間本身就是浪費，騰出空間追求資源效益。</span></div></li><li><div class="it">兩者有張力<span class="d">騰出空間追求效益、保留街市守護糧食可及，立場須在兩個目的之間取得平衡。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">社區設施覓地難<span class="d">長者日間護理設施和鄰舍中心最難找的是地方，街市位處社區中心、交通方便。</span></div></li><li><div class="it">混合用途帶人流<span class="d">每天前往長者中心或託兒服務的家庭，正是街市最需要的顧客，可為餘下攤檔帶人流。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">①低使用≠無需要<span class="d">空置率反映經營意欲而非顧客依賴，半空街市仍可能是長者唯一步行可達的糧食來源。</span></div></li><li><div class="it">②衰退螺旋<span class="d">零散收回空間令攤檔分散冷清，生意更差、空置更多，最後整個街市名存實亡。</span></div></li><li><div class="it">③多部門無人牽頭<span class="d">改裝要符合消防建築規定，營運撥款屬其他範疇，無部門負責便停在報告階段。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">鄰近地區經驗<span class="d">混合用途帶動人流的思路可借鑑，但各地業權、營運和租務與香港政府直管制度不同。</span></div><ul class="tree l3"><li><div class="sub">借思路不抄設計</div></li></ul></li><li><div class="it">先改善不騰出<span class="d">購買習慣轉變屬結構性，保留無人競投的空置攤位不會多帶來一個顧客。</span></div><ul class="tree l3"><li><div class="sub">結構轉變不可逆</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">①公開分類準則<span class="d">以顧客流量、糧食來源可達性及長者比例，把街市分為保留、集中騰出、整體轉型三類。</span></div></li><li><div class="it">②先安置後改裝<span class="d">攤檔集中至最方便樓層，政府付搬遷費並寬減租金，騰出空間優先作每天帶人流的設施。</span></div></li><li><div class="it">③單一牽頭部門<span class="d">每個項目動工前確定社區設施的營運部門和撥款，並諮詢區議會決定用途。</span></div></li><li><div class="it">先試點後推廣<span class="d">揀兩至三個空置嚴重街市試行兩年，以攤檔營業額、設施使用率和居民滿意度評估。</span></div><ul class="tree l3"><li><div class="sub">以指標定推廣</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 分析利弊 ② 表態 ③ 理據 ④ 條件式：支持 → 確保達致政策目的的建議（反對 → 其他提升街市使用效益的措施）⑤ 隱藏任務：處理「鄰近地區經驗」誘餌。</li>
 <li><strong>本文立場一句話：</strong> 支持，但以「集中而非關閉」為原則——騰出的是空置部分，不是社區的糧食供應。</li>
@@ -308,6 +382,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the proposal to disregard deed of mutual covenant restrictions when licensing guesthouses in buildings of three storeys or less on the outlying islands, and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Proceed with safeguards; licence never overrides the covenant</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Island homestays and DMCs</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Day trips to overnight stays<span class="d">The objective is to turn day trips into overnight stays so visitor spending reaches island households rather than leaving on the last ferry.</span></div></li><li><div class="it">Keep islands liveable<span class="d">The proposal must be judged by whether it achieves that objective while keeping the islands liveable for the people who live there.</span></div></li><li><div class="it">Conflict relocated, not removed<span class="d">Removing the DMC from licensing does not remove the DMC; the conflict moves from the licensing counter to the staircase and the courts.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: legal uncertainty</button><ul class="tree l2"><li><div class="it">Neighbours can still sue<span class="d">Because neighbours can still obtain injunctions, prudent operators will not invest in renovation and fire safety, leaving the least compliant to proceed.</span></div><ul class="tree l3"><li><div class="sub">Prudent operators won&#x27;t invest</div></li></ul></li><li><div class="it">Costly civil litigation<span class="d">Disputes pushed into slow, costly civil litigation disadvantage residents of modest means, and the Government is seen as licensing a breach.</span></div><ul class="tree l3"><li><div class="sub">Modest residents disadvantaged</div></li></ul></li><li><div class="it">Precedent<span class="d">Other sectors may press for similar treatment of covenants elsewhere, eroding confidence in the certainty of property rights.</span></div><ul class="tree l3"><li><div class="sub">Property rights eroded</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: residents and capacity</button><ul class="tree l2"><li><div class="it">Strangers on shared stairs<span class="d">Guesthouses bring strangers into shared buildings at night; complaints fall on agencies with a thin weekend presence, so resentment grows.</span></div><ul class="tree l3"><li><div class="sub">Complaints, thin enforcement</div></li></ul></li><li><div class="it">Visitor lets beat rents<span class="d">If letting to visitors pays more than letting to residents, rents rise and younger households who sustain schools and shops leave.</span></div><ul class="tree l3"><li><div class="sub">Young households leave</div></li></ul></li><li><div class="it">Fire in licensed premises<span class="d">Buildings not designed for transient occupancy carry fire risk; one serious fire in licensed premises would likely force a policy reversal.</span></div><ul class="tree l3"><li><div class="sub">Whole policy reversed</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Notify co-owners, 21 days<span class="d">Applicants notify all co-owners, who have 21 days to make representations; the Authority attaches conditions rather than refusing on the covenant.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Mediation, consent fast-track<span class="d">Guidance states a licence does not override a DMC; written consent earns faster processing, and free mediation precedes any court action.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Conditions tied to renewal<span class="d">Conditions on guest numbers, a 24-hour contact, noise rules and insurance; repeated substantiated complaints lead to suspension or non-renewal.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Two-island pilot, caps<span class="d">Begin on two islands, monitor licensed rooms against ferry and sewerage capacity, and cap the proportion of flats converted in any village.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Guidance within six months<span class="d">Issue licensing guidance and standard conditions within six months, then launch the two-island pilot.</span></div></li><li><div class="it">Track complaints and rents<span class="d">Indicators include licences issued, unlicensed premises regularised, complaints, mediation cases, overnight stays and local rents.</span></div></li><li><div class="it">Review after two years<span class="d">Submit a review after two years, before any extension of the scheme to other islands.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> (a) 恰好兩個問題，每個問題後接獨立的 Implications 段；(b) 可行措施，逐項標明回扣哪個問題。</li>
 <li><strong>兩個問題一句話：</strong> ① 牌照不推翻公契 → 法律不確定，守規經營者不敢投資、業主被迫打官司；② 鄰里與島嶼承載力，含租金上升、年輕家庭遷出這個隱藏後果。</li>
@@ -407,6 +482,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../08-innovation/index.html">← 08 創新科技與新型工業</a><a href="../10-transport/index.html">10 交通運輸與智慧出行 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/09-tourism/index.html">議題庫：旅遊、盛事與文體旅協同</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

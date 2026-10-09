@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/10-transport/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t10">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -162,6 +233,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《2025年道路交通（修訂）（網約車服務）條例草案》已於2025年10月獲立法會通過，大部分條文於2026年8月3日生效。政府正公開邀請平台申請網約車服務牌照，並會於2026年第四季開始向司機和車輛發出許可證；法例為網約車車輛許可證訂定的起步數量上限為一萬個。《行政長官2026年施政報告》提出，運輸署正構建網約車數據管理系統，監察平台合規營運，並會收集數據，「以便日後進行供求動態評估」。</p>
 <p>有意見認為，網約車服務投入運作後，政府應盡快按市場需求提高網約車的數目上限，以提升個人化點對點交通服務。你是否同意？試分析現況，提出你的措施，分析措施的執行挑戰及處理方法，並游說的士業界接受你的方案。</p>
 <p>請用中文作答。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>不急放寬：先訂指標，按缺口增發</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">網約車上限</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">公共交通為本<span class="d">政府一貫以公共交通為本，點對點服務屬輔助，規管目的不是單純增加路面車輛。</span></div></li><li><div class="it">補緊絀時地<span class="d">第一項標準：供應最緊絀的時段和地區能否改善，「市場需求」只回答了這一項的一部分。</span></div></li><li><div class="it">不損道路承載<span class="d">第二項標準：道路承載力和公共交通生態不受損害，新增車輛不應加劇擠塞。</span></div></li><li><div class="it">行業可持續<span class="d">第三項標準是點對點行業能否健康持續，三項合起來才是判斷放寬的依據。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①不足與否未知<span class="d">許可證第四季才發，人車綁定等限制下多少人申請未知，未量度供應便判不足。</span></div></li><li><div class="it">②錯配多於總量<span class="d">叫車難集中於繁忙、惡劣天氣、深夜和偏遠，放寬總數，新增車輛仍擠在市區。</span></div></li><li><div class="it">③數據在平台手<span class="d">需求數據在平台手上，平台有誘因放大需求，以其需求為準等於把發牌交給受規管者。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①基線期訂指標<span class="d">2027年上半年公布分區分時段候車時間等指標，首十二個月為基線期，不調整上限。</span></div></li><li><div class="it">②按缺口增發<span class="d">個別地區時段持續未達標才增發，附新界離島深夜服務條件，車速跌破即暫停增發。</span></div><ul class="tree l3"><li><div class="sub">附條件＋擠塞閘門</div></li></ul></li><li><div class="it">③數據寫入牌照<span class="d">把定期提交數據寫入平台牌照條件，由運輸署掌握數據，扣數據不對稱的癥結。</span></div></li><li><div class="it">的士同步提升<span class="d">鼓勵的士全面接入召車平台，以同一套指標公開評核的士與網約車。</span></div><ul class="tree l3"><li><div class="sub">同一套指標</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">平台操控數據<span class="d">平台可能選擇性提交數據，故訂明欄位頻率、運輸署抽查，以車速和問卷交叉核對。</span></div><ul class="tree l3"><li><div class="sub">抽查交叉核對</div></li></ul></li><li><div class="it">淪為政治角力<span class="d">平台嫌慢、的士嫌快，故事先公布指標門檻、每半年公開評估，決定權歸運輸署。</span></div><ul class="tree l3"><li><div class="sub">規則事先公布</div></li></ul></li><li><div class="it">行政負擔重<span class="d">分區分時段監察加重負擔，故首階段只分數個大區和兩類時段，並以系統自動比對。</span></div><ul class="tree l3"><li><div class="sub">先粗後細</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">重蹈稀缺牌照<span class="d">稀缺牌照確是的士困局根源，但人車綁定杜絕許可證轉手出租，稀缺不會變成炒賣價值。</span></div><ul class="tree l3"><li><div class="sub">人車綁定無炒賣</div></li></ul></li><li><div class="it">上限延續叫車難<span class="d">每多一輛車，擠塞成本由全體道路使用者承擔，市場需求必然高估社會需要。</span></div><ul class="tree l3"><li><div class="sub">擠塞成本全民付</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：的士業界</button><ul class="tree l2"><li><div class="it">怕收入攤薄<span class="d">增發須通過公開指標和擠塞閘門，業界可預見規則，而非面對隨平台游說變動的數字。</span></div><ul class="tree l3"><li><div class="sub">規則公開可預期</div></li></ul></li><li><div class="it">怕厚此薄彼<span class="d">兩者以同一套指標評核，並檢討的士過時限制，例如研究經平台預約時的收費彈性。</span></div><ul class="tree l3"><li><div class="sub">同指標、鬆綁的士</div></li></ul></li><li><div class="it">要話事權<span class="d">的士業界在諮詢小組佔一席並取得匯總數據；的士司機正是最快取得網約車資格的一群。</span></div><ul class="tree l3"><li><div class="sub">諮詢小組一席</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解（五層，按次序作答）</strong>
 1. 表態：是否同意「盡快」＋「按市場需求」提高上限（第一段釘死）
 2. 分析現況
@@ -271,6 +343,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《行政長官2026年施政報告》提出，運輸署已發出九個自動駕駛車輛（自動車）先導牌照，讓超過60輛自動車在多區測試，並會在今年內開始接受自動車營運商就個別項目商業化運作的申請，推動機場「航天走廊」自動駕駛運輸系統成為首個在港商業營運的項目；接駁高鐵西九龍站與機場快線九龍站的自動車預計在2027年第二季啟用。五年規劃亦提出「積極而有序地」加速自動駕駛在香港無人化、規模化發展，盡快達致商業營運。</p>
 <p>有意見認為，政府應進一步加快步伐，讓自動車盡快由指定場景擴展至一般道路的公共交通服務（例如專線小巴及巴士路線），以紓緩公共交通業司機不足的問題。你是否同意？試分析現況，提出你的措施，分析措施的執行挑戰及處理方法，並游說公共交通業的職工團體接受你的方案。</p>
 <p>請用中文作答。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>不急擴展：先建減人制度，分級補位</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">自動車擴展公交</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">商業化≠省人手<span class="d">車上仍需安全員便是一車一人，商業化本身不等於紓緩人手，題目把兩者混為一談。</span></div></li><li><div class="it">安全可控<span class="d">第一項標準是安全風險是否可控，一宗嚴重事故足以令整條技術路線停擺。</span></div></li><li><div class="it">責任保險清楚<span class="d">第二項標準是事故責任與保險是否清楚，否則保險缺乏定價基礎、商業營運卡住。</span></div></li><li><div class="it">一人多車<span class="d">真正能紓緩人手，是一名遙距人員可同時監察多輛車，故以每人監察車數作標準。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①責任未明<span class="d">無人駕駛事故責任在製造商、營運商還是遙距操作員未有完整安排，保險缺定價基礎。</span></div></li><li><div class="it">②安全員未減人<span class="d">測試和初期營運多配備安全員，人手需求不減反增，紓緩人手的效益未現。</span></div></li><li><div class="it">③路況複雜風險高<span class="d">小巴巴士路線要應付頻密上落客、違泊和斜路急彎，與首個項目所在的機場截然不同。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①先立法定責任<span class="d">兩年內修例訂營運商為首要責任人，先行賠償再追討製造商，並訂遙距監察車數上限。</span></div></li><li><div class="it">②補位難招路線<span class="d">第二級路線優先選深夜接駁和新發展區循環線，並資助司機轉型安全員、遙距和調度。</span></div><ul class="tree l3"><li><div class="sub">轉型遙距調度</div></li></ul></li><li><div class="it">③按場景分級<span class="d">分封閉範圍、固定低速接駁、一般道路三級，每升一級須達接管頻率和事故率等指標。</span></div><ul class="tree l3"><li><div class="sub">安全數據作閘門</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">業界嫌慢<span class="d">企業或轉往寬鬆城市，故公布每級準入條件和審批時間，並容許同級內擴大車隊。</span></div><ul class="tree l3"><li><div class="sub">公布審批時間</div></li></ul></li><li><div class="it">立法需時<span class="d">保險業嫌數據不足，故以牌照條件先行過渡，營運商先行賠償，政府與業界共享匿名數據。</span></div><ul class="tree l3"><li><div class="sub">牌照條件過渡</div></li></ul></li><li><div class="it">公眾信任<span class="d">定期公開營運數據，設獨立事故調查，事故後只暫停涉事路線，避免拖垮整個計劃。</span></div><ul class="tree l3"><li><div class="sub">獨立調查只停一線</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">落後內地城市<span class="d">內地先以法規明確責任再擴大營運可借鑑，但香港路窄、人車密度高，速度不可照搬。</span></div><ul class="tree l3"><li><div class="sub">借定責不抄速度</div></li></ul></li><li><div class="it">技術需真實路面<span class="d">技術需要真實路面數據才會成熟，本文的第二級正是在真實道路上累積數據。</span></div><ul class="tree l3"><li><div class="sub">第二級已上路</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：職工團體</button><ul class="tree l2"><li><div class="it">怕失飯碗<span class="d">自動車優先用於招不到司機的路線，要求營運商以自然流失處理人手，不取代在職司機。</span></div><ul class="tree l3"><li><div class="sub">補位、自然流失</div></li></ul></li><li><div class="it">怕被淘汰<span class="d">遙距操作和車隊調度需要熟悉本地路況的人，正是資深司機經驗的延伸，現職者優先受訓。</span></div><ul class="tree l3"><li><div class="sub">優先轉型培訓</div></li></ul></li><li><div class="it">要話事權<span class="d">讓職工代表參與安全指標檢討，由旁觀者變監察者，參與決定技術進入行業的速度和條件。</span></div><ul class="tree l3"><li><div class="sub">參與指標檢討</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解（五層，按次序作答）</strong>
 1. 表態：是否同意「盡快」擴展至「一般道路的公共交通服務」以紓緩司機不足
 2. 分析現況
@@ -380,6 +453,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《行政長官2026年施政報告》提出，粵港兩地政府會穩步擴展「粵車南下」至廣東省所有城市。計劃於2025年底實施，現時（2026年10月）已覆蓋大灣區內地九個城市：入境市區部分每日預約名額為200個，每車留港最多三天，內地長假期曾出現超額預約；港珠澳大橋香港口岸停車場亦提供泊車後轉乘本地公共交通的服務。兩地政府目標在2027年第一季或之前把計劃推廣至全省21個城市。</p>
 <p>有意見認為，政府應趁計劃擴展至全省，大幅增加入境市區的每日名額，以吸引更多內地自駕旅客來港消費。請分析上述建議有何利弊，表明你支持抑或反對有關建議，並就你的立場提出理據。如果是支持的話，請提出建議，確保方案可有效達致其政策目的；如果是反對的話，請提出其他吸引內地自駕旅客來港消費的措施。</p>
 <p>請用中文作答。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持增加，反對劃一：按日分層</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">粵車南下名額</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">雙向便利<span class="d">計劃與「港車北上」對應，令兩地自駕往來成為真正的雙向便利。</span></div></li><li><div class="it">高消費客群<span class="d">第二個目的是吸引消費力較高的家庭和小團體旅客來港消費。</span></div></li><li><div class="it">看分布非總量<span class="d">標準是每增一個名額帶來多少消費、在何時何地產生多少負擔，關鍵在分布非總量。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">需求真實<span class="d">內地長假期曾超額預約，自駕旅客多為家庭、傾向過夜，消費集中於住宿、餐飲和購物。</span></div></li><li><div class="it">雙向對等<span class="d">港車北上已廣泛使用，南下名額長期偏緊則兩地互惠欠對等，亦未發揮大橋效益。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">①長假期需求集中<span class="d">名額在長假期最緊，正是景點商場和過海通道最擠之時，劃一增加令新車流落在最擠處。</span></div></li><li><div class="it">②駕駛規則不同<span class="d">內地左軚車靠右行駛，香港靠左、路窄彎多，短期來港者未必熟悉巴士站和黃線規則。</span></div></li><li><div class="it">③跨境執法難<span class="d">違例罰款難向已離境車主追討，本地駕駛者覺不公平，居民觀感轉差反拖慢擴展。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">理據＋駁論</button><ul class="tree l2"><li><div class="it">名額是管理工具<span class="d">消費發生在商場酒店景點，旅客毋須把車開進核心區，名額應用來引導車流而非追求數量。</span></div></li><li><div class="it">分層效率更高<span class="d">把有限道路容量優先分給有確定落腳點的行程，每個名額轉化為消費的比率更高。</span></div></li><li><div class="it">穩步累積支持<span class="d">施政報告定下「穩步擴展」方針，逐步加碼讓政府以數據回應居民疑慮，擴展走得更遠。</span></div></li><li><div class="it">分層太複雜<span class="d">現行已按指定日子預約，分層只改每天名額、不增步驟；長假期擠塞才最損吸引力。</span></div><ul class="tree l3"><li><div class="sub">不增申請步驟</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">①按日子分層<span class="d">平日名額大幅提高，長假期審慎，額外名額只發給已預約酒店或商場泊位的旅客。</span></div></li><li><div class="it">①泊車轉乘<span class="d">擴大口岸停車場轉乘容量，配合景點公共交通套票和鐵路站停車場轉乘優惠。</span></div></li><li><div class="it">②③查驗＋欠罰停約<span class="d">查驗中心加入本地交通規則簡介和網上測驗；違例資料互通，欠罰款不能再預約。</span></div></li><li><div class="it">每季公布數據<span class="d">運輸署聯同業界每季公布名額使用率、熱點車速和違例率，作下一輪加名額依據。</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解（樣本版，按次序作答）</strong>
 1. 分析利弊
 2. 表明支持抑或反對
@@ -485,6 +559,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the introduction of the medium-capacity smart green transit system in Westbank and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Mode is defensible; risks are interchange and procurement</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Westbank transit line</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Whole journey, not line<span class="d">The test is a reliable journey to jobs and services from the outset, judged by the whole journey, not the line alone.</span></div></li><li><div class="it">Avoid car dependence<span class="d">The NDA should grow as a public-transport-oriented community rather than a car-dependent one, at a cost the City can sustain.</span></div></li><li><div class="it">Medium capacity is defensible<span class="d">Measured against the journey test, medium capacity over heavy rail is defensible; the risks lie at the interchange and in procurement.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: Northgate bottleneck</button><ul class="tree l2"><li><div class="it">Northgate already 95% full<span class="d">Northgate platforms run at 95 per cent in the peak with no extra trains before 2033, so crowding also burdens passengers from other districts.</span></div><ul class="tree l3"><li><div class="sub">Crowding hits others too</div></li></ul></li><li><div class="it">Slow first months<span class="d">Habits form in the first months after moving; slow, uncertain journeys push early residents to buy cars, locking in car dependence.</span></div><ul class="tree l3"><li><div class="sub">Car habits lock in</div></li></ul></li><li><div class="it">&#x27;Second-class tram&#x27; validated<span class="d">The &#x27;second-class tram&#x27; campaign would be validated by experience, raising pressure for heavy rail and the risk of paying for both systems.</span></div><ul class="tree l3"><li><div class="sub">Pay for both systems</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: first-of-its-kind delivery</button><ul class="tree l2"><li><div class="it">Rules written mid-tender<span class="d">The City is writing an approval regime while the tender is live; slippage beyond 2031 widens the service gap after residents arrive in 2028.</span></div><ul class="tree l3"><li><div class="sub">Delay beyond 2031</div></li></ul></li><li><div class="it">Only two bidders<span class="d">With only two bidders competitive tension is weak, and later design changes will be priced without it.</span></div><ul class="tree l3"><li><div class="sub">Weak price competition</div></li></ul></li><li><div class="it">Proprietary technology<span class="d">The chosen system defines interfaces, spare parts and software for decades, constraining every later extension and upgrade.</span></div><ul class="tree l3"><li><div class="sub">Decades of lock-in</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Northgate inside project scope<span class="d">Scope and fund extra platform access, concourse capacity and crowd management at Northgate, plus a peak express bus bypassing it.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Through-fares, buses from 2028<span class="d">Through-ticketing with an interchange discount from opening; buses use the reserved lanes from 2028 so residents start with public transport.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Protected upgrade path<span class="d">Protect the alignment for higher capacity with published loading triggers, answering residents through a transparent mechanism rather than a promise.</span></div><ul class="tree l3"><li><div class="sub">→P1, P2</div></li></ul></li><li><div class="it">Rules first, open interfaces<span class="d">Designate the regulator and adopt an international standard before award; use performance specifications and open interfaces, separating civil works from systems.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Framework within six months<span class="d">Finalise the approval framework and Northgate works scope within six months, then award the systems contract.</span></div></li><li><div class="it">Keep 2031 target<span class="d">Bus services on the reserved lanes start with the first intake, while Phase 1 keeps its 2031 opening target.</span></div></li><li><div class="it">Five indicators, quarterly<span class="d">Report quarterly on Northgate occupancy, door-to-door time, public transport share, availability, and cost and schedule variance.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解</strong>
 1. 文體：internal discussion paper（PURPOSE → BACKGROUND → PROBLEM 1 → Implications → PROBLEM 2 → Implications → RECOMMENDATIONS → IMPLEMENTATION AND MONITORING → ADVICE SOUGHT）
 2. (a) 兩個問題，數目不多不少；每個問題後面獨立一段 Implications
@@ -633,6 +708,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../09-tourism/index.html">← 09 旅遊、盛事與文體旅協同</a><a href="../11-environment/index.html">11 環境、氣候與城市韌性 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/10-transport/index.html">議題庫：交通運輸與智慧出行</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

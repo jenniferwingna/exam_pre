@@ -1,0 +1,566 @@
+{
+  "topic": "02",
+  "title": "醫療衞生與基層醫療",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "收費改革下一步",
+      "stance": "同意方向；下一步由調整收費轉向建好承接",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "平均→按需要",
+              "c": [],
+              "d": "收費改革實質把公帑資助由人人平均改為按需要分配，成效要用三項標準檢驗。"
+            },
+            {
+              "t": "標準：保障貧急重危",
+              "c": [],
+              "d": "第一項：最貧困和最危重的人是否得到更好保障，首階段已經達到。"
+            },
+            {
+              "t": "標準：社區有去處",
+              "c": [],
+              "d": "第二項：被引離醫院的非緊急病人，在社區有沒有負擔得起的去處，尚未達到。"
+            },
+            {
+              "t": "標準：不延誤求醫",
+              "c": [],
+              "d": "第三項：剛好不符合減免資格的人會否因收費延誤求醫，尚未達到。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "成效在保障面",
+              "c": [],
+              "d": "全額減免由少於一萬四千增至逾二十五萬，屬重新分配而非削減資助。"
+            },
+            {
+              "t": "①申請制",
+              "c": [],
+              "d": "減免須由病人申請，而最需要幫助的獨居長者往往最不熟悉申請程序。"
+            },
+            {
+              "t": "②懸崖效應",
+              "c": [],
+              "d": "減免以門檻劃界，收入剛高於門檻的夾心層要全額付費，最可能因價錢卻步。"
+            },
+            {
+              "t": "③推力無拉力",
+              "c": [],
+              "d": "非緊急病人被推離急症室，但夜間假期門診有限、私家收費不透明，可能只是延後求診。"
+            }
+          ],
+          "d": "用機制診斷，癥結編號與措施對應"
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①主動識別",
+              "c": [],
+              "d": "與社署核對已通過經濟審查的福利受助人資料，自動給予減免，對應申請制。"
+            },
+            {
+              "t": "②增設半免一級",
+              "c": [],
+              "d": "在全免之上增設半免一級，緩和收入剛過門檻者的懸崖效應。"
+            },
+            {
+              "t": "③轉介優惠＋夜診資訊",
+              "c": [],
+              "d": "持家庭醫生轉介的專科新症收費較低；恆常化夜間假期門診資訊平台，補上拉力。"
+            },
+            {
+              "t": "按年公布指標",
+              "c": [],
+              "d": "加入非緊急病人重返率、夾心層求診變化等指標，由醫管局每年公布。"
+            }
+          ],
+          "d": "逐項回扣癥結，附指標或試行"
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "私隱授權",
+              "c": [
+                "修例＋可退出"
+              ],
+              "d": "核對入息惹被查憂慮；先修例和私隱影響評估，可退出，首年只限福利受助人。"
+            },
+            {
+              "t": "財政質疑",
+              "c": [
+                "試行兩年對照"
+              ],
+              "d": "減免和優惠減少收入；指定專科試行兩年，以省下成本對照，超預算即調整。"
+            },
+            {
+              "t": "基層承接不足",
+              "c": [
+                "先承接後引導"
+              ],
+              "d": "找不到家庭醫生時優惠變相懲罰；康健中心覆蓋達標才推差別收費。"
+            }
+          ],
+          "d": "批評自己的措施，逐項配處理"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "變相加價",
+              "c": [
+                "輪候是隱性收費"
+              ],
+              "d": "舊制下非緊急與危重病人同樣排隊，輪候本身是隱性收費，由最沒有選擇的人支付。"
+            },
+            {
+              "t": "修補界線與配套",
+              "c": [],
+              "d": "全額減免人數已增至十多倍，受惠最多是低收入和重病者；問題在界線與配套而非方向。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "游說：病人組織",
+          "items": [
+            {
+              "t": "長期病開支",
+              "c": [
+                "萬元上限不變"
+              ],
+              "d": "主動識別和半免一級針對低收入長期病患者，一萬元全年上限維持不變。"
+            },
+            {
+              "t": "新藥資助",
+              "c": [
+                "每年公布新藥"
+              ],
+              "d": "改革與新藥資助掛鈎，醫管局每年公布新納入藥物名冊和撒瑪利亞基金的藥械。"
+            },
+            {
+              "t": "發言權",
+              "c": [
+                "加入檢討小組"
+              ],
+              "d": "邀請病人組織加入成效檢討小組，數據每年公開，夾心層延誤求醫即啟動檢討。"
+            }
+          ],
+          "d": "抓對方在意的事，給理由和讓步"
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "專科輪候減半",
+      "stance": "不同意：分流必要非關鍵；關鍵是轉介鏈閉合",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "新症指標≠舊症分流",
+              "c": [],
+              "d": "減半目標量度新症等多久，分流處理舊症由誰跟進，兩者並無自動因果關係。"
+            },
+            {
+              "t": "標準：新症真縮短",
+              "c": [],
+              "d": "評估標準不是分流了多少人，而是騰出的名額有否真正令新症輪候縮短。"
+            },
+            {
+              "t": "標準：質素不降",
+              "c": [],
+              "d": "同時要確保被分流病人的照顧質素沒有下降，基層能接得住。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①容量被覆診佔用",
+              "c": [],
+              "d": "穩定長期病患者定期回專科覆診取藥，專科時間多用於維持而非診斷。"
+            },
+            {
+              "t": "②入口無把關",
+              "c": [],
+              "d": "轉介資料參差，可由家庭醫生處理的個案進入專科輪候，新症名單持續膨脹。"
+            },
+            {
+              "t": "③出口無信任",
+              "c": [],
+              "d": "病人怕被降級、怕收費、怕重新排隊，專科亦顧慮社區質素，寧把病人留在手上。"
+            }
+          ],
+          "d": "用機制診斷，癥結編號與措施對應"
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "②上游電子轉介",
+              "c": [],
+              "d": "家庭醫生用電子轉介範本附齊檢查，並可先書面徵詢專科意見，社區能處理的毋須入輪候。"
+            },
+            {
+              "t": "③下游快速回流",
+              "c": [],
+              "d": "訂共同照顧協議、醫健通互通病歷；病情轉差可限期內重返原專科。"
+            },
+            {
+              "t": "①鎖定騰出名額",
+              "c": [],
+              "d": "騰出的覆診時段按比例撥作新症，藥物調整類新症交跨專業診所處理。"
+            }
+          ],
+          "d": "逐項回扣癥結，附指標或試行"
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "私家醫生不足",
+              "c": [
+                "按登記人數付費"
+              ],
+              "d": "參與不足則輪候只會轉移；改為按登記病人每年付費並按成效發放。"
+            },
+            {
+              "t": "病人怕降級",
+              "c": [
+                "書面回流保證"
+              ],
+              "d": "病人視轉回社區為降級；書面列明快速回流，共付額設上限，首年自願。"
+            },
+            {
+              "t": "專科挪用名額",
+              "c": [
+                "寫入服務指標"
+              ],
+              "d": "騰出名額可能被挪作他用；把新症名額比例寫入聯網年度服務指標，按月監察並公布。"
+            }
+          ],
+          "d": "批評自己的措施，逐項配處理"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "增聘醫生才根本",
+              "c": [
+                "人手增長需時"
+              ],
+              "d": "容量不足時分流只是重新排隊，但醫生比由2.25升至2.43需五年。"
+            },
+            {
+              "t": "兩者先後非取捨",
+              "c": [],
+              "d": "在人手到位之前，提高現有專科時間的運用效率，是兩三年內最可行的方法。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "游說：私家家庭醫生",
+          "items": [
+            {
+              "t": "病源回報",
+              "c": [
+                "收入穩定可預計"
+              ],
+              "d": "跟進穩定專科病人是持續可預計的業務，按登記人數付費令收入穩定。"
+            },
+            {
+              "t": "行政負擔",
+              "c": [
+                "電子平台"
+              ],
+              "d": "轉介和病歷經電子平台處理，毋須重複填表，減輕行政負擔。"
+            },
+            {
+              "t": "醫療責任",
+              "c": [
+                "專科後援＋回流"
+              ],
+              "d": "專科提供書面照顧計劃、諮詢渠道和快速回流，臨床風險不由家庭醫生獨自承擔。"
+            },
+            {
+              "t": "讓步",
+              "c": [
+                "試行期可退出"
+              ],
+              "d": "首兩年試行可隨時退出，付費每年與醫生組織共同檢討；把家庭醫生放回守門人位置。"
+            }
+          ],
+          "d": "抓對方在意的事，給理由和讓步"
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "社區藥房擴展",
+      "stance": "反對盡快全港推行；先做對，按指標分批",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "便宜 vs 慢病管理",
+              "c": [],
+              "d": "若目的只是便宜，擴展愈快愈好；若是支援基層慢病管理，就必須先把模式做對。"
+            },
+            {
+              "t": "標準：持續正確用藥",
+              "c": [],
+              "d": "計劃列於強化基層醫療之下，標準是長期病患者能否在社區持續而正確地用藥。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "公平：住址決定",
+              "c": [],
+              "d": "首階段只有四區，其餘地區同樣需要長期服藥的居民要等，形成住址決定受惠的不公。"
+            },
+            {
+              "t": "規模效益",
+              "c": [],
+              "d": "名冊配合集中採購，參與藥房和使用人數愈多，議價能力愈強，藥房愈易收支平衡。"
+            }
+          ],
+          "d": "公允寫最強的支持理由"
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "①缺擴展依據",
+              "c": [],
+              "d": "首階段數據未齊就全港推行，模式若有缺陷，等於把缺陷複製十八次。"
+            },
+            {
+              "t": "②藥劑人手不均",
+              "c": [],
+              "d": "各區藥房和藥劑師分布不均，倉卒擴展令藥房只能賣藥，淪為廉價藥物派發點。"
+            },
+            {
+              "t": "③醫生配藥未理順",
+              "c": [],
+              "d": "不少私家醫生診症連配藥，若視藥房為競爭者便不願開處方，使用率偏低。"
+            }
+          ],
+          "d": "弊處寫機制，為建議鋪路"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "其他區向隅",
+              "c": [
+                "先做後改難逆轉"
+              ],
+              "d": "承認分批有代價，但藥房簽約、病人習慣後難逆轉，先做後改成本特別高。"
+            },
+            {
+              "t": "先讓最需要者跨區",
+              "c": [],
+              "d": "不讓其餘地區乾等，而是在地區擴展之前，先讓最有需要的人跨區受惠。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "替代措施",
+          "items": [
+            {
+              "t": "先擴對象後擴區",
+              "c": [
+                "→駁論"
+              ],
+              "d": "優先照顧已參與共同治理網絡的慢病者，非試點區病人可憑電子處方跨區取藥或送遞。"
+            },
+            {
+              "t": "先深化名冊",
+              "c": [],
+              "d": "名冊優先納入三高等常見慢性病藥物，按處方數據每半年增補，集中資源在需求最大處。"
+            },
+            {
+              "t": "①②觸發指標分批",
+              "c": [],
+              "d": "訂明藥劑師覆核覆蓋率、持續取藥率等門檻，運作一年後評估，達標即擴展。"
+            },
+            {
+              "t": "③理順醫藥分工",
+              "c": [],
+              "d": "處方權在醫生，藥房配藥、覆核和跟進；採基本服務費加按量付費，令專業服務有回報。"
+            }
+          ],
+          "d": "反對分支：提出完整替代方案"
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "Private healthcare price transparency",
+      "stance": "Problem is design and proportionality, not principle",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Usable prices, not disclosure",
+              "c": [],
+              "d": "The objective is for patients to know roughly what they will pay before treatment, reducing disputes and letting competition work on value."
+            },
+            {
+              "t": "Voluntary code: incomparable data",
+              "c": [],
+              "d": "The voluntary code failed less because providers refused to disclose than because disclosures could not be compared or relied upon."
+            },
+            {
+              "t": "Design, not principle",
+              "c": [],
+              "d": "Almost no stakeholder opposes transparency as such, so the difficulty is design and proportionality, not principle."
+            }
+          ],
+          "d": "Define the objective and reset the success test"
+        },
+        {
+          "label": "Problem 1: incomparable information",
+          "items": [
+            {
+              "t": "Undefined procedures, split fees",
+              "c": [
+                "Cost without purpose"
+              ],
+              "d": "Procedures are described differently, doctors' fees quoted separately and ranges too wide, so price lists add figures but not comparable ones."
+            },
+            {
+              "t": "Unreliable estimates",
+              "c": [
+                "Disputes persist"
+              ],
+              "d": "Unreliable estimates would sustain the very billing disputes the law targets; if complaints do not fall, credibility suffers."
+            },
+            {
+              "t": "No case-mix adjustment",
+              "c": [
+                "Legal challenge"
+              ],
+              "d": "Statistics without case-mix adjustment make providers treating complex patients appear to overcharge, inviting legal challenge."
+            },
+            {
+              "t": "Visible prices",
+              "c": [
+                "Upward convergence"
+              ],
+              "d": "Once prices are visible, cheaper providers may raise fees towards the median, with knock-on effects on insurance premiums."
+            }
+          ],
+          "d": "Diagnose the mechanism; implications to second layer"
+        },
+        {
+          "label": "Problem 2: uniform regime, uneven sector",
+          "items": [
+            {
+              "t": "4,000 single-doctor clinics",
+              "c": [
+                "Costs passed to patients"
+              ],
+              "d": "For some 4,000 mostly single-doctor clinics compliance is a recurrent cost, likely passed to patients or avoided by dropping services."
+            },
+            {
+              "t": "Practitioner opposition",
+              "c": [
+                "Bill delayed or narrowed"
+              ],
+              "d": "Organised opposition from practitioners could delay the Bill or narrow it in ways that weaken its core."
+            },
+            {
+              "t": "Thin enforcement capacity",
+              "c": [
+                "Selective enforcement"
+              ],
+              "d": "The Regulator cannot inspect thousands of clinics, so enforcement becomes selective, and poor clinic returns contaminate statistics."
+            }
+          ],
+          "d": "Diagnose the mechanism; implications to second layer"
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Standard procedure packages",
+              "c": [
+                "→P1"
+              ],
+              "d": "Define standard packages for about 20 high-volume procedures, specifying facility, surgeon, anaesthetist and standard length of stay."
+            },
+            {
+              "t": "All-in estimate, variance rule",
+              "c": [
+                "→P1"
+              ],
+              "d": "Give one written estimate covering doctor and hospital fees; overruns beyond a margin must be explained, targeting surprise, not price."
+            },
+            {
+              "t": "Aggregate statistics first",
+              "c": [
+                "→P1+P2"
+              ],
+              "d": "Publish medians and ranges by procedure and hospital with case-mix notes; review doctor-level publication after two years."
+            },
+            {
+              "t": "Tiered duties, cheaper compliance",
+              "c": [
+                "→P2"
+              ],
+              "d": "Hospitals meet all requirements first; clinics get lighter duties, free templates, a portal, transition time and graduated enforcement."
+            }
+          ],
+          "d": "Each measure tagged to the problem it answers"
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "Packages before commencement",
+              "c": [],
+              "d": "Package definitions should be completed before the legislation takes effect, so published prices are comparable from day one."
+            },
+            {
+              "t": "Hospitals year one, clinics two",
+              "c": [],
+              "d": "Hospitals and day centres comply in year one; clinics and first statistics follow in year two, with a 24-month review."
+            },
+            {
+              "t": "Track price movements",
+              "c": [],
+              "d": "Indicators include written estimates, bills within margin and complaints; price movements detect upward convergence early."
+            }
+          ],
+          "d": "Timeline, indicators and review point"
+        }
+      ]
+    }
+  ]
+}

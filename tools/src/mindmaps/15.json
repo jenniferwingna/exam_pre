@@ -1,0 +1,576 @@
+{
+  "topic": "15",
+  "title": "公務員制度與公共治理改革",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "政府介入大維修",
+      "stance": "同意；只管程序把關，決定權留業主",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "保護業主非懲處",
+              "c": [],
+              "d": "若只為懲處加重罰則已足；最大受害者是缺乏專業的業主，需要簽約前不被操控。"
+            },
+            {
+              "t": "公平程序合理價",
+              "c": [],
+              "d": "成敗標準：業主能否經公平程序、以合理價格聘得合資格顧問和承建商，並確保工程質素。"
+            },
+            {
+              "t": "個案交法院",
+              "c": [],
+              "d": "個別事故的成因和責任交由獨立委員會和法院釐清，本文只討論制度，不越界定責。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "① 一次性買家",
+              "c": [],
+              "d": "大廈數十年才大修一次，委員多屬義務；顧問和承建商卻年年參與，熟知如何上下其手。"
+            },
+            {
+              "t": "② 決策被捕捉",
+              "c": [],
+              "d": "業主大會出席率偏低時，手握大量授權票的少數人便足以左右採購決定。"
+            },
+            {
+              "t": "③ 監管偏事後",
+              "c": [],
+              "d": "多付的款項在簽約一刻已鎖定，不合格工程也不會因事後檢控而變得安全。"
+            },
+            {
+              "t": "關鍵：顧問招標",
+              "c": [],
+              "d": "誰控制標書和評標，誰就控制整項工程，所以關鍵節點是顧問和招標程序。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "① 把關前移顧問",
+              "c": [],
+              "d": "政府由聘用顧問起擬標書、邀標並主持評標；顧問獨立，承建商招標便難操控。"
+            },
+            {
+              "t": "① 名單流動＋隨機",
+              "c": [],
+              "d": "名單每年按表現覆核、違規即暫停，每項工程隨機抽選邀標對象，令圍標集團難預先分配。"
+            },
+            {
+              "t": "② 投票門檻分類",
+              "c": [],
+              "d": "大型維修採購提高門檻並會前核實授權票；緊急維修維持現行要求，以免必要工程拖延。"
+            },
+            {
+              "t": "③ 施工獨立監察",
+              "c": [],
+              "d": "物料由獨立實驗所抽驗，工程款按階段驗收發放，把監察由事後移到施工期間。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "干預產權",
+              "c": [
+                "市場失靈非自主"
+              ],
+              "d": "業主在資訊和組織上結構性弱勢；不介入不是尊重自主，而是任由少數人以全體款項交易。"
+            },
+            {
+              "t": "政府變擔保",
+              "c": [
+                "只管程序"
+              ],
+              "d": "此說點出介入的真正風險；本文介入只管程序，決定權仍在業主大會，並轉為挑戰一處理。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "責任邊界",
+              "c": [
+                "協議寫明職責"
+              ],
+              "d": "業主或視政府為擔保；服務協議寫明政府只負責程序公平，施工質素按合約向承建商追究。"
+            },
+            {
+              "t": "人手不足",
+              "c": [
+                "外判認可機構"
+              ],
+              "d": "舊樓眾多而編制收緊；政府定標準、管名單、保留審核權，標書擬備外判予認可專業機構。"
+            },
+            {
+              "t": "把關者被滲透",
+              "c": [
+                "廉署審視＋輪換"
+              ],
+              "d": "圍標集團或設法入名單；邀廉署做防貪審視，評標人員申報利益並輪換，評標報告公開。"
+            }
+          ]
+        },
+        {
+          "label": "游說",
+          "items": [
+            {
+              "t": "法團：怕被質疑",
+              "c": [
+                "公開程序護身"
+              ],
+              "d": "委員最怕被質疑收受利益或程序出錯負法律責任；有紀錄、可公開的程序是最有力保障。"
+            },
+            {
+              "t": "法團：失決定權",
+              "c": [
+                "業主大會決定"
+              ],
+              "d": "決定權仍在業主大會，法團可選擇是否採用政府的評標意見。"
+            },
+            {
+              "t": "讓步",
+              "c": [
+                "減費試行一年"
+              ],
+              "d": "首批大廈減免服務費，試行一年公布成效數據；政府亦協助核實授權票和籌備業主大會。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "跨部門投訴處理",
+      "stance": "同意；關鍵是牽頭、負責、考核，非熱線",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "解決非回覆",
+              "c": [],
+              "d": "地區治理的目的是令市民訴求得到解決，而不只是得到回覆。"
+            },
+            {
+              "t": "不再重複",
+              "c": [],
+              "d": "衡量成效要看問題有否解決、會否重複出現；只改善轉介速度，問題依然反覆。"
+            },
+            {
+              "t": "市民信反映有用",
+              "c": [],
+              "d": "第三項標準是市民是否相信向政府反映是有用的；信任在一宗宗小事中累積。"
+            }
+          ]
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "轉介快≠辦得成",
+              "c": [],
+              "d": "1823滿意度4.6分反映的是轉介體驗；跨部門個案有提升空間，辦得成未有量度。"
+            },
+            {
+              "t": "① 無人當核心",
+              "c": [],
+              "d": "各部門按法定職權和指標運作，跨部門個案不屬任何部門核心指標，各自處理一小部分。"
+            },
+            {
+              "t": "② 回覆即結案",
+              "c": [],
+              "d": "個案以已回覆而非已解決作結，同一問題在系統中多次完成，在街上卻原封不動。"
+            },
+            {
+              "t": "③ 重複看不見",
+              "c": [],
+              "d": "重複投訴資料散落不同個案，部門只看到單宗，看不到同一地點反覆出現的規律。"
+            }
+          ]
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "① 牽頭部門清單",
+              "c": [],
+              "d": "按常見問題類別預先訂明牽頭部門；清單未涵蓋者由民政事務專員暫任牽頭，回應癥結一。"
+            },
+            {
+              "t": "① 成效入評核",
+              "c": [],
+              "d": "把跨部門個案的解決情況納入監察人員以至部門首長的評核，與賞罰分明方向一致。"
+            },
+            {
+              "t": "② 以解決為指標",
+              "c": [],
+              "d": "須經投訴人確認或實地核實才結案，每季公布重複投訴率和平均解決時間，回應癥結二。"
+            },
+            {
+              "t": "③ AI熱點交地區",
+              "c": [],
+              "d": "數字辦識別的重複問題每月以熱點清單送民政處、區議會和關愛隊，牽頭部門限期根治。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "滿意度已高",
+              "c": [
+                "量的是轉介快"
+              ],
+              "d": "反方以滿意度已高為由；但滿意度量度的是轉介體驗，不等於問題已解決。"
+            },
+            {
+              "t": "資源投地區力量",
+              "c": [
+                "接口不暢仍卡住"
+              ],
+              "d": "地區力量收集的訴求仍要部門處理；接口不暢，關愛隊只成另一轉介站，兩者並非取捨。"
+            }
+          ]
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "牽頭無法定權",
+              "c": [
+                "上報數字高層看"
+              ],
+              "d": "牽頭部門不能代行他部門權力；上報個案數目和原因向領導委員會匯報，讓不配合被看見。"
+            },
+            {
+              "t": "指標被扭曲",
+              "c": [
+                "反向指標＋回訪"
+              ],
+              "d": "部門或收窄定義、拆細個案或勸撤回；以重複投訴率作反向指標，1823隨機回訪核實。"
+            },
+            {
+              "t": "工作量增",
+              "c": [
+                "AI分流＋先三類"
+              ],
+              "d": "由AI分流歸類，首年只處理三至五類常見問題；長遠根治重複問題正是減輕工作量。"
+            }
+          ]
+        },
+        {
+          "label": "游說",
+          "items": [
+            {
+              "t": "首長：怕越權責任",
+              "c": [
+                "清單劃清界線"
+              ],
+              "d": "牽頭清單其實為部門寫明誰負責什麼，部門毋須再為模糊個案被無限追究。"
+            },
+            {
+              "t": "首長：怕人手不足",
+              "c": [
+                "根治省重複工"
+              ],
+              "d": "重複投訴是最大的無效工作量，根治一個熱點便省下大量人力；並為牽頭部門調配資源。"
+            },
+            {
+              "t": "首長：怕被比較",
+              "c": [
+                "首年只內部比"
+              ],
+              "d": "公開數據同樣可證明表現；讓步是邀部門參與訂指標，首年只作內部比較、次年才公開。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "公務員評核賞罰分明",
+      "stance": "支持；賞罰對稱，評成果和擔當",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "激勵：承擔",
+              "c": [],
+              "d": "評核第一項功能是激勵，讓表現出色的人得到認可，看的是有否勇於承擔。"
+            },
+            {
+              "t": "問責：盡責",
+              "c": [],
+              "d": "第二項功能是問責，讓表現欠佳者得到處理，看的是有否盡責。"
+            },
+            {
+              "t": "晉升：潛質",
+              "c": [],
+              "d": "第三項功能是作晉升和調配依據，看的是潛質；三項功能標準各不相同。"
+            },
+            {
+              "t": "最難是激勵",
+              "c": [],
+              "d": "只拉開等級最易做到的是問責，最難做到卻最重要的是激勵，所以賞罰必須對稱。"
+            }
+          ]
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "區分即公平",
+              "c": [],
+              "d": "表現出色與平平者得相若評價，對前者不公平，也削弱努力誘因。"
+            },
+            {
+              "t": "嚴控編制需人崗配",
+              "c": [],
+              "d": "人手不增而要提升執行力，晉升和重要崗位須落在最能勝任者身上，可信評核是基礎。"
+            },
+            {
+              "t": "問責文化",
+              "c": [],
+              "d": "市民的信任部分來自做得好有獎、做得差有罰的觀感，有助建立問責文化。"
+            }
+          ]
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "① 主觀性",
+              "c": [],
+              "d": "公務員工作難量化、成果數年才見；若依賴上司印象，區分愈細，偏見影響愈大。"
+            },
+            {
+              "t": "② 損害協作",
+              "c": [],
+              "d": "以同事比較為主，合作者變競爭者；而牽頭部門機制等治理改革最需要跨部門協作。"
+            },
+            {
+              "t": "③ 不做不錯",
+              "c": [],
+              "d": "首長責任制和兩級調查已加強追究失誤，評核若也只重懲處，人員便迴避有風險的工作。"
+            }
+          ]
+        },
+        {
+          "label": "理據",
+          "items": [
+            {
+              "t": "風險源於設計",
+              "c": [],
+              "d": "風險源於設計而非區分本身：主觀靠程序約束，協作寫進評核，不做不錯靠嘉獎擔當抵消。"
+            },
+            {
+              "t": "現狀亦有代價",
+              "c": [],
+              "d": "維持現狀並非沒有代價，不區分本身也是一種不公平，受損的是默默做事的人。"
+            }
+          ]
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "不細分保士氣",
+              "c": [
+                "不區分亦不公"
+              ],
+              "d": "這種不公平不會引起投訴，因而更難察覺；長此下去，最先放棄努力的正是最有能力的人。"
+            },
+            {
+              "t": "難以量化",
+              "c": [
+                "可靠程序約束"
+              ],
+              "d": "工作難量化帶來的主觀性，可以靠校準、事例和覆核等程序約束，而非放棄區分。"
+            }
+          ]
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "① 校準＋加簽覆核",
+              "c": [],
+              "d": "同職系評核人員定期校準評分尺度，每個評級附具體事例並由加簽人員覆核，回應主觀性。"
+            },
+            {
+              "t": "② 協作入指標",
+              "c": [],
+              "d": "把協作寫成行為指標，例如主動處理跨部門難題，與工作成果並列計分，回應弊二。"
+            },
+            {
+              "t": "③ 擔當指標＋容錯",
+              "c": [],
+              "d": "按五年規劃嘉獎勇於擔當；訂容錯指引，善意合理嘗試不等同失職，評核與紀律分開。"
+            },
+            {
+              "t": "兩周期檢討",
+              "c": [
+                "預先公布指標"
+              ],
+              "d": "事先公布評級分佈、申訴、流失和員工調查等檢討指標，並邀職方代表參與。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "Scaling tender assistance",
+      "stance": "Sound model; fix capacity and gatekeeper role first",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "One-off owners, repeat contractors",
+              "c": [],
+              "d": "Owners commission major repairs once in a generation while consultants and contractors tender every year; the Service corrects that imbalance."
+            },
+            {
+              "t": "Neutral party; owners decide",
+              "c": [],
+              "d": "A neutral party handles tender drafting and evaluation, where the imbalance is exploited, while the decision and contract stay with owners."
+            },
+            {
+              "t": "Can it scale 200-fold?",
+              "c": [],
+              "d": "The pilot works where applied; the question is whether it can be extended over two-hundredfold in three years without losing its qualities."
+            }
+          ]
+        },
+        {
+          "label": "Problem 1: Cannot scale",
+          "items": [
+            {
+              "t": "12 staff, nine months",
+              "c": [
+                "Repair queues worsen safety"
+              ],
+              "d": "Each tender is handled individually over most of a year, so buildings under repair orders would queue while their condition deteriorates."
+            },
+            {
+              "t": "40 a year: two centuries",
+              "c": [
+                "Enforcement dilemma"
+              ],
+              "d": "At the pilot's rate coverage would take over two centuries, and owners cannot credibly be prosecuted while waiting for the Service."
+            },
+            {
+              "t": "Staff hard to recruit",
+              "c": [
+                "Rings move to weakest"
+              ],
+              "d": "The same professionals are sought by the private market; owners who cannot wait return to private routes where rings concentrate."
+            }
+          ]
+        },
+        {
+          "label": "Problem 2: Gatekeeper risk",
+          "items": [
+            {
+              "t": "Seen as quality guarantee",
+              "c": [
+                "Contingent liability; lax owners"
+              ],
+              "d": "Seven in ten owners think the Ministry answers for quality, creating liability on contracts it never signed and relaxing owners' supervision."
+            },
+            {
+              "t": "Vetted list a target",
+              "c": [
+                "One scandal discredits Service"
+              ],
+              "d": "Two listed firms are under investigation; rings shut out of private tenders have every incentive to get inside the list."
+            },
+            {
+              "t": "Closed list favours big firms",
+              "c": [
+                "Fewer bids, gains erode"
+              ],
+              "d": "A small closed list is easier to collude within, and excluding smaller firms shrinks bidders and erodes the pilot's price gains."
+            }
+          ]
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Tier service by risk",
+              "c": [
+                "→P1"
+              ],
+              "d": "Reserve the full service for buildings under repair orders, without functioning associations or with complaints; others get standard documents and checks."
+            },
+            {
+              "t": "Benchmarks; accredit, not employ",
+              "c": [
+                "→P1"
+              ],
+              "d": "Publish price benchmarks needing no staff, and accredit professional firms to deliver tenders, turning the Ministry from producer into regulator."
+            },
+            {
+              "t": "Written role statement",
+              "c": [
+                "→P2"
+              ],
+              "d": "Service agreements state the Ministry answers for process fairness only, while works responsibility rests with owners and contractors, briefed before voting."
+            },
+            {
+              "t": "Open list; guard gatekeeper",
+              "c": [
+                "→P2"
+              ],
+              "d": "Publish admission criteria with a small-firm tier, re-vet annually, draw invitations at random, and have the Anti-Corruption Commission review procedures."
+            }
+          ]
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "6 months: role, benchmarks",
+              "c": [],
+              "d": "Within six months publish the role statement and price benchmarks, and re-vet the existing vetted list."
+            },
+            {
+              "t": "18 months: accreditation, tiers",
+              "c": [],
+              "d": "Within eighteen months accredit the first professional firms and introduce the tiered service for different building risk levels."
+            },
+            {
+              "t": "Then extend by risk",
+              "c": [],
+              "d": "Thereafter extend coverage according to risk tier rather than by building age alone, as the Minister's plan currently proposes."
+            },
+            {
+              "t": "Four indicators, half-yearly",
+              "c": [],
+              "d": "Report half-yearly on valid bids, prices against benchmarks, time to contract award and warranty defects, plus an annual owners' survey."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

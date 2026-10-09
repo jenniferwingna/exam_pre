@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/08-innovation/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t08">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>新型工業化：應否「把製造帶回香港」</h2><span class="wc">範文 1,484 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《香港第一個五年規劃》把「製造及新型工業產業增加價值佔本地生產總值比重」列為主要指標，力爭由2024年的3.8%於2030年後提升至5.5%。有意見認為，香港應大力推動新型工業化，把「製造」帶回香港。你是否同意？試分析香港發展新型工業化的現況（包括有利條件與限制），提出你的政策建議，分析這些建議的執行挑戰及處理方法，並游說立法會支持推動新型工業化的相關撥款。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意，但非帶回製造：中試留港、量產分工</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">新型工業化</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">恢復廠房？<span class="d">若目的是恢復製造業比重，標準便是廠房數目，會驅使政府以補貼追逐廠房。</span></div></li><li><div class="it">成果變本地產業<span class="d">若目的是把科研成果變成留港的產業、職位和稅基，標準是能否在本地走完樣品到首產。</span></div></li><li><div class="it">守住中游<span class="d">後者要求守住最易流失的中游：中試、首產和國際認證留港，量產則與大灣區分工。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">有利條件已具<span class="d">五所大學躋身全球百強，逾一百三十條智能生產線提早達標，新田科技城將提供中試空間。</span></div></li><li><div class="it">①地電成本高<span class="d">土地和電力成本高昂，本地技術人才持續短缺，新田要到年底起才陸續產出科研用地。</span></div></li><li><div class="it">②缺中試、工程師<span class="d">缺的不是工廠而是中游：中試線、工藝驗證工程師和第一張訂單；中試外流，量產跟著走。</span></div></li><li><div class="it">③指標缺中期<span class="d">5.5%指標屬「預期性」並以「2030年後」為期，沒有中期指標便難以問責。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">成本高不成立<span class="d">自動化並須國際認證的產品，地和人手只佔成本小部分，成敗在知識產權、認證和融資。</span></div><ul class="tree l3"><li><div class="sub">地人只佔小部分</div></li></ul></li><li><div class="it">灣區鏈更完整<span class="d">五年規劃本是「高校研發—灣區製造—港澳融資—國際市場」，真正問題是製造哪一段。</span></div><ul class="tree l3"><li><div class="sub">問製造哪一段</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">③準則聚焦＋指標<span class="d">以國際認證、高增值、高自動化篩選產品，首要指標是在港完成中試及首產項目數，扣③。</span></div></li><li><div class="it">②共用中試平台<span class="d">以微電子研發院中試線為樣板，企業按使用量付費，在新田首批用地預留中試樓面，扣②。</span></div></li><li><div class="it">①以承諾換土地<span class="d">產業用地以長期租約、低於市值批出，附投資額和本地職位承諾，未達承諾須退還，扣①。</span></div></li><li><div class="it">②培養產線人才<span class="d">資助延伸至工藝、驗證和品質工程，由應用科學大學與企業合辦學徒式課程，扣②。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">用地時間差<span class="d">用地分階段交付，企業兩三年內便決定；先用科學園、創新園過渡，給遷入新田的優先權。</span></div><ul class="tree l3"><li><div class="sub">過渡空間＋優先權</div></li></ul></li><li><div class="it">補貼企業觀感<span class="d">補貼個別企業有觀感和虧損風險；公開準則、獨立評審，按里程碑分期，以整體組合評估。</span></div><ul class="tree l3"><li><div class="sub">里程碑分期</div></li></ul></li><li><div class="it">灣區互相壓價<span class="d">灣區城市互相壓價；透過河套一區兩園，把香港做中試融資、灣區做量產訂為分流原則。</span></div><ul class="tree l3"><li><div class="sub">一區兩園分流</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：立法會</button><ul class="tree l2"><li><div class="it">錢用得其所<span class="d">撥款按里程碑分期，每期附中試項目和本地職位指標，未達標即暫停，議員握實質監察權。</span></div><ul class="tree l3"><li><div class="sub">里程碑、可暫停</div></li></ul></li><li><div class="it">向選民交代<span class="d">政府每年向事務委員會公布本地職位、薪酬和培訓名額，並配合五年規劃中期評估檢討。</span></div><ul class="tree l3"><li><div class="sub">每年公布職位</div></li></ul></li><li><div class="it">機會成本<span class="d">錢投醫療安老受惠更即時，但沒有新產業擴闊稅基，未來民生開支只會更難支撐。</span></div><ul class="tree l3"><li><div class="sub">擴稅基撐民生</div></li></ul></li><li><div class="it">怕一次背書<span class="d">讓步：首期撥款只覆蓋兩至三個重點產業，中期評估達標才擴展，議員毋須一次過背書。</span></div><ul class="tree l3"><li><div class="sub">首期兩三產業</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解（五層＋表態）：</strong> ① 你是否同意（首段表態）② 現況：有利條件＋限制 ③ 政策建議 ④ 執行挑戰＋處理方法（一一對應）⑤ 游說立法會支持撥款。</p>
 <p><strong>本文立場一句話：</strong> 同意推動新型工業化，不同意「把製造帶回」的提法——目標是把中試、首產和國際認證留在香港，量產與大灣區分工。</p>
 <p><strong>段落分配與字數預算（≤1,500）：</strong></p>
@@ -254,6 +326,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>創科產業引導基金：是否「揀選贏家」</h2><span class="wc">範文 1,294 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>政府推出一百億元的「創科產業引導基金」，以母基金形式與市場資金共同投資生命健康科技、人工智能與機械人、半導體與智能設備等策略性產業，並預期市場投入的資金至少為政府出資的三倍。有意見認為，這是以公帑「揀選贏家」，有違香港市場主導的傳統。請分析以引導基金支持創科產業的利弊，表明你是否同意上述意見，並就你的立場提出理據。如果你不同意，請提出確保基金有效運作的管治安排；如果你同意，請提出其他協助創科企業解決早期融資缺口的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>不同意：揀賽道和經理非企業，以管治控風險</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">引導基金揀贏家？</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">補融資斷層<span class="d">早期硬科技研發周期長、失敗率高，私人資本多在企業成熟後才入場，中間形成融資斷層。</span></div></li><li><div class="it">標準：額外性<span class="d">衡量基金的標準是額外性：帶動的是否確屬新增、並投向香港策略產業的私人資金。</span></div></li><li><div class="it">不單看回報<span class="d">基金目的是分擔私人不願獨擔的風險、帶動原本不會出現的投資，所以不單看回報。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">補位非搶位<span class="d">初創由實驗室走到產品化的階段最缺資金，基金專門承擔這一段，屬補位而非搶位。</span></div></li><li><div class="it">撬動三倍資金<span class="d">以少量公帑撬動私人資金，五年規劃預期市場投入至少為政府出資的三倍。</span></div></li><li><div class="it">形成產業集群<span class="d">集中資源發展香港有優勢、國家有需要的產業，形成集群，外溢效益遠高於個別企業回報。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">①方向錯損失集中<span class="d">劃定主題板塊本身就是政府對產業方向的判斷，方向一旦錯誤，損失會集中而非分散。</span></div></li><li><div class="it">②游說俘獲<span class="d">資訊不對稱之下，最懂得游說和爭取資源的企業，未必是最有前景的企業。</span></div></li><li><div class="it">③讓利搭便車<span class="d">為吸引跟投須讓利，安排不當則私人搭便車、虧損由公帑承擔，責任誰屬亦欠清晰。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">揀選贏家<span class="d">母基金形式下投資哪家企業由專業經理決定，政府揀的是規則和經理，而不是企業。</span></div><ul class="tree l3"><li><div class="sub">揀賽道不揀企業</div></li></ul></li><li><div class="it">公帑補貼私人<span class="d">私人投資者以自己的資金同步投入，若項目不值得投資，配對資金根本不會出現。</span></div><ul class="tree l3"><li><div class="sub">私人跟投即檢驗</div></li></ul></li><li><div class="it">經理迎合熱門<span class="d">經理迎合政策熱門屬激勵設計問題：讓利設上限、同輪同價投入、報酬與整體表現掛鈎。</span></div><ul class="tree l3"><li><div class="sub">激勵設計可修</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">①分散投資上限<span class="d">為單一子基金、企業及板塊設投資上限，避免資金追逐一兩個熱門題材，回應弊一。</span></div></li><li><div class="it">②決策分隔迴避<span class="d">獨立專業人士主導投委會，官員只訂投資政策、不參與個別項目，須申報迴避，回應弊二。</span></div></li><li><div class="it">③讓利上限公開<span class="d">訂明子基金私人資金最低比例和政府讓利上限並公開，回應弊三的搭便車問題。</span></div></li><li><div class="it">組合評估與退出<span class="d">以整體組合衡量成敗並每年匯報立法會，連續未達標的子基金不續期，並訂明年期和退出。</span></div><ul class="tree l3"><li><div class="sub">→揀錯不退</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解（樣本版）：</strong> ① 利 ② 弊 ③ 表明是否同意「揀選贏家」說 ④ 理據 ⑤ 條件式任務：不同意→管治安排。<strong>陷阱：</strong> 題目的「意見」是反對基金的，所以「不同意上述意見」＝支持基金；表態句要寫清楚「不同意上述意見」，不要只寫「支持」，免得評卷人對不上號。</p>
 <p><strong>本文立場一句話：</strong> 不同意——政府揀的是賽道和經理，不是企業；真正的風險是揀錯不退、虧損無人負責，應以管治處理。</p>
 <p><strong>段落分配與字數預算（≤1,300）：</strong></p>
@@ -350,6 +423,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>政府作本地創科產品的「首個用家」</h2><span class="wc">範文 1,497 字</span></div>
 <div class="qcard zh"><div class="ql">定稿題目</div><div class="qb"><p>《行政長官2026年施政報告》提出，創新科技及工業局將支持香港科技園公司研究設立「香港創科應用場景促進中心」，配對公私營界別的應用場景需求與三大創科園區企業及五大研發機構的技術方案；醫院管理局亦將籌設醫創融匯辦公室，加快醫療創新技術落地。有意見認為，本地創科企業最缺乏的往往不是資金，而是第一個願意採用其產品的客戶，因此政府應更進一步，以自身作為本地創科產品的「首個用家」。你是否同意？試分析本地創科產品在公營機構應用的現況，提出你的建議措施，分析這些措施的執行挑戰及處理方法，並游說政策局及部門首長支持推行。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意：做首個試用者，非保證買家</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">政府作首個用家</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">產業：可引用案例<span class="d">產業目的是讓本地企業取得首個可公開引用的案例，打破「沒有用戶便沒有案例」的循環。</span></div></li><li><div class="it">服務：改善服務<span class="d">服務目的是讓公營部門以新技術改善服務，與產業目的並不必然一致。</span></div></li><li><div class="it">兩者會衝突<span class="d">本地產品未及現有方案時，前者要求遷就、後者要求拒絕，故應做試用者而非保證買家。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">已用新技術<span class="d">AI效能提升組已落實三十個項目，醫創辦公室將籌設、促進中心在研究，多屬部門自用。</span></div></li><li><div class="it">①越新越難入圍<span class="d">採購以既定規格和往績為入圍條件，新產品天生缺乏往績，形成越新越難入圍。</span></div></li><li><div class="it">②部門風險不對稱<span class="d">部門試用出錯會被追究，成功卻未必獲記一功，面對不對稱風險自然不願試新。</span></div></li><li><div class="it">③試用成果不公開<span class="d">試用成果多不公開，企業即使完成試用，也拿不出可供私人或海外買家參考的評估。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">公共服務非試驗場<span class="d">試用可先在後勤和非關鍵環節進行，與現有方案並行比較，失敗即回復，不必犧牲服務。</span></div><ul class="tree l3"><li><div class="sub">後勤先行、並行</div></li></ul></li><li><div class="it">本地優先不公<span class="d">同意「本地優先」不可取；以公開問題、不限來源的方式採購，本地優勢應來自貼近用家。</span></div><ul class="tree l3"><li><div class="sub">同意；不限來源</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①問題清單代規格<span class="d">部門每年公布待解決問題，以成效要求而非技術規格邀請方案，由促進中心配對，扣①。</span></div></li><li><div class="it">③分段付費＋公開報告<span class="d">合約分概念驗證、小規模試用、擴大採用三段；成功不保證採購，但發公開評估，扣③。</span></div></li><li><div class="it">②中央試用預算<span class="d">試用經費由中央撥出、不佔部門經常開支，技術評估亦由中央團隊承擔，扣②。</span></div></li><li><div class="it">以下一客戶衡量<span class="d">核心指標是獲試用企業其後取得私人或海外客戶的比例，而非採購金額，試行三年檢討。</span></div><ul class="tree l3"><li><div class="sub">→防長期依賴</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">公平廉潔質疑<span class="d">落選企業或質疑程序；事先公布準則，跨部門小組評審並申報利益，結果連同理由公開。</span></div><ul class="tree l3"><li><div class="sub">公開準則與理由</div></li></ul></li><li><div class="it">部門不願試新<span class="d">部門不願試新；中央發容錯指引，按程序而結果未如預期者不追究，成功試用計入績效。</span></div><ul class="tree l3"><li><div class="sub">容錯指引＋績效</div></li></ul></li><li><div class="it">私隱網絡安全<span class="d">醫療和個人資料場景風險高；優先用去識別化數據，沿用AI投標者安全及道德合規申報。</span></div><ul class="tree l3"><li><div class="sub">去識別化數據</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：部門首長</button><ul class="tree l2"><li><div class="it">服務出錯<span class="d">部門可自選範疇，先由後勤環節開始，原有方案並行，隨時可以終止，服務不會出錯。</span></div><ul class="tree l3"><li><div class="sub">後勤先行可終止</div></li></ul></li><li><div class="it">預算<span class="d">試用經費由中央撥出，不佔部門的預算和經常開支，預算不會失控。</span></div><ul class="tree l3"><li><div class="sub">中央撥款</div></li></ul></li><li><div class="it">問責<span class="d">容錯指引列明按程序試用者不會因結果未如預期被追究，成功個案則計入部門績效。</span></div><ul class="tree l3"><li><div class="sub">容錯指引</div></li></ul></li><li><div class="it">人手<span class="d">技術評估由中央專責團隊承擔，不會加重部門前線人手的負擔。</span></div><ul class="tree l3"><li><div class="sub">中央技術評估</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解（五層＋表態）：</strong> ① 你是否同意（首段表態）② 現況：本地創科產品在公營機構的應用 ③ 建議措施 ④ 執行挑戰＋處理方法（一一對應）⑤ 游說政策局及部門首長。<strong>陷阱：</strong> 題目資料中的促進中心只是「研究設立」、醫創融匯辦公室是「將籌設」，現況段不可寫成「已推行」。</p>
 <p><strong>本文立場一句話：</strong> 同意，但政府應做「首個試用者」而非「保證買家」——以公平試用和按成效付費取代「本地優先」，以企業能否取得下一個客戶為成敗標準。</p>
 <p><strong>段落分配與字數預算（≤1,500）：</strong></p>
@@ -460,6 +534,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the introduction of commercial drone delivery over urban areas and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Cargo only, set corridors, after shared traffic picture and liability</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Urban drone delivery trial</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Test sharing urban airspace<span class="d">The trial tests whether routine commercial flights can share dense urban airspace safely and with public consent.</span></div></li><li><div class="it">Build regulator capability<span class="d">It should build the regulatory capability a wider low-altitude economy needs, judged by what the regulator learns.</span></div></li><li><div class="it">Sandbox: change in kind<span class="d">Sandbox flights were over closed sites with one operator; repeated competing flights over non-consenting residents differ in kind.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: built for isolated flights</button><ul class="tree l2"><li><div class="it">No shared traffic picture<span class="d">Each operator sees only its own drones while emergency helicopters fly low, so risk rises with the number of operators.</span></div><ul class="tree l3"><li><div class="sub">Collision, helicopter risk</div></li></ul></li><li><div class="it">Liability undefined<span class="d">The law does not say who pays if a drone injures someone on the ground, so incidents bring prolonged compensation disputes.</span></div><ul class="tree l3"><li><div class="sub">Compensation disputes</div></li></ul></li><li><div class="it">Only two insurers<span class="d">With only two insurers, uncertainty is priced into premiums, favouring the largest applicants so findings would not hold later.</span></div><ul class="tree l3"><li><div class="sub">Near-monopoly trial</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: local costs, dispersed benefits</button><ul class="tree l2"><li><div class="it">Yes, but not here<span class="d">Residents support drone delivery in general but not over their homes, because noise and surveillance are borne locally.</span></div><ul class="tree l3"><li><div class="sub">300+ complaints</div></li></ul></li><li><div class="it">Free routing, shortest path<span class="d">Operators choosing the shortest routes turn every route into a local dispute, pressing councillors to oppose the whole programme.</span></div><ul class="tree l3"><li><div class="sub">Councillors oppose all</div></li></ul></li><li><div class="it">Flights avoid organised districts<span class="d">Flights would shift to districts least able to organise, creating inequity and overstating public acceptance for expansion decisions.</span></div><ul class="tree l3"><li><div class="sub">Inequity, distorted evidence</div></li></ul></li><li><div class="it">Camera imagery<span class="d">Imagery retained or reused beyond navigation would expose operators and the Government to challenge under data protection law.</span></div><ul class="tree l3"><li><div class="sub">Privacy challenge</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Single traffic platform<span class="d">Every operator feeds real-time data into one Ministry platform showing emergency aircraft; otherwise start with fewer operators.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Strict liability; passengers separate<span class="d">Licences make operators strictly liable with minimum insurance; passenger aircraft stay out because a cargo trial cannot supply that safety case.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Designated corridors, hospital link<span class="d">Flights follow published corridors over roads, railways and waterfronts with noise limits, including the hospital link as visible public benefit.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Privacy code, early engagement<span class="d">Cameras serve navigation only, with prompt deletion and audits; consult councillors on corridors and publish complaints by corridor.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Six months&#x27; preparation<span class="d">Complete licence conditions, the privacy code and corridor consultation within six months before flights begin.</span></div></li><li><div class="it">Two corridors, not three districts<span class="d">Run the twelve-month trial in two designated corridors rather than across all three districts.</span></div></li><li><div class="it">Independent panel, preset indicators<span class="d">An independent panel reviews incidents per 10,000 flights, complaints, data breaches and reliability; expansion depends on these.</span></div></li><li><div class="it">Slower beats suspension<span class="d">A slower trial that keeps public trust is preferable to a faster one that ends in suspension.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><p><strong>任務拆解：</strong> (a) 兩個 major problems（數量必須是二）＋ 每個問題各自的 implications；(b) 可行措施，逐項對應 (a) 的兩個問題。文體：internal discussion paper，段落編號、大寫標題、ADVICE SOUGHT 收尾。</p>
 <p><strong>把個案歸併成兩個問題：</strong> 個案給了四項事實——沒有共用的空中交通圖像、法律未定責任且只有兩家保險商、民調「原則支持但不要在我家附近」、三百多宗投訴；另有「營辦商自選航線」和「載人飛行器要求加入」兩個埋伏。前兩項是同一機制（規管框架為單點作業而設）→ Problem 1；後兩項連同自選航線是另一機制（成本集中、效益分散）→ Problem 2；載人要求放在建議中處理。</p>
 <p><strong>本文立場一句話：</strong> 試驗應做，但只做貨運、只走指定航道、先建共用交通圖像和責任安排，載人另行處理。</p>
@@ -614,6 +689,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../07-housing/index.html">← 07 土地、房屋與居住質素</a><a href="../09-tourism/index.html">09 旅遊、盛事與文體旅協同 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/08-innovation/index.html">議題庫：創新科技與新型工業</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

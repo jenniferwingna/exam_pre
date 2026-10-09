@@ -1,0 +1,569 @@
+{
+  "topic": "04",
+  "title": "勞工、就業與人力",
+  "questions": [
+    {
+      "q": 1,
+      "paper": "zh",
+      "center": "外送員工傷立法",
+      "stance": "同意不足；只加令工傷落實的程序保障",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "補安全網不改模式",
+              "c": [],
+              "d": "立法不改平台模式，只為法律上自僱、風險上與僱員無異的外送員補安全網。"
+            },
+            {
+              "t": "標準：補償確定",
+              "c": [],
+              "d": "第一項標準：受傷者能否得到確定而及時的補償。"
+            },
+            {
+              "t": "標準：彈性、不轉嫁",
+              "c": [],
+              "d": "第二三項標準：平台工作的彈性能否保留，新增成本會否轉嫁回外送員身上。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "①身份缺口",
+              "c": [],
+              "d": "工傷補償建基於僱傭關係，平台卻把外送員列為自僱，管理上近似僱主卻毋須承擔責任。"
+            },
+            {
+              "t": "②多平台缺口",
+              "c": [],
+              "d": "外送員同時在多個平台接單，意外若發生在切換平台之間，責任無從界定。"
+            },
+            {
+              "t": "③誘因缺口",
+              "c": [],
+              "d": "按單計酬鼓勵趕時間，意外風險部分由計酬方式製造，醫療開支卻由個人承擔。"
+            },
+            {
+              "t": "癥結：風險成本錯配",
+              "c": [],
+              "d": "風險源於商業設計，成本卻落在最缺乏議價能力的一方，這是立法要處理的癥結。"
+            }
+          ],
+          "d": "用機制診斷，癥結編號與措施對應"
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①法定工傷補償",
+              "c": [],
+              "d": "保障由接單至完成送遞，含取貨路程；不以僱傭關係為前提，回應身份缺口。"
+            },
+            {
+              "t": "②③按單投保平台付",
+              "c": [],
+              "d": "保費按單計由平台承擔，不得扣報酬；責任以受傷時執行的訂單為準。"
+            },
+            {
+              "t": "程序保障防架空",
+              "c": [],
+              "d": "平台須保存接單收入紀錄並限時提交，不得因申索停用帳戶，防止法定權利被架空。"
+            },
+            {
+              "t": "兩年後數據檢討",
+              "c": [],
+              "d": "身份、最低收入和集體談判留後，實施兩年後由勞工處公布傷亡、申索和停用數據再決定。"
+            }
+          ],
+          "d": "逐項回扣癥結，附指標或試行"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "直接改僱員身份",
+              "c": [
+                "曠日持久、損彈性"
+              ],
+              "d": "身份須逐案判斷、平台可改合約規避，曠日持久間傷者得不到補償。"
+            },
+            {
+              "t": "先解決最迫切風險",
+              "c": [],
+              "d": "先解決最迫切的風險，再以檢討條款保留下一步，並非避重就輕。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "數據在平台手",
+              "c": [
+                "未交即推定工傷"
+              ],
+              "d": "外送員舉證處於劣勢；平台未按時交紀錄即推定工作期間受傷，勞工處抽查。"
+            },
+            {
+              "t": "成本轉嫁",
+              "c": [
+                "禁扣報酬＋公布"
+              ],
+              "d": "平台可能調低報酬或加佣金；禁止從報酬扣保費，並要求申報保費成本、公布行業平均。"
+            },
+            {
+              "t": "保險承保能力",
+              "c": [
+                "標準保單、共保"
+              ],
+              "d": "保險公司或定價過高不願承保；立法前與業界及保監局商討標準保單，預留過渡期或共保。"
+            }
+          ],
+          "d": "批評自己的措施，逐項配處理"
+        },
+        {
+          "label": "游說：平台公司",
+          "items": [
+            {
+              "t": "不被定性僱主",
+              "c": [
+                "毋須解決身份"
+              ],
+              "d": "法例只處理工傷及相關程序，毋須先解決身份爭議，平台不會因此被定性為僱主。"
+            },
+            {
+              "t": "成本可預測",
+              "c": [
+                "保費按單計"
+              ],
+              "d": "保費按訂單計算，成本可隨業務量預算，平台毋須面對不確定的負擔。"
+            },
+            {
+              "t": "公平競爭",
+              "c": [
+                "一律投保"
+              ],
+              "d": "所有平台一律投保，已自願提供保障者不會在價格競爭中吃虧，亦減少輿論和訴訟風險。"
+            },
+            {
+              "t": "讓步",
+              "c": [
+                "準備期＋共同設計"
+              ],
+              "d": "給予準備期、邀請參與訂標準保單、兩年後檢討；今天參與總比日後被動合算。"
+            }
+          ],
+          "d": "抓對方在意的事，給理由和讓步"
+        }
+      ]
+    },
+    {
+      "q": 2,
+      "paper": "zh",
+      "center": "收緊輸入勞工與中小企",
+      "stance": "不同意：問題在準則不透明、程序負擔",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "只填補真實短缺",
+              "c": [],
+              "d": "分級審批不是減少輸入，而是確保輸入只填補真實短缺，不取代本地工人。"
+            },
+            {
+              "t": "標準：分辨短缺/待遇",
+              "c": [],
+              "d": "第一項標準：收緊能否分辨真實短缺與待遇問題。"
+            },
+            {
+              "t": "標準：成本誰承擔",
+              "c": [],
+              "d": "第二項標準：收緊帶來的成本是否落在應承擔的一方。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "現況與癥結",
+          "items": [
+            {
+              "t": "兩說可同時成立",
+              "c": [],
+              "d": "本地人流失快、僱主難留人；但有輸入可用，改善待遇的壓力亦隨之減少。"
+            },
+            {
+              "t": "①缺公開分級準則",
+              "c": [],
+              "d": "中位工資只消除價格誘因，消除不了穩定誘因；納入第二級亦無公開準則。"
+            },
+            {
+              "t": "②程序負擔不成比例",
+              "c": [],
+              "d": "延長招聘期和實體招聘會屬固定成本，東主兼任人事的小食肆要讓職位多懸空兩星期。"
+            },
+            {
+              "t": "③長工時難留人",
+              "c": [],
+              "d": "廚房樓面工時長、輪班多、體力要求高，本地人入職後流失快，僱主確實難以留人。"
+            }
+          ],
+          "d": "用機制診斷，癥結編號與措施對應"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "勞動人口遞減",
+              "c": [
+                "應可升可降"
+              ],
+              "d": "勞動人口遞減是最有力的反方，但它支持的結論是分級要可升可降，而非不應分級。"
+            },
+            {
+              "t": "本地足→待遇問題",
+              "c": [],
+              "d": "本地應徵長期不足便不應留在第二級；本地應徵充足而職位懸空，問題便在待遇。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "措施",
+          "items": [
+            {
+              "t": "①公開準則雙向調",
+              "c": [],
+              "d": "按空缺率、應徵錄取、工資走勢和懸空時間定級，每季公布，指標改善即調回第一級。"
+            },
+            {
+              "t": "②合辦招聘會",
+              "c": [],
+              "d": "就業中心為同區食肆合辦招聘會並提供招聘紀錄範本，降低程序負擔而非降低標準。"
+            },
+            {
+              "t": "③半職分段更",
+              "c": [],
+              "d": "餐飲需求集中於繁忙時段，推廣半職及分段更表，配合再就業津貼吸引中高齡和婦女。"
+            }
+          ],
+          "d": "逐項回扣癥結，附指標或試行"
+        },
+        {
+          "label": "挑戰 → 處理",
+          "items": [
+            {
+              "t": "數據時差",
+              "c": [
+                "連續兩季決定"
+              ],
+              "d": "季度數據反映過去；以連續兩季數據決定升降級，避免短期波動頻繁改動。"
+            },
+            {
+              "t": "指標被操控",
+              "c": [
+                "中位工資＋職業分類"
+              ],
+              "d": "僱主或低薪製造無人應徵；本地招聘不低於中位工資，職位對應標準分類。"
+            },
+            {
+              "t": "勞資不信任",
+              "c": [
+                "三方年檢＋公開"
+              ],
+              "d": "工會視調級為讓步、商界游說放寬；勞資政每年共同檢視準則，決定連數據公開。"
+            }
+          ],
+          "d": "批評自己的措施，逐項配處理"
+        },
+        {
+          "label": "游說：餐飲業界",
+          "items": [
+            {
+              "t": "請得到人",
+              "c": [
+                "可調回第一級"
+              ],
+              "d": "本方案不即時放寬，但只要數據證明請不到人，工種便可調回第一級，毋須逐次游說。"
+            },
+            {
+              "t": "規則可預期",
+              "c": [
+                "預告期＋參與檢討"
+              ],
+              "d": "新準則生效前給予預告期，並邀請業界代表參與年度檢討，規則可以預期。"
+            },
+            {
+              "t": "計劃公信",
+              "c": [
+                "透明保住計劃"
+              ],
+              "d": "業界若被視為以輸入取代本地工人，社會支持便流失；透明準則正保住計劃。"
+            }
+          ],
+          "d": "抓對方在意的事，給理由和讓步"
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "paper": "zh",
+      "center": "公帑補貼青年薪酬",
+      "stance": "支持，但須留任掛鈎、核實額外性",
+      "branches": [
+        {
+          "label": "政策目的／評估標準",
+          "items": [
+            {
+              "t": "打破無經驗循環",
+              "c": [],
+              "d": "計劃針對沒有經驗就找不到工作、找不到工作就沒有經驗的循環，而非整體職位不足。"
+            },
+            {
+              "t": "標準：額外性",
+              "c": [],
+              "d": "第一項標準：受資助的職位是否真屬額外，而不是名額填滿多少。"
+            },
+            {
+              "t": "標準：期滿留任",
+              "c": [],
+              "d": "第二項標準：青年在補貼期滿後能否留任或轉往其他工作。"
+            }
+          ],
+          "d": "先拆政策目的，導出評估標準再表態"
+        },
+        {
+          "label": "利",
+          "items": [
+            {
+              "t": "降低試用風險",
+              "c": [],
+              "d": "僱主聘新人最大顧慮是試用風險而非薪金，政府在首六個月承擔部分薪酬正好降低風險。"
+            },
+            {
+              "t": "第一份工作紀錄",
+              "c": [],
+              "d": "第一份正式工作帶來的工作紀錄和推薦，是日後求職最有力的證明，價值遠超六個月收入。"
+            }
+          ],
+          "d": "公允寫最強的支持理由"
+        },
+        {
+          "label": "弊",
+          "items": [
+            {
+              "t": "①無謂損失",
+              "c": [],
+              "d": "補貼最易流向學歷較高、本來就會被聘用的青年，最難入職者反而未必受惠。"
+            },
+            {
+              "t": "②替代效應",
+              "c": [],
+              "d": "僱主可能以受資助青年填補原本會招聘的職位或取代現有員工，計劃卻未見核實方法。"
+            },
+            {
+              "t": "③期滿即止",
+              "c": [],
+              "d": "職位只須六個月、補貼亦正好六個月，沒有留任誘因，僱主可在補貼結束後不再續聘。"
+            }
+          ],
+          "d": "弊處寫機制，為建議鋪路"
+        },
+        {
+          "label": "駁論",
+          "items": [
+            {
+              "t": "理據：弊源於設計",
+              "c": [],
+              "d": "起步失業的代價遠大於補貼；三項弊處都源於設計而非補貼本身，改發放和核實便可收窄。"
+            },
+            {
+              "t": "改投職業培訓",
+              "c": [
+                "培訓買不到經驗"
+              ],
+              "d": "培訓解決不了沒有經驗這一關，較好做法是在受資助職位內加入在職培訓。"
+            }
+          ],
+          "d": "駁最強反方，不打稻草人"
+        },
+        {
+          "label": "建議",
+          "items": [
+            {
+              "t": "③補貼留任掛鈎",
+              "c": [],
+              "d": "總額不變，首四個月按月發放，其餘兩個月待青年留任滿一年才發，回應期滿即止。"
+            },
+            {
+              "t": "②強積金紀錄核實",
+              "c": [],
+              "d": "僱主授權查核強積金紀錄，前後數月裁減同類職位須退還補貼，以抽查為主減中小企負擔。"
+            },
+            {
+              "t": "①預留難就業名額",
+              "c": [],
+              "d": "撥出部分名額予長期待業或學歷較低青年，由就業中心轉介，回應無謂損失。"
+            },
+            {
+              "t": "導師＋技能紀錄",
+              "c": [],
+              "d": "每職位設導師和培訓計劃，期滿發技能紀錄；以期滿後就業率作檢討指標。"
+            }
+          ],
+          "d": "逐項對應弊處，附檢討指標"
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "paper": "en",
+      "center": "Re-employment Allowance review",
+      "stance": "Buys job entry, not sustained employment",
+      "branches": [
+        {
+          "label": "Purpose / reframing",
+          "items": [
+            {
+              "t": "Sustained work, not placements",
+              "c": [],
+              "d": "The objective is to bring people outside the labour market back into sustained employment, partly offsetting a shrinking workforce."
+            },
+            {
+              "t": "Judge by 12-month retention",
+              "c": [],
+              "d": "Success should be judged by how many are still in work a year later and how many would not otherwise have returned."
+            },
+            {
+              "t": "Popularity hides two weaknesses",
+              "c": [],
+              "d": "Placements far exceed the plan, but the headline figure conceals poor retention and allowance paid to people who would have returned anyway."
+            }
+          ],
+          "d": "Define the objective and reset the success test"
+        },
+        {
+          "label": "Problem 1: entry, not retention",
+          "items": [
+            {
+              "t": "Two in five leave",
+              "c": [
+                "Wasted early instalments"
+              ],
+              "d": "Two in five participants leave before the final instalment, so early instalments are wasted on jobs that do not last."
+            },
+            {
+              "t": "Jobs unsuited to returners",
+              "c": [
+                "Returners more discouraged"
+              ],
+              "d": "Long shifts and physical demands suit older workers and carers least; failed returners may be pushed further from work."
+            },
+            {
+              "t": "18-hour threshold",
+              "c": [
+                "Carers excluded"
+              ],
+              "d": "The 18-hour threshold excludes carers who can work only short or irregular hours, though they are key targets."
+            },
+            {
+              "t": "Employer churn",
+              "c": [
+                "Age bias reinforced"
+              ],
+              "d": "Employers absorb repeated recruitment costs and may conclude older workers are not worthwhile, while placement figures overstate success."
+            }
+          ],
+          "d": "Diagnose the mechanism; implications to second layer"
+        },
+        {
+          "label": "Problem 2: open budget, weak targeting",
+          "items": [
+            {
+              "t": "Wide eligibility line",
+              "c": [
+                "Pays ordinary job-movers"
+              ],
+              "d": "A demand-led scheme with an eligibility line of age 40 and three months out captures many ordinary job-movers."
+            },
+            {
+              "t": "Half would return anyway",
+              "c": [
+                "Deadweight drains budget"
+              ],
+              "d": "Half of surveyed participants would have taken the same job anyway, so the budget is drained by deadweight, not success."
+            },
+            {
+              "t": "Across-the-board cuts",
+              "c": [
+                "Hardest-to-help squeezed out"
+              ],
+              "d": "Across-the-board funding cuts would squeeze out the hardest to help, who take longest to find work and reach the queue last."
+            }
+          ],
+          "d": "Diagnose the mechanism; implications to second layer"
+        },
+        {
+          "label": "Recommendations",
+          "items": [
+            {
+              "t": "Add twelve-month instalment",
+              "c": [
+                "→P1"
+              ],
+              "d": "Within the same total, reduce the first instalment and add a fourth at twelve months, rewarding staying rather than entering."
+            },
+            {
+              "t": "Shorter, split-shift jobs",
+              "c": [
+                "→P1"
+              ],
+              "d": "Job centres work with employers' associations in the four main sectors to create shorter and split-shift posts for older workers and carers."
+            },
+            {
+              "t": "Part-time counts for carers",
+              "c": [
+                "→P1"
+              ],
+              "d": "Carers qualify with jobs below 18 hours, paid pro rata, with referral to child-care and elderly day-care services."
+            },
+            {
+              "t": "Target priority groups, cap budget",
+              "c": [
+                "→P2"
+              ],
+              "d": "Limit full eligibility to the long-term unemployed, those 60 or above and returning carers, within a fixed budget with published priorities."
+            }
+          ],
+          "d": "Each measure tagged to the problem it answers"
+        },
+        {
+          "label": "Implementation & monitoring",
+          "items": [
+            {
+              "t": "New rules next financial year",
+              "c": [],
+              "d": "Revised instalments and targeting take effect next financial year, with job redesign piloted in two sectors within six months."
+            },
+            {
+              "t": "Test additionality",
+              "c": [],
+              "d": "Compare participants with similar job-seekers without the allowance, so the Ministry knows what the scheme adds before making it permanent."
+            },
+            {
+              "t": "Cost per retained participant",
+              "c": [],
+              "d": "Track retention at six and twelve months, priority-group share, and cost per participant still in work after twelve months."
+            }
+          ],
+          "d": "Timeline, indicators and review point"
+        }
+      ]
+    }
+  ]
+}

@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/05-population/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t05">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>現金與稅務能否提升生育率</h2><span class="wc">範文 約 1,469 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>政府表示已改變過去不干預政策，轉為鼓勵生育，並於《行政長官2026年施政報告》加推11項「組合拳」措施，包括延續2萬元新生嬰兒獎勵金三年，以及把第二名及其後子女的新生嬰兒獎勵金提高至3萬元、子女免稅額提高至16萬元。有意見認為，現金獎勵和稅務優惠無助提升生育率。你是否同意？請分析香港生育率偏低的原因，就政府的鼓勵生育措施提出優化建議，分析你的建議在執行上的挑戰及處理方法，並游說僱主團體支持你所建議的家庭友善僱傭措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意現金難催生，但不撤回：退為配角</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">現金稅務催生？</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">推高出生數？<span class="d">若目的是短期推高出生數字，尺便是生育率，現金在這把尺下作用確實有限。</span></div></li><li><div class="it">縮窄生育落差<span class="d">若目的是縮窄「想生」與「實際生」的落差，尺便是令家庭卻步的成本有否下降。</span></div></li><li><div class="it">尺：卻步成本降否<span class="d">現金只處理成本的一小部分，故同意難提升生育率，但不撤回，由主角退為配角。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①空間成本<span class="d">居所細小，多一個孩子要先換大單位，生育便被置業或上樓的時間表拖延。</span></div></li><li><div class="it">②時間成本<span class="d">工時長，零至三歲託兒和課後照顧不足，雙職家庭難以再承擔一個孩子。</span></div></li><li><div class="it">③職場代價<span class="d">照顧責任主要由女性承擔，生育即放慢事業；教育競爭又令資源集中於一個孩子。</span></div></li><li><div class="it">一次性對經常性<span class="d">一次性獎勵金對應持續多年的成本，現金效果有限，原因在結構而不在金額。</span></div><ul class="tree l3"><li><div class="sub">原因在結構</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">現金即時減負<span class="d">承認現金能即時減負、第二胎設計精準；但若作主要工具，討論便淪為「應加到多少」。</span></div><ul class="tree l3"><li><div class="sub">淪為加碼競賽</div></li></ul></li><li><div class="it">韓國大灑現金<span class="d">韓國大量投入現金生育率仍極低，教訓是現金不能取代結構改革；但制度不同不可套用。</span></div><ul class="tree l3"><li><div class="sub">借教訓不套數字</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">①現金分期指定用途<span class="d">第二胎起新增獎勵金於零至三歲分期發放，指定用於託兒及醫療，變成最辛苦三年的支援。</span></div></li><li><div class="it">②擴零至三歲託兒<span class="d">擴大受訓社區保姆，在政府大樓及屋邨設幼兒中心，並公開託兒輪候時間，回應時間成本。</span></div></li><li><div class="it">③家庭友善僱傭標準<span class="d">分階段訂「申請彈性工作的權利」，僱主須書面回覆但毋須一律批准，並延長侍產假。</span></div></li><li><div class="it">統籌＋中期指標<span class="d">由司長級官員統籌，公開第二胎比率、託兒使用率和幼兒母親就業率，三年內檢討。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">財政承擔<span class="d">經常開支成效慢；分期支援由獎勵金新增部分轉化，總額可控，並看託兒使用率等指標。</span></div><ul class="tree l3"><li><div class="sub">由新增部分轉化</div></li></ul></li><li><div class="it">中小企抗拒<span class="d">中小企人手緊絀；按規模分階段，申請權容許以營運理由拒絕，政府初期分擔侍產假薪酬。</span></div><ul class="tree l3"><li><div class="sub">分階段＋申請權</div></li></ul></li><li><div class="it">託兒人手不足<span class="d">託兒擴容有上限；先擴社區保姆等輕型模式，提供培訓認證，為幼兒工作人員設晉升階梯。</span></div><ul class="tree l3"><li><div class="sub">社區保姆先行</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：僱主團體</button><ul class="tree l2"><li><div class="it">成本<span class="d">留住一名已受訓員工遠比重新招聘划算，而育兒階段正是員工最易流失的時候。</span></div><ul class="tree l3"><li><div class="sub">留人比招聘划算</div></li></ul></li><li><div class="it">人手<span class="d">勞動人口將逐步減少，彈性安排能吸引因照顧而離職的婦女重投職場。</span></div><ul class="tree l3"><li><div class="sub">吸引婦女回流</div></li></ul></li><li><div class="it">營運彈性<span class="d">申請權容許以營運理由拒絕；勞工法例將檢視，商界及早參與設計更能切合實際。</span></div><ul class="tree l3"><li><div class="sub">申請權非必批權</div></li></ul></li><li><div class="it">怕一刀切<span class="d">讓步：按規模分期、兩年過渡期、初期分擔中小企成本，兩年後公開數據共同檢討。</span></div><ul class="tree l3"><li><div class="sub">分期、過渡、分擔</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態：是否同意「現金和稅務優惠無助提升生育率」；② 分析生育率偏低的原因（即現況）；③ 就政府措施提出優化建議；④ 指出<strong>自己建議</strong>的執行挑戰，每項配處理方法；⑤ 游說僱主團體支持<strong>自己建議</strong>的家庭友善僱傭措施。</li>
 <li><strong>立場一句話：</strong> 同意現金本身難以提升生育率，但不贊成撤回——把它降為配角，重心轉向空間、時間和職場代價三項結構性成本。</li>
@@ -203,6 +275,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>置業支援與生育掛鈎</h2><span class="wc">範文 約 1,293 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《行政長官2026年施政報告》提出把置業支援與生育掛鈎：子女於2026年9月16日或之後在香港出生（父或母須為香港永久性居民）的家庭，若在生育前一年或後兩年內購置住宅物業，可獲減免最多2萬元印花稅（須修訂法例）；由下一期居屋銷售計劃起，有新生嬰兒的白表家庭申請者，最高按揭成數提升至95%。有意見認為，住屋是年輕家庭延遲生育的主要原因，這類措施能對症下藥。請分析把置業支援與生育掛鈎的利弊，表明你支持抑或反對這種做法，並就你的立場提出理據。如果是支持的話，請提出建議，確保措施能有效達致其政策目的；如果是反對的話，請提出其他協助年輕家庭解決住屋需要、以營造生育友善環境的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>有條件支持：補租住缺口、高按揭設保障</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">置業支援掛鈎生育</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">提早置業？<span class="d">若目的是幫助年輕家庭提早置業，成功標準便是置業宗數，這並非生育政策的目的。</span></div></li><li><div class="it">消除空間障礙<span class="d">鼓勵生育應消除「沒有空間就不生」：看想生育的家庭能否及時得到足夠居住空間。</span></div></li><li><div class="it">只照顧部分家庭<span class="d">以此衡量，置業支援只照顧到買得起的家庭，所以本文只是有條件支持。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><ul class="tree l2"><li><div class="it">對準障礙和時點<span class="d">空間不足令人延遲生育，首置與生育年齡重疊；生育前後支援可打破「先買樓後生育」。</span></div></li><li><div class="it">直擊首期、成本低<span class="d">年輕家庭難在首期而非月供，提高按揭成數降入場門檻；2萬元減免對庫房影響有限。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><ul class="tree l2"><li><div class="it">①排除租住家庭<span class="d">最受空間所困的是租住細小單位、未能置業的家庭，「買得起」的門檻正好把他們排除。</span></div></li><li><div class="it">②槓桿撞開支高峰<span class="d">95%按揭幾乎沒有資產緩衝，槓桿最高時正值新生嬰兒令開支上升，影響會否再生一胎。</span></div></li><li><div class="it">③誘因錯位<span class="d">本會置業的家庭只得額外收益，或為配合減免調動生育時間，令出生提前而非增加。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">對無子女不公<span class="d">公屋優先配屋屬零和，一家提前另一家便延後，公平質疑較合理；須分清兩類措施。</span></div><ul class="tree l3"><li><div class="sub">分零和與非零和</div></li></ul></li><li><div class="it">印花稅、按揭成數<span class="d">印花稅減免和按揭成數不奪任何人單位，屬非零和；生育帶來未來的勞動力和稅基。</span></div><ul class="tree l3"><li><div class="sub">非零和，不奪單位</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><ul class="tree l2"><li><div class="it">①補租住缺口<span class="d">新生嬰兒公屋家庭列入調遷優先；私樓租戶提高租金扣稅上限並設年期，回應弊一。</span></div></li><li><div class="it">②育兒期壓力測試<span class="d">審批時以「育兒期」情景評估還款能力，簽約前提供理財輔導，回應弊二的槓桿風險。</span></div></li><li><div class="it">③以空間計成效<span class="d">由房屋局追蹤受惠家庭人均面積及其後生育情況，三年後檢討，回應弊三並扣回政策目的。</span></div></li><li><div class="it">供應配合需求<span class="d">新建公營房屋適度增加適合幼兒家庭的單位，否則需求面支援只令家庭互相競爭。</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 分析利弊；② 表明支持抑或反對；③ 提出理據；④ 條件式任務——本文支持，所以要提出「確保達致政策目的」的建議（若反對，則要另起替代措施）。</li>
 <li><strong>立場一句話：</strong> 有條件支持——方向對、成本可控，但必須補上租住家庭的缺口，並為95%按揭設保障。</li>
@@ -248,6 +321,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>非本地專上學生十萬人</h2><span class="wc">範文 約 1,472 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《香港第一個五年規劃》以「在香港修讀經本地評審全日制專上課程的非本地學生數目」為主要指標之一，目標由2024/25學年約7.98萬人增至2029/30學年10萬人；政府亦推出「城中學舍計劃」，鼓勵市場把現有商廈改裝或重建為學生宿舍。有意見認為，大幅增加非本地專上學生有助香港補充人才、建設國際專上教育樞紐；亦有意見擔心本地學生的資源會因此被攤薄。你是否同意香港應大幅增加非本地專上學生？請分析現況，提出措施確保擴大招收非本地學生的同時本地學生的利益不受損害，分析有關措施在執行上的挑戰及處理方法，並游說本地學生及家長支持你的方案。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意增加，三前提：額外、配套先行、看留港</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">非本地生十萬</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><ul class="tree l2"><li><div class="it">教育樞紐：多元質素<span class="d">若目的是建設國際專上教育樞紐，標準是生源是否多元、教學質素能否保持。</span></div></li><li><div class="it">補人才：看留港<span class="d">若目的是補充人才，標準是畢業生有多少留港工作、投入哪些行業，而非入學人數。</span></div></li><li><div class="it">指標≠目的<span class="d">把收生人數這個指標與樞紐、人才兩個目的分開，立場因而附三個可驗證的前提。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><ul class="tree l2"><li><div class="it">①承載力瓶頸<span class="d">招生可加快，宿舍、教學人手和校園空間卻需時建立；商廈改裝令校園事務變城市事務。</span></div></li><li><div class="it">②看得見的資源<span class="d">本地生感受的是宿位、熱門課程座位和老師時間，一旦競爭，總量增加仍有被攤薄的觀感。</span></div></li><li><div class="it">③指標目的斷層<span class="d">收生由院校掌握，留港取決於就業市場；只追求入學人數，指標達標而人才目的落空。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">駁論</button><ul class="tree l2"><li><div class="it">擠佔本地資源<span class="d">城中學舍以自資私營提供宿位，非本地生亦帶來學費，擴招資源大多非從本地份額撥出。</span></div><ul class="tree l3"><li><div class="sub">自資宿位＋學費</div></li></ul></li><li><div class="it">必然攤薄<span class="d">真正風險是宿位、課堂、導師等共用資源的分配規則不清，應補規則而非否定擴招方向。</span></div><ul class="tree l3"><li><div class="sub">真風險：分配規則</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">措施</button><ul class="tree l2"><li><div class="it">②本地優先非替代<span class="d">按院校和課程每年公布本地學額及非本地生人數，承諾擴招不減本地學額，扣癥結二。</span></div></li><li><div class="it">①宿舍配套先行<span class="d">訂本地生最低宿位年期，新增非本地生由新增宿位承接，訂宿舍安全標準，扣癥結一。</span></div></li><li><div class="it">②學費回饋全體<span class="d">院校把部分非本地學費撥作全體受惠的獎學金、交流和學習支援，在年報列明，扣癥結二。</span></div></li><li><div class="it">③以留港就業衡量<span class="d">追蹤非本地畢業生第三年仍在港工作的比例及行業，對照人才清單調整收生，扣癥結三。</span></div></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><ul class="tree l2"><li><div class="it">院校擴招誘因<span class="d">院校有誘因先擴招後補配套；把宿位、師生比例納入表現評估，未達標須先補足才可再擴。</span></div><ul class="tree l3"><li><div class="sub">配套納表現評估</div></li></ul></li><li><div class="it">改裝宿舍擾民<span class="d">改裝宿舍有消防、管理、噪音問題；審批要求管理計劃，設地區聯絡及投訴渠道並公開巡查</span></div><ul class="tree l3"><li><div class="sub">管理計劃＋聯絡</div></li></ul></li><li><div class="it">數據難改觀感<span class="d">整體數據好看，熱門課程的競爭仍惹不滿；按課程公布數據，並設學生代表參與檢討。</span></div><ul class="tree l3"><li><div class="sub">按課程公布</div></li></ul></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：本地學生及家長</button><ul class="tree l2"><li><div class="it">入學機會<span class="d">以每年公開的數據，而非口頭保證，證明本地資助學額沒有因擴招而減少。</span></div><ul class="tree l3"><li><div class="sub">每年公開數據</div></li></ul></li><li><div class="it">學習質素<span class="d">非本地學費和多元背景支持更多課程、交流和獎學金，本地生不必出境也有國際化課堂。</span></div><ul class="tree l3"><li><div class="sub">學費撐課程交流</div></li></ul></li><li><div class="it">畢業出路<span class="d">勞動人口將減，以人才清單引導非本地畢業生投入短缺行業，補缺口而非爭奪同一批職位。</span></div><ul class="tree l3"><li><div class="sub">補缺口不爭職</div></li></ul></li><li><div class="it">怕受損<span class="d">讓步：最低宿位年期寫入院校承諾；三年後學生代表參與檢討，若本地生受損便放慢收生。</span></div><ul class="tree l3"><li><div class="sub">宿位承諾＋放慢</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態：是否同意大幅增加；② 分析現況；③ 提出措施（單一目標：本地學生利益不受損）；④ 執行挑戰，每項配處理方法；⑤ 游說本地學生及家長。</li>
 <li><strong>立場一句話：</strong> 同意增加，但有三個前提——新增學額屬「額外」而非「替代」、配套先行、以畢業生留港就業而非收生人數衡量成敗。</li>
@@ -303,6 +377,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the implementation of the exemption from proof of company income for founders backed by designated public bodies and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Income proof was evidence; replace it, don&#x27;t just waive it</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Founder renewal exemption</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><ul class="tree l2"><li><div class="it">Retain genuine pre-revenue founders<span class="d">The exemption aims to keep founders whose companies are genuine but too young to earn income.</span></div></li><li><div class="it">Income = evidence, not end<span class="d">The income requirement was never an end in itself; it was evidence of doing what the visa was granted for.</span></div></li><li><div class="it">Verification and incentives<span class="d">So the difficulty is verification and incentives, not generosity: what provides evidence once income is set aside?</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: test removed, not replaced</button><ul class="tree l2"><li><div class="it">Backing goes stale<span class="d">Public backing is granted at entry on a business plan and says little about trading two years later; integrity risk follows.</span></div><ul class="tree l3"><li><div class="sub">Integrity risk</div></li></ul></li><li><div class="it">Nothing left to judge<span class="d">Immigration already lacks start-up expertise; with income waived it has almost nothing to judge, inviting challenges and inconsistency.</span></div><ul class="tree l3"><li><div class="sub">Inconsistent, challengeable decisions</div></li></ul></li><li><div class="it">Abuse cases surface<span class="d">If abuse cases surface, renewal rules may tighten for all holders, leaving genuine founders worse off than before.</span></div><ul class="tree l3"><li><div class="sub">Rules tightened for all</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: conflicting gatekeepers</button><ul class="tree l2"><li><div class="it">Targets reward admissions<span class="d">Bodies measured by admissions now offer backing that also buys residence, so visa-motivated firms crowd out genuine entrepreneurs.</span></div><ul class="tree l3"><li><div class="sub">Places crowded out</div></li></ul></li><li><div class="it">Private backers excluded<span class="d">Founders backed by private investors, perhaps screened more rigorously, are excluded and pushed towards public backing for unrelated reasons.</span></div><ul class="tree l3"><li><div class="sub">Equity distortion</div></li></ul></li><li><div class="it">Only postpones question<span class="d">A founder still earning little will face the same uncertainty at the next renewal unless the City decides that test now.</span></div><ul class="tree l3"><li><div class="sub">Same uncertainty later</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><ul class="tree l2"><li><div class="it">Active-operation test<span class="d">Exempted founders show at least three verifiable indicators: local staff, tax filings, premises, R&amp;D spending, follow-on investment, days present.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">One-off, shorter extension<span class="d">Each founder may use the exemption once, for a shorter extension, after which a milestone-based test applies.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Certify facts; Immigration decides<span class="d">Designated bodies certify facts against published criteria while Immigration decides; their targets reward company survival and local hiring.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Route for private backers<span class="d">Founders backed by accredited private investors apply under the same active-operation test, assessed by an independent panel.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><ul class="tree l2"><li><div class="it">Criteria within three months<span class="d">Publish the active-operation criteria within three months so founders and designated bodies know the test in advance.</span></div></li><li><div class="it">Pilot: Innovation Park only<span class="d">Pilot the exemption with the Innovation Park Corporation alone for twelve months before involving other bodies.</span></div></li><li><div class="it">Extend after 18-month review<span class="d">Decide on extension to the Digital Hub and Start-up Fund only after an 18-month review.</span></div></li><li><div class="it">Track active-at-renewal rate<span class="d">Indicators: exempted companies still active at next renewal, local jobs, audit findings and processing times, reported half-yearly.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> (a) <strong>兩個</strong>問題（不多不少），每個問題後面一段<strong>獨立的 Implications</strong>；(b) 可行措施，逐項標明回扣哪個問題。</li>
 <li><strong>定位一句話：</strong> 政策目的是留住「有實質營運、只是未有收入」的創辦人；收入證明本來只是「真實營運的證據」——所以兩個問題是<strong>驗證</strong>（拿走了證據卻沒有替代）和<strong>誘因</strong>（決定權實際落在誘因相反的機構手上）。</li>
@@ -403,6 +478,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../04-labour/index.html">← 04 勞工、就業與人力</a><a href="../06-welfare/index.html">06 福利、扶貧與社會流動 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/05-population/index.html">議題庫：人口、生育與人才</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>

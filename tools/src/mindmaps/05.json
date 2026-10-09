@@ -1,0 +1,560 @@
+{
+ "topic": "05",
+ "title": "人口、生育與人才",
+ "questions": [
+  {
+   "q": 1,
+   "paper": "zh",
+   "center": "現金稅務催生？",
+   "stance": "同意現金難催生，但不撤回：退為配角",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "推高出生數？",
+       "c": [],
+       "d": "若目的是短期推高出生數字，尺便是生育率，現金在這把尺下作用確實有限。"
+      },
+      {
+       "t": "縮窄生育落差",
+       "c": [],
+       "d": "若目的是縮窄「想生」與「實際生」的落差，尺便是令家庭卻步的成本有否下降。"
+      },
+      {
+       "t": "尺：卻步成本降否",
+       "c": [],
+       "d": "現金只處理成本的一小部分，故同意難提升生育率，但不撤回，由主角退為配角。"
+      }
+     ]
+    },
+    {
+     "label": "現況與癥結",
+     "items": [
+      {
+       "t": "①空間成本",
+       "c": [],
+       "d": "居所細小，多一個孩子要先換大單位，生育便被置業或上樓的時間表拖延。"
+      },
+      {
+       "t": "②時間成本",
+       "c": [],
+       "d": "工時長，零至三歲託兒和課後照顧不足，雙職家庭難以再承擔一個孩子。"
+      },
+      {
+       "t": "③職場代價",
+       "c": [],
+       "d": "照顧責任主要由女性承擔，生育即放慢事業；教育競爭又令資源集中於一個孩子。"
+      },
+      {
+       "t": "一次性對經常性",
+       "c": [
+        "原因在結構"
+       ],
+       "d": "一次性獎勵金對應持續多年的成本，現金效果有限，原因在結構而不在金額。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "現金即時減負",
+       "c": [
+        "淪為加碼競賽"
+       ],
+       "d": "承認現金能即時減負、第二胎設計精準；但若作主要工具，討論便淪為「應加到多少」。"
+      },
+      {
+       "t": "韓國大灑現金",
+       "c": [
+        "借教訓不套數字"
+       ],
+       "d": "韓國大量投入現金生育率仍極低，教訓是現金不能取代結構改革；但制度不同不可套用。"
+      }
+     ]
+    },
+    {
+     "label": "措施",
+     "items": [
+      {
+       "t": "①現金分期指定用途",
+       "c": [],
+       "d": "第二胎起新增獎勵金於零至三歲分期發放，指定用於託兒及醫療，變成最辛苦三年的支援。"
+      },
+      {
+       "t": "②擴零至三歲託兒",
+       "c": [],
+       "d": "擴大受訓社區保姆，在政府大樓及屋邨設幼兒中心，並公開託兒輪候時間，回應時間成本。"
+      },
+      {
+       "t": "③家庭友善僱傭標準",
+       "c": [],
+       "d": "分階段訂「申請彈性工作的權利」，僱主須書面回覆但毋須一律批准，並延長侍產假。"
+      },
+      {
+       "t": "統籌＋中期指標",
+       "c": [],
+       "d": "由司長級官員統籌，公開第二胎比率、託兒使用率和幼兒母親就業率，三年內檢討。"
+      }
+     ]
+    },
+    {
+     "label": "挑戰 → 處理",
+     "items": [
+      {
+       "t": "財政承擔",
+       "c": [
+        "由新增部分轉化"
+       ],
+       "d": "經常開支成效慢；分期支援由獎勵金新增部分轉化，總額可控，並看託兒使用率等指標。"
+      },
+      {
+       "t": "中小企抗拒",
+       "c": [
+        "分階段＋申請權"
+       ],
+       "d": "中小企人手緊絀；按規模分階段，申請權容許以營運理由拒絕，政府初期分擔侍產假薪酬。"
+      },
+      {
+       "t": "託兒人手不足",
+       "c": [
+        "社區保姆先行"
+       ],
+       "d": "託兒擴容有上限；先擴社區保姆等輕型模式，提供培訓認證，為幼兒工作人員設晉升階梯。"
+      }
+     ]
+    },
+    {
+     "label": "游說：僱主團體",
+     "items": [
+      {
+       "t": "成本",
+       "c": [
+        "留人比招聘划算"
+       ],
+       "d": "留住一名已受訓員工遠比重新招聘划算，而育兒階段正是員工最易流失的時候。"
+      },
+      {
+       "t": "人手",
+       "c": [
+        "吸引婦女回流"
+       ],
+       "d": "勞動人口將逐步減少，彈性安排能吸引因照顧而離職的婦女重投職場。"
+      },
+      {
+       "t": "營運彈性",
+       "c": [
+        "申請權非必批權"
+       ],
+       "d": "申請權容許以營運理由拒絕；勞工法例將檢視，商界及早參與設計更能切合實際。"
+      },
+      {
+       "t": "怕一刀切",
+       "c": [
+        "分期、過渡、分擔"
+       ],
+       "d": "讓步：按規模分期、兩年過渡期、初期分擔中小企成本，兩年後公開數據共同檢討。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 2,
+   "paper": "zh",
+   "center": "置業支援掛鈎生育",
+   "stance": "有條件支持：補租住缺口、高按揭設保障",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "提早置業？",
+       "c": [],
+       "d": "若目的是幫助年輕家庭提早置業，成功標準便是置業宗數，這並非生育政策的目的。"
+      },
+      {
+       "t": "消除空間障礙",
+       "c": [],
+       "d": "鼓勵生育應消除「沒有空間就不生」：看想生育的家庭能否及時得到足夠居住空間。"
+      },
+      {
+       "t": "只照顧部分家庭",
+       "c": [],
+       "d": "以此衡量，置業支援只照顧到買得起的家庭，所以本文只是有條件支持。"
+      }
+     ]
+    },
+    {
+     "label": "利",
+     "items": [
+      {
+       "t": "對準障礙和時點",
+       "c": [],
+       "d": "空間不足令人延遲生育，首置與生育年齡重疊；生育前後支援可打破「先買樓後生育」。"
+      },
+      {
+       "t": "直擊首期、成本低",
+       "c": [],
+       "d": "年輕家庭難在首期而非月供，提高按揭成數降入場門檻；2萬元減免對庫房影響有限。"
+      }
+     ]
+    },
+    {
+     "label": "弊",
+     "items": [
+      {
+       "t": "①排除租住家庭",
+       "c": [],
+       "d": "最受空間所困的是租住細小單位、未能置業的家庭，「買得起」的門檻正好把他們排除。"
+      },
+      {
+       "t": "②槓桿撞開支高峰",
+       "c": [],
+       "d": "95%按揭幾乎沒有資產緩衝，槓桿最高時正值新生嬰兒令開支上升，影響會否再生一胎。"
+      },
+      {
+       "t": "③誘因錯位",
+       "c": [],
+       "d": "本會置業的家庭只得額外收益，或為配合減免調動生育時間，令出生提前而非增加。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "對無子女不公",
+       "c": [
+        "分零和與非零和"
+       ],
+       "d": "公屋優先配屋屬零和，一家提前另一家便延後，公平質疑較合理；須分清兩類措施。"
+      },
+      {
+       "t": "印花稅、按揭成數",
+       "c": [
+        "非零和，不奪單位"
+       ],
+       "d": "印花稅減免和按揭成數不奪任何人單位，屬非零和；生育帶來未來的勞動力和稅基。"
+      }
+     ]
+    },
+    {
+     "label": "建議",
+     "items": [
+      {
+       "t": "①補租住缺口",
+       "c": [],
+       "d": "新生嬰兒公屋家庭列入調遷優先；私樓租戶提高租金扣稅上限並設年期，回應弊一。"
+      },
+      {
+       "t": "②育兒期壓力測試",
+       "c": [],
+       "d": "審批時以「育兒期」情景評估還款能力，簽約前提供理財輔導，回應弊二的槓桿風險。"
+      },
+      {
+       "t": "③以空間計成效",
+       "c": [],
+       "d": "由房屋局追蹤受惠家庭人均面積及其後生育情況，三年後檢討，回應弊三並扣回政策目的。"
+      },
+      {
+       "t": "供應配合需求",
+       "c": [],
+       "d": "新建公營房屋適度增加適合幼兒家庭的單位，否則需求面支援只令家庭互相競爭。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 3,
+   "paper": "zh",
+   "center": "非本地生十萬",
+   "stance": "同意增加，三前提：額外、配套先行、看留港",
+   "branches": [
+    {
+     "label": "政策目的／評估標準",
+     "items": [
+      {
+       "t": "教育樞紐：多元質素",
+       "c": [],
+       "d": "若目的是建設國際專上教育樞紐，標準是生源是否多元、教學質素能否保持。"
+      },
+      {
+       "t": "補人才：看留港",
+       "c": [],
+       "d": "若目的是補充人才，標準是畢業生有多少留港工作、投入哪些行業，而非入學人數。"
+      },
+      {
+       "t": "指標≠目的",
+       "c": [],
+       "d": "把收生人數這個指標與樞紐、人才兩個目的分開，立場因而附三個可驗證的前提。"
+      }
+     ]
+    },
+    {
+     "label": "現況與癥結",
+     "items": [
+      {
+       "t": "①承載力瓶頸",
+       "c": [],
+       "d": "招生可加快，宿舍、教學人手和校園空間卻需時建立；商廈改裝令校園事務變城市事務。"
+      },
+      {
+       "t": "②看得見的資源",
+       "c": [],
+       "d": "本地生感受的是宿位、熱門課程座位和老師時間，一旦競爭，總量增加仍有被攤薄的觀感。"
+      },
+      {
+       "t": "③指標目的斷層",
+       "c": [],
+       "d": "收生由院校掌握，留港取決於就業市場；只追求入學人數，指標達標而人才目的落空。"
+      }
+     ]
+    },
+    {
+     "label": "駁論",
+     "items": [
+      {
+       "t": "擠佔本地資源",
+       "c": [
+        "自資宿位＋學費"
+       ],
+       "d": "城中學舍以自資私營提供宿位，非本地生亦帶來學費，擴招資源大多非從本地份額撥出。"
+      },
+      {
+       "t": "必然攤薄",
+       "c": [
+        "真風險：分配規則"
+       ],
+       "d": "真正風險是宿位、課堂、導師等共用資源的分配規則不清，應補規則而非否定擴招方向。"
+      }
+     ]
+    },
+    {
+     "label": "措施",
+     "items": [
+      {
+       "t": "②本地優先非替代",
+       "c": [],
+       "d": "按院校和課程每年公布本地學額及非本地生人數，承諾擴招不減本地學額，扣癥結二。"
+      },
+      {
+       "t": "①宿舍配套先行",
+       "c": [],
+       "d": "訂本地生最低宿位年期，新增非本地生由新增宿位承接，訂宿舍安全標準，扣癥結一。"
+      },
+      {
+       "t": "②學費回饋全體",
+       "c": [],
+       "d": "院校把部分非本地學費撥作全體受惠的獎學金、交流和學習支援，在年報列明，扣癥結二。"
+      },
+      {
+       "t": "③以留港就業衡量",
+       "c": [],
+       "d": "追蹤非本地畢業生第三年仍在港工作的比例及行業，對照人才清單調整收生，扣癥結三。"
+      }
+     ]
+    },
+    {
+     "label": "挑戰 → 處理",
+     "items": [
+      {
+       "t": "院校擴招誘因",
+       "c": [
+        "配套納表現評估"
+       ],
+       "d": "院校有誘因先擴招後補配套；把宿位、師生比例納入表現評估，未達標須先補足才可再擴。"
+      },
+      {
+       "t": "改裝宿舍擾民",
+       "c": [
+        "管理計劃＋聯絡"
+       ],
+       "d": "改裝宿舍有消防、管理、噪音問題；審批要求管理計劃，設地區聯絡及投訴渠道並公開巡查"
+      },
+      {
+       "t": "數據難改觀感",
+       "c": [
+        "按課程公布"
+       ],
+       "d": "整體數據好看，熱門課程的競爭仍惹不滿；按課程公布數據，並設學生代表參與檢討。"
+      }
+     ]
+    },
+    {
+     "label": "游說：本地學生及家長",
+     "items": [
+      {
+       "t": "入學機會",
+       "c": [
+        "每年公開數據"
+       ],
+       "d": "以每年公開的數據，而非口頭保證，證明本地資助學額沒有因擴招而減少。"
+      },
+      {
+       "t": "學習質素",
+       "c": [
+        "學費撐課程交流"
+       ],
+       "d": "非本地學費和多元背景支持更多課程、交流和獎學金，本地生不必出境也有國際化課堂。"
+      },
+      {
+       "t": "畢業出路",
+       "c": [
+        "補缺口不爭職"
+       ],
+       "d": "勞動人口將減，以人才清單引導非本地畢業生投入短缺行業，補缺口而非爭奪同一批職位。"
+      },
+      {
+       "t": "怕受損",
+       "c": [
+        "宿位承諾＋放慢"
+       ],
+       "d": "讓步：最低宿位年期寫入院校承諾；三年後學生代表參與檢討，若本地生受損便放慢收生。"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "q": 4,
+   "paper": "en",
+   "center": "Founder renewal exemption",
+   "stance": "Income proof was evidence; replace it, don't just waive it",
+   "branches": [
+    {
+     "label": "Purpose / reframing",
+     "items": [
+      {
+       "t": "Retain genuine pre-revenue founders",
+       "c": [],
+       "d": "The exemption aims to keep founders whose companies are genuine but too young to earn income."
+      },
+      {
+       "t": "Income = evidence, not end",
+       "c": [],
+       "d": "The income requirement was never an end in itself; it was evidence of doing what the visa was granted for."
+      },
+      {
+       "t": "Verification and incentives",
+       "c": [],
+       "d": "So the difficulty is verification and incentives, not generosity: what provides evidence once income is set aside?"
+      }
+     ]
+    },
+    {
+     "label": "Problem 1: test removed, not replaced",
+     "items": [
+      {
+       "t": "Backing goes stale",
+       "c": [
+        "Integrity risk"
+       ],
+       "d": "Public backing is granted at entry on a business plan and says little about trading two years later; integrity risk follows."
+      },
+      {
+       "t": "Nothing left to judge",
+       "c": [
+        "Inconsistent, challengeable decisions"
+       ],
+       "d": "Immigration already lacks start-up expertise; with income waived it has almost nothing to judge, inviting challenges and inconsistency."
+      },
+      {
+       "t": "Abuse cases surface",
+       "c": [
+        "Rules tightened for all"
+       ],
+       "d": "If abuse cases surface, renewal rules may tighten for all holders, leaving genuine founders worse off than before."
+      }
+     ]
+    },
+    {
+     "label": "Problem 2: conflicting gatekeepers",
+     "items": [
+      {
+       "t": "Targets reward admissions",
+       "c": [
+        "Places crowded out"
+       ],
+       "d": "Bodies measured by admissions now offer backing that also buys residence, so visa-motivated firms crowd out genuine entrepreneurs."
+      },
+      {
+       "t": "Private backers excluded",
+       "c": [
+        "Equity distortion"
+       ],
+       "d": "Founders backed by private investors, perhaps screened more rigorously, are excluded and pushed towards public backing for unrelated reasons."
+      },
+      {
+       "t": "Only postpones question",
+       "c": [
+        "Same uncertainty later"
+       ],
+       "d": "A founder still earning little will face the same uncertainty at the next renewal unless the City decides that test now."
+      }
+     ]
+    },
+    {
+     "label": "Recommendations",
+     "items": [
+      {
+       "t": "Active-operation test",
+       "c": [
+        "→P1"
+       ],
+       "d": "Exempted founders show at least three verifiable indicators: local staff, tax filings, premises, R&D spending, follow-on investment, days present."
+      },
+      {
+       "t": "One-off, shorter extension",
+       "c": [
+        "→P1"
+       ],
+       "d": "Each founder may use the exemption once, for a shorter extension, after which a milestone-based test applies."
+      },
+      {
+       "t": "Certify facts; Immigration decides",
+       "c": [
+        "→P2"
+       ],
+       "d": "Designated bodies certify facts against published criteria while Immigration decides; their targets reward company survival and local hiring."
+      },
+      {
+       "t": "Route for private backers",
+       "c": [
+        "→P2"
+       ],
+       "d": "Founders backed by accredited private investors apply under the same active-operation test, assessed by an independent panel."
+      }
+     ]
+    },
+    {
+     "label": "Implementation & monitoring",
+     "items": [
+      {
+       "t": "Criteria within three months",
+       "c": [],
+       "d": "Publish the active-operation criteria within three months so founders and designated bodies know the test in advance."
+      },
+      {
+       "t": "Pilot: Innovation Park only",
+       "c": [],
+       "d": "Pilot the exemption with the Innovation Park Corporation alone for twelve months before involving other bodies."
+      },
+      {
+       "t": "Extend after 18-month review",
+       "c": [],
+       "d": "Decide on extension to the Digital Hub and Start-up Fund only after an 18-month review."
+      },
+      {
+       "t": "Track active-at-renewal rate",
+       "c": [],
+       "d": "Indicators: exempted companies still active at next renewal, local jobs, audit findings and processing times, reported half-yearly."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

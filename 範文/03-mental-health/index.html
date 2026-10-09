@@ -80,6 +80,76 @@ background:var(--amber-bg);color:var(--amber);margin-bottom:9px}
  .hd .right{margin-left:0}
 }
 
+.mm-wrap{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:14px;overflow-x:auto}
+.mm-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mm-stance{flex:1 1 260px;font-size:13.5px;color:var(--dim);margin:0;padding-left:10px;border-left:3px solid var(--line2)}
+.mm-stance b{color:var(--text)}
+.mm-btn{font:inherit;font-size:12px;padding:3px 10px;border:1px solid var(--line2);background:var(--surface-2);color:var(--dim);border-radius:2px;cursor:pointer}
+.mm-btn[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.mm-seg{display:inline-flex}.mm-seg .mm-btn+.mm-btn{border-left:none}
+.mm{display:flex;align-items:center;min-width:max-content}
+.mm ul{list-style:none;margin:0;padding:0;flex:none}
+.mm .root{flex:none;max-width:170px;padding:10px 14px;background:var(--navy);color:var(--surface);font-family:"Noto Serif HK",Georgia,serif;font-weight:700;font-size:15px;line-height:1.45;border-radius:3px;text-align:center}
+.mm .root.en{background:var(--en)}
+.mm .tree{position:relative;padding-left:26px}
+.mm .tree::before{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .tree>li{position:relative;display:flex;align-items:center;padding:3px 0 3px 13px}
+.mm .tree>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line2)}
+.mm .tree>li:first-child::before{top:50%}
+.mm .tree>li:last-child::before{bottom:50%}
+.mm .tree>li:only-child::before{display:none}
+.mm .tree>li::after{content:"";position:absolute;left:0;top:50%;width:13px;border-top:2px solid var(--line2)}
+.mm .br{flex:none;width:122px;padding:6px 10px;font:inherit;font-weight:700;font-size:13px;line-height:1.4;text-align:left;border-radius:3px;background:var(--c-bg);color:var(--c);border:1px solid var(--c);cursor:pointer}
+.mm .br::after{content:" ▾";font-size:11px;opacity:.7}
+.mm li.fold>.br::after{content:" ▸"}
+.mm li.fold>.tree,.mm li.fold>.bd{display:none}
+.mm li.fold>.br{border-style:dashed}
+.mm .bd{display:none;font-size:12.5px;color:var(--dim);margin:4px 0 0 2px}
+.mm .it{flex:none;max-width:250px;padding:4px 9px;font-size:13px;line-height:1.5;background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:2px}
+.mm .it .d{display:none;font-size:12.5px;line-height:1.65;color:var(--dim);margin-top:2px;font-weight:400}
+.mm .sub{flex:none;max-width:250px;font-size:12.5px;line-height:1.5;color:var(--dim);padding:2px 6px}
+.mm .tree.l2,.mm .tree.l3{padding-left:22px}
+.mm .tree.l2::before,.mm .tree.l3::before{width:11px}
+.mm .tree.l3>li::after{width:9px}
+.mm .c-zh{--c:var(--zh);--c-bg:var(--zh-bg)}
+.mm .c-en{--c:var(--en);--c-bg:var(--en-bg)}
+.mm .c-jade{--c:var(--jade);--c-bg:var(--jade-bg)}
+.mm .c-amber{--c:var(--amber);--c-bg:var(--amber-bg)}
+.mm .c-navy{--c:var(--navy);--c-bg:var(--surface-3)}
+.mm .c-stamp{--c:var(--stamp);--c-bg:var(--zh-bg)}
+.mmv .mm .it{display:block;max-width:62ch}
+
+.mmv .mm{display:block;min-width:0}
+.mmv .mm .root{max-width:none;text-align:left}
+.mmv .mm .tree,.mmv .mm .tree.l2,.mmv .mm .tree.l3{padding-left:14px}
+.mmv .mm .tree::before{display:none}
+.mmv .mm .tree>li{display:block;padding:6px 0 0 14px}
+.mmv .mm .tree>li::before,.mmv .mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mmv .mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mmv .mm .tree>li::after{top:19px}
+.mmv .mm .tree.l3>li::after{top:14px}
+.mmv .mm .tree.l3>li:last-child::before{height:14px}
+.mmv .mm .br{width:auto;display:inline-block}
+.mmv .mm .it,.mmv .mm .sub{max-width:none;display:inline-block}
+.mmv .mm .d{display:block}
+.mmv .mm .bd{display:block}
+@media (max-width:760px){.mm-wrap{padding:12px}.mm-seg{display:none}
+.mm{display:block;min-width:0}
+.mm .root{max-width:none;text-align:left}
+.mm .tree,.mm .tree.l2,.mm .tree.l3{padding-left:14px}
+.mm .tree::before{display:none}
+.mm .tree>li{display:block;padding:6px 0 0 14px}
+.mm .tree>li::before,.mm .tree>li:first-child::before{top:0;bottom:auto;height:100%;display:block}
+.mm .tree>li:last-child::before{bottom:auto;height:19px}
+.mm .tree>li::after{top:19px}
+.mm .tree.l3>li::after{top:14px}
+.mm .tree.l3>li:last-child::before{height:14px}
+.mm .br{width:auto;display:inline-block}
+.mm .it,.mm .sub{max-width:none;display:inline-block}
+.mm .d{display:block}
+.mm .bd{display:block}
+.mm .it{display:block}}
+
 .wrap.narrow,.hd.narrow,.quicknav .in.narrow{max-width:940px}
 section{scroll-margin-top:56px}
 .intro{margin-top:22px}
@@ -149,6 +219,7 @@ details.sx.how2 summary::before{color:var(--jade)}
   <div class="right">
     <a class="back" href="../index.html">← 範文首頁</a>
     <a class="back" href="../../議題庫/03-mental-health/index.html#exam">對應議題頁 →</a>
+    <a class="back" href="../../腦圖/index.html#t03">本議題腦圖</a>
     <a class="back" href="../../答題框架/index.html">答題框架</a>
   </div>
 </div></header>
@@ -157,6 +228,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q1">
 <div class="qh"><span class="qno">題一</span><span class="pp zh">中文卷</span><h2>全面推行精神健康分層護理</h2><span class="wc">範文 1,482 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>政府已接納精神健康諮詢委員會提交的「精神健康分層護理模式」框架，下一步會研究為不同精神健康工作人員訂立能力標準及設計培訓課程，協調跨部門分工，制訂全面落實細節。有意見認為，政府應盡快全面推行分層護理，讓一般情緒問題及輕度至中度個案由學校、社福及基層醫療等前線處理，精神科專科則集中處理嚴重個案。你是否同意？試分析現況，提出落實分層護理的措施，分析執行上的挑戰及處理方法，並游說精神科醫生及社工界支持你的方案。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意全面推行，但三年分階段達到</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">精神健康分層護理</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><div class="bd">先拆政策目的，導出評估標準再表態</div><ul class="tree l2"><li><div class="it">合適層級可上可落<span class="d">分層不是把病人分類，而是按需要配對合適強度的支援，病情有變可上落。</span></div></li><li><div class="it">標準：輕中度及時介入<span class="d">標準之一：輕中度個案能否在合理時間內獲得學校、社區或基層的介入。</span></div></li><li><div class="it">標準：上轉快、輪候短<span class="d">標準之二三：需要升級時能否迅速上轉，專科輪候能否真正縮短。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><div class="bd">用機制診斷，癥結編號與措施對應</div><ul class="tree l2"><li><div class="it">層間沒有樓梯<span class="d">真正癥結不在缺少層，而在層與層之間沒有樓梯，個案上不去也落不來。</span></div></li><li><div class="it">①無共同評估語言<span class="d">醫療、社福、教育各有前線卻無共同評估工具，同一求助者可得三個不同判斷。</span></div></li><li><div class="it">②中層防衞性轉介<span class="d">中層欠能力標準和專科後援，便把個案往上推，令輪候更長、輕症惡化，形成惡性循環。</span></div></li><li><div class="it">③無人擁有個案<span class="d">沒有人負責整個個案，個案在系統之間轉手時最容易流失。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><div class="bd">逐項回扣癥結，附指標或試行</div><ul class="tree l2"><li><div class="it">①統一入口及工具<span class="d">基層醫療署牽頭制定共用評估工具和轉介表格，以地區康健中心作統一入口。</span></div></li><li><div class="it">②中層能力標準<span class="d">按層級訂明社工、家庭醫生、學校人員等可處理的範圍和培訓督導要求，與法定名冊銜接。</span></div></li><li><div class="it">③專科諮詢＋統籌者<span class="d">精神科設諮詢時段，下轉附回轉保證，每個中度個案指定統籌者跟進到底。</span></div></li><li><div class="it">兩三區試行<span class="d">先在兩至三個先導地區試行十八個月，以首次評估等候、上轉時間和重複危機比率為指標。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><div class="bd">批評自己的措施，逐項配處理</div><ul class="tree l2"><li><div class="it">中層人手參差<span class="d">中層人手不足、資歷參差；不降門檻而把能力標準分級，資歷淺者在督導下處理較低層級。</span></div><ul class="tree l3"><li><div class="sub">能力標準分級</div></li></ul></li><li><div class="it">三局各自為政<span class="d">三局分工撥款各自為政；設醫衞局牽頭跨局督導委員會，以共同指標問責。</span></div><ul class="tree l3"><li><div class="sub">跨局督導委員會</div></li></ul></li><li><div class="it">怕質素和責任<span class="d">專業界擔心質素和法律責任；由專科主導訂上轉條件，各層責任寫成明文。</span></div><ul class="tree l3"><li><div class="sub">專科訂上轉條件</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><div class="bd">駁最強反方，不打稻草人</div><ul class="tree l2"><li><div class="it">低成本「降級」<span class="d">承認無標準後援時憂慮會成真；但輕中度個案輪候期間零服務，現狀才是降級。</span></div><ul class="tree l3"><li><div class="sub">現狀才是降級</div></li></ul></li><li><div class="it">分層＝等候有人跟<span class="d">分層以能力標準和雙向通道，讓每人在等候期間已有人跟進，有需要時又能回到專科。</span></div></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：精神科醫生</button><div class="bd">抓對方在意的事，給理由和讓步</div><ul class="tree l2"><li><div class="it">臨床把關<span class="d">專科最在意病人安全；上轉標準由專科訂立，並在督導委員會佔有議席。</span></div><ul class="tree l3"><li><div class="sub">上轉標準由專科訂</div></li></ul></li><li><div class="it">門診量<span class="d">分層讓專科集中處理真正需要專科的個案，諮詢時段計入服務量而非額外工作。</span></div><ul class="tree l3"><li><div class="sub">諮詢計入服務量</div></li></ul></li></ul></li><li class="b c-zh"><button type="button" class="br" aria-expanded="true">游說：社工界</button><div class="bd">抓對方在意的事，給理由和讓步</div><ul class="tree l2"><li><div class="it">怕成風險下游<span class="d">社工怕成醫療風險下游；能力標準劃定做什麼、不做什麼，減少灰色地帶。</span></div><ul class="tree l3"><li><div class="sub">劃清做與不做</div></li></ul></li><li><div class="it">專業地位<span class="d">培訓和資歷認可提升社工的專業地位，令分層成為專業發展而非額外負擔。</span></div><ul class="tree l3"><li><div class="sub">培訓資歷認可</div></li></ul></li><li><div class="it">人手<span class="d">新增個案須有相應人手撥款，試行期內設個案量上限和工作量監察。</span></div><ul class="tree l3"><li><div class="sub">個案量上限</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態（是否同意「盡快全面」推行）② 分析現況 ③ 提出落實措施 ④ 分析執行挑戰 ⑤ 處理方法（與④逐項配對）⑥ 游說精神科醫生 ⑦ 游說社工界。</li>
 <li><strong>題目的鈎：</strong> 「盡快」與「全面」是兩件事——可以同意終點、不同意速度；題目描述的分工是「意見」，不必照單全收。</li>
@@ -204,6 +276,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q2">
 <div class="qh"><span class="qno">題二</span><span class="pp zh">中文卷</span><h2>立法限制兒童使用社交媒體</h2><span class="wc">範文 1,266 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>《行政長官2026年施政報告》提出，於律政司領導的工作組轄下成立「兒童使用社交媒體」專責小組，檢視兒童使用社交媒體（包括AI互動）的風險，以及有否需要採取更具針對性的應對方法，包括立法及行政措施。有意見認為，政府應立法限制兒童使用社交媒體，例如設定開設帳戶的最低年齡，以保障他們的身心健康。請分析上述建議有何利弊，表明你是支持抑或反對有關建議，並就你的立場提出理據。如果是支持的話，請提出建議，確保規管可有效達致其政策目的；如果是反對的話，請提出其他保障兒童身心健康的措施。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>支持立法：先管平台設計，年齡限制第二步</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">限制兒童用社交媒體</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><div class="bd">先拆政策目的，導出評估標準再表態</div><ul class="tree l2"><li><div class="it">傷害三源<span class="d">傷害來自有害內容、無限捲動等設計，以及與陌生人和AI互動的接觸風險。</span></div></li><li><div class="it">標準：源頭減害<span class="d">首要標準是措施能否在源頭減少傷害，而非只限制兒童進入。</span></div></li><li><div class="it">標準：可執行<span class="d">措施須能切實執行，並且不會把兒童推往更隱蔽的空間。</span></div></li><li><div class="it">標準：私隱相稱<span class="d">年齡驗證的私隱代價必須與保護兒童的效果相稱。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">利</button><div class="bd">公允寫最強的支持理由</div><ul class="tree l2"><li><div class="it">家長共同底線<span class="d">家長個別限制因同學都在用而失效，屬集體行動困境；法律令所有家庭面對同一規則。</span></div></li><li><div class="it">責任歸平台<span class="d">平台掌握產品設計和數據，由它承擔預設保護責任，遠比要求每個家長逐一設定有效。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">弊</button><div class="bd">弊處寫機制，為建議鋪路</div><ul class="tree l2"><li><div class="it">①私隱代價<span class="d">要確認誰未成年就要核實所有用戶年齡，處理不當會變成大規模收集身份資料的理由。</span></div></li><li><div class="it">②執法難、擠壓效應<span class="d">平台多在境外營運；兒童被擋在主流平台外，可能轉用更隱蔽的應用程式，風險不減反增。</span></div></li><li><div class="it">③誤傷求助渠道<span class="d">網上空間是部分兒童維繫朋輩、尋求支援的渠道，一刀切可能擋走正在求助的孩子。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">駁論</button><div class="bd">駁最強反方，不打稻草人</div><ul class="tree l2"><li><div class="it">理據：傷害來自設計<span class="d">禁令針對進入，傷害主要來自設計；規管設計既能源頭減害，又不必先解決全面年齡驗證。</span></div></li><li><div class="it">教育已足夠<span class="d">政府已推家長資源套和AI課程，但教育改變使用者卻改變不了產品，是必要非充分條件。</span></div><ul class="tree l3"><li><div class="sub">改變不了產品</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">建議</button><div class="bd">逐項對應弊處，附檢討指標</div><ul class="tree l2"><li><div class="it">分階段先管設計<span class="d">首階段要求未成年用戶預設私隱帳戶、關閉推送和深夜通知；再考慮年齡。</span></div></li><li><div class="it">①最少資料驗證<span class="d">容許年齡估算或第三方核實，不准保存身份資料，私隱專員參與訂標準。</span></div></li><li><div class="it">②罰款＋透明報告<span class="d">以罰款作執法槓桿，並要求平台定期公布涉及兒童用戶的投訴和處理數據，回應執法難。</span></div></li><li><div class="it">③保留求助渠道<span class="d">規管不阻隔網上青年支援隊等服務；兩年後以深夜使用和求助數據檢討。</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 利 ② 弊 ③ 表態 ④ 理據 ⑤（因本文支持）確保規管達致政策目的的建議。條件式任務只答自己選的一邊。</li>
 <li><strong>題目的鈎：</strong> 「例如設定最低年齡」只是例子——可以支持立法，但不以年齡禁令為起點；「身心健康」就是政策目的，要先拆開它。</li>
@@ -251,6 +324,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <section class="qa" id="q3">
 <div class="qh"><span class="qno">題三</span><span class="pp zh">中文卷</span><h2>三層應急機制應否在小學恆常化</h2><span class="wc">範文 1,421 字</span></div>
 <div class="qcard zh"><div class="ql">題目</div><div class="qb"><p>以學校為本的「三層應急機制」已在中學恆常化，並在全港小學四至六年級試行。《行政長官2026年施政報告》提出於2026/27學年延續小學的試行，並優化支援服務、加強學校專業人員培訓，以及早識別和支援有較高自殺風險的學生。有意見認為，政府應在試行期結束後，把機制在小學恆常化。你是否同意？試分析機制在小學推行的現況，提出優化措施，分析執行上的挑戰及處理方法，並游說小學教師及家長支持你的方案。</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap"><div class="mm-bar"><p class="mm-stance"><b>立場：</b>同意恆常化，但須修正流程和配套</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">簡圖</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">詳解</button></span><button type="button" class="mm-btn" data-fold="none">全部展開</button><button type="button" class="mm-btn" data-fold="all">全部收起</button></div><div class="mm"><div class="root">小學三層應急機制</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">政策目的／評估標準</button><div class="bd">先拆政策目的，導出評估標準再表態</div><ul class="tree l2"><li><div class="it">及早識別、及時支援<span class="d">機制目的是讓高自殺風險學生被及早識別，並在最短時間內得到專業支援。</span></div></li><li><div class="it">標準：準確、快速<span class="d">標準一二：識別是否準確，不遺漏也不過度轉介；由識別到專業介入需時多久。</span></div></li><li><div class="it">標準：可承擔、不標籤<span class="d">前線能否持續承擔、會否令學生被標籤；中學已恆常化，小學撤回會斷層。</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">現況與癥結</button><div class="bd">用機制診斷，癥結編號與措施對應</div><ul class="tree l2"><li><div class="it">①幼童少言語表達<span class="d">年幼學生多以行為轉變、身體不適或拒學表現困擾，識別更依賴教師觀察和家長資料。</span></div></li><li><div class="it">②識別後無處安置<span class="d">瓶頸不在識別而在識別之後：轉介後仍長時間輪候，學校只能識別而無處安置。</span></div></li><li><div class="it">③多計劃多頭轉介<span class="d">小學同時推行多個支援計劃，各自設識別轉介流程，前線負擔倍增、資料分散。</span></div></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">措施</button><div class="bd">逐項回扣癥結，附指標或試行</div><ul class="tree l2"><li><div class="it">先公布試行評估<span class="d">恆常化前完成並公布試行評估，以介入時間、跟進完成率和教師工時修訂流程。</span></div></li><li><div class="it">③統籌人員＋撥款<span class="d">專項撥款購買臨床心理時數，校內指定統籌人員並調整課節，集中處理不同計劃的轉介。</span></div></li><li><div class="it">②打通中間層<span class="d">由網上青年支援隊和社區服務承接中風險個案，並與兒童精神科設優先評估安排。</span></div></li><li><div class="it">①家長參與＋升中<span class="d">統一家長通知和同意程序；家長同意下，升中時把支援紀錄移交中學，兩階段連成一線。</span></div></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">挑戰 → 處理</button><div class="bd">批評自己的措施，逐項配處理</div><ul class="tree l2"><li><div class="it">經常開支<span class="d">專項撥款屬經常開支易受質疑；以三年為一期撥款，期滿按指標檢討，優先需要較大學校。</span></div><ul class="tree l3"><li><div class="sub">三年一期撥款</div></li></ul></li><li><div class="it">擠壓其他病童<span class="d">優先安排可能擠壓其他病童；中間層先承接，只上轉高風險，公布輪候。</span></div><ul class="tree l3"><li><div class="sub">只上轉高風險</div></li></ul></li><li><div class="it">家長不同意<span class="d">家長怕標籤和影響升學；由社工溝通，以支援而非診斷為框架。</span></div><ul class="tree l3"><li><div class="sub">社工以支援框架</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">駁論</button><div class="bd">駁最強反方，不打稻草人</div><ul class="tree l2"><li><div class="it">延長試行<span class="d">長期試行有代價：學校不投放培訓人手，合約人員流失，機制停在臨時狀態。</span></div><ul class="tree l3"><li><div class="sub">臨時狀態留不住人</div></li></ul></li><li><div class="it">恆常化≠不檢討<span class="d">數據可在恆常化後繼續收集，只要內置定期檢討和調整機制，恆常化不等於永不檢討。</span></div></li></ul></li><li class="b c-stamp"><button type="button" class="br" aria-expanded="true">游說：小學教師</button><div class="bd">抓對方在意的事，給理由和讓步</div><ul class="tree l2"><li><div class="it">工作量<span class="d">教師擔心工作量；以專項撥款和課節調整回應，並延續教師身心健康課程。</span></div><ul class="tree l3"><li><div class="sub">撥款＋減課節</div></li></ul></li><li><div class="it">怕被追究<span class="d">教師怕未能識別而被追究；明確職責界線只限識別與轉介，而非判斷與治療。</span></div><ul class="tree l3"><li><div class="sub">只管識別轉介</div></li></ul></li></ul></li><li class="b c-zh"><button type="button" class="br" aria-expanded="true">游說：家長</button><div class="bd">抓對方在意的事，給理由和讓步</div><ul class="tree l2"><li><div class="it">標籤前途<span class="d">家長在意子女被標籤和前途；說明機制目的是支援而非診斷，紀錄只作支援用途。</span></div><ul class="tree l3"><li><div class="sub">紀錄只作支援</div></li></ul></li><li><div class="it">知情權<span class="d">除非出現即時危險，重要決定必須取得家長同意；家長亦透過資源套成為機制一部分。</span></div><ul class="tree l3"><li><div class="sub">重要決定須同意</div></li></ul></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>任務拆解：</strong> ① 表態 ② 分析小學推行的現況 ③ 優化措施 ④ 執行挑戰 ⑤ 處理方法 ⑥ 游說小學教師 ⑦ 游說家長。</li>
 <li><strong>紅線：</strong> 不寫成「學生自殺問題」的泛論；不描述個案；不建議強制篩查全體學生而不提私隱與標籤。</li>
@@ -308,6 +382,7 @@ details.sx.how2 summary::before{color:var(--jade)}
 <p>(a) set out two major problems facing the proposed introduction of annual workplace stress assessments and explain the implication of the identified issues; and</p>
 <p>(b) recommend feasible measures to address the major problems identified.</p>
 <p>Please draft the paper in English.</p></div></div>
+<details class="sx mmd"><summary>思路腦圖<span class="s">複習用：立場 → 癥結 → 措施 → 挑戰 → 游說</span></summary><div class="mm-wrap" lang="en"><div class="mm-bar"><p class="mm-stance"><b>Stance：</b>Compulsion adds assessments, not candour or help</p><span class="mm-seg"><button type="button" class="mm-btn" data-view="brief" aria-pressed="true">Brief</button><button type="button" class="mm-btn" data-view="detail" aria-pressed="false">Detail</button></span><button type="button" class="mm-btn" data-fold="none">Expand all</button><button type="button" class="mm-btn" data-fold="all">Collapse all</button></div><div class="mm"><div class="root en">Workplace stress assessments</div><ul class="tree"><li class="b c-zh"><button type="button" class="br" aria-expanded="true">Purpose / reframing</button><div class="bd">Define the objective and reset the success test</div><ul class="tree l2"><li><div class="it">Identify risk, change conditions<span class="d">The objective is to identify at-risk employees early and give employers a reason to change the conditions that generate stress.</span></div></li><li><div class="it">Tests: honesty, help follows<span class="d">An assessment is useful only if people answer it honestly and if a result leads to help.</span></div></li><li><div class="it">Pilot fails both tests<span class="d">The pilot suggests the proposal meets neither test; compulsion would increase assessments, not their candour or usefulness.</span></div></li></ul></li><li class="b c-en"><button type="button" class="br" aria-expanded="true">Problem 1: trust in results</button><div class="bd">Diagnose the mechanism; implications to second layer</div><ul class="tree l2"><li><div class="it">Staff fear supervisors<span class="d">Fear that supervisors see individual results was the main reason for non-response; participation may rise while candour falls.</span></div><ul class="tree l3"><li><div class="sub">Candour falls</div></li></ul></li><li><div class="it">Employers fear liability<span class="d">Once an employer holds a result it is arguably on notice, so it may respond defensively by quietly managing out disclosers.</span></div><ul class="tree l3"><li><div class="sub">Defensive manage-outs</div></li></ul></li><li><div class="it">Same flaw: employer data<span class="d">The employer holding individual data drives both objections; low scores may only mean low trust, giving false reassurance.</span></div><ul class="tree l3"><li><div class="sub">False reassurance</div></li></ul></li></ul></li><li class="b c-jade"><button type="button" class="br" aria-expanded="true">Problem 2: no pathway to help</button><div class="bd">Diagnose the mechanism; implications to second layer</div><ul class="tree l2"><li><div class="it">Helpline-only follow-up<span class="d">Most high scorers did not use support, usually just a helpline; being told one is at risk without help may leave staff worse off.</span></div><ul class="tree l3"><li><div class="sub">At-risk staff worse off</div></li></ul></li><li><div class="it">No added capacity<span class="d">The proposal adds identification without capacity, so those seeking help are displaced into public services, lengthening waits.</span></div><ul class="tree l3"><li><div class="sub">Longer public waits</div></li></ul></li><li><div class="it">SMEs excluded<span class="d">SMEs fall below the threshold, so two-thirds of the workforce is excluded, widening the gap between large and small workplaces.</span></div><ul class="tree l3"><li><div class="sub">Wider large–small gap</div></li></ul></li><li><div class="it">Stress seen as individual<span class="d">Much stress originates in workload, hours and management; employers may comply at minimum cost, producing a statistic, not change.</span></div><ul class="tree l3"><li><div class="sub">Statistic, not change</div></li></ul></li></ul></li><li class="b c-amber"><button type="button" class="br" aria-expanded="true">Recommendations</button><div class="bd">Each measure tagged to the problem it answers</div><ul class="tree l2"><li><div class="it">Independent platform, aggregated data<span class="d">An independent platform gives individuals their own results; employers receive only anonymised unit data, withheld for groups under ten.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Ban misuse, safe harbour<span class="d">Legislate a ban on using data in appraisal, promotion or redundancy, and treat employers acting on aggregated findings as compliant.</span></div><ul class="tree l3"><li><div class="sub">→P1</div></li></ul></li><li><div class="it">Stepped pathway, pooled support<span class="d">Put a stepped route in place before any mandate, with co-funded pooled assistance via trade associations for small firms.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li><li><div class="it">Organisational action plans<span class="d">Require organisations to produce action plans on workload, hours and management practice, turning screening into a lever for change.</span></div><ul class="tree l3"><li><div class="sub">→P2</div></li></ul></li></ul></li><li class="b c-navy"><button type="button" class="br" aria-expanded="true">Implementation &amp; monitoring</button><div class="bd">Timeline, indicators and review point</div><ul class="tree l2"><li><div class="it">Large employers first<span class="d">Apply the duty first to the public sector and firms over 500 staff, extending to 100+ once the platform and pooled assistance operate.</span></div></li><li><div class="it">Review end of year three<span class="d">Commission the platform within twelve months, start in year two, and decide on extension after a review at the end of year three.</span></div></li><li><div class="it">Public waits must not rise<span class="d">Indicators include response rate, support within four weeks, action plans, misuse complaints, and public waiting times, which must not rise.</span></div></li></ul></li></ul></div></div></details>
 <details class="sx"><summary>審題<span class="s">考場上第一分鐘要做的事　·　預設收起：先自己審題，再展開對照</span></summary><div class="bd"><ul>
 <li><strong>Task breakdown:</strong> (a) exactly <strong>two</strong> problems, each with a diagnosis paragraph and a separate <strong>Implications</strong> paragraph; (b) measures, each tagged to Problem 1 or Problem 2. Plus Purpose, Background, Implementation and Monitoring, Advice Sought.</li>
 <li><strong>Reading the case:</strong> 41% response + fear of supervisors + employers' liability worry + union's demand → all point to <strong>one</strong> design flaw (the employer holds individual results) = Problem 1. One in five high-stress + under a quarter using a helpline + 16-week public wait + SMEs below the threshold = Problem 2 (identification without a pathway). Cost to employers is folded into Problem 2's equity point and the phasing recommendation, not made a third problem.</li>
@@ -408,6 +483,27 @@ details.sx.how2 summary::before{color:var(--jade)}
 <a class="toplink" href="#top">↑ 回到頂部</a></section>
 <div class="pager"><a href="../02-healthcare/index.html">← 02 醫療衞生與基層醫療</a><a href="../04-labour/index.html">04 勞工、就業與人力 →</a></div>
 <div class="foot">範文按考場手寫篇幅寫，建議先看題目自己寫一次，再展開審題、最後才讀範文。題目及事實以《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》及《行政長官2026年施政報告》為本；英文卷個案為虛構城市 City of Jade。出題為備考推斷，並非真題；本頁為備考筆記，不代表政府立場。<br><a href="../../議題庫/03-mental-health/index.html">議題庫：精神健康</a> · <a href="../index.html">全部範文</a> · <a href="../../答題框架/index.html">答題框架</a></div>
-</div>
+</div><script>
+(function(){
+  var KEY='jre-mm-view', view='brief';
+  try{view=localStorage.getItem(KEY)||'brief'}catch(e){}
+  function apply(v){
+    view=v;
+    document.querySelectorAll('.mm-wrap').forEach(function(w){
+      w.classList.toggle('mmv',v==='detail');
+      w.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===v))});
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');
+    if(!t||!t.closest('.mm-wrap'))return;
+    var w=t.closest('.mm-wrap');
+    if(t.classList.contains('br')){var li=t.parentNode;li.classList.toggle('fold');t.setAttribute('aria-expanded',String(!li.classList.contains('fold')));return}
+    if(t.dataset.view){apply(t.dataset.view);try{localStorage.setItem(KEY,t.dataset.view)}catch(e){}return}
+    if(t.dataset.fold){var f=t.dataset.fold==='all';w.querySelectorAll('.mm li.b').forEach(function(li){li.classList.toggle('fold',f);li.querySelector('.br').setAttribute('aria-expanded',String(!f))})}
+  });
+  apply(view);
+})();
+</script>
 </body>
 </html>
